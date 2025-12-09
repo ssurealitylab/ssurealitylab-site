@@ -1436,7 +1436,7 @@ document.addEventListener('DOMContentLoaded', function() {
         language: isEnglish ? 'en' : 'ko',
         max_length: 700,
         think_mode: currentChatMode === 'deep',
-        model_choice: currentChatMode === 'test' ? 'gpt-oss-120b' : (currentChatMode === 'deep' ? 'llama3.3-70b' : 'qwen3-4b')
+        model_choice: currentChatMode === 'test' ? 'gpt-oss-120b' : (currentChatMode === 'deep' ? 'gpt-oss-120b' : 'qwen3-4b')
       };
 
       const response = await fetch(endpoints.chat, {
@@ -1537,7 +1537,7 @@ document.addEventListener('DOMContentLoaded', function() {
           language: isEnglish ? 'en' : 'ko',
           max_length: 700,
           think_mode: (localStorage.getItem('chatMode') || 'deep') === 'deep',
-          model_choice: (localStorage.getItem('chatMode') || 'deep') === 'test' ? 'gpt-oss-120b' : ((localStorage.getItem('chatMode') || 'deep') === 'deep' ? 'llama3.3-70b' : 'qwen3-4b')
+          model_choice: (localStorage.getItem('chatMode') || 'deep') === 'test' ? 'gpt-oss-120b' : ((localStorage.getItem('chatMode') || 'deep') === 'deep' ? 'gpt-oss-120b' : 'qwen3-4b')
         }),
       }).then(response => {
         const reader = response.body.getReader();
