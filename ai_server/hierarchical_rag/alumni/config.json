@@ -1,0 +1,10 @@
+{
+  "category": "alumni",
+  "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "num_documents": 17,
+  "embedding_dim": 384,
+  "doc_types": [
+    "alumni",
+    "alumni_summary"
+  ]
+}

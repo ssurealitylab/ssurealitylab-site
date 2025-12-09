@@ -1025,9 +1025,9 @@ document.addEventListener('DOMContentLoaded', function() {
   let isEnglish = false;
   let selectedModel = 'qwen3-4b';
 
-  // Chat mode - Initialize from localStorage (default: 'fast')
+  // Chat mode - Initialize from localStorage (default: 'deep')
   // Modes: 'fast' (빠른모드), 'deep' (심층모드), 'test' (테스트모드 - 8B)
-  let chatMode = localStorage.getItem('chatMode') || 'fast';
+  let chatMode = localStorage.getItem('chatMode') || 'deep';
   const thinkModeLabel = document.querySelector('.think-mode-label');
 
   // Set initial UI state
@@ -1430,7 +1430,7 @@ document.addEventListener('DOMContentLoaded', function() {
       currentAIRequest = controller; // Store for cancellation
 
       // Determine request parameters based on chat mode
-      const currentChatMode = localStorage.getItem('chatMode') || 'fast';
+      const currentChatMode = localStorage.getItem('chatMode') || 'deep';
       const requestBody = {
         question: question,
         language: isEnglish ? 'en' : 'ko',
@@ -1536,8 +1536,8 @@ document.addEventListener('DOMContentLoaded', function() {
           question: question,
           language: isEnglish ? 'en' : 'ko',
           max_length: 700,
-          think_mode: (localStorage.getItem('chatMode') || 'fast') === 'deep',
-          model_choice: (localStorage.getItem('chatMode') || 'fast') === 'test' ? 'gpt-oss-120b' : ((localStorage.getItem('chatMode') || 'fast') === 'deep' ? 'llama3.3-70b' : 'qwen3-4b')
+          think_mode: (localStorage.getItem('chatMode') || 'deep') === 'deep',
+          model_choice: (localStorage.getItem('chatMode') || 'deep') === 'test' ? 'gpt-oss-120b' : ((localStorage.getItem('chatMode') || 'deep') === 'deep' ? 'llama3.3-70b' : 'qwen3-4b')
         }),
       }).then(response => {
         const reader = response.body.getReader();
@@ -1866,7 +1866,7 @@ document.addEventListener('DOMContentLoaded', function() {
           }
         } else {
           // Direct connection mode - always show thinking if preconnected
-          const currentMode = localStorage.getItem('chatMode') || 'fast';
+          const currentMode = localStorage.getItem('chatMode') || 'deep';
           const waveDots = '<span class="wave-dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></span>';
           if (isAIServerReady) {
             if (currentMode === 'deep') {

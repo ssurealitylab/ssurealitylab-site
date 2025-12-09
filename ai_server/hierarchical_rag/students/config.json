@@ -1,0 +1,10 @@
+{
+  "category": "students",
+  "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "num_documents": 23,
+  "embedding_dim": 384,
+  "doc_types": [
+    "student",
+    "members_summary"
+  ]
+}

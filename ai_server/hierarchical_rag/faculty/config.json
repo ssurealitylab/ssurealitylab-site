@@ -1,0 +1,9 @@
+{
+  "category": "faculty",
+  "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "num_documents": 2,
+  "embedding_dim": 384,
+  "doc_types": [
+    "faculty"
+  ]
+}

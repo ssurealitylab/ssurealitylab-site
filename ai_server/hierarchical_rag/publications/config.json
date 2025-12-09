@@ -1,0 +1,9 @@
+{
+  "category": "publications",
+  "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "num_documents": 32,
+  "embedding_dim": 384,
+  "doc_types": [
+    "publication"
+  ]
+}
