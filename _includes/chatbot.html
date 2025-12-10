@@ -349,6 +349,25 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
+.verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  color: #2e7d32;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  border: 1px solid #a5d6a7;
+}
+
+.verified-badge::before {
+  content: '\2714';
+  font-size: 9px;
+}
+
 .user-message {
   align-items: flex-end;
 }
@@ -1525,6 +1544,7 @@ document.addEventListener('DOMContentLoaded', function() {
       let fullResponse = "";
       let responseTime = null;
       let tokens = null;
+      let verifiedByResearchers = false;
 
       // Create EventSource manually using fetch for POST
       fetch(url, {
@@ -1549,7 +1569,8 @@ document.addEventListener('DOMContentLoaded', function() {
               resolve({
                 response: fullResponse,
                 response_time: responseTime,
-                tokens: tokens
+                tokens: tokens,
+                verified_by_researchers: verifiedByResearchers
               });
               return;
             }
@@ -1584,6 +1605,7 @@ document.addEventListener('DOMContentLoaded', function() {
                   if (data.done) {
                     responseTime = data.response_time;
                     tokens = data.tokens;
+                    verifiedByResearchers = data.verified_by_researchers || false;
                   }
                 } catch (e) {
                   // Skip invalid JSON
@@ -1919,6 +1941,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const response = aiResult?.response || aiResult || 'No response';
         const responseTime = (aiResult?.response_time && typeof aiResult.response_time === 'number') ? aiResult.response_time : null;
         const tokens = (aiResult?.tokens && typeof aiResult.tokens === 'number') ? aiResult.tokens : null;
+        const verifiedByResearchers = aiResult?.verified_by_researchers || false;
 
         // Check if response seems uncertain or generic for AI fallback
         let finalResponse = response;
@@ -1939,7 +1962,10 @@ document.addEventListener('DOMContentLoaded', function() {
         if (lastMessage && lastMessage.classList.contains('bot-message')) {
           const contentDiv = lastMessage.querySelector('div:first-child');
           if (contentDiv) {
-            contentDiv.innerHTML = finalResponse.replace(/\n/g, '<br>');
+            // Add verified badge if lab_info was used
+            const badgeHtml = verifiedByResearchers ?
+              `<div class="verified-badge">${isEnglish ? 'Verified by researchers' : '연구원 검증 정보'}</div>` : '';
+            contentDiv.innerHTML = badgeHtml + finalResponse.replace(/\n/g, '<br>');
           }
 
           // Add response time and token count

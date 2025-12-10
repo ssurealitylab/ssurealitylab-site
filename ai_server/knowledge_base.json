@@ -851,5 +851,86 @@
       "title": "Accurate Baseball Player Pose Refinement Using Motion Prior Guidance",
       "language": "ko"
     }
+  },
+  {
+    "content": "Reality Lab 소개\nReality Lab은 2023년에 설립된 숭실대학교 김희원 교수님의 인공지능 연구실입니다. 컴퓨터 비전(Computer Vision), 딥러닝(Deep Learning), 로보틱스/Embodied AI, 이미지 복원/초해상도, Generative Model 등을 연구합니다.\n위치: 서울특별시 동작구 상도로 369, 숭실대학교 정보과학관 602호\n연락처: 전화 +82-2-820-0679, 이메일 hwkim@ssu.ac.kr (김희원 교수님)\n홈페이지: https://ssurealitylab.github.io/\nGitHub: https://github.com/ssurealitylab",
+    "metadata": {
+      "type": "lab_info",
+      "source": "faq",
+      "title": "연구실 소개",
+      "language": "ko"
+    }
+  },
+  {
+    "content": "Reality Lab 연구 분야\n주요 연구 분야: 컴퓨터 비전, 딥러닝, 로보틱스/Embodied AI, 이미지 복원/초해상도, Generative Model\n컴퓨터 비전: 이미지 초해상도(Super-Resolution), 이미지 복원(Image Restoration), 스타일 트랜스퍼, 안경 제거(HiGlassRM), Task-Aware 이미지 다운스케일링 등\n로보틱스/Embodied AI: 로봇 조작 시뮬레이션(DynScene), 2025년 CVPR Embodied AI Workshop Arnold Challenge 1위, 2024년 3위 수상. 연구실 자체 개발 로봇(Human scale 1기, Toy scale 1기) 보유\n이미지 복원/초해상도: EDSR, CADyQ, DAQ, NERDS, Attentive Fine-Grained Structured Sparsity 등 다수 논문 발표\n사용 도구: Python, Isaac Sim 등",
+    "metadata": {
+      "type": "lab_info",
+      "source": "faq",
+      "title": "연구 분야",
+      "language": "ko"
+    }
+  },
+  {
+    "content": "Reality Lab 산학협력 및 프로젝트\n김희원 교수님께서 창업하신 (주)카이로바를 통해 다양한 정부 사업을 진행 중입니다.\n2025 국가 아젠다 사업: 지능형 로봇의 위험 상황 예측 및 안전 조작 시스템 구축 - 시각 및 언어 융합 기반 고차원적 상황 이해를 통한 저위험 힘 제어 및 경로 계획 과제 선정\n로봇 정부 웹 서칭용 LLM 개발 등 다양한 프로젝트 진행 중",
+    "metadata": {
+      "type": "lab_info",
+      "source": "faq",
+      "title": "산학협력",
+      "language": "ko"
+    }
+  },
+  {
+    "content": "Reality Lab 지원 방법\n학부 인턴 지원: 교수님 이메일(hwkim@ssu.ac.kr)로 CV, 포트폴리오, 성적표 등 참고 자료를 보내주시면 됩니다.\n지원 자격 조건: 특별한 조건 없습니다.\n타대생 지원: 가능합니다. 세종대, 수원대, 한국교통대, 덕성여대 등 타 대학 출신 학생들도 다수 있습니다.\n비전공자 지원: 가능합니다. 전자과 등 비전공 출신 학생들도 있습니다.\n코딩 테스트/면접: 교수님과 1대1 미팅으로 진행되며, 별도 테스트는 없습니다.\n대학원(석사) 진학: 교수님과의 면담 이후 가능합니다. 포트폴리오, CV, 성적표가 필요합니다.\n인턴 기간: 학부생, 숭실대 대학원 지원 시기 전 학생의 경우 인턴으로 활동하며, 기간은 개인마다 다릅니다.\n급여: 소정의 급여가 지원됩니다.\n정원(TO): 특별히 정해진 정원은 없습니다.\n지원 시 중점사항: 연구실에 대한 관심이 있으시다면 GitHub Issue를 통해 메시지를 남겨주시면 됩니다.",
+    "metadata": {
+      "type": "lab_info",
+      "source": "faq",
+      "title": "지원 방법",
+      "language": "ko"
+    }
+  },
+  {
+    "content": "Reality Lab 연구실 생활 및 문화\n근무 시간: 자율 출퇴근제로 운영됩니다.\n재택근무: 가능합니다. 다만 주 1회 미팅이 있으며, 되도록 오프라인 참석을 권장합니다.\n세미나/미팅: 주 1회 진행됩니다. 매주 미팅을 통해 교수님 및 다른 학생들과 논문에 대해 논의합니다.\n회식/MT: 정해진 것은 없지만 학기말에 있는 편입니다.\n연구실 분위기: 정말 친절하고 하고 싶은 연구를 할 수 있도록 장려하는 분위기입니다. 본인과 맞는 사람을 찾아 연구를 진행하여 탑티어 학회에 논문을 내는 경우도 많습니다.\n멘토링: 2025년 기준 퀄컴 인턴 합격자의 멘토링 시스템이 있었으며, 향후에도 자유롭게 진행될 수 있습니다.\n선배 조언: 연구실 내부에서 자유롭게 조언을 나누며, 슬랙을 통해 소통하는 문화가 있습니다.",
+    "metadata": {
+      "type": "lab_info",
+      "source": "faq",
+      "title": "연구실 생활",
+      "language": "ko"
+    }
+  },
+  {
+    "content": "Reality Lab GPU 서버 및 연구 환경\nGPU 서버: A6000 8대, 1080Ti 10대, RTX 4090 5대, 2080Ti 16대, 공용 Corca A100 6대, Pro 6000 8대 (2025년 기준)\n연구 공간: 정보과학관 602호와 숭실대 테크스테이션 두 곳을 사용합니다. 다른 연구실과 공간을 공유합니다.\n학회 참석: 논문이 게재된 경우 학회 참석 지원이 됩니다. 그 외에는 교수님과 상의가 필요합니다.\n다른 연구실 협업: CVPR, ECCV, ICCV, WACV 등 학회에서 만난 학생들과 함께 논문을 내는 경우가 많으며, 숭실대 내 연구실과의 협업도 가능합니다.",
+    "metadata": {
+      "type": "lab_info",
+      "source": "faq",
+      "title": "연구 환경",
+      "language": "ko"
+    }
+  },
+  {
+    "content": "Reality Lab 구성원 현황\n현재 구성원: 석사과정 10명, 학부 인턴 11명으로 총 21명 (2025년 기준)\n박사과정: 아직 없습니다.\n졸업생 진로: 2023년 설립된 신생 연구실이지만, 이미 퀄컴(Qualcomm) 인턴에 합격한 연구원이 있습니다.\n학부생 논문 참여: 가능합니다. 실제로 학부 인턴들이 WACV, CVPR 등 주요 학회 논문의 공동 저자로 참여하고 있습니다.",
+    "metadata": {
+      "type": "lab_info",
+      "source": "faq",
+      "title": "구성원",
+      "language": "ko"
+    }
+  },
+  {
+    "content": "Reality Lab 연구 성과 및 수상\n주요 학회: CVPR, ICCV, ECCV, WACV, NeurIPS, AAAI, BMVC 등 컴퓨터 비전 및 AI 분야 탑티어 학회에 논문 투고\n최근 성과: 2025-2026년 WACV, CVPR, AAAI, BMVC 등 주요 학회에 다수 논문 게재\n수상 내역: 2025 CVPR Embodied AI Workshop Arnold Challenge 1위, 2024년 3위, NTIRE Challenge 등 다수 수상\n특허: 교수님께서 특허 출원을 장려하시며, 실제로 특허를 낸 학생도 다수 있습니다.",
+    "metadata": {
+      "type": "lab_info",
+      "source": "faq",
+      "title": "연구 성과",
+      "language": "ko"
+    }
+  },
+  {
+    "content": "Reality Lab 연구실 장점 및 지원자에게 하고 싶은 말\n연구실 장점: 정말 자유롭게 본인이 하고 싶은 연구를 할 수 있습니다. 자신의 연구에 로봇이 필요하다면 로봇을 만들 수 있고, 새로운 연구를 해보고 싶다면 도전할 수 있습니다. 특정 주제에 강제로 참여해야 하는 일은 없습니다.\n예비 지원자에게: 정말 편하게 지원해주세요. 열정이 넘치는 당신이라면 우리 연구실에서도 분명히 잘해낼 것입니다!",
+    "metadata": {
+      "type": "lab_info",
+      "source": "faq",
+      "title": "지원자 안내",
+      "language": "ko"
+    }
   }
 ]
