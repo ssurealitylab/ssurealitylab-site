@@ -172,12 +172,12 @@
   position: absolute;
   bottom: 80px;
   right: 0;
-  width: 450px;
-  height: 600px;
+  width: 495px;
+  height: 720px;
   min-width: 320px;
   min-height: 400px;
-  max-width: 800px;
-  max-height: 800px;
+  max-width: 900px;
+  max-height: 900px;
   background: #ffffff !important;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 16px;
@@ -352,20 +352,37 @@
 .verified-badge {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
-  color: #2e7d32;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  background: #4caf50;
+  color: white;
   font-size: 10px;
-  font-weight: 600;
-  padding: 3px 8px;
-  border-radius: 10px;
+  font-weight: bold;
+  border-radius: 50%;
   margin-bottom: 6px;
-  border: 1px solid #a5d6a7;
+  cursor: help;
+  position: relative;
 }
 
 .verified-badge::before {
   content: '\2714';
   font-size: 9px;
+}
+
+.verified-badge:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #333;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  white-space: nowrap;
+  z-index: 1000;
 }
 
 .user-message {
@@ -1963,8 +1980,9 @@ document.addEventListener('DOMContentLoaded', function() {
           const contentDiv = lastMessage.querySelector('div:first-child');
           if (contentDiv) {
             // Add verified badge if lab_info was used
+            const tooltipText = isEnglish ? 'Verified by researchers' : '연구원 검증 정보';
             const badgeHtml = verifiedByResearchers ?
-              `<div class="verified-badge">${isEnglish ? 'Verified by researchers' : '연구원 검증 정보'}</div>` : '';
+              `<div class="verified-badge" data-tooltip="${tooltipText}"></div>` : '';
             contentDiv.innerHTML = badgeHtml + finalResponse.replace(/\n/g, '<br>');
           }
 
