@@ -1,7 +1,8 @@
 <!-- Reality Lab Chatbot -->
 <div id="chatbot-container" class="chatbot-container" style="display: none;">
-  
+
   <div id="chatbot-window" class="chatbot-window">
+    <div id="verified-badge" class="verified-badge" data-tooltip="연구원 검증 정보"></div>
     <div class="chatbot-header">
       <div class="chatbot-header-info">
         <div class="chatbot-title">Reality Lab Assistant</div>
@@ -344,30 +345,36 @@
 }
 
 .verified-badge {
-  display: inline-flex;
+  display: none;
   align-items: center;
   justify-content: center;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   background: #4caf50;
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
   border-radius: 50%;
-  margin-bottom: 6px;
   cursor: help;
-  position: relative;
+  position: absolute;
+  right: -30px;
+  bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.verified-badge.show {
+  display: flex;
 }
 
 .verified-badge::before {
   content: '\2714';
-  font-size: 9px;
+  font-size: 11px;
 }
 
 .verified-badge:hover::after {
   content: attr(data-tooltip);
   position: absolute;
-  left: 20px;
+  right: 28px;
   top: 50%;
   transform: translateY(-50%);
   background: #333;
@@ -1973,11 +1980,19 @@ document.addEventListener('DOMContentLoaded', function() {
         if (lastMessage && lastMessage.classList.contains('bot-message')) {
           const contentDiv = lastMessage.querySelector('div:first-child');
           if (contentDiv) {
-            // Add verified badge if lab_info was used
+            contentDiv.innerHTML = finalResponse.replace(/\n/g, '<br>');
+          }
+
+          // Show/hide verified badge on chatbot window
+          const verifiedBadge = document.getElementById('verified-badge');
+          if (verifiedBadge) {
             const tooltipText = isEnglish ? 'Verified by researchers' : '연구원 검증 정보';
-            const badgeHtml = verifiedByResearchers ?
-              `<div class="verified-badge" data-tooltip="${tooltipText}"></div>` : '';
-            contentDiv.innerHTML = badgeHtml + finalResponse.replace(/\n/g, '<br>');
+            verifiedBadge.setAttribute('data-tooltip', tooltipText);
+            if (verifiedByResearchers) {
+              verifiedBadge.classList.add('show');
+            } else {
+              verifiedBadge.classList.remove('show');
+            }
           }
 
           // Add response time and token count
