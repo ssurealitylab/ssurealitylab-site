@@ -207,6 +207,24 @@ students:
       github: ""
       linkedin: ""
 
+    - name: "Hyeonchan Kim"
+      name_ko: "김현찬"
+      email: "holiday0726@soongsil.ac.kr"
+      university: "Digital Media, Soongsil University, B.S."
+      research: "Physical AI, Computer Vision"
+      photo: "assets/img/members/default.jpg"
+      github: "https://github.com/holiday0726"
+      linkedin: ""
+
+    - name: "Jaerim Kim"
+      name_ko: "김재림"
+      email: "kkjjrr0504@gmail.com"
+      university: "AI Software Engineering, Soongsil University, B.S."
+      research: "Computer Vision, Deep Learning"
+      photo: "assets/img/members/default.jpg"
+      github: ""
+      linkedin: ""
+
 alumni:
   description: "Former Research Interns"
   former_interns:
