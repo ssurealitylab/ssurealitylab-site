@@ -1,9 +1,13 @@
 <!-- Splash Intro Screen -->
 <div id="splash-intro" class="splash-intro">
   <div class="splash-content">
-    <div class="splash-logo" id="splash-logo">
+    <div class="splash-logo">
       <span class="splash-text reality">Reality</span>
       <span class="splash-text lab">Lab</span>
+    </div>
+    <div class="splash-tagline">AI Research Laboratory</div>
+    <div class="splash-loader">
+      <div class="loader-bar"></div>
     </div>
   </div>
 </div>
@@ -21,7 +25,7 @@
   align-items: center;
   z-index: 99999;
   opacity: 1;
-  transition: opacity 0.6s ease-out;
+  transition: opacity 0.5s ease-out;
 }
 
 .splash-intro.fade-out {
@@ -41,12 +45,8 @@
   display: flex;
   justify-content: center;
   align-items: baseline;
-  gap: 12px;
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.splash-logo.moving {
-  position: fixed;
+  gap: 8px;
+  margin-bottom: 20px;
 }
 
 .splash-text {
@@ -57,19 +57,51 @@
 }
 
 .splash-text.reality {
-  font-size: 5rem;
-  color: #212529;
+  font-size: 4rem;
+  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   animation: slideUp 0.6s ease-out 0.2s forwards;
 }
 
 .splash-text.lab {
-  font-size: 5rem;
-  color: #3B82F6;
+  font-size: 4rem;
+  background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   animation: slideUp 0.6s ease-out 0.4s forwards;
 }
 
-.splash-logo.moving .splash-text {
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+.splash-tagline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out 0.7s forwards;
+  margin-bottom: 40px;
+}
+
+.splash-loader {
+  width: 200px;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  margin: 0 auto;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeIn 0.3s ease-out 0.9s forwards;
+}
+
+.loader-bar {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 50%, #f093fb 100%);
+  border-radius: 3px;
+  animation: loadProgress 1.5s ease-out 1s forwards;
 }
 
 @keyframes slideUp {
@@ -83,15 +115,38 @@
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes loadProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .splash-text.reality,
   .splash-text.lab {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 
-  .splash-logo {
-    gap: 8px;
+  .splash-tagline {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+  }
+
+  .splash-loader {
+    width: 150px;
   }
 }
 </style>
@@ -100,6 +155,7 @@
 (function() {
   // Check if intro was already shown in this session
   if (sessionStorage.getItem('splashShown')) {
+    // Hide splash immediately
     var splash = document.getElementById('splash-intro');
     if (splash) {
       splash.classList.add('hidden');
@@ -110,58 +166,17 @@
   // Mark as shown for this session
   sessionStorage.setItem('splashShown', 'true');
 
-  // Phase 1: Show text animation (1.2s)
-  // Phase 2: Move to target position (0.8s)
-  // Phase 3: Fade out (0.5s)
-
+  // Wait for animation to complete (2.5 seconds total)
   setTimeout(function() {
     var splash = document.getElementById('splash-intro');
-    var splashLogo = document.getElementById('splash-logo');
-
-    // Find the target element on the page
-    var targetText = document.querySelector('.reality-lab-text');
-
-    if (targetText && splashLogo) {
-      // Get target position
-      var targetRect = targetText.getBoundingClientRect();
-      var splashRect = splashLogo.getBoundingClientRect();
-
-      // Calculate the scale (target is smaller)
-      var targetFontSize = window.getComputedStyle(targetText).fontSize;
-      var currentFontSize = window.getComputedStyle(splashLogo.querySelector('.splash-text')).fontSize;
-      var scale = parseFloat(targetFontSize) / parseFloat(currentFontSize);
-
-      // Calculate movement
-      var targetCenterX = targetRect.left + targetRect.width / 2;
-      var targetCenterY = targetRect.top + targetRect.height / 2;
-      var currentCenterX = splashRect.left + splashRect.width / 2;
-      var currentCenterY = splashRect.top + splashRect.height / 2;
-
-      var moveX = targetCenterX - currentCenterX;
-      var moveY = targetCenterY - currentCenterY;
-
-      // Apply movement and scale
-      splashLogo.classList.add('moving');
-      splashLogo.style.transform = 'translate(' + moveX + 'px, ' + moveY + 'px) scale(' + scale + ')';
-      splashLogo.style.opacity = '0';
-
-      // Fade out splash background
-      setTimeout(function() {
-        splash.classList.add('fade-out');
-
-        setTimeout(function() {
-          splash.classList.add('hidden');
-        }, 600);
-      }, 600);
-
-    } else {
-      // Fallback: just fade out
+    if (splash) {
       splash.classList.add('fade-out');
+
+      // Remove from DOM after fade out
       setTimeout(function() {
         splash.classList.add('hidden');
-      }, 600);
+      }, 500);
     }
-
-  }, 1400); // Wait for initial animation
+  }, 2500);
 })();
 </script>
