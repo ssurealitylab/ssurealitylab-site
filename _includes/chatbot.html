@@ -1647,34 +1647,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let isTyping = false;
   let currentDisplayedText = '';
 
-  // Filter out AI thinking/reasoning patterns from response
-  function filterThinkingPatterns(text) {
-    // Remove common AI thinking patterns (English)
-    const thinkingPatterns = [
-      /^Okay,?\s*(so\s*)?(the user|let me|I need|I should|I'll|I will|looking|checking).*?\n\n/gis,
-      /^Let me\s+(check|think|look|see|find|search|analyze|review).*?\n\n/gis,
-      /^(Looking|Checking|Searching|Analyzing|Reviewing)\s+(at|for|through|back|the).*?\n\n/gis,
-      /^Wait,?\s+.*?\n\n/gis,
-      /^(Hmm|So|Now|First|Actually),?\s+.*?(\n\n|\.\s+(?=[A-Z가-힣]))/gis,
-      /^I (need to|should|will|'ll|have to|can|want to)\s+.*?\n\n/gis,
-      /^(The user|They|This question).*?(asking|wants|needs|is about).*?\n\n/gis,
-      /^Based on (the|my|this).*?(\n\n)/gis,
-    ];
-
-    let filtered = text;
-    for (const pattern of thinkingPatterns) {
-      filtered = filtered.replace(pattern, '');
-    }
-
-    // Remove any remaining leading whitespace/newlines
-    filtered = filtered.replace(/^\s*\n+/, '');
-
-    return filtered;
-  }
-
   function updateStreamingMessage(text) {
-    // Filter out thinking patterns
-    text = filterThinkingPatterns(text);
     const messages = chatbotMessages.querySelectorAll('.message');
     const lastMessage = messages[messages.length - 1];
 
