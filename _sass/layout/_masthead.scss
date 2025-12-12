@@ -596,7 +596,7 @@ header.masthead {
         img {
           width: 100%;
           height: 100%;
-          object-fit: contain; // Changed from cover to contain - shows full image without cropping
+          object-fit: cover; // Fill width, allow top/bottom cropping
           border-radius: 20px;
           filter: none !important;
           opacity: 1 !important;
