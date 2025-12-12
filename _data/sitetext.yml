@@ -16,6 +16,12 @@ en: &DEFAULT_EN
     button: Learn About Our Research
     buttonlink: "#services"
     slider:
+      - image: "참고 이미지/homepage_slider_images/slider_kist_seminar.jpg"
+        title: "KIST Seminar"
+        description: "Guest Lecture by Dr. Kanggeon Kim"
+      - image: "참고 이미지/homepage_slider_images/slider_rrr_robot.jpg"
+        title: "RRR Robot"
+        description: "Custom Built Research Platform"
       - image: "참고 이미지/homepage_slider_images/slider_gyeonggi2025.png"
         title: "Gyeonggi Youth Gap Year"
         description: "Governor's Award - Toddlerbot Project"
