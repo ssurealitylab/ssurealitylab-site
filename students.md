@@ -7,6 +7,128 @@ keywords: Reality Lab students, 리얼리티랩 학생, Soongsil University, 숭
 
 # Students
 
+## Ph.D. Students
+<p style="color: #6c757d; font-size: 0.9rem; margin-top: -10px; margin-bottom: 20px;">Click on a card to view detailed information</p>
+
+<div class="members-grid">
+  {% for student in site.data.members.students.phd_students %}
+  <div class="member-card clickable-card" onclick="openMemberModal('phd-{{ student.name | slugify }}')">
+    <div class="member-photo">
+      <img src="{{ student.photo }}" alt="{{ student.name }}" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjZjNmNGY2Ii8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjgwIiByPSIzMCIgZmlsbD0iIzllYTNhOCIvPgo8cGF0aCBkPSJNNjAgMTYwYzAtMjIuMDkgMTcuOTEtNDAgNDAtNDBzNDAgMTcuOTEgNDAgNDB2MjBINjB2LTIweiIgZmlsbD0iIzllYTNhOCIvPgo8L3N2Zz4K'">
+    </div>
+    <div class="member-info">
+      <h3 class="member-name">{{ student.name }}</h3>
+      {% if student.email %}
+      <p class="member-email">{{ student.email }}</p>
+      {% endif %}
+      {% if student.university %}
+      <p class="member-university">{{ student.university }}</p>
+      {% endif %}
+      {% if student.research %}
+      <p class="member-research">{{ student.research }}</p>
+      {% endif %}
+      <div class="member-social">
+        {% if student.email and student.email != "" %}
+          <a href="#" onclick="event.preventDefault(); event.stopPropagation(); copyEmail('{{ student.email }}', event)" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        {% else %}
+          <a href="#" onclick="event.preventDefault(); event.stopPropagation()" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        {% endif %}
+        {% if student.github and student.github != "" %}
+          <a href="{{ student.github }}" target="_blank" onclick="event.stopPropagation()" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        {% endif %}
+        {% if student.linkedin and student.linkedin != "" %}
+          <a href="{{ student.linkedin }}" target="_blank" onclick="event.stopPropagation()" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for {{ student.name }} -->
+  <div id="modal-phd-{{ student.name | slugify }}" class="member-modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeMemberModal('phd-{{ student.name | slugify }}')">&times;</span>
+      <div class="modal-photo">
+        <img src="{{ student.photo }}" alt="{{ student.name }}" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjZjNmNGY2Ii8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjgwIiByPSIzMCIgZmlsbD0iIzllYTNhOCIvPgo8cGF0aCBkPSJNNjAgMTYwYzAtMjIuMDkgMTcuOTEtNDAgNDAtNDBzNDAgMTcuOTEgNDAgNDB2MjBINjB2LTIweiIgZmlsbD0iIzllYTNhOCIvPgo8L3N2Zz4K'">
+      </div>
+      <div class="modal-info">
+        <h2 class="modal-name">{{ student.name }}</h2>
+        {% if student.research %}
+        <p class="modal-research"><strong>Research:</strong> {{ student.research }}</p>
+        {% endif %}
+
+        {% assign phd_news_achievements = "" | split: "" %}
+        {% assign phd_pub_achievements = "" | split: "" %}
+
+        {% for news_item in site.data.news.news %}
+          {% if news_item.participants contains student.name %}
+            {% unless news_item.title contains "Paper Acceptance" %}
+              {% assign year = news_item.date | slice: 0, 4 %}
+              {% assign news_text = news_item.title | append: " (" | append: year | append: ")" %}
+              {% assign phd_news_achievements = phd_news_achievements | push: news_text %}
+            {% endunless %}
+          {% endif %}
+        {% endfor %}
+
+        {% for pub in site.data.publications.publications %}
+          {% if pub.authors contains student.name %}
+            {% unless pub.type == "workshop" and pub.status == "award" %}
+              {% assign venue_clean = pub.venue_short | replace: "25", "" | replace: "24", "" | replace: "23", "" | replace: "22", "" | replace: "21", "" | replace: "20", "" %}
+              {% assign pub_text = pub.title | append: " - " | append: venue_clean | append: " " | append: pub.year %}
+              {% assign phd_pub_achievements = phd_pub_achievements | push: pub_text %}
+            {% endunless %}
+          {% endif %}
+        {% endfor %}
+
+        {% if phd_news_achievements.size > 0 or phd_pub_achievements.size > 0 %}
+        <div class="modal-achievements">
+          <strong>Achievements:</strong>
+
+          {% if phd_news_achievements.size > 0 %}
+          <p style="margin: 10px 0 5px 0; font-weight: 600; color: #6c757d; font-size: 0.9rem;">Awards & Activities</p>
+          <ul style="margin-top: 5px;">
+          {% for achievement in phd_news_achievements %}
+            <li>{{ achievement }}</li>
+          {% endfor %}
+          </ul>
+          {% endif %}
+
+          {% if phd_pub_achievements.size > 0 %}
+          <p style="margin: 10px 0 5px 0; font-weight: 600; color: #6c757d; font-size: 0.9rem;">Publications</p>
+          <ul style="margin-top: 5px;">
+          {% for achievement in phd_pub_achievements %}
+            <li>{{ achievement }}</li>
+          {% endfor %}
+          </ul>
+          {% endif %}
+        </div>
+        {% endif %}
+
+        <div class="modal-social">
+          {% if student.github and student.github != "" %}
+            <a href="{{ student.github }}" target="_blank" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          {% endif %}
+          {% if student.linkedin and student.linkedin != "" %}
+            <a href="{{ student.linkedin }}" target="_blank" title="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
 ## Master's Students
 <p style="color: #6c757d; font-size: 0.9rem; margin-top: -10px; margin-bottom: 20px;">Click on a card to view detailed information</p>
 

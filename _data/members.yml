@@ -17,7 +17,7 @@ faculty:
     linkedin: ""
 
 students:
-  ms_students:
+  phd_students:
     - name: "Sungyong Park"
       name_ko: "박성용"
       email: "ejqdl010@gmail.com"
@@ -27,6 +27,7 @@ students:
       github: "https://ejqdl02.github.io/"
       linkedin: "https://www.linkedin.com/in/sungyong-park-662a19294/"
 
+  ms_students:
     - name: "Byungkwan Chae"
       name_ko: "채병관"
       email: "silencechae75@gmail.com"
