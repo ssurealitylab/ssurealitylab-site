@@ -31,6 +31,13 @@
 
   <title>{% if page.title %}{{ page.title | append: " | " | append: site.seo_title | default: site.title }}{% else %}{{ site.seo_title | default: site.title }}{% endif %}</title>
 
+  <!-- Preload first slider image for faster LCP -->
+  {% if site.data.sitetext[site.locale].header.slider.first %}
+  <link rel="preload" as="image" href="{{ site.data.sitetext[site.locale].header.slider.first.image }}" fetchpriority="high">
+  {% elsif site.data.sitetext.header.slider.first %}
+  <link rel="preload" as="image" href="{{ site.data.sitetext.header.slider.first.image }}" fetchpriority="high">
+  {% endif %}
+
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/apple-touch-icon.png">

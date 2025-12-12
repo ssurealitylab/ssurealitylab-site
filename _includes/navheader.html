@@ -106,7 +106,7 @@
             {%- if site.data.sitetext[site.locale].header.slider -%}
             {% for slide in site.data.sitetext[site.locale].header.slider %}
             <div class="slider-image {% if forloop.first %}active{% endif %}">
-              <img src="{{ slide.image }}" alt="{{ slide.title }}" class="img-fluid">
+              <img src="{{ slide.image }}" alt="{{ slide.title }}" class="img-fluid" {% if forloop.first %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %}>
             </div>
             {% endfor %}
             {%- endif -%}
@@ -147,7 +147,7 @@
             {%- if site.data.sitetext.header.slider -%}
             {% for slide in site.data.sitetext.header.slider %}
             <div class="slider-image {% if forloop.first %}active{% endif %}">
-              <img src="{{ slide.image }}" alt="{{ slide.title }}" class="img-fluid">
+              <img src="{{ slide.image }}" alt="{{ slide.title }}" class="img-fluid" {% if forloop.first %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %}>
             </div>
             {% endfor %}
             {%- endif -%}
