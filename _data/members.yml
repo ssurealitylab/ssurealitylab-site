@@ -212,7 +212,7 @@ students:
       email: "holiday0726@soongsil.ac.kr"
       university: "Digital Media, Soongsil University, B.S."
       research: "Physical AI, Computer Vision"
-      photo: "assets/img/members/default.jpg"
+      photo: "assets/img/members/hyeonchan_kim.png"
       github: "https://github.com/holiday0726"
       linkedin: ""
 
@@ -221,7 +221,7 @@ students:
       email: "kkjjrr0504@gmail.com"
       university: "AI Software Engineering, Soongsil University, B.S."
       research: "Computer Vision, Deep Learning"
-      photo: "assets/img/members/default.jpg"
+      photo: "assets/img/members/jaerim_kim.png"
       github: ""
       linkedin: ""
 
