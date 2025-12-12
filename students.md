@@ -10,7 +10,7 @@ keywords: Reality Lab students, 리얼리티랩 학생, Soongsil University, 숭
 ## Ph.D. Students
 <p style="color: #6c757d; font-size: 0.9rem; margin-top: -10px; margin-bottom: 20px;">Click on a card to view detailed information</p>
 
-<div class="members-grid">
+<div class="members-grid phd-grid">
   {% for student in site.data.members.students.phd_students %}
   <div class="member-card clickable-card" onclick="openMemberModal('phd-{{ student.name | slugify }}')">
     <div class="member-photo">
@@ -390,6 +390,11 @@ keywords: Reality Lab students, 리얼리티랩 학생, Soongsil University, 숭
   gap: 25px;
   margin-bottom: 50px;
   padding: 20px 0;
+}
+
+.members-grid.phd-grid {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+  justify-content: start;
 }
 
 .member-card {
