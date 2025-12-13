@@ -17,7 +17,7 @@ en: &DEFAULT_EN
     buttonlink: "#services"
     slider:
       - image: "참고 이미지/homepage_slider_images/slider_kist_seminar.jpg"
-        title: "Invited Seminar"
+        title: "Media Seminar"
         description: "Dr. Kanggeon Kim from KIST"
       - image: "참고 이미지/homepage_slider_images/slider_rrr_robot.jpg"
         title: "RRR Robot"
