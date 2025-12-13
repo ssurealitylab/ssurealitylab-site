@@ -18,7 +18,7 @@ en: &DEFAULT_EN
     slider:
       - image: "참고 이미지/homepage_slider_images/slider_kist_seminar.jpg"
         title: "Media Seminar"
-        description: "Kanggeon Kim from KIST"
+        description: "Kanggeon Kim, KIST"
       - image: "참고 이미지/homepage_slider_images/slider_rrr_robot.jpg"
         title: "RRR Robot"
         description: "Custom Built Research Platform"
