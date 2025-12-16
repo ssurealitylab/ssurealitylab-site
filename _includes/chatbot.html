@@ -42,16 +42,12 @@
       <input type="text" id="chatbot-input" class="chatbot-input" placeholder="궁금한 것을 물어보세요..." maxlength="200">
       <div class="think-mode-dropdown">
         <button id="think-mode-btn" class="think-mode-btn">
-          <span class="think-mode-label">빠른모드</span>
+          <span class="think-mode-label">심층모드</span>
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
         <div id="think-mode-menu" class="think-mode-menu">
-          <div class="think-mode-option" data-mode="fast">
-            <span class="mode-title">빠른모드</span>
-            <span class="mode-desc">즉시 답변</span>
-          </div>
           <div class="think-mode-option" data-mode="deep">
             <span class="mode-title">심층모드</span>
             <span class="mode-desc">깊은 추론</span>
@@ -1063,18 +1059,19 @@ document.addEventListener('DOMContentLoaded', function() {
   let selectedModel = 'qwen3-4b';
 
   // Chat mode - Initialize from localStorage (default: 'deep')
-  // Modes: 'fast' (빠른모드), 'deep' (심층모드), 'test' (테스트모드 - 8B)
-  let chatMode = localStorage.getItem('chatMode') || 'deep';
+  // Modes: 'deep' (심층모드), 'test' (테스트모드 - GPT-OSS 120B)
+  let storedMode = localStorage.getItem('chatMode');
+  // If stored mode is 'fast' (removed), default to 'deep'
+  let chatMode = (storedMode === 'fast' || !storedMode) ? 'deep' : storedMode;
   const thinkModeLabel = document.querySelector('.think-mode-label');
 
   // Set initial UI state
   function updateThinkModeUI() {
     const modeLabels = {
-      'fast': '빠른모드',
       'deep': '심층모드',
       'test': '🧪 테스트'
     };
-    thinkModeLabel.textContent = modeLabels[chatMode] || '빠른모드';
+    thinkModeLabel.textContent = modeLabels[chatMode] || '심층모드';
     thinkModeOptions.forEach(opt => {
       opt.classList.toggle('selected', opt.dataset.mode === chatMode);
     });
@@ -2059,7 +2056,7 @@ document.addEventListener('DOMContentLoaded', function() {
       thinkModeMenu.classList.remove('show');
       thinkModeBtn.classList.remove('active');
 
-      const modeNames = { 'fast': 'Fast (빠름)', 'deep': 'Deep (심층)', 'test': 'Test (GPT-OSS 120B)' };
+      const modeNames = { 'deep': 'Deep (심층)', 'test': 'Test (GPT-OSS 120B)' };
       console.log('Chat mode:', modeNames[chatMode]);
     });
   });
