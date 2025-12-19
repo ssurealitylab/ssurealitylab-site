@@ -108,6 +108,15 @@ students:
       github: "https://github.com/JEONG-HO-JAE"
       linkedin: "https://www.linkedin.com/in/98hojae-jeong"
 
+    - name: "Sooyoung Choi"
+      name_ko: "최수영"
+      email: "csy010921@gmail.com"
+      university: "Media, Soongsil University, B.S."
+      research: "Computer Vision, Deep Learning"
+      photo: "assets/img/members/suyoung_choi.jpg"
+      github: ""
+      linkedin: ""
+
   interns:
     - name: "Seoyoung Kim"
       name_ko: "김서영"
@@ -115,15 +124,6 @@ students:
       university: "Media, Soongsil University, B.S."
       research: "Deep Learning, Medical AI"
       photo: "assets/img/members/seoyoung_kim.jpg"
-      github: ""
-      linkedin: ""
-
-    - name: "Sooyoung Choi"
-      name_ko: "최수영"
-      email: "csy010921@gmail.com"
-      university: "Media, Soongsil University, B.S."
-      research: "Computer Vision, Deep Learning"
-      photo: "assets/img/members/suyoung_choi.jpg"
       github: ""
       linkedin: ""
 
