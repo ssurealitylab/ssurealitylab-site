@@ -173,7 +173,7 @@ publications:
   # 2023 Publications
   - id: c15_2023
     title: "NERDS: A General Framework to Train Camera Denoisers from Raw-RGB Noisy Image Pairs"
-    authors: "Yunseok Yang†, Heewon Kim"
+    authors: "Heewon Kim, Kyoung Mu Lee"
     venue: "International Conference on Learning Representations (ICLR)"
     venue_short: "ICLR"
     year: 2023
@@ -182,7 +182,7 @@ publications:
     citation: "[C15] Heewon Kim and Kyoung Mu Lee, \"NERDS: A General Framework to Train Camera Denoisers from Raw-RGB Noisy Image Pairs,\" International Conference on Learning Representations (ICLR), 2023."
     image: "assets/img/publications/nerds/architecture.png"
     links:
-      pdf: "https://openreview.net/pdf?id=SHvF5xaueVv"
+      pdf: "https://openreview.net/pdf?id=NO0ThzteQdI"
 
   - id: j4
     title: "Learning Controllable ISP for Image Enhancement"
