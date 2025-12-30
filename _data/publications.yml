@@ -178,7 +178,7 @@ publications:
     status: published
     citation: "[J7] Ji Hoon Bang†, Eun Hee Kim, Hyung Jun Kim, Jong-Won Chung, Woo-Keun Seo, Gyeong-Moon Kim, Dong-Ho Lee, Heewon Kim*, and Oh Young Bang*, \"Machine Learning-Based Etiologic Subtyping of Ischemic Stroke Using Circulating Exosomal microRNAs,\" International Journal of Molecular Sciences (IJMS), vol. 25, no. 12, pp. 1-14, Jun. 2024."
     image: "assets/img/publications/stroke/architecture.png"
-    notes: "* Equal contribution<br>† First author"
+    notes: "* Equal contribution<br>† Undergraduate student"
     links:
       pdf: "https://www.researchgate.net/publication/381597774_Machine_Learning-Based_Etiologic_Subtyping_of_Ischemic_Stroke_Using_Circulating_Exosomal_microRNAs/link/68046351df0e3f544f42deae/download"
 
@@ -415,14 +415,14 @@ publications:
 
   - id: c1
     title: "Enhanced Deep Residual Networks for Single Image Super-Resolution"
-    authors: "Bee Lim*, Sanghyun Son*, Heewon Kim, Seungjun Nah, and Kyoung Mu Lee"
+    authors: "Bee Lim, Sanghyun Son, Heewon Kim, Seungjun Nah, and Kyoung Mu Lee"
     venue: "2nd NTIRE: New Trends in Image Restoration and Enhancement workshop and challenge on image super-resolution in conjunction with CVPR 2017"
     venue_short: "CVPRW17"
     year: 2017
     type: conference
     status: published
     citation: "[C1] Bee Lim, Sanghyun Son, Heewon Kim, Seungjun Nah, and Kyoung Mu Lee, \"Enhanced Deep Residual Networks for Single Image Super-Resolution,\" 2nd NTIRE: New Trends in Image Restoration and Enhancement workshop and challenge on image super-resolution in conjunction with CVPR 2017. (Challenge Winners, Best Paper Award of Workshop)"
-    notes: "* Equal contribution<br>Challenge Winners, Best Paper Award of Workshop"
+    notes: "Challenge Winners, Best Paper Award of Workshop"
     links:
       paper: "https://openaccess.thecvf.com/content_cvpr_2017_workshops/w12/papers/Lim_Enhanced_Deep_Residual_CVPR_2017_paper.pdf"
       pdf: "https://openaccess.thecvf.com/content_cvpr_2017_workshops/w12/papers/Lim_Enhanced_Deep_Residual_CVPR_2017_paper.pdf"
