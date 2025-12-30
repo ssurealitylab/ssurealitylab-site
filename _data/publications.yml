@@ -146,14 +146,14 @@ publications:
 
   # 2024 Publications
   - id: w2
-    title: "3rd Place Winner at CVPR 2024 Embodied AI Workshop"
+    title: "3rd Place at CVPR 2024 Embodied AI Workshop"
     authors: "Sangmin Lee, Sungyong Park, Heewon Kim"
     venue: "CVPR 2024 Embodied AI Workshop"
     venue_short: "Arnold Challenge"
     year: 2024
     type: workshop
     status: award
-    citation: "3rd Place Winner at CVPR 2024 Embodied AI Workshop"
+    citation: "3rd Place at CVPR 2024 Embodied AI Workshop"
     badge_style: challenge-badge
 
   - id: c17j8

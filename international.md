@@ -202,7 +202,7 @@ title: International Publications
         <div class="col-12 mb-3">
           <div class="publication-list-item">
             <div class="publication-badge challenge-badge">ARNOLD Challenge</div>
-            <h5 class="list-title">3rd Place Winner at CVPR 2024 Embodied AI Workshop</h5>
+            <h5 class="list-title">3rd Place at CVPR 2024 Embodied AI Workshop</h5>
             <p class="list-authors">Sangmin Lee, Sungyong Park, Heewon Kim</p>
           </div>
         </div>
