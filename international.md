@@ -175,12 +175,12 @@ title: International Publications
           </div>
         </div>
 
-        <!-- ARNOLD Challenge -->
+        <!-- ARNOLD Challenge 2025 -->
         <div class="col-12 mb-3">
           <div class="publication-list-item" onclick="openPublicationModal('arnold')" style="cursor: pointer;">
             <div class="publication-badge challenge-badge">ARNOLD Challenge</div>
             <h5 class="list-title">1st Place Winner at CVPR 2025 Embodied AI Workshop</h5>
-            <p class="list-authors">Chaewoo Lim, Dowon Kim, Sangmin Lee, Sungyong Park, Heewon Kim</p>
+            <p class="list-authors">Dowon Kim, Chaewoo Lim, Sangmin Lee, Sungyong Park, Heewon Kim</p>
           </div>
         </div>
       </div>
@@ -198,6 +198,15 @@ title: International Publications
       </div>
 
       <div class="row">
+        <!-- ARNOLD Challenge 2024 -->
+        <div class="col-12 mb-3">
+          <div class="publication-list-item">
+            <div class="publication-badge challenge-badge">ARNOLD Challenge</div>
+            <h5 class="list-title">3rd Place Winner at CVPR 2024 Embodied AI Workshop</h5>
+            <p class="list-authors">Sangmin Lee, Sungyong Park, Heewon Kim</p>
+          </div>
+        </div>
+
         <!-- GSA 2024 -->
         <div class="col-12 mb-3">
           <div class="publication-list-item" onclick="openPublicationModal('c17j8')" style="cursor: pointer;">
@@ -279,7 +288,7 @@ title: International Publications
               </a>
             </div>
             <h5 class="list-title">NERDS: A General Framework to Train Camera Denoisers</h5>
-            <p class="list-authors">Yunseok Yang†, Heewon Kim</p>
+            <p class="list-authors">Heewon Kim, Kyoung Mu Lee</p>
           </div>
         </div>
 

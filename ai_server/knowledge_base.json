@@ -637,7 +637,7 @@
     }
   },
   {
-    "content": "논문: NERDS: A General Framework to Train Camera Denoisers from Raw-RGB Noisy Image Pairs\n저자: Yunseok Yang†, Heewon Kim\n학회: ICLR",
+    "content": "논문: NERDS: A General Framework to Train Camera Denoisers from Raw-RGB Noisy Image Pairs\n저자: Heewon Kim, Kyoung Mu Lee\n학회: ICLR",
     "metadata": {
       "type": "publication",
       "source": "international",
