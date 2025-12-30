@@ -134,7 +134,7 @@ publications:
 
   - id: w1
     title: "1st Place Winner at CVPR 2025 Embodied AI Workshop"
-    authors: "Chaewoo Lim, Dowon Kim, Sangmin Lee, Sungyong Park, Heewon Kim"
+    authors: "Dowon Kim, Chaewoo Lim, Sangmin Lee, Sungyong Park, Heewon Kim"
     venue: "CVPR 2025 Embodied AI Workshop"
     venue_short: "Arnold Challenge"
     year: 2025
@@ -144,6 +144,17 @@ publications:
     badge_style: challenge-badge
 
   # 2024 Publications
+  - id: w2
+    title: "3rd Place Winner at CVPR 2024 Embodied AI Workshop"
+    authors: "Sangmin Lee, Sungyong Park, Heewon Kim"
+    venue: "CVPR 2024 Embodied AI Workshop"
+    venue_short: "Arnold Challenge"
+    year: 2024
+    type: workshop
+    status: award
+    citation: "3rd Place Winner at CVPR 2024 Embodied AI Workshop"
+    badge_style: challenge-badge
+
   - id: c17j8
     title: "Trajectories of chronic pain among older Veterans: Identifying pain-worsening predictors via machine learning"
     authors: "Chiyoung Lee, Yeri Kim†, Seoyoung Kim†, Beth Cohen, Kent Kwoh, Hyochol Ahn, Juyoung Park, Heewon Kim"
