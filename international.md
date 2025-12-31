@@ -121,6 +121,12 @@ title: International Publications
               <a href="https://www.sciencedirect.com/science/article/pii/S2405959525000360" target="_blank" class="external-icon-link pdf-link" title="PDF" onclick="event.stopPropagation()">
                 <i class="fas fa-file-pdf"></i>
               </a>
+              <a href="https://lnkd.in/g4X4cD9S" target="_blank" class="external-icon-link website-link" title="Project Page" onclick="event.stopPropagation()">
+                <i class="fas fa-globe"></i>
+              </a>
+              <a href="https://lnkd.in/gx6Mv9EB" target="_blank" class="external-icon-link github-link" title="GitHub" onclick="event.stopPropagation()">
+                <i class="fab fa-github"></i>
+              </a>
             </div>
             <h5 class="list-title">Accurate Baseball Player Pose Refinement Using Motion Prior Guidance</h5>
             <p class="list-authors">Seunghyun Oh†, Heewon Kim</p>
