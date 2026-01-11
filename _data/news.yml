@@ -3,7 +3,7 @@ news:
     date: "2026-01-05"
     category: "Internship"
     participants: ["Dowon Kim"]
-    description: "Started internship at LG AI Research, Physical Intelligence Lab"
+    description: "Started internship at LG AI Research, Physical Intelligence Lab. Congratulations!"
     image: "lgresearch.jpg"
 
   - title: "WACV 2026 - 2 Papers Have Been Accepted!"
@@ -52,7 +52,7 @@ news:
     date: "2025-03-24"
     category: "Internship"
     participants: ["Sangmin Lee"]
-    description: "Started software internship for Automated Driving at Qualcomm"
+    description: "Started software internship for Automated Driving at Qualcomm. Congratulations!"
     image: "qualcomm.png"
 
   - title: "ICT Express Paper Acceptance"
