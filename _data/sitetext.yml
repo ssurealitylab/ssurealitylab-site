@@ -21,7 +21,7 @@ en: &DEFAULT_EN
         description: "2025 Lab Celebration"
       - image: "참고 이미지/homepage_slider_images/slider_arnold_award.jpg"
         title: "ARNOLD Challenge"
-        description: "CVPR 2025 - 1st Place Winner"
+        description: "CVPR 2025 - 1st Place Award Ceremony"
       - image: "참고 이미지/homepage_slider_images/slider_kist_seminar.jpg"
         title: "Media Seminar"
         description: "Kanggeon Kim, KIST"
