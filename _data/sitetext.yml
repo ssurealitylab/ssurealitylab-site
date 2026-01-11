@@ -18,7 +18,7 @@ en: &DEFAULT_EN
     slider:
       - image: "참고 이미지/homepage_slider_images/slider_yearend_party.jpg"
         title: "Year-End Party"
-        description: "2024 Lab Celebration"
+        description: "2025 Lab Celebration"
       - image: "참고 이미지/homepage_slider_images/slider_kist_seminar.jpg"
         title: "Media Seminar"
         description: "Kanggeon Kim, KIST"
