@@ -62,6 +62,13 @@ news:
     description: "Paper accepted to CVPR 2025"
     image: "cvpr2025.png"
 
+  - title: "LG AI Research Internship"
+    date: "2025-01-05"
+    category: "Internship"
+    participants: ["Dowon Kim"]
+    description: "Started internship at LG AI Research, Physical Intelligence Lab"
+    image: "lgresearch.jpg"
+
   - title: "AAAI 2025 Paper Acceptance"
     date: "2024-12-10"
     category: "Publication"
