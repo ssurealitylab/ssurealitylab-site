@@ -250,11 +250,6 @@ robots:
         speed: "Up to 2 m/s walking"
         battery: "~2 hours runtime"
         payload: "3 kg (per arm)"
-      skills:
-        - "Bipedal Walking & Running"
-        - "Dexterous Manipulation"
-        - "Whole-body Control"
-        - "Reinforcement Learning"
       bio: "Reality Lab's third humanoid robot member. Capable of dynamic locomotion, object manipulation, and learning new skills through reinforcement learning."
 
 alumni:

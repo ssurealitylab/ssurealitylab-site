@@ -388,8 +388,8 @@ keywords: Reality Lab students, 리얼리티랩 학생, Soongsil University, 숭
 
 <div class="members-grid robots-grid">
   {% for robot in site.data.members.robots.members %}
-  <div class="member-card robot-card clickable-card" onclick="openMemberModal('robot-{{ robot.name | slugify }}')">
-    <div class="member-photo robot-photo">
+  <div class="member-card clickable-card" onclick="openMemberModal('robot-{{ robot.name | slugify }}')">
+    <div class="member-photo">
       <img src="{{ robot.photo }}" alt="{{ robot.name }}" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjZjNmNGY2Ii8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjgwIiByPSIzMCIgZmlsbD0iIzllYTNhOCIvPgo8cGF0aCBkPSJNNjAgMTYwYzAtMjIuMDkgMTcuOTEtNDAgNDAtNDBzNDAgMTcuOTEgNDAgNDB2MjBINjB2LTIweiIgZmlsbD0iIzllYTNhOCIvPgo8L3N2Zz4K'">
     </div>
     <div class="member-info">
@@ -406,7 +406,7 @@ keywords: Reality Lab students, 리얼리티랩 학생, Soongsil University, 숭
 
   <!-- Modal for {{ robot.name }} -->
   <div id="modal-robot-{{ robot.name | slugify }}" class="member-modal">
-    <div class="modal-content robot-modal-content">
+    <div class="modal-content">
       <span class="close-modal" onclick="closeMemberModal('robot-{{ robot.name | slugify }}')">&times;</span>
       <div class="modal-photo">
         <img src="{{ robot.photo }}" alt="{{ robot.name }}" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjZjNmNGY2Ii8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjgwIiByPSIzMCIgZmlsbD0iIzllYTNhOCIvPgo8cGF0aCBkPSJNNjAgMTYwYzAtMjIuMDkgMTcuOTEtNDAgNDAtNDBzNDAgMTcuOTEgNDAgNDB2MjBINjB2LTIweiIgZmlsbD0iIzllYTNhOCIvPgo8L3N2Zz4K'">
@@ -434,16 +434,6 @@ keywords: Reality Lab students, 리얼리티랩 학생, Soongsil University, 숭
         </div>
         {% endif %}
 
-        {% if robot.skills and robot.skills.size > 0 %}
-        <div class="modal-achievements robot-skills">
-          <strong><i class="fas fa-bolt"></i> Capabilities</strong>
-          <ul>
-          {% for skill in robot.skills %}
-            <li>{{ skill }}</li>
-          {% endfor %}
-          </ul>
-        </div>
-        {% endif %}
       </div>
     </div>
   </div>
@@ -803,45 +793,25 @@ h2:first-of-type {
   justify-content: start;
 }
 
-.robot-card {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  border: 2px solid #dee2e6;
-}
-
-.robot-card:hover {
-  border-color: #3498db;
-  background: linear-gradient(135deg, #ffffff 0%, #f1f3f5 100%);
-}
-
-.robot-photo img {
-  border-radius: 15px !important;
-  border: 3px solid #3498db !important;
-}
-
 .robot-bio {
   font-size: 0.95rem;
   color: #495057;
   line-height: 1.6;
   margin: 15px 0;
   padding: 15px;
-  background: #e9ecef;
-  border-radius: 10px;
-  font-style: italic;
-}
-
-.robot-specs,
-.robot-skills {
   background: #f8f9fa;
-  border-left: 4px solid #3498db;
+  border-radius: 10px;
 }
 
-.robot-specs strong,
-.robot-skills strong {
-  color: #3498db;
+.robot-specs {
+  background: #f8f9fa;
 }
 
-.robot-specs strong i,
-.robot-skills strong i {
+.robot-specs strong {
+  color: #2c3e50;
+}
+
+.robot-specs strong i {
   margin-right: 8px;
 }
 
@@ -866,12 +836,6 @@ h2:first-of-type {
   color: #495057;
   min-width: 80px;
   margin-right: 10px;
-}
-
-.robot-modal-content .modal-photo img {
-  border-radius: 20px !important;
-  width: 180px !important;
-  height: 180px !important;
 }
 </style>
 
