@@ -126,6 +126,7 @@ en: &DEFAULT_EN
       - title: "Kairoba"
         url: https://kairoba.com
         logo: assets/img/kairoba-logo.png
+        style: "margin-top: 5px"
 
   team:
     title: "OUR RESEARCH TEAM"
