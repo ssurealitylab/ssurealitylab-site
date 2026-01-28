@@ -226,6 +226,15 @@ students:
       github: ""
       linkedin: ""
 
+    - name: "Yeunsuh Kim"
+      name_ko: "김연서"
+      email: "yeunsuh.kim@gmail.com"
+      university: "Globalmedia, Soongsil University, B.S."
+      research: "Physical AI"
+      photo: "assets/img/members/yeunsuh_kim.jpg"
+      github: "https://github.com/daeGULLL"
+      linkedin: ""
+
 alumni:
   description: "Former Research Interns"
   former_interns:
