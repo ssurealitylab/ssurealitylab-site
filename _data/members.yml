@@ -238,8 +238,8 @@ students:
 robots:
   description: "Research Robots"
   members:
-    - name: "???"
-      name_ko: "???"
+    - name: "G1"
+      name_ko: "G1"
       model: "Unitree G1 EDU"
       joined: "January 2026"
       photo: "assets/img/members/unitree_g1.jpg"
@@ -255,7 +255,7 @@ robots:
         - "Dexterous Manipulation"
         - "Whole-body Control"
         - "Reinforcement Learning"
-      bio: "Reality Lab's first humanoid robot member. Capable of dynamic locomotion, object manipulation, and learning new skills through reinforcement learning."
+      bio: "Reality Lab's third humanoid robot member. Capable of dynamic locomotion, object manipulation, and learning new skills through reinforcement learning."
 
 alumni:
   description: "Former Research Interns"

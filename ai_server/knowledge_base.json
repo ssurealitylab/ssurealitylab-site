@@ -445,7 +445,7 @@
     }
   },
   {
-    "content": "Reality Lab 연구 로봇\nReality Lab은 2026년 1월에 Unitree G1 EDU 휴머노이드 로봇을 도입했습니다.\n로봇 스펙: 키 127cm, 무게 35kg, 23+ 관절 (손 포함 43 DoF), 최대 보행 속도 2m/s, 배터리 약 2시간, 팔당 3kg 적재 가능\n로봇 능력: 이족 보행 및 달리기, 정밀 손 조작, 전신 제어, 강화학습\nReality Lab의 첫 번째 휴머노이드 로봇 멤버로, 동적 이동, 물체 조작, 강화학습을 통한 새로운 기술 학습이 가능합니다.",
+    "content": "Reality Lab 연구 로봇\nReality Lab은 2026년 1월에 Unitree G1 EDU 휴머노이드 로봇(이름: G1)을 도입했습니다.\n로봇 스펙: 키 127cm, 무게 35kg, 23+ 관절 (손 포함 43 DoF), 최대 보행 속도 2m/s, 배터리 약 2시간, 팔당 3kg 적재 가능\n로봇 능력: 이족 보행 및 달리기, 정밀 손 조작, 전신 제어, 강화학습\nReality Lab의 세 번째 휴머노이드 로봇 멤버로, 동적 이동, 물체 조작, 강화학습을 통한 새로운 기술 학습이 가능합니다.",
     "metadata": {
       "type": "robot",
       "source": "robots",
@@ -454,7 +454,7 @@
     }
   },
   {
-    "content": "Reality Lab Research Robots\nReality Lab introduced the Unitree G1 EDU humanoid robot in January 2026.\nRobot Specs: Height 127cm, Weight 35kg, 23+ Joints (43 DoF with hands), Max walking speed 2m/s, Battery ~2 hours, 3kg payload per arm\nCapabilities: Bipedal Walking & Running, Dexterous Manipulation, Whole-body Control, Reinforcement Learning\nReality Lab's first humanoid robot member, capable of dynamic locomotion, object manipulation, and learning new skills through reinforcement learning.",
+    "content": "Reality Lab Research Robots\nReality Lab introduced the Unitree G1 EDU humanoid robot (named G1) in January 2026.\nRobot Specs: Height 127cm, Weight 35kg, 23+ Joints (43 DoF with hands), Max walking speed 2m/s, Battery ~2 hours, 3kg payload per arm\nCapabilities: Bipedal Walking & Running, Dexterous Manipulation, Whole-body Control, Reinforcement Learning\nReality Lab's third humanoid robot member, capable of dynamic locomotion, object manipulation, and learning new skills through reinforcement learning.",
     "metadata": {
       "type": "robot",
       "source": "robots",
