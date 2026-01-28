@@ -383,6 +383,73 @@ keywords: Reality Lab students, 리얼리티랩 학생, Soongsil University, 숭
   {% endfor %}
 </div>
 
+## Research Robots
+<p style="color: #6c757d; font-size: 0.9rem; margin-top: -10px; margin-bottom: 20px;">Click on a card to view detailed specifications</p>
+
+<div class="members-grid robots-grid">
+  {% for robot in site.data.members.robots.members %}
+  <div class="member-card robot-card clickable-card" onclick="openMemberModal('robot-{{ robot.name | slugify }}')">
+    <div class="member-photo robot-photo">
+      <img src="{{ robot.photo }}" alt="{{ robot.name }}" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjZjNmNGY2Ii8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjgwIiByPSIzMCIgZmlsbD0iIzllYTNhOCIvPgo8cGF0aCBkPSJNNjAgMTYwYzAtMjIuMDkgMTcuOTEtNDAgNDAtNDBzNDAgMTcuOTEgNDAgNDB2MjBINjB2LTIweiIgZmlsbD0iIzllYTNhOCIvPgo8L3N2Zz4K'">
+    </div>
+    <div class="member-info">
+      <h3 class="member-name">{{ robot.name }}</h3>
+      <p class="member-email"><i class="fas fa-robot"></i> {{ robot.model }}</p>
+      <p class="member-university"><i class="fas fa-calendar-alt"></i> Joined: {{ robot.joined }}</p>
+      <div class="member-social">
+        <a href="#" onclick="event.preventDefault(); event.stopPropagation(); openMemberModal('robot-{{ robot.name | slugify }}')" title="View Specs">
+          <i class="fas fa-info-circle"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for {{ robot.name }} -->
+  <div id="modal-robot-{{ robot.name | slugify }}" class="member-modal">
+    <div class="modal-content robot-modal-content">
+      <span class="close-modal" onclick="closeMemberModal('robot-{{ robot.name | slugify }}')">&times;</span>
+      <div class="modal-photo">
+        <img src="{{ robot.photo }}" alt="{{ robot.name }}" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjZjNmNGY2Ii8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjgwIiByPSIzMCIgZmlsbD0iIzllYTNhOCIvPgo8cGF0aCBkPSJNNjAgMTYwYzAtMjIuMDkgMTcuOTEtNDAgNDAtNDBzNDAgMTcuOTEgNDAgNDB2MjBINjB2LTIweiIgZmlsbD0iIzllYTNhOCIvPgo8L3N2Zz4K'">
+      </div>
+      <div class="modal-info">
+        <h2 class="modal-name">{{ robot.name }}</h2>
+        <p class="modal-research"><strong>Model:</strong> {{ robot.model }}</p>
+        <p class="modal-research"><strong>Joined:</strong> {{ robot.joined }}</p>
+
+        {% if robot.bio %}
+        <p class="robot-bio">{{ robot.bio }}</p>
+        {% endif %}
+
+        {% if robot.specs %}
+        <div class="modal-achievements robot-specs">
+          <strong><i class="fas fa-cogs"></i> Specifications</strong>
+          <ul class="specs-list">
+            {% if robot.specs.height %}<li><span class="spec-label">Height:</span> {{ robot.specs.height }}</li>{% endif %}
+            {% if robot.specs.weight %}<li><span class="spec-label">Weight:</span> {{ robot.specs.weight }}</li>{% endif %}
+            {% if robot.specs.dof %}<li><span class="spec-label">DoF:</span> {{ robot.specs.dof }}</li>{% endif %}
+            {% if robot.specs.speed %}<li><span class="spec-label">Speed:</span> {{ robot.specs.speed }}</li>{% endif %}
+            {% if robot.specs.battery %}<li><span class="spec-label">Battery:</span> {{ robot.specs.battery }}</li>{% endif %}
+            {% if robot.specs.payload %}<li><span class="spec-label">Payload:</span> {{ robot.specs.payload }}</li>{% endif %}
+          </ul>
+        </div>
+        {% endif %}
+
+        {% if robot.skills and robot.skills.size > 0 %}
+        <div class="modal-achievements robot-skills">
+          <strong><i class="fas fa-bolt"></i> Capabilities</strong>
+          <ul>
+          {% for skill in robot.skills %}
+            <li>{{ skill }}</li>
+          {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
 <style>
 .members-grid {
   display: grid;
@@ -728,6 +795,83 @@ h2:first-of-type {
   .member-name {
     font-size: 1.2rem;
   }
+}
+
+/* Robot Section Styles */
+.robots-grid {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+  justify-content: start;
+}
+
+.robot-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 2px solid #dee2e6;
+}
+
+.robot-card:hover {
+  border-color: #3498db;
+  background: linear-gradient(135deg, #ffffff 0%, #f1f3f5 100%);
+}
+
+.robot-photo img {
+  border-radius: 15px !important;
+  border: 3px solid #3498db !important;
+}
+
+.robot-bio {
+  font-size: 0.95rem;
+  color: #495057;
+  line-height: 1.6;
+  margin: 15px 0;
+  padding: 15px;
+  background: #e9ecef;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+.robot-specs,
+.robot-skills {
+  background: #f8f9fa;
+  border-left: 4px solid #3498db;
+}
+
+.robot-specs strong,
+.robot-skills strong {
+  color: #3498db;
+}
+
+.robot-specs strong i,
+.robot-skills strong i {
+  margin-right: 8px;
+}
+
+.specs-list {
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+
+.specs-list li {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.specs-list li:last-child {
+  border-bottom: none;
+}
+
+.spec-label {
+  font-weight: 600;
+  color: #495057;
+  min-width: 80px;
+  margin-right: 10px;
+}
+
+.robot-modal-content .modal-photo img {
+  border-radius: 20px !important;
+  width: 180px !important;
+  height: 180px !important;
 }
 </style>
 

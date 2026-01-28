@@ -235,6 +235,28 @@ students:
       github: "https://github.com/daeGULLL"
       linkedin: ""
 
+robots:
+  description: "Research Robots"
+  members:
+    - name: "???"
+      name_ko: "???"
+      model: "Unitree G1 EDU"
+      joined: "January 2026"
+      photo: "assets/img/members/unitree_g1.jpg"
+      specs:
+        height: "127 cm"
+        weight: "35 kg"
+        dof: "23+ Joints (43 DoF with hands)"
+        speed: "Up to 2 m/s walking"
+        battery: "~2 hours runtime"
+        payload: "3 kg (per arm)"
+      skills:
+        - "Bipedal Walking & Running"
+        - "Dexterous Manipulation"
+        - "Whole-body Control"
+        - "Reinforcement Learning"
+      bio: "Reality Lab's first humanoid robot member. Capable of dynamic locomotion, object manipulation, and learning new skills through reinforcement learning."
+
 alumni:
   description: "Former Research Interns"
   former_interns:
