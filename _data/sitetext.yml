@@ -123,6 +123,9 @@ en: &DEFAULT_EN
       - title: "Soongsil University"
         url: https://www.ssu.ac.kr
         logo: assets/img/ssu-logo.png
+      - title: "Kairoba"
+        url: https://kairoba.com
+        logo: assets/img/kairoba-logo.png
 
   team:
     title: "OUR RESEARCH TEAM"
