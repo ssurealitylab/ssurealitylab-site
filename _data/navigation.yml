@@ -20,6 +20,8 @@ nav:
         url: https://ssurealitylab.github.io/faculty.html
       - title: "Students"
         url: https://ssurealitylab.github.io/students.html
+      - title: "Robots"
+        url: https://ssurealitylab.github.io/students.html#research-robots
       - title: "Alumni"
         url: https://ssurealitylab.github.io/alumni.html
   - title: "Publications"
@@ -55,6 +57,8 @@ en: &DEFAULT_EN
           url: https://ssurealitylab.github.io/faculty.html
         - title: "Students"
           url: https://ssurealitylab.github.io/students.html
+        - title: "Robots"
+          url: https://ssurealitylab.github.io/students.html#research-robots
         - title: "Alumni"
           url: https://ssurealitylab.github.io/alumni.html
     - title: "Publications"

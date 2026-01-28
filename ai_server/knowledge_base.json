@@ -180,34 +180,37 @@
     }
   },
   {
-    "content": "Reality Lab의 연구원은 총 21명입니다.\n\n현재 연구실 구성원:\n- 석사과정 학생: 10명\n- 연구 인턴: 11명\n\n석사과정 학생 수는 10명이고, 연구 인턴 수는 11명입니다.\n학생 수를 포함하여 전체 연구원은 21명입니다.\n\n석사과정 학생 명단: Sungyong Park, Byungkwan Chae, Youngjae Choi, Sangmin Lee, Minjoo Koh, Hyunjun Kho, Hyunsuh Kho, Juhyoung Lee, Jiwoo Seo, Hojae Jeong\n연구 인턴 명단: Seoyoung Kim, Sooyoung Choi, Jiwon Hwang, Eunwoo Song, Sebin Lee, Dowon Kim, Yeonji Kim, Jaehyeon Lee, Yebin Lee, Jungha Lim, Yeri Kim",
+    "content": "Reality Lab의 연구원은 총 24명입니다.\n\n현재 연구실 구성원:\n- 박사과정 학생: 1명\n- 석사과정 학생: 10명\n- 연구 인턴: 13명\n\n박사과정 학생 수는 1명이고, 석사과정 학생 수는 10명이고, 연구 인턴 수는 13명입니다.\n학생 수를 포함하여 전체 연구원은 24명입니다.\n\n박사과정 학생 명단: Sungyong Park (박성용)\n석사과정 학생 명단: Byungkwan Chae (채병관), Youngjae Choi (최영재), Sangmin Lee (이상민), Minjoo Koh (고민주), Hyunjun Kho (고현준), Hyunsuh Kho (고현서), Juhyoung Lee (이주형), Jiwoo Seo (서지우), Hojae Jeong (정호재), Sooyoung Choi (최수영)\n연구 인턴 명단: Seoyoung Kim (김서영), Jiwon Hwang (황지원), Eunwoo Song (송은우), Sebin Lee (이세빈), Dowon Kim (김도원), Yeonji Kim (김연지), Jaehyeon Lee (이재현), Yebin Lee (이예빈), Jungha Lim (임정하), Yeri Kim (김예리), Hyeonchan Kim (김현찬), Jaerim Kim (김재림), Yeunsuh Kim (김연서)",
     "metadata": {
       "type": "members_summary",
       "source": "students",
-      "total": 21,
+      "total": 24,
+      "phd_count": 1,
       "ms_count": 10,
-      "intern_count": 11,
+      "intern_count": 13,
       "language": "ko"
     }
   },
   {
-    "content": "Reality Lab has a total of 21 researchers.\n\nCurrent lab members:\n- Master's Students: 10 members\n- Research Interns: 11 members\n\nThe number of Master's students is 10, and the number of research interns is 11.\nIncluding all students, the total number of researchers is 21.\n\nMaster's Students: Sungyong Park, Byungkwan Chae, Youngjae Choi, Sangmin Lee, Minjoo Koh, Hyunjun Kho, Hyunsuh Kho, Juhyoung Lee, Jiwoo Seo, Hojae Jeong\nResearch Interns: Seoyoung Kim, Sooyoung Choi, Jiwon Hwang, Eunwoo Song, Sebin Lee, Dowon Kim, Yeonji Kim, Jaehyeon Lee, Yebin Lee, Jungha Lim, Yeri Kim",
+    "content": "Reality Lab has a total of 24 researchers.\n\nCurrent lab members:\n- Ph.D. Students: 1 member\n- Master's Students: 10 members\n- Research Interns: 13 members\n\nThe number of Ph.D. students is 1, the number of Master's students is 10, and the number of research interns is 13.\nIncluding all students, the total number of researchers is 24.\n\nPh.D. Students: Sungyong Park\nMaster's Students: Byungkwan Chae, Youngjae Choi, Sangmin Lee, Minjoo Koh, Hyunjun Kho, Hyunsuh Kho, Juhyoung Lee, Jiwoo Seo, Hojae Jeong, Sooyoung Choi\nResearch Interns: Seoyoung Kim, Jiwon Hwang, Eunwoo Song, Sebin Lee, Dowon Kim, Yeonji Kim, Jaehyeon Lee, Yebin Lee, Jungha Lim, Yeri Kim, Hyeonchan Kim, Jaerim Kim, Yeunsuh Kim",
     "metadata": {
       "type": "members_summary",
       "source": "students",
-      "total": 21,
+      "total": 24,
+      "phd_count": 1,
       "ms_count": 10,
-      "intern_count": 11,
+      "intern_count": 13,
       "language": "en"
     }
   },
   {
-    "content": "박성용 (Sungyong Park) 학생\n박성용의 이메일: ejqdl010@gmail.com\n연구분야: Image Restoration, AI for Astronomy",
+    "content": "박성용 (Sungyong Park) 박사과정 학생\n박성용의 이메일: ejqdl010@gmail.com\n연구분야: Computer Vision, Deep Learning\n박성용은 Reality Lab의 첫 박사과정 학생입니다.",
     "metadata": {
       "type": "student",
       "source": "students",
       "name": "Sungyong Park",
       "name_ko": "박성용",
+      "degree": "PhD",
       "language": "ko"
     }
   },
@@ -409,6 +412,54 @@
       "name": "Yeri Kim",
       "name_ko": "김예리",
       "language": "ko"
+    }
+  },
+  {
+    "content": "김현찬 (Hyeonchan Kim) 학생\n김현찬의 이메일: holiday0726@soongsil.ac.kr\n연구분야: Physical AI, Computer Vision",
+    "metadata": {
+      "type": "student",
+      "source": "students",
+      "name": "Hyeonchan Kim",
+      "name_ko": "김현찬",
+      "language": "ko"
+    }
+  },
+  {
+    "content": "김재림 (Jaerim Kim) 학생\n김재림의 이메일: kkjjrr0504@gmail.com\n연구분야: Computer Vision, Deep Learning",
+    "metadata": {
+      "type": "student",
+      "source": "students",
+      "name": "Jaerim Kim",
+      "name_ko": "김재림",
+      "language": "ko"
+    }
+  },
+  {
+    "content": "김연서 (Yeunsuh Kim) 학생\n김연서의 이메일: yeunsuh.kim@gmail.com\n연구분야: Physical AI",
+    "metadata": {
+      "type": "student",
+      "source": "students",
+      "name": "Yeunsuh Kim",
+      "name_ko": "김연서",
+      "language": "ko"
+    }
+  },
+  {
+    "content": "Reality Lab 연구 로봇\nReality Lab은 2026년 1월에 Unitree G1 EDU 휴머노이드 로봇을 도입했습니다.\n로봇 스펙: 키 127cm, 무게 35kg, 23+ 관절 (손 포함 43 DoF), 최대 보행 속도 2m/s, 배터리 약 2시간, 팔당 3kg 적재 가능\n로봇 능력: 이족 보행 및 달리기, 정밀 손 조작, 전신 제어, 강화학습\nReality Lab의 첫 번째 휴머노이드 로봇 멤버로, 동적 이동, 물체 조작, 강화학습을 통한 새로운 기술 학습이 가능합니다.",
+    "metadata": {
+      "type": "robot",
+      "source": "robots",
+      "name": "Unitree G1 EDU",
+      "language": "ko"
+    }
+  },
+  {
+    "content": "Reality Lab Research Robots\nReality Lab introduced the Unitree G1 EDU humanoid robot in January 2026.\nRobot Specs: Height 127cm, Weight 35kg, 23+ Joints (43 DoF with hands), Max walking speed 2m/s, Battery ~2 hours, 3kg payload per arm\nCapabilities: Bipedal Walking & Running, Dexterous Manipulation, Whole-body Control, Reinforcement Learning\nReality Lab's first humanoid robot member, capable of dynamic locomotion, object manipulation, and learning new skills through reinforcement learning.",
+    "metadata": {
+      "type": "robot",
+      "source": "robots",
+      "name": "Unitree G1 EDU",
+      "language": "en"
     }
   },
   {
@@ -907,7 +958,7 @@
     }
   },
   {
-    "content": "Reality Lab 구성원 현황\n현재 구성원: 석사과정 10명, 학부 인턴 11명으로 총 21명 (2025년 기준)\n박사과정: 아직 없습니다.\n졸업생 진로: 2023년 설립된 신생 연구실이지만, 이미 퀄컴(Qualcomm) 인턴에 합격한 연구원이 있습니다.\n학부생 논문 참여: 가능합니다. 실제로 학부 인턴들이 WACV, CVPR 등 주요 학회 논문의 공동 저자로 참여하고 있습니다.",
+    "content": "Reality Lab 구성원 현황\n현재 구성원: 박사과정 1명, 석사과정 10명, 학부 인턴 13명으로 총 24명 (2026년 1월 기준)\n박사과정: 박성용 1명\n졸업생 진로: 2023년 설립된 신생 연구실이지만, 이미 퀄컴(Qualcomm), LG 인턴에 합격한 연구원이 있습니다.\n학부생 논문 참여: 가능합니다. 실제로 학부 인턴들이 WACV, CVPR 등 주요 학회 논문의 공동 저자로 참여하고 있습니다.",
     "metadata": {
       "type": "lab_info",
       "source": "faq",
