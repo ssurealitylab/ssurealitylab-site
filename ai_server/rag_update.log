@@ -34,3 +34,80 @@
 /bin/sh: 1: /home/i0179/Realitylab-site/ai_server/update_rag.sh: not found
 /bin/sh: 1: /home/i0179/Realitylab-site/ai_server/update_rag.sh: not found
 /bin/sh: 1: /home/i0179/Realitylab-site/ai_server/update_rag.sh: not found
+/bin/sh: 1: /home/i0179/Realitylab-site/ai_server/update_rag.sh: not found
+/bin/sh: 1: /home/i0179/Realitylab-site/ai_server/update_rag.sh: not found
+/bin/sh: 1: /home/i0179/Realitylab-site/ai_server/update_rag.sh: not found
+/bin/sh: 1: /home/i0179/Realitylab-site/ai_server/update_rag.sh: not found
+/bin/sh: 1: /home/i0179/Realitylab-site/ai_server/update_rag.sh: not found
+/bin/sh: 1: /home/i0179/Realitylab-site/ai_server/update_rag.sh: not found
+/bin/sh: 1: /home/i0179/Realitylab-site/ai_server/update_rag.sh: not found
+
+========================================
+[2026. 01. 19. (월) 05:00:01 KST] Starting RAG Update...
+========================================
+[2026. 01. 19. (월) 05:00:01 KST] Step 1/4: Crawling website...
+python3: can't open file '/home/i0179/Realitylab-site/ai_server/crawl_website.py': [Errno 2] No such file or directory
+[2026. 01. 19. (월) 05:00:01 KST] ERROR: Website crawling failed!
+
+========================================
+[2026. 01. 20. (화) 05:00:01 KST] Starting RAG Update...
+========================================
+[2026. 01. 20. (화) 05:00:01 KST] Step 1/4: Crawling website...
+python3: can't open file '/home/i0179/Realitylab-site/ai_server/crawl_website.py': [Errno 2] No such file or directory
+[2026. 01. 20. (화) 05:00:01 KST] ERROR: Website crawling failed!
+
+========================================
+[2026. 01. 21. (수) 05:00:01 KST] Starting RAG Update...
+========================================
+[2026. 01. 21. (수) 05:00:01 KST] Step 1/4: Crawling website...
+python3: can't open file '/home/i0179/Realitylab-site/ai_server/crawl_website.py': [Errno 2] No such file or directory
+[2026. 01. 21. (수) 05:00:01 KST] ERROR: Website crawling failed!
+
+========================================
+[2026. 01. 22. (목) 05:00:01 KST] Starting RAG Update...
+========================================
+[2026. 01. 22. (목) 05:00:01 KST] Step 1/4: Crawling website...
+python3: can't open file '/home/i0179/Realitylab-site/ai_server/crawl_website.py': [Errno 2] No such file or directory
+[2026. 01. 22. (목) 05:00:02 KST] ERROR: Website crawling failed!
+
+========================================
+[2026. 01. 23. (금) 05:00:01 KST] Starting RAG Update...
+========================================
+[2026. 01. 23. (금) 05:00:01 KST] Step 1/4: Crawling website...
+python3: can't open file '/home/i0179/Realitylab-site/ai_server/crawl_website.py': [Errno 2] No such file or directory
+[2026. 01. 23. (금) 05:00:01 KST] ERROR: Website crawling failed!
+
+========================================
+[2026. 01. 24. (토) 05:00:01 KST] Starting RAG Update...
+========================================
+[2026. 01. 24. (토) 05:00:01 KST] Step 1/4: Crawling website...
+python3: can't open file '/home/i0179/Realitylab-site/ai_server/crawl_website.py': [Errno 2] No such file or directory
+[2026. 01. 24. (토) 05:00:01 KST] ERROR: Website crawling failed!
+
+========================================
+[2026. 01. 25. (일) 05:00:01 KST] Starting RAG Update...
+========================================
+[2026. 01. 25. (일) 05:00:01 KST] Step 1/4: Crawling website...
+python3: can't open file '/home/i0179/Realitylab-site/ai_server/crawl_website.py': [Errno 2] No such file or directory
+[2026. 01. 25. (일) 05:00:01 KST] ERROR: Website crawling failed!
+
+========================================
+[2026. 01. 26. (월) 05:00:01 KST] Starting RAG Update...
+========================================
+[2026. 01. 26. (월) 05:00:01 KST] Step 1/4: Crawling website...
+python3: can't open file '/home/i0179/Realitylab-site/ai_server/crawl_website.py': [Errno 2] No such file or directory
+[2026. 01. 26. (월) 05:00:01 KST] ERROR: Website crawling failed!
+
+========================================
+[2026. 01. 27. (화) 05:00:01 KST] Starting RAG Update...
+========================================
+[2026. 01. 27. (화) 05:00:01 KST] Step 1/4: Crawling website...
+python3: can't open file '/home/i0179/Realitylab-site/ai_server/crawl_website.py': [Errno 2] No such file or directory
+[2026. 01. 27. (화) 05:00:01 KST] ERROR: Website crawling failed!
+
+========================================
+[2026. 01. 28. (수) 05:00:01 KST] Starting RAG Update...
+========================================
+[2026. 01. 28. (수) 05:00:01 KST] Step 1/4: Crawling website...
+python3: can't open file '/home/i0179/Realitylab-site/ai_server/crawl_website.py': [Errno 2] No such file or directory
+[2026. 01. 28. (수) 05:00:01 KST] ERROR: Website crawling failed!

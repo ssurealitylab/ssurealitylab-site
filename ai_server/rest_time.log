@@ -1,0 +1,683 @@
+2026. 01. 19. (월) 04:00:01 KST: === REST TIME START ===
+2026. 01. 19. (월) 04:00:01 KST: Stopping llama-server to free GPU memory...
+2026. 01. 19. (월) 04:00:03 KST: Force killing llama-server...
+2026. 01. 19. (월) 04:00:03 KST: llama-server stopped, GPU 0,2 freed
+2026. 01. 19. (월) 04:00:03 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 2540 MiB
+1, 10961 MiB
+2, 468 MiB
+3, 14608 MiB
+2026. 01. 19. (월) 04:00:03 KST: Rest time active until 8 AM KST
+2026. 01. 19. (월) 08:00:01 KST: === REST TIME END ===
+2026. 01. 19. (월) 08:00:01 KST: Starting llama-server (GPT-OSS 120B)...
+2026. 01. 19. (월) 08:00:01 KST: llama-server starting (PID: 3232803)
+2026. 01. 19. (월) 08:00:06 KST: Waiting for model to load... (1/24)
+2026. 01. 19. (월) 08:00:11 KST: Waiting for model to load... (2/24)
+2026. 01. 19. (월) 08:00:16 KST: Waiting for model to load... (3/24)
+2026. 01. 19. (월) 08:00:21 KST: Waiting for model to load... (4/24)
+2026. 01. 19. (월) 08:00:26 KST: Waiting for model to load... (5/24)
+2026. 01. 19. (월) 08:00:31 KST: Waiting for model to load... (6/24)
+2026. 01. 19. (월) 08:00:36 KST: Waiting for model to load... (7/24)
+2026. 01. 19. (월) 08:00:41 KST: Waiting for model to load... (8/24)
+2026. 01. 19. (월) 08:00:46 KST: Waiting for model to load... (9/24)
+2026. 01. 19. (월) 08:00:51 KST: Waiting for model to load... (10/24)
+2026. 01. 19. (월) 08:00:57 KST: Waiting for model to load... (11/24)
+2026. 01. 19. (월) 08:01:02 KST: Waiting for model to load... (12/24)
+2026. 01. 19. (월) 08:01:07 KST: Waiting for model to load... (13/24)
+2026. 01. 19. (월) 08:01:12 KST: Waiting for model to load... (14/24)
+2026. 01. 19. (월) 08:01:17 KST: Waiting for model to load... (15/24)
+2026. 01. 19. (월) 08:01:22 KST: Waiting for model to load... (16/24)
+2026. 01. 19. (월) 08:01:27 KST: llama-server is ready!
+2026. 01. 19. (월) 08:01:27 KST: AI server fully operational
+2026. 01. 19. (월) 08:01:27 KST: GPU status after start:
+index, memory.used [MiB]
+0, 18382 MiB
+1, 10965 MiB
+2, 15862 MiB
+3, 14608 MiB
+2026. 01. 20. (화) 04:00:01 KST: === REST TIME START ===
+2026. 01. 20. (화) 04:00:01 KST: Stopping llama-server to free GPU memory...
+2026. 01. 20. (화) 04:00:03 KST: Force killing llama-server...
+2026. 01. 20. (화) 04:00:03 KST: llama-server stopped, GPU 0,2 freed
+2026. 01. 20. (화) 04:00:03 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 2102 MiB
+1, 10987 MiB
+2, 14 MiB
+3, 14608 MiB
+2026. 01. 20. (화) 04:00:03 KST: Rest time active until 8 AM KST
+2026. 01. 20. (화) 08:00:01 KST: === REST TIME END ===
+2026. 01. 20. (화) 08:00:01 KST: Starting llama-server (GPT-OSS 120B)...
+2026. 01. 20. (화) 08:00:01 KST: llama-server starting (PID: 1921477)
+2026. 01. 20. (화) 08:00:06 KST: Waiting for model to load... (1/24)
+2026. 01. 20. (화) 08:00:11 KST: Waiting for model to load... (2/24)
+2026. 01. 20. (화) 08:00:16 KST: Waiting for model to load... (3/24)
+2026. 01. 20. (화) 08:00:21 KST: Waiting for model to load... (4/24)
+2026. 01. 20. (화) 08:00:26 KST: Waiting for model to load... (5/24)
+2026. 01. 20. (화) 08:00:31 KST: Waiting for model to load... (6/24)
+2026. 01. 20. (화) 08:00:36 KST: Waiting for model to load... (7/24)
+2026. 01. 20. (화) 08:00:41 KST: Waiting for model to load... (8/24)
+2026. 01. 20. (화) 08:00:46 KST: Waiting for model to load... (9/24)
+2026. 01. 20. (화) 08:00:51 KST: Waiting for model to load... (10/24)
+2026. 01. 20. (화) 08:00:56 KST: Waiting for model to load... (11/24)
+2026. 01. 20. (화) 08:01:01 KST: Waiting for model to load... (12/24)
+2026. 01. 20. (화) 08:01:06 KST: Waiting for model to load... (13/24)
+2026. 01. 20. (화) 08:01:11 KST: Waiting for model to load... (14/24)
+2026. 01. 20. (화) 08:01:16 KST: Waiting for model to load... (15/24)
+2026. 01. 20. (화) 08:01:21 KST: Waiting for model to load... (16/24)
+2026. 01. 20. (화) 08:01:26 KST: Waiting for model to load... (17/24)
+2026. 01. 20. (화) 08:01:32 KST: Waiting for model to load... (18/24)
+2026. 01. 20. (화) 08:01:37 KST: Waiting for model to load... (19/24)
+2026. 01. 20. (화) 08:01:42 KST: Waiting for model to load... (20/24)
+2026. 01. 20. (화) 08:01:47 KST: Waiting for model to load... (21/24)
+2026. 01. 20. (화) 08:01:52 KST: Waiting for model to load... (22/24)
+2026. 01. 20. (화) 08:01:57 KST: Waiting for model to load... (23/24)
+2026. 01. 20. (화) 08:02:02 KST: Waiting for model to load... (24/24)
+2026. 01. 20. (화) 08:02:02 KST: Warning - llama-server may still be loading
+2026. 01. 20. (화) 08:02:02 KST: GPU status after start:
+index, memory.used [MiB]
+0, 18340 MiB
+1, 10993 MiB
+2, 15818 MiB
+3, 14608 MiB
+2026. 01. 21. (수) 04:00:01 KST: === REST TIME START ===
+2026. 01. 21. (수) 04:00:01 KST: Stopping llama-server to free GPU memory...
+2026. 01. 21. (수) 04:00:03 KST: Force killing llama-server...
+2026. 01. 21. (수) 04:00:03 KST: llama-server stopped, GPU 0,2 freed
+2026. 01. 21. (수) 04:00:03 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 2102 MiB
+1, 11011 MiB
+2, 14 MiB
+3, 9886 MiB
+2026. 01. 21. (수) 04:00:03 KST: Rest time active until 8 AM KST
+2026. 01. 21. (수) 08:00:01 KST: === REST TIME END ===
+2026. 01. 21. (수) 08:00:01 KST: Starting llama-server (GPT-OSS 120B)...
+2026. 01. 21. (수) 08:00:01 KST: llama-server starting (PID: 599230)
+2026. 01. 21. (수) 08:00:06 KST: Waiting for model to load... (1/24)
+2026. 01. 21. (수) 08:00:11 KST: Waiting for model to load... (2/24)
+2026. 01. 21. (수) 08:00:16 KST: Waiting for model to load... (3/24)
+2026. 01. 21. (수) 08:00:21 KST: Waiting for model to load... (4/24)
+2026. 01. 21. (수) 08:00:26 KST: Waiting for model to load... (5/24)
+2026. 01. 21. (수) 08:00:31 KST: Waiting for model to load... (6/24)
+2026. 01. 21. (수) 08:00:36 KST: Waiting for model to load... (7/24)
+2026. 01. 21. (수) 08:00:42 KST: Waiting for model to load... (8/24)
+2026. 01. 21. (수) 08:00:47 KST: Waiting for model to load... (9/24)
+2026. 01. 21. (수) 08:00:52 KST: Waiting for model to load... (10/24)
+2026. 01. 21. (수) 08:00:57 KST: Waiting for model to load... (11/24)
+2026. 01. 21. (수) 08:01:02 KST: Waiting for model to load... (12/24)
+2026. 01. 21. (수) 08:01:07 KST: Waiting for model to load... (13/24)
+2026. 01. 21. (수) 08:01:12 KST: Waiting for model to load... (14/24)
+2026. 01. 21. (수) 08:01:17 KST: Waiting for model to load... (15/24)
+2026. 01. 21. (수) 08:01:22 KST: Waiting for model to load... (16/24)
+2026. 01. 21. (수) 08:01:27 KST: Waiting for model to load... (17/24)
+2026. 01. 21. (수) 08:01:32 KST: Waiting for model to load... (18/24)
+2026. 01. 21. (수) 08:01:37 KST: Waiting for model to load... (19/24)
+2026. 01. 21. (수) 08:01:42 KST: Waiting for model to load... (20/24)
+2026. 01. 21. (수) 08:01:47 KST: Waiting for model to load... (21/24)
+2026. 01. 21. (수) 08:01:52 KST: Waiting for model to load... (22/24)
+2026. 01. 21. (수) 08:01:57 KST: Waiting for model to load... (23/24)
+2026. 01. 21. (수) 08:02:02 KST: Waiting for model to load... (24/24)
+2026. 01. 21. (수) 08:02:02 KST: Warning - llama-server may still be loading
+2026. 01. 21. (수) 08:02:02 KST: GPU status after start:
+index, memory.used [MiB]
+0, 18340 MiB
+1, 11015 MiB
+2, 15818 MiB
+3, 9886 MiB
+2026. 01. 22. (목) 04:00:01 KST: === REST TIME START ===
+2026. 01. 22. (목) 04:00:01 KST: Stopping llama-server to free GPU memory...
+2026. 01. 22. (목) 04:00:03 KST: llama-server stopped, GPU 0,2 freed
+2026. 01. 22. (목) 04:00:03 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 2102 MiB
+1, 11031 MiB
+2, 14 MiB
+3, 9886 MiB
+2026. 01. 22. (목) 04:00:03 KST: Rest time active until 8 AM KST
+2026. 01. 22. (목) 08:00:01 KST: === REST TIME END ===
+2026. 01. 22. (목) 08:00:01 KST: Starting llama-server (GPT-OSS 120B)...
+2026. 01. 22. (목) 08:00:01 KST: llama-server starting (PID: 3462930)
+2026. 01. 22. (목) 08:00:06 KST: Waiting for model to load... (1/24)
+2026. 01. 22. (목) 08:00:11 KST: Waiting for model to load... (2/24)
+2026. 01. 22. (목) 08:00:16 KST: Waiting for model to load... (3/24)
+2026. 01. 22. (목) 08:00:21 KST: Waiting for model to load... (4/24)
+2026. 01. 22. (목) 08:00:26 KST: Waiting for model to load... (5/24)
+2026. 01. 22. (목) 08:00:32 KST: Waiting for model to load... (6/24)
+2026. 01. 22. (목) 08:00:37 KST: Waiting for model to load... (7/24)
+2026. 01. 22. (목) 08:00:42 KST: Waiting for model to load... (8/24)
+2026. 01. 22. (목) 08:00:47 KST: Waiting for model to load... (9/24)
+2026. 01. 22. (목) 08:00:52 KST: Waiting for model to load... (10/24)
+2026. 01. 22. (목) 08:00:57 KST: Waiting for model to load... (11/24)
+2026. 01. 22. (목) 08:01:02 KST: Waiting for model to load... (12/24)
+2026. 01. 22. (목) 08:01:07 KST: Waiting for model to load... (13/24)
+2026. 01. 22. (목) 08:01:13 KST: Waiting for model to load... (14/24)
+2026. 01. 22. (목) 08:01:18 KST: Waiting for model to load... (15/24)
+2026. 01. 22. (목) 08:01:23 KST: Waiting for model to load... (16/24)
+2026. 01. 22. (목) 08:01:28 KST: Waiting for model to load... (17/24)
+2026. 01. 22. (목) 08:01:33 KST: Waiting for model to load... (18/24)
+2026. 01. 22. (목) 08:01:38 KST: Waiting for model to load... (19/24)
+2026. 01. 22. (목) 08:01:44 KST: Waiting for model to load... (20/24)
+2026. 01. 22. (목) 08:01:49 KST: Waiting for model to load... (21/24)
+2026. 01. 22. (목) 08:01:54 KST: Waiting for model to load... (22/24)
+2026. 01. 22. (목) 08:01:59 KST: Waiting for model to load... (23/24)
+2026. 01. 22. (목) 08:02:04 KST: Waiting for model to load... (24/24)
+2026. 01. 22. (목) 08:02:04 KST: Warning - llama-server may still be loading
+2026. 01. 22. (목) 08:02:04 KST: GPU status after start:
+index, memory.used [MiB]
+0, 2490 MiB
+1, 11035 MiB
+2, 402 MiB
+3, 9886 MiB
+2026. 01. 23. (금) 04:00:01 KST: === REST TIME START ===
+2026. 01. 23. (금) 04:00:01 KST: Stopping llama-server to free GPU memory...
+2026. 01. 23. (금) 04:00:03 KST: llama-server stopped, GPU 0,2 freed
+2026. 01. 23. (금) 04:00:03 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 2102 MiB
+1, 11047 MiB
+2, 14 MiB
+3, 9886 MiB
+2026. 01. 23. (금) 04:00:03 KST: Rest time active until 8 AM KST
+2026. 01. 23. (금) 08:00:01 KST: === REST TIME END ===
+2026. 01. 23. (금) 08:00:02 KST: Starting llama-server (GPT-OSS 120B)...
+2026. 01. 23. (금) 08:00:02 KST: llama-server starting (PID: 2139439)
+2026. 01. 23. (금) 08:00:07 KST: Waiting for model to load... (1/24)
+2026. 01. 23. (금) 08:00:12 KST: Waiting for model to load... (2/24)
+2026. 01. 23. (금) 08:00:17 KST: Waiting for model to load... (3/24)
+2026. 01. 23. (금) 08:00:22 KST: Waiting for model to load... (4/24)
+2026. 01. 23. (금) 08:00:27 KST: Waiting for model to load... (5/24)
+2026. 01. 23. (금) 08:00:32 KST: Waiting for model to load... (6/24)
+2026. 01. 23. (금) 08:00:37 KST: Waiting for model to load... (7/24)
+2026. 01. 23. (금) 08:00:42 KST: Waiting for model to load... (8/24)
+2026. 01. 23. (금) 08:00:47 KST: Waiting for model to load... (9/24)
+2026. 01. 23. (금) 08:00:52 KST: Waiting for model to load... (10/24)
+2026. 01. 23. (금) 08:00:57 KST: Waiting for model to load... (11/24)
+2026. 01. 23. (금) 08:01:02 KST: Waiting for model to load... (12/24)
+2026. 01. 23. (금) 08:01:07 KST: Waiting for model to load... (13/24)
+2026. 01. 23. (금) 08:01:12 KST: Waiting for model to load... (14/24)
+2026. 01. 23. (금) 08:01:17 KST: Waiting for model to load... (15/24)
+2026. 01. 23. (금) 08:01:22 KST: Waiting for model to load... (16/24)
+2026. 01. 23. (금) 08:01:27 KST: Waiting for model to load... (17/24)
+2026. 01. 23. (금) 08:01:32 KST: Waiting for model to load... (18/24)
+2026. 01. 23. (금) 08:01:37 KST: Waiting for model to load... (19/24)
+2026. 01. 23. (금) 08:01:42 KST: Waiting for model to load... (20/24)
+2026. 01. 23. (금) 08:01:47 KST: Waiting for model to load... (21/24)
+2026. 01. 23. (금) 08:01:53 KST: Waiting for model to load... (22/24)
+2026. 01. 23. (금) 08:01:58 KST: Waiting for model to load... (23/24)
+2026. 01. 23. (금) 08:02:03 KST: Waiting for model to load... (24/24)
+2026. 01. 23. (금) 08:02:03 KST: Warning - llama-server may still be loading
+2026. 01. 23. (금) 08:02:03 KST: GPU status after start:
+index, memory.used [MiB]
+0, 2490 MiB
+1, 11051 MiB
+2, 402 MiB
+3, 9886 MiB
+2026. 01. 24. (토) 04:00:01 KST: === REST TIME START ===
+2026. 01. 24. (토) 04:00:01 KST: Stopping llama-server to free GPU memory...
+2026. 01. 24. (토) 04:00:03 KST: llama-server stopped, GPU 0,2 freed
+2026. 01. 24. (토) 04:00:03 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 2102 MiB
+1, 11061 MiB
+2, 14 MiB
+3, 9886 MiB
+2026. 01. 24. (토) 04:00:03 KST: Rest time active until 8 AM KST
+2026. 01. 24. (토) 08:00:01 KST: === REST TIME END ===
+2026. 01. 24. (토) 08:00:01 KST: Starting llama-server (GPT-OSS 120B)...
+2026. 01. 24. (토) 08:00:01 KST: llama-server starting (PID: 810990)
+2026. 01. 24. (토) 08:00:06 KST: Waiting for model to load... (1/24)
+2026. 01. 24. (토) 08:00:11 KST: Waiting for model to load... (2/24)
+2026. 01. 24. (토) 08:00:16 KST: Waiting for model to load... (3/24)
+2026. 01. 24. (토) 08:00:21 KST: Waiting for model to load... (4/24)
+2026. 01. 24. (토) 08:00:26 KST: Waiting for model to load... (5/24)
+2026. 01. 24. (토) 08:00:32 KST: Waiting for model to load... (6/24)
+2026. 01. 24. (토) 08:00:37 KST: Waiting for model to load... (7/24)
+2026. 01. 24. (토) 08:00:42 KST: Waiting for model to load... (8/24)
+2026. 01. 24. (토) 08:00:47 KST: Waiting for model to load... (9/24)
+2026. 01. 24. (토) 08:00:52 KST: Waiting for model to load... (10/24)
+2026. 01. 24. (토) 08:00:57 KST: Waiting for model to load... (11/24)
+2026. 01. 24. (토) 08:01:02 KST: Waiting for model to load... (12/24)
+2026. 01. 24. (토) 08:01:07 KST: Waiting for model to load... (13/24)
+2026. 01. 24. (토) 08:01:12 KST: Waiting for model to load... (14/24)
+2026. 01. 24. (토) 08:01:17 KST: Waiting for model to load... (15/24)
+2026. 01. 24. (토) 08:01:22 KST: Waiting for model to load... (16/24)
+2026. 01. 24. (토) 08:01:27 KST: Waiting for model to load... (17/24)
+2026. 01. 24. (토) 08:01:32 KST: Waiting for model to load... (18/24)
+2026. 01. 24. (토) 08:01:37 KST: Waiting for model to load... (19/24)
+2026. 01. 24. (토) 08:01:42 KST: Waiting for model to load... (20/24)
+2026. 01. 24. (토) 08:01:47 KST: Waiting for model to load... (21/24)
+2026. 01. 24. (토) 08:01:52 KST: Waiting for model to load... (22/24)
+2026. 01. 24. (토) 08:01:58 KST: Waiting for model to load... (23/24)
+2026. 01. 24. (토) 08:02:03 KST: Waiting for model to load... (24/24)
+2026. 01. 24. (토) 08:02:03 KST: Warning - llama-server may still be loading
+2026. 01. 24. (토) 08:02:03 KST: GPU status after start:
+index, memory.used [MiB]
+0, 2490 MiB
+1, 11061 MiB
+2, 402 MiB
+3, 9886 MiB
+2026. 01. 25. (일) 04:00:02 KST: === REST TIME START ===
+2026. 01. 25. (일) 04:00:02 KST: Stopping llama-server to free GPU memory...
+2026. 01. 25. (일) 04:00:04 KST: llama-server stopped, GPU 0,2 freed
+2026. 01. 25. (일) 04:00:04 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 3105 MiB
+1, 692 MiB
+2, 14 MiB
+3, 15 MiB
+2026. 01. 25. (일) 04:00:04 KST: Rest time active until 8 AM KST
+2026. 01. 25. (일) 08:00:01 KST: === REST TIME END ===
+2026. 01. 25. (일) 08:00:01 KST: Starting llama-server (GPT-OSS 120B)...
+2026. 01. 25. (일) 08:00:01 KST: llama-server starting (PID: 2926657)
+2026. 01. 25. (일) 08:00:06 KST: Waiting for model to load... (1/24)
+2026. 01. 25. (일) 08:00:11 KST: Waiting for model to load... (2/24)
+2026. 01. 25. (일) 08:00:16 KST: Waiting for model to load... (3/24)
+2026. 01. 25. (일) 08:00:21 KST: Waiting for model to load... (4/24)
+2026. 01. 25. (일) 08:00:26 KST: Waiting for model to load... (5/24)
+2026. 01. 25. (일) 08:00:31 KST: Waiting for model to load... (6/24)
+2026. 01. 25. (일) 08:00:36 KST: Waiting for model to load... (7/24)
+2026. 01. 25. (일) 08:00:41 KST: Waiting for model to load... (8/24)
+2026. 01. 25. (일) 08:00:46 KST: Waiting for model to load... (9/24)
+2026. 01. 25. (일) 08:00:52 KST: Waiting for model to load... (10/24)
+2026. 01. 25. (일) 08:00:57 KST: Waiting for model to load... (11/24)
+2026. 01. 25. (일) 08:01:02 KST: Waiting for model to load... (12/24)
+2026. 01. 25. (일) 08:01:07 KST: Waiting for model to load... (13/24)
+2026. 01. 25. (일) 08:01:12 KST: Waiting for model to load... (14/24)
+2026. 01. 25. (일) 08:01:17 KST: Waiting for model to load... (15/24)
+2026. 01. 25. (일) 08:01:22 KST: Waiting for model to load... (16/24)
+2026. 01. 25. (일) 08:01:27 KST: Waiting for model to load... (17/24)
+2026. 01. 25. (일) 08:01:32 KST: Waiting for model to load... (18/24)
+2026. 01. 25. (일) 08:01:37 KST: Waiting for model to load... (19/24)
+2026. 01. 25. (일) 08:01:42 KST: Waiting for model to load... (20/24)
+2026. 01. 25. (일) 08:01:47 KST: Waiting for model to load... (21/24)
+2026. 01. 25. (일) 08:01:52 KST: Waiting for model to load... (22/24)
+2026. 01. 25. (일) 08:01:57 KST: Waiting for model to load... (23/24)
+2026. 01. 25. (일) 08:02:02 KST: Waiting for model to load... (24/24)
+2026. 01. 25. (일) 08:02:02 KST: Warning - llama-server may still be loading
+2026. 01. 25. (일) 08:02:02 KST: GPU status after start:
+index, memory.used [MiB]
+0, 18311 MiB
+1, 692 MiB
+2, 15220 MiB
+3, 15 MiB
+2026. 01. 26. (월) 04:00:01 KST: === REST TIME START ===
+2026. 01. 26. (월) 04:00:01 KST: Stopping llama-server to free GPU memory...
+2026. 01. 26. (월) 04:00:03 KST: Force killing llama-server...
+2026. 01. 26. (월) 04:00:03 KST: llama-server stopped, GPU 0,2 freed
+2026. 01. 26. (월) 04:00:03 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 2534 MiB
+1, 6191 MiB
+2, 444 MiB
+3, 23526 MiB
+2026. 01. 26. (월) 04:00:03 KST: Rest time active until 8 AM KST
+2026. 01. 26. (월) 08:00:01 KST: === REST TIME END ===
+2026. 01. 26. (월) 08:00:01 KST: Starting llama-server (GPT-OSS 120B)...
+2026. 01. 26. (월) 08:00:01 KST: llama-server starting (PID: 3879880)
+2026. 01. 26. (월) 08:00:07 KST: Waiting for model to load... (1/24)
+2026. 01. 26. (월) 08:00:12 KST: Waiting for model to load... (2/24)
+2026. 01. 26. (월) 08:00:17 KST: Waiting for model to load... (3/24)
+2026. 01. 26. (월) 08:00:22 KST: Waiting for model to load... (4/24)
+2026. 01. 26. (월) 08:00:27 KST: Waiting for model to load... (5/24)
+2026. 01. 26. (월) 08:00:32 KST: Waiting for model to load... (6/24)
+2026. 01. 26. (월) 08:00:37 KST: Waiting for model to load... (7/24)
+2026. 01. 26. (월) 08:00:42 KST: Waiting for model to load... (8/24)
+2026. 01. 26. (월) 08:00:47 KST: Waiting for model to load... (9/24)
+2026. 01. 26. (월) 08:00:52 KST: Waiting for model to load... (10/24)
+2026. 01. 26. (월) 08:00:57 KST: Waiting for model to load... (11/24)
+2026. 01. 26. (월) 08:01:02 KST: Waiting for model to load... (12/24)
+2026. 01. 26. (월) 08:01:07 KST: Waiting for model to load... (13/24)
+2026. 01. 26. (월) 08:01:12 KST: Waiting for model to load... (14/24)
+2026. 01. 26. (월) 08:01:17 KST: Waiting for model to load... (15/24)
+2026. 01. 26. (월) 08:01:22 KST: Waiting for model to load... (16/24)
+2026. 01. 26. (월) 08:01:27 KST: Waiting for model to load... (17/24)
+2026. 01. 26. (월) 08:01:32 KST: Waiting for model to load... (18/24)
+2026. 01. 26. (월) 08:01:37 KST: Waiting for model to load... (19/24)
+2026. 01. 26. (월) 08:01:42 KST: Waiting for model to load... (20/24)
+2026. 01. 26. (월) 08:01:47 KST: llama-server is ready!
+2026. 01. 26. (월) 08:01:47 KST: AI server fully operational
+2026. 01. 26. (월) 08:01:47 KST: GPU status after start:
+index, memory.used [MiB]
+0, 18382 MiB
+1, 6191 MiB
+2, 15862 MiB
+3, 23526 MiB
+2026. 01. 27. (화) 04:00:01 KST: === REST TIME START ===
+2026. 01. 27. (화) 04:00:01 KST: Stopping llama-server to free GPU memory...
+2026. 01. 27. (화) 04:00:03 KST: Force killing llama-server...
+2026. 01. 27. (화) 04:00:03 KST: llama-server stopped, GPU 0,2 freed
+2026. 01. 27. (화) 04:00:03 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 2534 MiB
+1, 1553 MiB
+2, 444 MiB
+3, 1070 MiB
+2026. 01. 27. (화) 04:00:03 KST: Rest time active until 8 AM KST
+2026. 01. 27. (화) 08:00:01 KST: === REST TIME END ===
+2026. 01. 27. (화) 08:00:01 KST: Starting llama-server (GPT-OSS 120B)...
+2026. 01. 27. (화) 08:00:01 KST: llama-server starting (PID: 552459)
+2026. 01. 27. (화) 08:00:06 KST: Waiting for model to load... (1/24)
+2026. 01. 27. (화) 08:00:11 KST: Waiting for model to load... (2/24)
+2026. 01. 27. (화) 08:00:16 KST: llama-server is ready!
+2026. 01. 27. (화) 08:00:16 KST: AI server fully operational
+2026. 01. 27. (화) 08:00:16 KST: GPU status after start:
+index, memory.used [MiB]
+0, 18382 MiB
+1, 1553 MiB
+2, 15862 MiB
+3, 1070 MiB
+2026. 01. 28. (수) 04:00:01 KST: === REST TIME START ===
+2026. 01. 28. (수) 04:00:01 KST: Stopping llama-server to free GPU memory...
+2026. 01. 28. (수) 04:00:03 KST: Force killing llama-server...
+2026. 01. 28. (수) 04:00:03 KST: llama-server stopped, GPU 0,2 freed
+2026. 01. 28. (수) 04:00:03 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 2102 MiB
+1, 6133 MiB
+2, 14 MiB
+3, 23526 MiB
+2026. 01. 28. (수) 04:00:03 KST: Rest time active until 8 AM KST
+2026. 01. 28. (수) 08:00:01 KST: === REST TIME END ===
+2026. 01. 28. (수) 08:00:01 KST: Starting llama-server (GPT-OSS 120B)...
+2026. 01. 28. (수) 08:00:01 KST: llama-server starting (PID: 1603267)
+2026. 01. 28. (수) 08:00:06 KST: Waiting for model to load... (1/24)
+2026. 01. 28. (수) 08:00:12 KST: Waiting for model to load... (2/24)
+2026. 01. 28. (수) 08:00:17 KST: llama-server is ready!
+2026. 01. 28. (수) 08:00:17 KST: AI server fully operational
+2026. 01. 28. (수) 08:00:17 KST: GPU status after start:
+index, memory.used [MiB]
+0, 18382 MiB
+1, 6133 MiB
+2, 15862 MiB
+3, 23526 MiB
+2026. 01. 28. (수) 20:39:01 KST: === REST TIME END ===
+2026. 01. 28. (수) 20:39:01 KST: llama-server already running, skipping start
+2026. 01. 28. (수) 20:39:01 KST: GPU status after start:
+index, memory.used [MiB]
+0, 18402 MiB
+1, 3465 MiB
+2, 15900 MiB
+3, 19070 MiB
+2026. 01. 28. (수) 20:39:01 KST: Starting new cloudflared tunnel...
+2026. 01. 28. (수) 20:39:12 KST: Tunnel restart complete
+2026. 01. 28. (수) 21:35:27 KST: === REST TIME START ===
+2026. 01. 28. (수) 21:35:27 KST: Stopping llama-server to free GPU memory...
+2026. 01. 28. (수) 21:35:29 KST: Force killing llama-server...
+2026. 01. 28. (수) 21:35:29 KST: llama-server stopped, GPU 0,2 freed
+2026. 01. 28. (수) 21:35:29 KST: Stopping cloudflared tunnel...
+2026. 01. 28. (수) 21:35:30 KST: Tunnel stopped
+2026. 01. 28. (수) 21:35:30 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 2102 MiB
+1, 4513 MiB
+2, 14 MiB
+3, 23526 MiB
+2026. 01. 28. (수) 21:35:30 KST: Rest time active until 8 AM KST
+2026. 01. 28. (수) 21:37:01 KST: === REST TIME END ===
+2026. 01. 28. (수) 21:37:01 KST: Starting llama-server (GPT-OSS 120B)...
+2026. 01. 28. (수) 21:37:01 KST: llama-server starting (PID: 2259924)
+2026. 01. 28. (수) 21:37:06 KST: Waiting for model to load... (1/24)
+2026. 01. 28. (수) 21:37:11 KST: llama-server is ready!
+2026. 01. 28. (수) 21:37:11 KST: AI server fully operational
+2026. 01. 28. (수) 21:37:11 KST: GPU status after start:
+index, memory.used [MiB]
+0, 18382 MiB
+1, 4513 MiB
+2, 15862 MiB
+3, 23526 MiB
+2026. 01. 28. (수) 21:37:11 KST: Starting new cloudflared tunnel...
+2026. 01. 28. (수) 21:37:20 KST: Tunnel restart complete
+2026. 01. 28. (수) 23:00:20 KST: === REST TIME START ===
+2026. 01. 28. (수) 23:00:20 KST: Stopping ai_chatbot_server...
+2026. 01. 28. (수) 23:00:21 KST: Stopping llama-server to free GPU memory...
+2026. 01. 28. (수) 23:00:23 KST: Force killing llama-server...
+2026. 01. 28. (수) 23:00:23 KST: llama-server stopped, GPU 0,2 freed
+2026. 01. 28. (수) 23:00:23 KST: Stopping cloudflared tunnel...
+2026. 01. 28. (수) 23:00:24 KST: All services stopped
+2026. 01. 28. (수) 23:00:24 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 1087 MiB
+1, 4513 MiB
+2, 14 MiB
+3, 23526 MiB
+2026. 01. 28. (수) 23:00:24 KST: Rest time active until 8 AM KST
+2026. 01. 28. (수) 23:01:01 KST: === REST TIME END ===
+2026. 01. 28. (수) 23:01:01 KST: Starting llama-server (GPT-OSS 120B)...
+2026. 01. 28. (수) 23:01:01 KST: llama-server starting (PID: 2337369)
+2026. 01. 28. (수) 23:01:06 KST: Waiting for model to load... (1/24)
+2026. 01. 28. (수) 23:01:11 KST: llama-server is ready!
+2026. 01. 28. (수) 23:01:11 KST: llama-server fully operational
+2026. 01. 28. (수) 23:01:11 KST: GPU status after start:
+index, memory.used [MiB]
+0, 17366 MiB
+1, 4513 MiB
+2, 15862 MiB
+3, 23526 MiB
+2026. 01. 28. (수) 23:01:11 KST: Starting ai_chatbot_server.py (port 4005)...
+2026. 01. 28. (수) 23:01:11 KST: ai_chatbot_server starting (PID: 2337601)
+2026. 01. 28. (수) 23:01:13 KST: Waiting for chatbot server... (1/10)
+2026. 01. 28. (수) 23:01:15 KST: Waiting for chatbot server... (2/10)
+2026. 01. 28. (수) 23:01:17 KST: Waiting for chatbot server... (3/10)
+2026. 01. 28. (수) 23:01:19 KST: ai_chatbot_server is ready!
+2026. 01. 28. (수) 23:01:19 KST: Starting new cloudflared tunnel...
+2026. 01. 28. (수) 23:01:29 KST: All services started
+2026. 01. 28. (수) 23:05:01 KST: === REST TIME END ===
+2026. 01. 28. (수) 23:05:01 KST: llama-server already running, skipping start
+2026. 01. 28. (수) 23:05:01 KST: GPU status after start:
+index, memory.used [MiB]
+0, 17366 MiB
+1, 4513 MiB
+2, 15862 MiB
+3, 23526 MiB
+2026. 01. 28. (수) 23:05:01 KST: Starting ai_chatbot_server.py (port 4005)...
+2026. 01. 28. (수) 23:05:01 KST: ai_chatbot_server starting (PID: 2342117)
+2026. 01. 28. (수) 23:05:04 KST: Waiting for chatbot server... (1/10)
+2026. 01. 28. (수) 23:05:06 KST: Waiting for chatbot server... (2/10)
+2026. 01. 28. (수) 23:05:08 KST: Waiting for chatbot server... (3/10)
+2026. 01. 28. (수) 23:05:10 KST: ai_chatbot_server is ready!
+2026. 01. 28. (수) 23:05:10 KST: Starting new cloudflared tunnel...
+2026. 01. 28. (수) 23:05:21 KST: All services started
+2026. 01. 28. (수) 23:09:01 KST: === REST TIME END ===
+2026. 01. 28. (수) 23:09:01 KST: llama-server already running, skipping start
+2026. 01. 28. (수) 23:09:01 KST: GPU status after start:
+index, memory.used [MiB]
+0, 18216 MiB
+1, 4509 MiB
+2, 15862 MiB
+3, 23526 MiB
+2026. 01. 28. (수) 23:09:01 KST: ai_chatbot_server already running, skipping
+2026. 01. 28. (수) 23:09:01 KST: Starting new cloudflared tunnel...
+2026. 01. 28. (수) 23:09:12 KST: All services started
+2026. 01. 29. (목) 04:00:01 KST: === REST TIME START ===
+2026. 01. 29. (목) 04:00:01 KST: Stopping ai_chatbot_server...
+2026. 01. 29. (목) 04:00:03 KST: Stopping llama-server to free GPU memory...
+2026. 01. 29. (목) 04:00:05 KST: llama-server stopped, GPU 0,2 freed
+2026. 01. 29. (목) 04:00:05 KST: Stopping cloudflared tunnel...
+2026. 01. 29. (목) 04:00:06 KST: All services stopped
+2026. 01. 29. (목) 04:00:06 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 1087 MiB
+1, 4513 MiB
+2, 14 MiB
+3, 23526 MiB
+2026. 01. 29. (목) 04:00:06 KST: Rest time active until 8 AM KST
+2026. 01. 29. (목) 08:00:01 KST: === REST TIME END ===
+2026. 01. 29. (목) 08:00:01 KST: Starting llama-server (GPT-OSS 120B)...
+2026. 01. 29. (목) 08:00:01 KST: llama-server starting (PID: 2785639)
+2026. 01. 29. (목) 08:00:06 KST: Waiting for model to load... (1/24)
+2026. 01. 29. (목) 08:00:11 KST: llama-server is ready!
+2026. 01. 29. (목) 08:00:11 KST: llama-server fully operational
+2026. 01. 29. (목) 08:00:11 KST: GPU status after start:
+index, memory.used [MiB]
+0, 17366 MiB
+1, 4513 MiB
+2, 15862 MiB
+3, 23526 MiB
+2026. 01. 29. (목) 08:00:11 KST: Starting ai_chatbot_server.py (port 4005)...
+2026. 01. 29. (목) 08:00:11 KST: ai_chatbot_server starting (PID: 2785834)
+2026. 01. 29. (목) 08:00:13 KST: Waiting for chatbot server... (1/10)
+2026. 01. 29. (목) 08:00:15 KST: Waiting for chatbot server... (2/10)
+2026. 01. 29. (목) 08:00:17 KST: Waiting for chatbot server... (3/10)
+2026. 01. 29. (목) 08:00:19 KST: ai_chatbot_server is ready!
+2026. 01. 29. (목) 08:00:19 KST: Starting new cloudflared tunnel...
+2026. 01. 29. (목) 08:00:29 KST: All services started
+2026. 01. 30. (금) 04:00:01 KST: === REST TIME START ===
+2026. 01. 30. (금) 04:00:01 KST: Stopping ai_chatbot_server...
+2026. 01. 30. (금) 04:00:02 KST: Stopping llama-server to free GPU memory...
+2026. 01. 30. (금) 04:00:04 KST: llama-server stopped, GPU 0,2 freed
+2026. 01. 30. (금) 04:00:04 KST: Stopping cloudflared tunnel...
+2026. 01. 30. (금) 04:00:05 KST: All services stopped
+2026. 01. 30. (금) 04:00:05 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 1087 MiB
+1, 1553 MiB
+2, 14 MiB
+3, 1070 MiB
+2026. 01. 30. (금) 04:00:05 KST: Rest time active until 8 AM KST
+2026. 01. 30. (금) 08:00:01 KST: === REST TIME END ===
+2026. 01. 30. (금) 08:00:01 KST: Starting llama-server (GPT-OSS 120B)...
+2026. 01. 30. (금) 08:00:01 KST: llama-server starting (PID: 3648611)
+2026. 01. 30. (금) 08:00:06 KST: Waiting for model to load... (1/24)
+2026. 01. 30. (금) 08:00:11 KST: Waiting for model to load... (2/24)
+2026. 01. 30. (금) 08:00:16 KST: Waiting for model to load... (3/24)
+2026. 01. 30. (금) 08:00:21 KST: Waiting for model to load... (4/24)
+2026. 01. 30. (금) 08:00:26 KST: Waiting for model to load... (5/24)
+2026. 01. 30. (금) 08:00:31 KST: llama-server is ready!
+2026. 01. 30. (금) 08:00:31 KST: llama-server fully operational
+2026. 01. 30. (금) 08:00:31 KST: GPU status after start:
+index, memory.used [MiB]
+0, 17366 MiB
+1, 1553 MiB
+2, 15862 MiB
+3, 1070 MiB
+2026. 01. 30. (금) 08:00:31 KST: Starting ai_chatbot_server.py (port 4005)...
+2026. 01. 30. (금) 08:00:31 KST: ai_chatbot_server starting (PID: 3648923)
+2026. 01. 30. (금) 08:00:33 KST: Waiting for chatbot server... (1/10)
+2026. 01. 30. (금) 08:00:35 KST: Waiting for chatbot server... (2/10)
+2026. 01. 30. (금) 08:00:37 KST: Waiting for chatbot server... (3/10)
+2026. 01. 30. (금) 08:00:39 KST: Waiting for chatbot server... (4/10)
+2026. 01. 30. (금) 08:00:41 KST: Waiting for chatbot server... (5/10)
+2026. 01. 30. (금) 08:00:43 KST: ai_chatbot_server is ready!
+2026. 01. 30. (금) 08:00:43 KST: Starting new cloudflared tunnel...
+2026. 01. 30. (금) 08:00:52 KST: All services started
+2026. 01. 31. (토) 04:00:01 KST: === REST TIME START ===
+2026. 01. 31. (토) 04:00:01 KST: Stopping ai_chatbot_server...
+2026. 01. 31. (토) 04:00:02 KST: Stopping llama-server to free GPU memory...
+2026. 01. 31. (토) 04:00:05 KST: llama-server stopped, GPU 0,2 freed
+2026. 01. 31. (토) 04:00:05 KST: Stopping cloudflared tunnel...
+2026. 01. 31. (토) 04:00:06 KST: All services stopped
+2026. 01. 31. (토) 04:00:06 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 1087 MiB
+1, 1553 MiB
+2, 14 MiB
+3, 1070 MiB
+2026. 01. 31. (토) 04:00:06 KST: Rest time active until 8 AM KST
+2026. 01. 31. (토) 08:00:01 KST: === REST TIME END ===
+2026. 01. 31. (토) 08:00:01 KST: Starting llama-server (GPT-OSS 120B)...
+2026. 01. 31. (토) 08:00:01 KST: llama-server starting (PID: 308662)
+2026. 01. 31. (토) 08:00:06 KST: Waiting for model to load... (1/24)
+2026. 01. 31. (토) 08:00:11 KST: Waiting for model to load... (2/24)
+2026. 01. 31. (토) 08:00:16 KST: Waiting for model to load... (3/24)
+2026. 01. 31. (토) 08:00:21 KST: Waiting for model to load... (4/24)
+2026. 01. 31. (토) 08:00:26 KST: Waiting for model to load... (5/24)
+2026. 01. 31. (토) 08:00:31 KST: Waiting for model to load... (6/24)
+2026. 01. 31. (토) 08:00:36 KST: Waiting for model to load... (7/24)
+2026. 01. 31. (토) 08:00:41 KST: Waiting for model to load... (8/24)
+2026. 01. 31. (토) 08:00:46 KST: Waiting for model to load... (9/24)
+2026. 01. 31. (토) 08:00:51 KST: llama-server is ready!
+2026. 01. 31. (토) 08:00:51 KST: llama-server fully operational
+2026. 01. 31. (토) 08:00:51 KST: GPU status after start:
+index, memory.used [MiB]
+0, 17366 MiB
+1, 1553 MiB
+2, 15862 MiB
+3, 1070 MiB
+2026. 01. 31. (토) 08:00:51 KST: Starting ai_chatbot_server.py (port 4005)...
+2026. 01. 31. (토) 08:00:51 KST: ai_chatbot_server starting (PID: 309149)
+2026. 01. 31. (토) 08:00:53 KST: Waiting for chatbot server... (1/10)
+2026. 01. 31. (토) 08:00:55 KST: Waiting for chatbot server... (2/10)
+2026. 01. 31. (토) 08:00:57 KST: Waiting for chatbot server... (3/10)
+2026. 01. 31. (토) 08:00:59 KST: Waiting for chatbot server... (4/10)
+2026. 01. 31. (토) 08:01:02 KST: Waiting for chatbot server... (5/10)
+2026. 01. 31. (토) 08:01:04 KST: Waiting for chatbot server... (6/10)
+2026. 01. 31. (토) 08:01:06 KST: Waiting for chatbot server... (7/10)
+2026. 01. 31. (토) 08:01:08 KST: Waiting for chatbot server... (8/10)
+2026. 01. 31. (토) 08:01:10 KST: Waiting for chatbot server... (9/10)
+2026. 01. 31. (토) 08:01:12 KST: Waiting for chatbot server... (10/10)
+2026. 01. 31. (토) 08:01:12 KST: Starting new cloudflared tunnel...
+2026. 01. 31. (토) 08:01:20 KST: All services started
+2026. 02. 01. (일) 04:00:01 KST: === REST TIME START ===
+2026. 02. 01. (일) 04:00:01 KST: Stopping ai_chatbot_server...
+2026. 02. 01. (일) 04:00:02 KST: Stopping llama-server to free GPU memory...
+2026. 02. 01. (일) 04:00:04 KST: llama-server stopped, GPU 0,2 freed
+2026. 02. 01. (일) 04:00:04 KST: Stopping cloudflared tunnel...
+2026. 02. 01. (일) 04:00:05 KST: All services stopped
+2026. 02. 01. (일) 04:00:05 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 1087 MiB
+1, 1553 MiB
+2, 14 MiB
+3, 1070 MiB
+2026. 02. 01. (일) 04:00:05 KST: Rest time active until 8 AM KST
+2026. 02. 01. (일) 08:00:01 KST: === REST TIME END ===
+2026. 02. 01. (일) 08:00:01 KST: Starting llama-server (GPT-OSS 120B)...
+2026. 02. 01. (일) 08:00:01 KST: llama-server starting (PID: 992504)
+2026. 02. 01. (일) 08:00:06 KST: Waiting for model to load... (1/24)
+2026. 02. 01. (일) 08:00:11 KST: llama-server is ready!
+2026. 02. 01. (일) 08:00:11 KST: llama-server fully operational
+2026. 02. 01. (일) 08:00:11 KST: GPU status after start:
+index, memory.used [MiB]
+0, 17366 MiB
+1, 1553 MiB
+2, 15862 MiB
+3, 1070 MiB
+2026. 02. 01. (일) 08:00:11 KST: Starting ai_chatbot_server.py (port 4005)...
+2026. 02. 01. (일) 08:00:11 KST: ai_chatbot_server starting (PID: 992635)
+2026. 02. 01. (일) 08:00:13 KST: Waiting for chatbot server... (1/10)
+2026. 02. 01. (일) 08:00:15 KST: Waiting for chatbot server... (2/10)
+2026. 02. 01. (일) 08:00:17 KST: Waiting for chatbot server... (3/10)
+2026. 02. 01. (일) 08:00:19 KST: ai_chatbot_server is ready!
+2026. 02. 01. (일) 08:00:19 KST: Starting new cloudflared tunnel...
+2026. 02. 01. (일) 08:00:28 KST: All services started
+2026. 02. 02. (월) 04:00:01 KST: === REST TIME START ===
+2026. 02. 02. (월) 04:00:01 KST: Stopping ai_chatbot_server...
+2026. 02. 02. (월) 04:00:02 KST: Stopping llama-server to free GPU memory...
+2026. 02. 02. (월) 04:00:04 KST: llama-server stopped, GPU 0,2 freed
+2026. 02. 02. (월) 04:00:04 KST: Stopping cloudflared tunnel...
+2026. 02. 02. (월) 04:00:05 KST: All services stopped
+2026. 02. 02. (월) 04:00:05 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 1087 MiB
+1, 8166 MiB
+2, 14 MiB
+3, 23526 MiB
+2026. 02. 02. (월) 04:00:05 KST: Rest time active until 8 AM KST
+2026. 02. 02. (월) 08:00:01 KST: === REST TIME END ===
+2026. 02. 02. (월) 08:00:01 KST: Starting llama-server (GPT-OSS 120B)...
+2026. 02. 02. (월) 08:00:01 KST: llama-server starting (PID: 2112207)
+2026. 02. 02. (월) 08:00:06 KST: Waiting for model to load... (1/24)
+2026. 02. 02. (월) 08:00:11 KST: Waiting for model to load... (2/24)
+2026. 02. 02. (월) 08:00:16 KST: Waiting for model to load... (3/24)
+2026. 02. 02. (월) 08:00:21 KST: Waiting for model to load... (4/24)
+2026. 02. 02. (월) 08:00:26 KST: Waiting for model to load... (5/24)
+2026. 02. 02. (월) 08:00:31 KST: Waiting for model to load... (6/24)
+2026. 02. 02. (월) 08:00:36 KST: llama-server is ready!
+2026. 02. 02. (월) 08:00:36 KST: llama-server fully operational
+2026. 02. 02. (월) 08:00:36 KST: GPU status after start:
+index, memory.used [MiB]
+0, 17366 MiB
+1, 8166 MiB
+2, 15862 MiB
+3, 23526 MiB
+2026. 02. 02. (월) 08:00:36 KST: Starting ai_chatbot_server.py (port 4005)...
+2026. 02. 02. (월) 08:00:36 KST: ai_chatbot_server starting (PID: 2112819)
+2026. 02. 02. (월) 08:00:38 KST: Waiting for chatbot server... (1/10)
+2026. 02. 02. (월) 08:00:40 KST: Waiting for chatbot server... (2/10)
+2026. 02. 02. (월) 08:00:42 KST: Waiting for chatbot server... (3/10)
+2026. 02. 02. (월) 08:00:44 KST: Waiting for chatbot server... (4/10)
+2026. 02. 02. (월) 08:00:46 KST: ai_chatbot_server is ready!
+2026. 02. 02. (월) 08:00:46 KST: Starting new cloudflared tunnel...
+2026. 02. 02. (월) 08:01:19 KST: All services started

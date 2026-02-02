@@ -1011,3 +1011,655 @@ fatal: could not read Username for 'https://github.com': No such device or addre
 [2025. 12. 06. (토) 18:00:30 KST] ERROR: Failed to push to GitHub after 3 attempts!
 [2025. 12. 06. (토) 18:00:30 KST] Tunnel restart completed successfully!
 ======================================
+[2026. 01. 28. (수) 18:28:12 KST] Starting Cloudflare Tunnel restart...
+
+========================================
+[2026. 01. 28. (수) 18:28:14 KST] Starting new cloudflared tunnel...
+[2026. 01. 28. (수) 18:28:14 KST] Waiting for tunnel to initialize...
+2026-01-28T09:28:14Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-01-28T09:28:14Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-01-28T09:28:18Z INF +--------------------------------------------------------------------------------------------+
+2026-01-28T09:28:18Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-01-28T09:28:18Z INF |  https://programmer-accomplish-issued-scenes.trycloudflare.com                             |
+2026-01-28T09:28:18Z INF +--------------------------------------------------------------------------------------------+
+2026-01-28T09:28:18Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-01-28T09:28:18Z INF Version 2026.1.1 (Checksum 0c3de409287cc60264cd59a285c434a243ec6d1d79ff39dc8d36b716f9dda7ef)
+2026-01-28T09:28:18Z INF GOOS: linux, GOVersion: go1.24.11, GoArch: amd64
+2026-01-28T09:28:18Z INF Settings: map[ha-connections:1 protocol:quic url:http://localhost:8081]
+2026-01-28T09:28:18Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2026-01-28T09:28:18Z INF Generated Connector ID: 193b5d51-d59c-4ede-9f20-c5397cd05f0e
+2026-01-28T09:28:18Z INF Initial protocol quic
+2026-01-28T09:28:18Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-28T09:28:18Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-28T09:28:18Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-28T09:28:18Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-28T09:28:18Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-01-28T09:28:18Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.7
+2026/01/28 18:28:18 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+2026-01-28T09:28:19Z INF Registered tunnel connection connIndex=0 connection=62c22036-3b10-4515-b9fd-5cce3cb14b19 event=0 ip=198.41.192.7 location=icn06 protocol=quic
+[2026. 01. 28. (수) 18:28:19 KST] New tunnel URL: https://programmer-accomplish-issued-scenes.trycloudflare.com
+[2026. 01. 28. (수) 18:28:19 KST] Old URL: https://hear-lucky-stretch-plus.trycloudflare.com
+[2026. 01. 28. (수) 18:28:19 KST] Updating chatbot.html and bug-report.html...
+[2026. 01. 28. (수) 18:28:19 KST] chatbot.html updated successfully
+[2026. 01. 28. (수) 18:28:19 KST] Committing changes to git...
+Version auto-updated to v1072
+[main 5b05881] Auto-update Cloudflare Tunnel URL
+ 3 files changed, 5 insertions(+), 5 deletions(-)
+[2026. 01. 28. (수) 18:28:19 KST] Pushing to GitHub...
+To https://github.com/ssurealitylab/ssurealitylab.github.io.git
+   24d9ec8..5b05881  main -> main
+[2026. 01. 28. (수) 18:28:21 KST] Successfully pushed to GitHub!
+[2026. 01. 28. (수) 18:28:21 KST] Tunnel restart completed successfully!
+======================================
+[2026. 01. 28. (수) 18:40:33 KST] Starting Cloudflare Tunnel restart...
+
+========================================
+[2026. 01. 28. (수) 18:40:35 KST] Starting new cloudflared tunnel...
+[2026. 01. 28. (수) 18:40:35 KST] Waiting for tunnel to initialize...
+2026-01-28T09:40:35Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-01-28T09:40:35Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-01-28T09:40:39Z INF +--------------------------------------------------------------------------------------------+
+2026-01-28T09:40:39Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-01-28T09:40:39Z INF |  https://solely-ash-suppose-sur.trycloudflare.com                                          |
+2026-01-28T09:40:39Z INF +--------------------------------------------------------------------------------------------+
+2026-01-28T09:40:39Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-01-28T09:40:39Z INF Version 2026.1.1 (Checksum 0c3de409287cc60264cd59a285c434a243ec6d1d79ff39dc8d36b716f9dda7ef)
+2026-01-28T09:40:39Z INF GOOS: linux, GOVersion: go1.24.11, GoArch: amd64
+2026-01-28T09:40:39Z INF Settings: map[ha-connections:1 protocol:quic url:http://localhost:8081]
+2026-01-28T09:40:39Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2026-01-28T09:40:39Z INF Generated Connector ID: cece7f82-2f78-4011-a7b8-7cfbf037f70c
+2026-01-28T09:40:39Z INF Initial protocol quic
+2026-01-28T09:40:39Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-28T09:40:39Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-28T09:40:39Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-28T09:40:39Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-28T09:40:39Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-01-28T09:40:39Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.37
+2026/01/28 18:40:39 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+[2026. 01. 28. (수) 18:40:39 KST] New tunnel URL: https://solely-ash-suppose-sur.trycloudflare.com
+[2026. 01. 28. (수) 18:40:39 KST] Old URL: https://programmer-accomplish-issued-scenes.trycloudflare.com
+[2026. 01. 28. (수) 18:40:39 KST] Updating chatbot.html and bug-report.html...
+[2026. 01. 28. (수) 18:40:39 KST] chatbot.html updated successfully
+[2026. 01. 28. (수) 18:40:39 KST] Committing changes to git...
+Version auto-updated to v1073
+[main c259410] Auto-update Cloudflare Tunnel URL
+ 3 files changed, 5 insertions(+), 5 deletions(-)
+[2026. 01. 28. (수) 18:40:39 KST] Pushing to GitHub...
+To https://github.com/ssurealitylab/ssurealitylab.github.io.git
+   5b05881..c259410  main -> main
+[2026. 01. 28. (수) 18:40:41 KST] Successfully pushed to GitHub!
+[2026. 01. 28. (수) 18:40:41 KST] Tunnel restart completed successfully!
+======================================
+[2026. 01. 28. (수) 18:46:11 KST] Starting Cloudflare Tunnel restart...
+
+========================================
+[2026. 01. 28. (수) 18:46:13 KST] Starting new cloudflared tunnel...
+[2026. 01. 28. (수) 18:46:13 KST] Waiting for tunnel to initialize...
+2026-01-28T09:46:13Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-01-28T09:46:13Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-01-28T09:46:17Z INF +--------------------------------------------------------------------------------------------+
+2026-01-28T09:46:17Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-01-28T09:46:17Z INF |  https://seekers-conducted-application-spray.trycloudflare.com                             |
+2026-01-28T09:46:17Z INF +--------------------------------------------------------------------------------------------+
+2026-01-28T09:46:17Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-01-28T09:46:17Z INF Version 2026.1.1 (Checksum 0c3de409287cc60264cd59a285c434a243ec6d1d79ff39dc8d36b716f9dda7ef)
+2026-01-28T09:46:17Z INF GOOS: linux, GOVersion: go1.24.11, GoArch: amd64
+2026-01-28T09:46:17Z INF Settings: map[ha-connections:1 protocol:quic url:http://localhost:8081]
+2026-01-28T09:46:17Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2026-01-28T09:46:17Z INF Generated Connector ID: 6bbe51a7-ceaf-43de-9dd9-087f62269a55
+2026-01-28T09:46:17Z INF Initial protocol quic
+2026-01-28T09:46:17Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-28T09:46:17Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-28T09:46:17Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-28T09:46:17Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-28T09:46:17Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-01-28T09:46:17Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.53
+2026/01/28 18:46:17 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+[2026. 01. 28. (수) 18:46:17 KST] New tunnel URL: https://seekers-conducted-application-spray.trycloudflare.com
+[2026. 01. 28. (수) 18:46:17 KST] Old URL: https://solely-ash-suppose-sur.trycloudflare.com
+[2026. 01. 28. (수) 18:46:17 KST] Updating chatbot.html and bug-report.html...
+[2026. 01. 28. (수) 18:46:17 KST] chatbot.html updated successfully
+[2026. 01. 28. (수) 18:46:17 KST] Committing changes to git...
+Version auto-updated to v1074
+[main d937a43] Auto-update Cloudflare Tunnel URL
+ 3 files changed, 5 insertions(+), 5 deletions(-)
+[2026. 01. 28. (수) 18:46:18 KST] Pushing to GitHub...
+To https://github.com/ssurealitylab/ssurealitylab.github.io.git
+   c259410..d937a43  main -> main
+[2026. 01. 28. (수) 18:46:20 KST] Successfully pushed to GitHub!
+[2026. 01. 28. (수) 18:46:20 KST] Tunnel restart completed successfully!
+======================================
+[2026. 01. 28. (수) 20:34:33 KST] Starting Cloudflare Tunnel restart...
+[2026. 01. 28. (수) 20:34:33 KST] Killing old cloudflared process (PID: 2125457)
+
+========================================
+[2026. 01. 28. (수) 20:34:37 KST] Starting new cloudflared tunnel...
+[2026. 01. 28. (수) 20:34:37 KST] Waiting for tunnel to initialize...
+2026-01-28T11:34:37Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-01-28T11:34:37Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-01-28T11:34:42Z INF +--------------------------------------------------------------------------------------------+
+2026-01-28T11:34:42Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-01-28T11:34:42Z INF |  https://salt-surround-barrier-originally.trycloudflare.com                                |
+2026-01-28T11:34:42Z INF +--------------------------------------------------------------------------------------------+
+2026-01-28T11:34:42Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-01-28T11:34:42Z INF Version 2026.1.1 (Checksum 0c3de409287cc60264cd59a285c434a243ec6d1d79ff39dc8d36b716f9dda7ef)
+2026-01-28T11:34:42Z INF GOOS: linux, GOVersion: go1.24.11, GoArch: amd64
+2026-01-28T11:34:42Z INF Settings: map[ha-connections:1 protocol:quic url:http://localhost:8081]
+2026-01-28T11:34:42Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2026-01-28T11:34:42Z INF Generated Connector ID: 826fcedd-168e-4be1-8e21-52a986887ae7
+2026-01-28T11:34:42Z INF Initial protocol quic
+2026-01-28T11:34:42Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-28T11:34:42Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-28T11:34:42Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-28T11:34:42Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-28T11:34:42Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-01-28T11:34:42Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.7
+2026/01/28 20:34:42 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+[2026. 01. 28. (수) 20:34:42 KST] New tunnel URL: https://salt-surround-barrier-originally.trycloudflare.com
+[2026. 01. 28. (수) 20:34:42 KST] Old URL: https://seekers-conducted-application-spray.trycloudflare.com
+[2026. 01. 28. (수) 20:34:42 KST] Updating chatbot.html and bug-report.html...
+[2026. 01. 28. (수) 20:34:42 KST] chatbot.html updated successfully
+[2026. 01. 28. (수) 20:34:42 KST] Committing changes to git...
+Version auto-updated to v1075
+[main 0ce0050] Auto-update Cloudflare Tunnel URL
+ 3 files changed, 5 insertions(+), 5 deletions(-)
+[2026. 01. 28. (수) 20:34:42 KST] Pushing to GitHub...
+To https://github.com/ssurealitylab/ssurealitylab.github.io.git
+   d937a43..0ce0050  main -> main
+[2026. 01. 28. (수) 20:34:45 KST] Successfully pushed to GitHub!
+[2026. 01. 28. (수) 20:34:45 KST] Tunnel restart completed successfully!
+======================================
+[2026. 01. 28. (수) 20:39:01 KST] Starting Cloudflare Tunnel restart...
+[2026. 01. 28. (수) 20:39:01 KST] Killing old cloudflared process (PID: 2216097)
+
+========================================
+[2026. 01. 28. (수) 20:39:05 KST] Starting new cloudflared tunnel...
+[2026. 01. 28. (수) 20:39:05 KST] Waiting for tunnel to initialize...
+2026-01-28T11:39:05Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-01-28T11:39:05Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-01-28T11:39:09Z INF +--------------------------------------------------------------------------------------------+
+2026-01-28T11:39:09Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-01-28T11:39:09Z INF |  https://gerald-carlos-oem-funky.trycloudflare.com                                         |
+2026-01-28T11:39:09Z INF +--------------------------------------------------------------------------------------------+
+2026-01-28T11:39:09Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-01-28T11:39:09Z INF Version 2026.1.1 (Checksum 0c3de409287cc60264cd59a285c434a243ec6d1d79ff39dc8d36b716f9dda7ef)
+2026-01-28T11:39:09Z INF GOOS: linux, GOVersion: go1.24.11, GoArch: amd64
+2026-01-28T11:39:09Z INF Settings: map[ha-connections:1 protocol:quic url:http://localhost:8081]
+2026-01-28T11:39:09Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2026-01-28T11:39:09Z INF Generated Connector ID: c6b67129-a163-4b99-a1f3-225005e4a524
+2026-01-28T11:39:09Z INF Initial protocol quic
+2026-01-28T11:39:09Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-28T11:39:09Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-28T11:39:09Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-28T11:39:09Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-28T11:39:09Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-01-28T11:39:09Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.113
+2026/01/28 20:39:09 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+2026-01-28T11:39:10Z INF Registered tunnel connection connIndex=0 connection=8365bd99-98d3-4234-bac7-6d61428e18d2 event=0 ip=198.41.200.113 location=icn01 protocol=quic
+[2026. 01. 28. (수) 20:39:10 KST] New tunnel URL: https://gerald-carlos-oem-funky.trycloudflare.com
+[2026. 01. 28. (수) 20:39:10 KST] Old URL: https://salt-surround-barrier-originally.trycloudflare.com
+[2026. 01. 28. (수) 20:39:10 KST] Updating chatbot.html and bug-report.html...
+[2026. 01. 28. (수) 20:39:10 KST] chatbot.html updated successfully
+[2026. 01. 28. (수) 20:39:10 KST] Committing changes to git...
+Version auto-updated to v1076
+[main 507665a] Auto-update Cloudflare Tunnel URL
+ 3 files changed, 5 insertions(+), 5 deletions(-)
+[2026. 01. 28. (수) 20:39:10 KST] Pushing to GitHub...
+To https://github.com/ssurealitylab/ssurealitylab.github.io.git
+   0ce0050..507665a  main -> main
+[2026. 01. 28. (수) 20:39:12 KST] Successfully pushed to GitHub!
+[2026. 01. 28. (수) 20:39:12 KST] Tunnel restart completed successfully!
+======================================
+[2026. 01. 28. (수) 21:37:11 KST] Starting Cloudflare Tunnel restart...
+
+========================================
+[2026. 01. 28. (수) 21:37:13 KST] Starting new cloudflared tunnel...
+[2026. 01. 28. (수) 21:37:13 KST] Waiting for tunnel to initialize...
+2026-01-28T12:37:13Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-01-28T12:37:13Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-01-28T12:37:17Z INF +--------------------------------------------------------------------------------------------+
+2026-01-28T12:37:17Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-01-28T12:37:17Z INF |  https://heart-rendering-rental-bacteria.trycloudflare.com                                 |
+2026-01-28T12:37:17Z INF +--------------------------------------------------------------------------------------------+
+2026-01-28T12:37:17Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-01-28T12:37:17Z INF Version 2026.1.1 (Checksum 0c3de409287cc60264cd59a285c434a243ec6d1d79ff39dc8d36b716f9dda7ef)
+2026-01-28T12:37:17Z INF GOOS: linux, GOVersion: go1.24.11, GoArch: amd64
+2026-01-28T12:37:17Z INF Settings: map[ha-connections:1 protocol:quic url:http://localhost:8081]
+2026-01-28T12:37:17Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2026-01-28T12:37:17Z INF Generated Connector ID: de742c15-6d0d-4ddd-8580-4a05b8b2c1d1
+2026-01-28T12:37:17Z INF Initial protocol quic
+2026-01-28T12:37:17Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-28T12:37:17Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-28T12:37:17Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-28T12:37:17Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-28T12:37:17Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-01-28T12:37:17Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.23
+2026/01/28 21:37:17 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+[2026. 01. 28. (수) 21:37:17 KST] New tunnel URL: https://heart-rendering-rental-bacteria.trycloudflare.com
+[2026. 01. 28. (수) 21:37:17 KST] Old URL: https://gerald-carlos-oem-funky.trycloudflare.com
+[2026. 01. 28. (수) 21:37:17 KST] Updating chatbot.html and bug-report.html...
+[2026. 01. 28. (수) 21:37:17 KST] chatbot.html updated successfully
+[2026. 01. 28. (수) 21:37:17 KST] Committing changes to git...
+Version auto-updated to v1077
+[main 68603d2] Auto-update Cloudflare Tunnel URL
+ 3 files changed, 5 insertions(+), 5 deletions(-)
+[2026. 01. 28. (수) 21:37:17 KST] Pushing to GitHub...
+To https://github.com/ssurealitylab/ssurealitylab.github.io.git
+   507665a..68603d2  main -> main
+[2026. 01. 28. (수) 21:37:20 KST] Successfully pushed to GitHub!
+[2026. 01. 28. (수) 21:37:20 KST] Tunnel restart completed successfully!
+======================================
+[2026. 01. 28. (수) 22:53:10 KST] Starting Cloudflare Tunnel restart...
+[2026. 01. 28. (수) 22:53:10 KST] Killing old cloudflared process (PID: 2260287)
+
+========================================
+[2026. 01. 28. (수) 22:53:14 KST] Starting new cloudflared tunnel...
+[2026. 01. 28. (수) 22:53:14 KST] Waiting for tunnel to initialize...
+2026-01-28T13:53:14Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-01-28T13:53:14Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-01-28T13:53:17Z INF +--------------------------------------------------------------------------------------------+
+2026-01-28T13:53:17Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-01-28T13:53:17Z INF |  https://asian-henry-transcript-profits.trycloudflare.com                                  |
+2026-01-28T13:53:17Z INF +--------------------------------------------------------------------------------------------+
+2026-01-28T13:53:17Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-01-28T13:53:17Z INF Version 2026.1.1 (Checksum 0c3de409287cc60264cd59a285c434a243ec6d1d79ff39dc8d36b716f9dda7ef)
+2026-01-28T13:53:17Z INF GOOS: linux, GOVersion: go1.24.11, GoArch: amd64
+2026-01-28T13:53:17Z INF Settings: map[ha-connections:1 protocol:quic url:http://localhost:4005]
+2026-01-28T13:53:17Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2026-01-28T13:53:17Z INF Generated Connector ID: 42fc518c-d58f-4374-ae3a-051045cc1afd
+2026-01-28T13:53:17Z INF Initial protocol quic
+2026-01-28T13:53:17Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-28T13:53:17Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-28T13:53:17Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-28T13:53:17Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-28T13:53:17Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-01-28T13:53:17Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.33
+2026/01/28 22:53:17 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+[2026. 01. 28. (수) 22:53:18 KST] New tunnel URL: https://asian-henry-transcript-profits.trycloudflare.com
+[2026. 01. 28. (수) 22:53:18 KST] Old URL: https://heart-rendering-rental-bacteria.trycloudflare.com
+[2026. 01. 28. (수) 22:53:18 KST] Updating chatbot.html and bug-report.html...
+[2026. 01. 28. (수) 22:53:18 KST] chatbot.html updated successfully
+[2026. 01. 28. (수) 22:53:18 KST] Committing changes to git...
+Version auto-updated to v1078
+[main 3114037] Auto-update Cloudflare Tunnel URL
+ 3 files changed, 5 insertions(+), 5 deletions(-)
+[2026. 01. 28. (수) 22:53:18 KST] Pushing to GitHub...
+To https://github.com/ssurealitylab/ssurealitylab.github.io.git
+   68603d2..3114037  main -> main
+[2026. 01. 28. (수) 22:53:20 KST] Successfully pushed to GitHub!
+[2026. 01. 28. (수) 22:53:20 KST] Tunnel restart completed successfully!
+======================================
+[2026. 01. 28. (수) 23:01:19 KST] Starting Cloudflare Tunnel restart...
+
+========================================
+[2026. 01. 28. (수) 23:01:21 KST] Starting new cloudflared tunnel...
+[2026. 01. 28. (수) 23:01:21 KST] Waiting for tunnel to initialize...
+2026-01-28T14:01:21Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-01-28T14:01:21Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-01-28T14:01:27Z INF +--------------------------------------------------------------------------------------------+
+2026-01-28T14:01:27Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-01-28T14:01:27Z INF |  https://downloadable-casio-rail-parallel.trycloudflare.com                                |
+2026-01-28T14:01:27Z INF +--------------------------------------------------------------------------------------------+
+2026-01-28T14:01:27Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-01-28T14:01:27Z INF Version 2026.1.1 (Checksum 0c3de409287cc60264cd59a285c434a243ec6d1d79ff39dc8d36b716f9dda7ef)
+2026-01-28T14:01:27Z INF GOOS: linux, GOVersion: go1.24.11, GoArch: amd64
+2026-01-28T14:01:27Z INF Settings: map[ha-connections:1 protocol:quic url:http://localhost:4005]
+2026-01-28T14:01:27Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2026-01-28T14:01:27Z INF Generated Connector ID: 5d0a4210-4ed5-467b-a713-8f2aa6260893
+2026-01-28T14:01:27Z INF Initial protocol quic
+2026-01-28T14:01:27Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-28T14:01:27Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-28T14:01:27Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-28T14:01:27Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-28T14:01:27Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-01-28T14:01:27Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.33
+2026/01/28 23:01:27 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+[2026. 01. 28. (수) 23:01:27 KST] New tunnel URL: https://downloadable-casio-rail-parallel.trycloudflare.com
+[2026. 01. 28. (수) 23:01:27 KST] Old URL: https://asian-henry-transcript-profits.trycloudflare.com
+[2026. 01. 28. (수) 23:01:27 KST] Updating chatbot.html and bug-report.html...
+[2026. 01. 28. (수) 23:01:27 KST] chatbot.html updated successfully
+[2026. 01. 28. (수) 23:01:27 KST] Committing changes to git...
+Version auto-updated to v1079
+[main 758f7f6] Auto-update Cloudflare Tunnel URL
+ 3 files changed, 5 insertions(+), 5 deletions(-)
+[2026. 01. 28. (수) 23:01:27 KST] Pushing to GitHub...
+To https://github.com/ssurealitylab/ssurealitylab.github.io.git
+   3114037..758f7f6  main -> main
+[2026. 01. 28. (수) 23:01:29 KST] Successfully pushed to GitHub!
+[2026. 01. 28. (수) 23:01:29 KST] Tunnel restart completed successfully!
+======================================
+[2026. 01. 28. (수) 23:05:10 KST] Starting Cloudflare Tunnel restart...
+[2026. 01. 28. (수) 23:05:10 KST] Killing old cloudflared process (PID: 2337847)
+
+========================================
+[2026. 01. 28. (수) 23:05:14 KST] Starting new cloudflared tunnel...
+[2026. 01. 28. (수) 23:05:14 KST] Waiting for tunnel to initialize...
+2026-01-28T14:05:14Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-01-28T14:05:14Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-01-28T14:05:18Z INF +--------------------------------------------------------------------------------------------+
+2026-01-28T14:05:18Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-01-28T14:05:18Z INF |  https://membership-slim-winds-produce.trycloudflare.com                                   |
+2026-01-28T14:05:18Z INF +--------------------------------------------------------------------------------------------+
+2026-01-28T14:05:18Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-01-28T14:05:18Z INF Version 2026.1.1 (Checksum 0c3de409287cc60264cd59a285c434a243ec6d1d79ff39dc8d36b716f9dda7ef)
+2026-01-28T14:05:18Z INF GOOS: linux, GOVersion: go1.24.11, GoArch: amd64
+2026-01-28T14:05:18Z INF Settings: map[ha-connections:1 protocol:quic url:http://localhost:4005]
+2026-01-28T14:05:18Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2026-01-28T14:05:18Z INF Generated Connector ID: 5e230615-8592-44a9-9e64-a3385a4943cd
+2026-01-28T14:05:18Z INF Initial protocol quic
+2026-01-28T14:05:18Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-28T14:05:18Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-28T14:05:18Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-28T14:05:18Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-28T14:05:18Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-01-28T14:05:18Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.37
+2026/01/28 23:05:18 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+[2026. 01. 28. (수) 23:05:19 KST] New tunnel URL: https://membership-slim-winds-produce.trycloudflare.com
+[2026. 01. 28. (수) 23:05:19 KST] Old URL: https://downloadable-casio-rail-parallel.trycloudflare.com
+[2026. 01. 28. (수) 23:05:19 KST] Updating chatbot.html and bug-report.html...
+[2026. 01. 28. (수) 23:05:19 KST] chatbot.html updated successfully
+[2026. 01. 28. (수) 23:05:19 KST] Committing changes to git...
+Version auto-updated to v1080
+[main a53a21d] Auto-update Cloudflare Tunnel URL
+ 3 files changed, 5 insertions(+), 5 deletions(-)
+[2026. 01. 28. (수) 23:05:19 KST] Pushing to GitHub...
+To https://github.com/ssurealitylab/ssurealitylab.github.io.git
+   758f7f6..a53a21d  main -> main
+[2026. 01. 28. (수) 23:05:21 KST] Successfully pushed to GitHub!
+[2026. 01. 28. (수) 23:05:21 KST] Tunnel restart completed successfully!
+======================================
+[2026. 01. 28. (수) 23:09:01 KST] Starting Cloudflare Tunnel restart...
+[2026. 01. 28. (수) 23:09:01 KST] Killing old cloudflared process (PID: 2342421)
+
+========================================
+[2026. 01. 28. (수) 23:09:05 KST] Starting new cloudflared tunnel...
+[2026. 01. 28. (수) 23:09:05 KST] Waiting for tunnel to initialize...
+2026-01-28T14:09:05Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-01-28T14:09:05Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-01-28T14:09:09Z INF +--------------------------------------------------------------------------------------------+
+2026-01-28T14:09:09Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-01-28T14:09:09Z INF |  https://magazines-prevention-balance-involved.trycloudflare.com                           |
+2026-01-28T14:09:09Z INF +--------------------------------------------------------------------------------------------+
+2026-01-28T14:09:09Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-01-28T14:09:09Z INF Version 2026.1.1 (Checksum 0c3de409287cc60264cd59a285c434a243ec6d1d79ff39dc8d36b716f9dda7ef)
+2026-01-28T14:09:09Z INF GOOS: linux, GOVersion: go1.24.11, GoArch: amd64
+2026-01-28T14:09:09Z INF Settings: map[ha-connections:1 protocol:quic url:http://localhost:4005]
+2026-01-28T14:09:09Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2026-01-28T14:09:09Z INF Generated Connector ID: 28561498-171c-4567-b94f-98e37fa3f059
+2026-01-28T14:09:09Z INF Initial protocol quic
+2026-01-28T14:09:09Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-28T14:09:09Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-28T14:09:09Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-28T14:09:09Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-28T14:09:09Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-01-28T14:09:09Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.13
+2026/01/28 23:09:09 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+[2026. 01. 28. (수) 23:09:10 KST] New tunnel URL: https://magazines-prevention-balance-involved.trycloudflare.com
+[2026. 01. 28. (수) 23:09:10 KST] Old URL: https://membership-slim-winds-produce.trycloudflare.com
+[2026. 01. 28. (수) 23:09:10 KST] Updating chatbot.html and bug-report.html...
+[2026. 01. 28. (수) 23:09:10 KST] chatbot.html updated successfully
+[2026. 01. 28. (수) 23:09:10 KST] Committing changes to git...
+Version auto-updated to v1081
+[main 4b7c652] Auto-update Cloudflare Tunnel URL
+ 3 files changed, 5 insertions(+), 5 deletions(-)
+[2026. 01. 28. (수) 23:09:10 KST] Pushing to GitHub...
+To https://github.com/ssurealitylab/ssurealitylab.github.io.git
+   a53a21d..4b7c652  main -> main
+[2026. 01. 28. (수) 23:09:12 KST] Successfully pushed to GitHub!
+[2026. 01. 28. (수) 23:09:12 KST] Tunnel restart completed successfully!
+======================================
+[2026. 01. 29. (목) 08:00:19 KST] Starting Cloudflare Tunnel restart...
+
+========================================
+[2026. 01. 29. (목) 08:00:21 KST] Starting new cloudflared tunnel...
+[2026. 01. 29. (목) 08:00:21 KST] Waiting for tunnel to initialize...
+2026-01-28T23:00:21Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-01-28T23:00:21Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-01-28T23:00:26Z INF +--------------------------------------------------------------------------------------------+
+2026-01-28T23:00:26Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-01-28T23:00:26Z INF |  https://garden-planned-resulted-nam.trycloudflare.com                                     |
+2026-01-28T23:00:26Z INF +--------------------------------------------------------------------------------------------+
+2026-01-28T23:00:26Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-01-28T23:00:26Z INF Version 2026.1.1 (Checksum 0c3de409287cc60264cd59a285c434a243ec6d1d79ff39dc8d36b716f9dda7ef)
+2026-01-28T23:00:26Z INF GOOS: linux, GOVersion: go1.24.11, GoArch: amd64
+2026-01-28T23:00:26Z INF Settings: map[ha-connections:1 protocol:quic url:http://localhost:4005]
+2026-01-28T23:00:26Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2026-01-28T23:00:26Z INF Generated Connector ID: 84dfb7e3-0a80-4ac1-b3eb-4e4894f48052
+2026-01-28T23:00:26Z INF Initial protocol quic
+2026-01-28T23:00:26Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-28T23:00:26Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-28T23:00:26Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-28T23:00:26Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-28T23:00:26Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-01-28T23:00:26Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.37
+2026/01/29 08:00:26 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+[2026. 01. 29. (목) 08:00:26 KST] New tunnel URL: https://garden-planned-resulted-nam.trycloudflare.com
+[2026. 01. 29. (목) 08:00:26 KST] Old URL: https://magazines-prevention-balance-involved.trycloudflare.com
+[2026. 01. 29. (목) 08:00:26 KST] Updating chatbot.html and bug-report.html...
+[2026. 01. 29. (목) 08:00:26 KST] chatbot.html updated successfully
+[2026. 01. 29. (목) 08:00:26 KST] Committing changes to git...
+Version auto-updated to v1091
+[main f9f3377] Auto-update Cloudflare Tunnel URL
+ 3 files changed, 5 insertions(+), 5 deletions(-)
+[2026. 01. 29. (목) 08:00:26 KST] Pushing to GitHub...
+To https://github.com/ssurealitylab/ssurealitylab.github.io.git
+   bcd7dc6..f9f3377  main -> main
+[2026. 01. 29. (목) 08:00:29 KST] Successfully pushed to GitHub!
+[2026. 01. 29. (목) 08:00:29 KST] Tunnel restart completed successfully!
+======================================
+[2026. 01. 30. (금) 08:00:43 KST] Starting Cloudflare Tunnel restart...
+
+========================================
+[2026. 01. 30. (금) 08:00:45 KST] Starting new cloudflared tunnel...
+[2026. 01. 30. (금) 08:00:45 KST] Waiting for tunnel to initialize...
+2026-01-29T23:00:45Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-01-29T23:00:45Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-01-29T23:00:49Z INF +--------------------------------------------------------------------------------------------+
+2026-01-29T23:00:49Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-01-29T23:00:49Z INF |  https://recovered-taking-outlet-lover.trycloudflare.com                                   |
+2026-01-29T23:00:49Z INF +--------------------------------------------------------------------------------------------+
+2026-01-29T23:00:49Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-01-29T23:00:49Z INF Version 2026.1.1 (Checksum 0c3de409287cc60264cd59a285c434a243ec6d1d79ff39dc8d36b716f9dda7ef)
+2026-01-29T23:00:49Z INF GOOS: linux, GOVersion: go1.24.11, GoArch: amd64
+2026-01-29T23:00:49Z INF Settings: map[ha-connections:1 protocol:quic url:http://localhost:4005]
+2026-01-29T23:00:49Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2026-01-29T23:00:49Z INF Generated Connector ID: 60f1697f-2331-4adf-8fd1-9ace0c6b2478
+2026-01-29T23:00:49Z INF Initial protocol quic
+2026-01-29T23:00:49Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-29T23:00:49Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-29T23:00:49Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-29T23:00:49Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-29T23:00:49Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-01-29T23:00:49Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.27
+2026/01/30 08:00:49 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+[2026. 01. 30. (금) 08:00:49 KST] New tunnel URL: https://recovered-taking-outlet-lover.trycloudflare.com
+[2026. 01. 30. (금) 08:00:49 KST] Old URL: https://garden-planned-resulted-nam.trycloudflare.com
+[2026. 01. 30. (금) 08:00:49 KST] Updating chatbot.html and bug-report.html...
+[2026. 01. 30. (금) 08:00:49 KST] chatbot.html updated successfully
+[2026. 01. 30. (금) 08:00:49 KST] Committing changes to git...
+Version auto-updated to v1092
+[main 6e4e172] Auto-update Cloudflare Tunnel URL
+ 3 files changed, 6 insertions(+), 6 deletions(-)
+[2026. 01. 30. (금) 08:00:50 KST] Pushing to GitHub...
+To https://github.com/ssurealitylab/ssurealitylab.github.io.git
+   f9f3377..6e4e172  main -> main
+[2026. 01. 30. (금) 08:00:52 KST] Successfully pushed to GitHub!
+[2026. 01. 30. (금) 08:00:52 KST] Tunnel restart completed successfully!
+======================================
+[2026. 01. 31. (토) 08:01:12 KST] Starting Cloudflare Tunnel restart...
+
+========================================
+[2026. 01. 31. (토) 08:01:14 KST] Starting new cloudflared tunnel...
+[2026. 01. 31. (토) 08:01:14 KST] Waiting for tunnel to initialize...
+2026-01-30T23:01:14Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-01-30T23:01:14Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-01-30T23:01:18Z INF +--------------------------------------------------------------------------------------------+
+2026-01-30T23:01:18Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-01-30T23:01:18Z INF |  https://visiting-chicago-gis-identifier.trycloudflare.com                                 |
+2026-01-30T23:01:18Z INF +--------------------------------------------------------------------------------------------+
+2026-01-30T23:01:18Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-01-30T23:01:18Z INF Version 2026.1.1 (Checksum 0c3de409287cc60264cd59a285c434a243ec6d1d79ff39dc8d36b716f9dda7ef)
+2026-01-30T23:01:18Z INF GOOS: linux, GOVersion: go1.24.11, GoArch: amd64
+2026-01-30T23:01:18Z INF Settings: map[ha-connections:1 protocol:quic url:http://localhost:4005]
+2026-01-30T23:01:18Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2026-01-30T23:01:18Z INF Generated Connector ID: 0a0bf839-b979-4dda-a2fd-c03bd29f3cda
+2026-01-30T23:01:18Z INF Initial protocol quic
+2026-01-30T23:01:18Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-30T23:01:18Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-30T23:01:18Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-30T23:01:18Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-30T23:01:18Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-01-30T23:01:18Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.57
+2026/01/31 08:01:18 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+[2026. 01. 31. (토) 08:01:18 KST] New tunnel URL: https://visiting-chicago-gis-identifier.trycloudflare.com
+[2026. 01. 31. (토) 08:01:18 KST] Old URL: https://recovered-taking-outlet-lover.trycloudflare.com
+[2026. 01. 31. (토) 08:01:18 KST] Updating chatbot.html and bug-report.html...
+[2026. 01. 31. (토) 08:01:18 KST] chatbot.html updated successfully
+[2026. 01. 31. (토) 08:01:18 KST] Committing changes to git...
+Version auto-updated to v1093
+[main 9a97252] Auto-update Cloudflare Tunnel URL
+ 3 files changed, 6 insertions(+), 6 deletions(-)
+[2026. 01. 31. (토) 08:01:18 KST] Pushing to GitHub...
+To https://github.com/ssurealitylab/ssurealitylab.github.io.git
+   6e4e172..9a97252  main -> main
+[2026. 01. 31. (토) 08:01:20 KST] Successfully pushed to GitHub!
+[2026. 01. 31. (토) 08:01:20 KST] Tunnel restart completed successfully!
+======================================
+[2026. 02. 01. (일) 08:00:19 KST] Starting Cloudflare Tunnel restart...
+
+========================================
+[2026. 02. 01. (일) 08:00:21 KST] Starting new cloudflared tunnel...
+[2026. 02. 01. (일) 08:00:21 KST] Waiting for tunnel to initialize...
+2026-01-31T23:00:22Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-01-31T23:00:22Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-01-31T23:00:25Z INF +--------------------------------------------------------------------------------------------+
+2026-01-31T23:00:25Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-01-31T23:00:25Z INF |  https://meyer-got-wide-fabrics.trycloudflare.com                                          |
+2026-01-31T23:00:25Z INF +--------------------------------------------------------------------------------------------+
+2026-01-31T23:00:25Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-01-31T23:00:25Z INF Version 2026.1.1 (Checksum 0c3de409287cc60264cd59a285c434a243ec6d1d79ff39dc8d36b716f9dda7ef)
+2026-01-31T23:00:25Z INF GOOS: linux, GOVersion: go1.24.11, GoArch: amd64
+2026-01-31T23:00:25Z INF Settings: map[ha-connections:1 protocol:quic url:http://localhost:4005]
+2026-01-31T23:00:25Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2026-01-31T23:00:25Z INF Generated Connector ID: 762ec7c7-72c0-4b32-856b-d1bfbfeecb95
+2026-01-31T23:00:25Z INF Initial protocol quic
+2026-01-31T23:00:25Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-31T23:00:25Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-31T23:00:25Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-01-31T23:00:25Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-01-31T23:00:25Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-01-31T23:00:25Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.53
+2026/02/01 08:00:25 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+[2026. 02. 01. (일) 08:00:25 KST] New tunnel URL: https://meyer-got-wide-fabrics.trycloudflare.com
+[2026. 02. 01. (일) 08:00:25 KST] Old URL: https://visiting-chicago-gis-identifier.trycloudflare.com
+[2026. 02. 01. (일) 08:00:25 KST] Updating chatbot.html and bug-report.html...
+[2026. 02. 01. (일) 08:00:25 KST] chatbot.html updated successfully
+[2026. 02. 01. (일) 08:00:25 KST] Committing changes to git...
+Version auto-updated to v1094
+[main eb39df7] Auto-update Cloudflare Tunnel URL
+ 3 files changed, 6 insertions(+), 6 deletions(-)
+[2026. 02. 01. (일) 08:00:26 KST] Pushing to GitHub...
+To https://github.com/ssurealitylab/ssurealitylab.github.io.git
+   9a97252..eb39df7  main -> main
+[2026. 02. 01. (일) 08:00:28 KST] Successfully pushed to GitHub!
+[2026. 02. 01. (일) 08:00:28 KST] Tunnel restart completed successfully!
+======================================
+[2026. 02. 02. (월) 08:00:46 KST] Starting Cloudflare Tunnel restart...
+
+========================================
+[2026. 02. 02. (월) 08:00:48 KST] Starting new cloudflared tunnel...
+[2026. 02. 02. (월) 08:00:48 KST] Waiting for tunnel to initialize...
+2026-02-01T23:00:49Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-02-01T23:00:49Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-02-01T23:00:49Z ERR Error unmarshaling QuickTunnel response: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+<title>Worker threw exception | api.trycloudflare.com | Cloudflare</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/cf.errors.css" />
+<!--[if lt IE 9]><link rel="stylesheet" id='cf_styles-ie-css' href="/cdn-cgi/styles/cf.errors.ie.css" /><![endif]-->
+<style>body{margin:0;padding:0}</style>
+
+
+<!--[if gte IE 10]><!-->
+<script>
+  if (!navigator.cookieEnabled) {
+    window.addEventListener('DOMContentLoaded', function () {
+      var cookieEl = document.getElementById('cookie-alert');
+      cookieEl.style.display = 'block';
+    })
+  }
+</script>
+<!--<![endif]-->
+
+
+</head>
+<body>
+  <div id="cf-wrapper">
+    <div class="cf-alert cf-alert-error cf-cookie-error" id="cookie-alert" data-translate="enable_cookies">Please enable cookies.</div>
+    <div id="cf-error-details" class="cf-error-details-wrapper">
+      <div class="cf-wrapper cf-header cf-error-overview">
+        <h1>
+          <span class="cf-error-type" data-translate="error">Error</span>
+          <span class="cf-error-code">1101</span>
+          <small class="heading-ray-id">Ray ID: 9c7511313f48ea07 &bull; 2026-02-01 23:00:49 UTC</small>
+        </h1>
+        <h2 class="cf-subheadline" data-translate="error_desc">Worker threw exception</h2>
+      </div><!-- /.header -->
+
+      <section></section><!-- spacer -->
+
+      <div class="cf-section cf-wrapper">
+        <div class="cf-columns two">
+          <div class="cf-column">
+            <h2 data-translate="what_happened">What happened?</h2>
+            <p>You've requested a page on a website (api.trycloudflare.com) that is on the <a href="https://www.cloudflare.com/5xx-error-landing/" target="_blank">Cloudflare</a> network. An unknown error occurred while rendering the page.</p>
+          </div>
+
+          
+          <div class="cf-column">
+            <h2 data-translate="what_can_i_do">What can I do?</h2>
+            <p><strong>If you are the owner of this website:</strong><br />refer to <a href="https://developers.cloudflare.com/workers/observability/errors/" target="_blank">Workers - Errors and Exceptions</a> and check Workers Logs for api.trycloudflare.com.</p>
+          </div>
+          
+        </div>
+      </div><!-- /.section -->
+
+      <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">9c7511313f48ea07</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">203.253.25.165</span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div><!-- /#cf-error-details -->
+  </div><!-- /#cf-wrapper -->
+
+  <script>
+  window._cf_translation = {};
+  
+  
+</script>
+
+</body>
+</html>
+ error="invalid character '<' looking for beginning of value" status_code="500 Internal Server Error"
+failed to unmarshal quick Tunnel: invalid character '<' looking for beginning of value
+[2026. 02. 02. (월) 08:01:19 KST] ERROR: Failed to get new tunnel URL after 30s!
