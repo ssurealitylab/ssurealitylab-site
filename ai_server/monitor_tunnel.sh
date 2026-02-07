@@ -1,15 +1,39 @@
 #!/bin/bash
 
 # Tunnel Health Monitor Script
-# Checks if tunnel is actually working, not just if process is running
+# - Checks if tunnel is actually working
+# - Respects rate limit cooldown
+# - Prevents duplicate restart attempts
 
 WORK_DIR="/home/i0179/Realitylab-site"
 LOG_FILE="$WORK_DIR/ai_server/tunnel_monitor.log"
 CHATBOT_FILE="$WORK_DIR/_includes/chatbot.html"
+LOCK_FILE="$WORK_DIR/ai_server/restart_tunnel.lock"
+RATE_LIMIT_FILE="$WORK_DIR/ai_server/rate_limit_until.txt"
 
 log() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" >> "$LOG_FILE"
 }
+
+# Check if restart is already running
+if [ -f "$LOCK_FILE" ]; then
+    LOCK_PID=$(cat "$LOCK_FILE" 2>/dev/null)
+    if ps -p "$LOCK_PID" > /dev/null 2>&1; then
+        log "SKIP: restart_tunnel.sh already running (PID: $LOCK_PID)"
+        exit 0
+    fi
+fi
+
+# Check rate limit cooldown
+if [ -f "$RATE_LIMIT_FILE" ]; then
+    RATE_LIMIT_UNTIL=$(cat "$RATE_LIMIT_FILE" 2>/dev/null)
+    CURRENT_TIME=$(date +%s)
+    if [ "$CURRENT_TIME" -lt "$RATE_LIMIT_UNTIL" ]; then
+        WAIT_MINS=$(( (RATE_LIMIT_UNTIL - CURRENT_TIME) / 60 ))
+        log "SKIP: Rate limit cooldown active (${WAIT_MINS}min remaining)"
+        exit 0
+    fi
+fi
 
 # Get current tunnel URL from chatbot.html
 CURRENT_URL=$(grep -oE "DIRECT_AI_SERVER_URL = 'https://[a-z0-9-]+\.trycloudflare\.com'" "$CHATBOT_FILE" | grep -oE 'https://[a-z0-9-]+\.trycloudflare\.com')

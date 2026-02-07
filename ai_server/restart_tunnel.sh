@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# Cloudflare Tunnel Auto-Restart Script with Retry Logic
-# Handles Cloudflare API outages with automatic retries
+# Cloudflare Tunnel Auto-Restart Script with Smart Retry Logic
+# - Exponential backoff to avoid rate limits
+# - Rate limit detection with long cooldown
+# - Lock file to prevent duplicate runs
+# - Daily attempt limit
 
 WORK_DIR="/home/i0179/Realitylab-site"
 LOG_FILE="$WORK_DIR/ai_server/tunnel_cron.log"
@@ -10,13 +13,19 @@ BUGREPORT_FILE="$WORK_DIR/_includes/bug-report.html"
 PID_FILE="$WORK_DIR/ai_server/cloudflared.pid"
 TEMP_LOG="$WORK_DIR/ai_server/tunnel_temp.log"
 CLOUDFLARED="$WORK_DIR/ai_server/cloudflared.new"
+LOCK_FILE="$WORK_DIR/ai_server/restart_tunnel.lock"
+RATE_LIMIT_FILE="$WORK_DIR/ai_server/rate_limit_until.txt"
+DAILY_COUNT_FILE="$WORK_DIR/ai_server/daily_attempts.txt"
 
 # Port for ai_chatbot_server.py
 AI_SERVER_PORT=4005
 
-# Retry settings
-MAX_RETRIES=60        # Max retry attempts (60 * 2min = 2 hours max)
-RETRY_DELAY=120       # 2 minutes between retries
+# Retry settings - Exponential backoff
+MAX_RETRIES=10              # Fewer retries with longer waits
+INITIAL_DELAY=120           # Start with 2 minutes
+MAX_DELAY=1800              # Max 30 minutes between retries
+RATE_LIMIT_COOLDOWN=3600    # 1 hour cooldown on rate limit
+DAILY_MAX_ATTEMPTS=20       # Max 20 attempts per day
 
 cd "$WORK_DIR"
 
@@ -25,8 +34,63 @@ log() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1"
 }
 
+cleanup_lock() {
+    rm -f "$LOCK_FILE"
+}
+
+# Check for existing lock (prevent duplicate runs)
+if [ -f "$LOCK_FILE" ]; then
+    LOCK_PID=$(cat "$LOCK_FILE" 2>/dev/null)
+    if ps -p "$LOCK_PID" > /dev/null 2>&1; then
+        log "Another restart_tunnel.sh is already running (PID: $LOCK_PID). Exiting."
+        exit 0
+    else
+        log "Stale lock file found. Removing..."
+        rm -f "$LOCK_FILE"
+    fi
+fi
+
+# Create lock file
+echo $$ > "$LOCK_FILE"
+trap cleanup_lock EXIT
+
+# Check rate limit cooldown
+if [ -f "$RATE_LIMIT_FILE" ]; then
+    RATE_LIMIT_UNTIL=$(cat "$RATE_LIMIT_FILE" 2>/dev/null)
+    CURRENT_TIME=$(date +%s)
+    if [ "$CURRENT_TIME" -lt "$RATE_LIMIT_UNTIL" ]; then
+        WAIT_MINS=$(( (RATE_LIMIT_UNTIL - CURRENT_TIME) / 60 ))
+        log "Rate limit cooldown active. Wait ${WAIT_MINS} more minutes. Exiting."
+        exit 0
+    else
+        rm -f "$RATE_LIMIT_FILE"
+    fi
+fi
+
+# Check daily attempt limit
+TODAY=$(date +%Y-%m-%d)
+if [ -f "$DAILY_COUNT_FILE" ]; then
+    SAVED_DATE=$(head -1 "$DAILY_COUNT_FILE" 2>/dev/null)
+    SAVED_COUNT=$(tail -1 "$DAILY_COUNT_FILE" 2>/dev/null)
+    if [ "$SAVED_DATE" == "$TODAY" ]; then
+        if [ "$SAVED_COUNT" -ge "$DAILY_MAX_ATTEMPTS" ]; then
+            log "Daily attempt limit reached ($DAILY_MAX_ATTEMPTS). Try again tomorrow."
+            exit 0
+        fi
+        DAILY_COUNT=$SAVED_COUNT
+    else
+        DAILY_COUNT=0
+    fi
+else
+    DAILY_COUNT=0
+fi
+
+# Increment daily count
+DAILY_COUNT=$((DAILY_COUNT + 1))
+echo -e "$TODAY\n$DAILY_COUNT" > "$DAILY_COUNT_FILE"
+
 log "========================================"
-log "Starting Cloudflare Tunnel restart with retry logic..."
+log "Starting Cloudflare Tunnel restart (Attempt $DAILY_COUNT/$DAILY_MAX_ATTEMPTS today)..."
 
 # Kill existing cloudflared processes
 if [ -f "$PID_FILE" ]; then
@@ -40,8 +104,10 @@ fi
 pkill -f "cloudflared.*tunnel" 2>/dev/null
 sleep 2
 
-# Retry loop
+# Retry loop with exponential backoff
 RETRY_COUNT=0
+CURRENT_DELAY=$INITIAL_DELAY
+
 while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
     RETRY_COUNT=$((RETRY_COUNT + 1))
     log "Attempt $RETRY_COUNT/$MAX_RETRIES - Creating tunnel..."
@@ -57,6 +123,7 @@ while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
     MAX_WAIT=45
     WAIT_COUNT=0
     NEW_URL=""
+    RATE_LIMITED=false
 
     while [ $WAIT_COUNT -lt $MAX_WAIT ]; do
         sleep 1
@@ -69,20 +136,37 @@ while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
                 break
             fi
 
+            # Check for RATE LIMIT error (429)
+            if grep -q "429 Too Many Requests" "$TEMP_LOG" 2>/dev/null; then
+                log "RATE LIMIT detected (429)! Entering cooldown..."
+                RATE_LIMITED=true
+                pkill -f "cloudflared" 2>/dev/null
+                break
+            fi
+
             # Check for Cloudflare API error (service outage)
             if grep -q "Error unmarshaling QuickTunnel" "$TEMP_LOG" 2>/dev/null; then
-                log "Cloudflare API error detected (service outage)"
+                log "Cloudflare API error detected"
                 pkill -f "cloudflared" 2>/dev/null
                 break
             fi
 
             if grep -q "failed to unmarshal quick Tunnel" "$TEMP_LOG" 2>/dev/null; then
-                log "Cloudflare API error detected (service outage)"
+                log "Cloudflare API error detected"
                 pkill -f "cloudflared" 2>/dev/null
                 break
             fi
         fi
     done
+
+    # If rate limited, set cooldown and exit
+    if [ "$RATE_LIMITED" = true ]; then
+        COOLDOWN_UNTIL=$(($(date +%s) + RATE_LIMIT_COOLDOWN))
+        echo "$COOLDOWN_UNTIL" > "$RATE_LIMIT_FILE"
+        log "Rate limit cooldown set for $((RATE_LIMIT_COOLDOWN / 60)) minutes."
+        log "========================================"
+        exit 1
+    fi
 
     # If we got a URL, verify and update
     if [ -n "$NEW_URL" ]; then
@@ -124,6 +208,9 @@ while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
                 fi
             fi
 
+            # Reset daily count on success (optional - encourages healthy behavior)
+            echo -e "$TODAY\n0" > "$DAILY_COUNT_FILE"
+
             log "Tunnel restart completed successfully!"
             log "========================================"
             exit 0
@@ -133,10 +220,16 @@ while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
         fi
     fi
 
-    # Wait before retry
+    # Wait before retry (exponential backoff)
     if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
-        log "Waiting ${RETRY_DELAY}s before next attempt..."
-        sleep $RETRY_DELAY
+        log "Waiting ${CURRENT_DELAY}s before next attempt (exponential backoff)..."
+        sleep $CURRENT_DELAY
+
+        # Double the delay for next time, up to max
+        CURRENT_DELAY=$((CURRENT_DELAY * 2))
+        if [ $CURRENT_DELAY -gt $MAX_DELAY ]; then
+            CURRENT_DELAY=$MAX_DELAY
+        fi
     fi
 done
 
