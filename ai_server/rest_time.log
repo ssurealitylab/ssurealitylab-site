@@ -1604,3 +1604,41 @@ index, memory.used [MiB]
 2026. 02. 09. (월) 08:00:32 KST: Starting new cloudflared tunnel...
 [2026-02-09 08:00:32] Another restart_tunnel.sh is already running (PID: 1807446). Exiting.
 2026. 02. 09. (월) 08:00:32 KST: All services started
+2026. 02. 10. (화) 04:00:01 KST: === REST TIME START ===
+2026. 02. 10. (화) 04:00:01 KST: Stopping ai_chatbot_server...
+2026. 02. 10. (화) 04:00:02 KST: Stopping llama-server to free GPU memory...
+2026. 02. 10. (화) 04:00:04 KST: llama-server stopped, GPU 0,2 freed
+2026. 02. 10. (화) 04:00:04 KST: Stopping cloudflared tunnel...
+2026. 02. 10. (화) 04:00:05 KST: All services stopped
+2026. 02. 10. (화) 04:00:05 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 1087 MiB
+1, 24072 MiB
+2, 14 MiB
+3, 6832 MiB
+2026. 02. 10. (화) 04:00:05 KST: Rest time active until 8 AM KST
+2026. 02. 10. (화) 08:00:01 KST: === REST TIME END ===
+2026. 02. 10. (화) 08:00:01 KST: Starting llama-server (GPT-OSS 120B)...
+2026. 02. 10. (화) 08:00:01 KST: llama-server starting (PID: 2140267)
+2026. 02. 10. (화) 08:00:07 KST: Waiting for model to load... (1/24)
+2026. 02. 10. (화) 08:00:12 KST: Waiting for model to load... (2/24)
+2026. 02. 10. (화) 08:00:17 KST: llama-server is ready!
+2026. 02. 10. (화) 08:00:17 KST: llama-server fully operational
+2026. 02. 10. (화) 08:00:17 KST: GPU status after start:
+index, memory.used [MiB]
+0, 17366 MiB
+1, 24012 MiB
+2, 15862 MiB
+3, 6832 MiB
+2026. 02. 10. (화) 08:00:17 KST: Starting ai_chatbot_server.py (port 4005)...
+2026. 02. 10. (화) 08:00:17 KST: ai_chatbot_server starting (PID: 2140504)
+2026. 02. 10. (화) 08:00:19 KST: Waiting for chatbot server... (1/10)
+2026. 02. 10. (화) 08:00:21 KST: Waiting for chatbot server... (2/10)
+2026. 02. 10. (화) 08:00:23 KST: Waiting for chatbot server... (3/10)
+2026. 02. 10. (화) 08:00:25 KST: Waiting for chatbot server... (4/10)
+2026. 02. 10. (화) 08:00:27 KST: Waiting for chatbot server... (5/10)
+2026. 02. 10. (화) 08:00:29 KST: Waiting for chatbot server... (6/10)
+2026. 02. 10. (화) 08:00:31 KST: ai_chatbot_server is ready!
+2026. 02. 10. (화) 08:00:31 KST: Starting new cloudflared tunnel...
+[2026-02-10 08:00:31] Another restart_tunnel.sh is already running (PID: 2140252). Exiting.
+2026. 02. 10. (화) 08:00:31 KST: All services started
