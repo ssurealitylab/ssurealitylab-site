@@ -1752,3 +1752,37 @@ index, memory.used [MiB]
 2026. 02. 12. (목) 08:02:16 KST: Starting new cloudflared tunnel...
 [2026-02-12 08:02:16] Another restart_tunnel.sh is already running (PID: 3420258). Exiting.
 2026. 02. 12. (목) 08:02:16 KST: All services started
+2026. 02. 13. (금) 04:00:01 KST: === REST TIME START ===
+2026. 02. 13. (금) 04:00:01 KST: Stopping ai_chatbot_server...
+2026. 02. 13. (금) 04:00:02 KST: Stopping llama-server to free GPU memory...
+2026. 02. 13. (금) 04:00:04 KST: llama-server stopped, GPU 0,2 freed
+2026. 02. 13. (금) 04:00:04 KST: Stopping cloudflared tunnel...
+2026. 02. 13. (금) 04:00:05 KST: All services stopped
+2026. 02. 13. (금) 04:00:05 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 1087 MiB
+1, 21412 MiB
+2, 14 MiB
+3, 6832 MiB
+2026. 02. 13. (금) 04:00:05 KST: Rest time active until 8 AM KST
+2026. 02. 13. (금) 08:00:01 KST: === REST TIME END ===
+2026. 02. 13. (금) 08:00:01 KST: Starting llama-server (GPT-OSS 120B)...
+2026. 02. 13. (금) 08:00:01 KST: llama-server starting (PID: 3508601)
+2026. 02. 13. (금) 08:00:06 KST: Waiting for model to load... (1/24)
+2026. 02. 13. (금) 08:00:11 KST: llama-server is ready!
+2026. 02. 13. (금) 08:00:11 KST: llama-server fully operational
+2026. 02. 13. (금) 08:00:11 KST: GPU status after start:
+index, memory.used [MiB]
+0, 17366 MiB
+1, 24012 MiB
+2, 15862 MiB
+3, 6832 MiB
+2026. 02. 13. (금) 08:00:11 KST: Starting ai_chatbot_server.py (port 4005)...
+2026. 02. 13. (금) 08:00:11 KST: ai_chatbot_server starting (PID: 3508777)
+2026. 02. 13. (금) 08:00:13 KST: Waiting for chatbot server... (1/10)
+2026. 02. 13. (금) 08:00:15 KST: Waiting for chatbot server... (2/10)
+2026. 02. 13. (금) 08:00:17 KST: Waiting for chatbot server... (3/10)
+2026. 02. 13. (금) 08:00:19 KST: ai_chatbot_server is ready!
+2026. 02. 13. (금) 08:00:19 KST: Starting new cloudflared tunnel...
+[2026-02-13 08:00:19] Another restart_tunnel.sh is already running (PID: 3508604). Exiting.
+2026. 02. 13. (금) 08:00:19 KST: All services started
