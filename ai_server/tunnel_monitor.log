@@ -58350,3 +58350,8 @@ remove the file manually to continue.
 [2026-02-23 16:00:27] Waiting 1800s before next attempt (exponential backoff)...
 [2026-02-23 16:10:01] SKIP: restart_tunnel.sh already running (PID: 17249)
 [2026-02-23 16:20:01] SKIP: restart_tunnel.sh already running (PID: 17249)
+[2026-02-23 16:30:01] SKIP: restart_tunnel.sh already running (PID: 47097)
+[2026-02-23 16:30:27] Attempt 7/10 - Creating tunnel...
+[2026-02-23 16:30:31] Tunnel URL obtained: https://easter-mixture-badge-dog.trycloudflare.com
+[2026-02-23 16:30:38] Tunnel health check PASSED!
+[2026-02-23 16:30:38] Updating URLs: https://makes-circle-released-fool.trycloudflare.com -> https://easter-mixture-badge-dog.trycloudflare.com
