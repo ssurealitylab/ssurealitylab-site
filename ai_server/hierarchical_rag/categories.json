@@ -1,12 +1,11 @@
 {
   "categories": [
-    "faculty",
-    "students",
-    "alumni",
+    "members",
     "news",
     "publications",
     "lab_info",
-    "lab_info_sensitive"
+    "research",
+    "qa"
   ],
   "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
   "total_documents": 115

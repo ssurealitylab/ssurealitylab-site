@@ -111,3 +111,94 @@ python3: can't open file '/home/i0179/Realitylab-site/ai_server/crawl_website.py
 [2026. 01. 28. (수) 05:00:01 KST] Step 1/4: Crawling website...
 python3: can't open file '/home/i0179/Realitylab-site/ai_server/crawl_website.py': [Errno 2] No such file or directory
 [2026. 01. 28. (수) 05:00:01 KST] ERROR: Website crawling failed!
+
+========================================
+[2026. 02. 24. (화) 00:00:02 KST] Starting RAG Update...
+========================================
+[2026. 02. 24. (화) 00:00:02 KST] Step 1/3: Building knowledge base from local files...
+Building knowledge base...
+- Extracting lab info...
+- Extracting research areas...
+- Extracting member information...
+- Extracting news...
+- Extracting publications...
+- Extracting Q&A pairs...
+
+Total documents created: 115
+
+Knowledge base saved to: /home/i0179/Realitylab-site/ai_server/knowledge_base.json
+Total size: 56.52 KB
+
+=== Knowledge Base Statistics ===
+  lab_info: 2 documents
+  research_area: 10 documents
+  member: 24 documents
+  news: 38 documents
+  publication: 33 documents
+  qa: 8 documents
+[2026. 02. 24. (화) 00:00:02 KST] Knowledge base built successfully
+[2026. 02. 24. (화) 00:00:02 KST] Step 2/3: Building hierarchical RAG index...
+Loading knowledge base from: /home/i0179/Realitylab-site/ai_server/knowledge_base.json
+  Loaded 115 documents
+  Loaded 39 name mappings from /home/i0179/Realitylab-site/ai_server/name_mapping.json
+
+Converting English names to Korean in documents...
+  Converted names in 96 documents
+
+Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  Model loaded successfully
+
+============================================================
+Building Hierarchical RAG System
+============================================================
+
+=== Building members Index ===
+  Documents: 24
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.18s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.18s/it]
+  ✅ Saved to: /home/i0179/Realitylab-site/ai_server/hierarchical_rag/members
+     Index: 24 vectors
+
+=== Building news Index ===
+  Documents: 38
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:  50%|█████     | 1/2 [00:01<00:01,  1.55s/it]Batches: 100%|██████████| 2/2 [00:03<00:00,  1.82s/it]Batches: 100%|██████████| 2/2 [00:03<00:00,  1.78s/it]
+  ✅ Saved to: /home/i0179/Realitylab-site/ai_server/hierarchical_rag/news
+     Index: 38 vectors
+
+=== Building publications Index ===
+  Documents: 33
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:  50%|█████     | 1/2 [00:02<00:02,  2.33s/it]Batches: 100%|██████████| 2/2 [00:03<00:00,  1.70s/it]Batches: 100%|██████████| 2/2 [00:03<00:00,  1.79s/it]
+  ✅ Saved to: /home/i0179/Realitylab-site/ai_server/hierarchical_rag/publications
+     Index: 33 vectors
+
+=== Building lab_info Index ===
+  Documents: 2
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.03s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.03s/it]
+  ✅ Saved to: /home/i0179/Realitylab-site/ai_server/hierarchical_rag/lab_info
+     Index: 2 vectors
+
+=== Building research Index ===
+  Documents: 10
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.84s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.84s/it]
+  ✅ Saved to: /home/i0179/Realitylab-site/ai_server/hierarchical_rag/research
+     Index: 10 vectors
+
+=== Building qa Index ===
+  Documents: 8
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.77s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.77s/it]
+  ✅ Saved to: /home/i0179/Realitylab-site/ai_server/hierarchical_rag/qa
+     Index: 8 vectors
+
+============================================================
+✅ Hierarchical RAG Build Complete!
+Output directory: /home/i0179/Realitylab-site/ai_server/hierarchical_rag
+============================================================
+[2026. 02. 24. (화) 00:00:27 KST] Hierarchical RAG index built successfully
+[2026. 02. 24. (화) 00:00:27 KST] Step 3/3: Restarting chatbot server...
+[2026. 02. 24. (화) 00:00:35 KST] Chatbot server restarted (PID: 209630)
+
+Summary:
+  Knowledge base documents: 115
+
+========================================
+[2026. 02. 24. (화) 00:00:35 KST] RAG Update Completed!
+========================================

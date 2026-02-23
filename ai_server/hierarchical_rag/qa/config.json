@@ -1,0 +1,9 @@
+{
+  "category": "qa",
+  "model_name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "num_documents": 8,
+  "embedding_dim": 384,
+  "doc_types": [
+    "qa"
+  ]
+}
