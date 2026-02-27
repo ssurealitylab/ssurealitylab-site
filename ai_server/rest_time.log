@@ -2174,3 +2174,202 @@ index, memory.used [MiB]
 2026. 02. 24. (화) 08:00:26 KST: Starting new cloudflared tunnel...
 [2026-02-24 08:00:26] Another restart_tunnel.sh is already running (PID: 361831). Exiting.
 2026. 02. 24. (화) 08:00:26 KST: All services started
+2026. 02. 25. (수) 04:00:01 KST: === REST TIME START ===
+2026. 02. 25. (수) 04:00:01 KST: Stopping ai_chatbot_server...
+2026. 02. 25. (수) 04:00:02 KST: Stopping llama-server to free GPU memory...
+2026. 02. 25. (수) 04:00:04 KST: llama-server stopped, GPU 0,2 freed
+2026. 02. 25. (수) 04:00:04 KST: Stopping cloudflared tunnel...
+2026. 02. 25. (수) 04:00:05 KST: All services stopped
+2026. 02. 25. (수) 04:00:05 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 1531 MiB
+1, 9971 MiB
+2, 14 MiB
+3, 23581 MiB
+2026. 02. 25. (수) 04:00:05 KST: Rest time active until 8 AM KST
+2026. 02. 25. (수) 08:00:01 KST: === REST TIME END ===
+2026. 02. 25. (수) 08:00:01 KST: Starting llama-server (GPT-OSS 120B)...
+2026. 02. 25. (수) 08:00:01 KST: llama-server starting (PID: 1023181)
+2026. 02. 25. (수) 08:00:08 KST: Waiting for model to load... (1/24)
+2026. 02. 25. (수) 08:00:13 KST: Waiting for model to load... (2/24)
+2026. 02. 25. (수) 08:00:18 KST: Waiting for model to load... (3/24)
+2026. 02. 25. (수) 08:00:23 KST: Waiting for model to load... (4/24)
+2026. 02. 25. (수) 08:00:28 KST: Waiting for model to load... (5/24)
+2026. 02. 25. (수) 08:00:33 KST: Waiting for model to load... (6/24)
+2026. 02. 25. (수) 08:00:38 KST: Waiting for model to load... (7/24)
+2026. 02. 25. (수) 08:00:43 KST: Waiting for model to load... (8/24)
+2026. 02. 25. (수) 08:00:48 KST: Waiting for model to load... (9/24)
+2026. 02. 25. (수) 08:00:53 KST: Waiting for model to load... (10/24)
+2026. 02. 25. (수) 08:00:58 KST: Waiting for model to load... (11/24)
+2026. 02. 25. (수) 08:01:03 KST: Waiting for model to load... (12/24)
+2026. 02. 25. (수) 08:01:08 KST: Waiting for model to load... (13/24)
+2026. 02. 25. (수) 08:01:13 KST: Waiting for model to load... (14/24)
+2026. 02. 25. (수) 08:01:18 KST: Waiting for model to load... (15/24)
+2026. 02. 25. (수) 08:01:23 KST: Waiting for model to load... (16/24)
+2026. 02. 25. (수) 08:01:28 KST: Waiting for model to load... (17/24)
+2026. 02. 25. (수) 08:01:33 KST: Waiting for model to load... (18/24)
+2026. 02. 25. (수) 08:01:38 KST: Waiting for model to load... (19/24)
+2026. 02. 25. (수) 08:01:43 KST: Waiting for model to load... (20/24)
+2026. 02. 25. (수) 08:01:48 KST: Waiting for model to load... (21/24)
+2026. 02. 25. (수) 08:01:53 KST: Waiting for model to load... (22/24)
+2026. 02. 25. (수) 08:01:58 KST: Waiting for model to load... (23/24)
+2026. 02. 25. (수) 08:02:03 KST: Waiting for model to load... (24/24)
+2026. 02. 25. (수) 08:02:03 KST: Warning - llama-server may still be loading
+2026. 02. 25. (수) 08:02:03 KST: GPU status after start:
+index, memory.used [MiB]
+0, 11572 MiB
+1, 9971 MiB
+2, 18403 MiB
+3, 23561 MiB
+2026. 02. 25. (수) 08:02:03 KST: Starting ai_chatbot_server.py (port 4005)...
+2026. 02. 25. (수) 08:02:04 KST: ai_chatbot_server starting (PID: 1024522)
+2026. 02. 25. (수) 08:02:06 KST: Waiting for chatbot server... (1/10)
+2026. 02. 25. (수) 08:02:08 KST: Waiting for chatbot server... (2/10)
+2026. 02. 25. (수) 08:02:10 KST: Waiting for chatbot server... (3/10)
+2026. 02. 25. (수) 08:02:12 KST: Waiting for chatbot server... (4/10)
+2026. 02. 25. (수) 08:02:14 KST: Waiting for chatbot server... (5/10)
+2026. 02. 25. (수) 08:02:16 KST: Waiting for chatbot server... (6/10)
+2026. 02. 25. (수) 08:02:18 KST: Waiting for chatbot server... (7/10)
+2026. 02. 25. (수) 08:02:20 KST: Waiting for chatbot server... (8/10)
+2026. 02. 25. (수) 08:02:22 KST: Waiting for chatbot server... (9/10)
+2026. 02. 25. (수) 08:02:24 KST: Waiting for chatbot server... (10/10)
+2026. 02. 25. (수) 08:02:24 KST: Starting new cloudflared tunnel...
+[2026-02-25 08:02:24] Another restart_tunnel.sh is already running (PID: 1023180). Exiting.
+2026. 02. 25. (수) 08:02:24 KST: All services started
+2026. 02. 26. (목) 04:00:01 KST: === REST TIME START ===
+2026. 02. 26. (목) 04:00:01 KST: Stopping ai_chatbot_server...
+2026. 02. 26. (목) 04:00:02 KST: Stopping llama-server to free GPU memory...
+2026. 02. 26. (목) 04:00:04 KST: llama-server stopped, GPU 0,2 freed
+2026. 02. 26. (목) 04:00:04 KST: Stopping cloudflared tunnel...
+2026. 02. 26. (목) 04:00:05 KST: All services stopped
+2026. 02. 26. (목) 04:00:05 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 18837 MiB
+1, 20818 MiB
+2, 24149 MiB
+3, 22376 MiB
+2026. 02. 26. (목) 04:00:05 KST: Rest time active until 8 AM KST
+2026. 02. 26. (목) 08:00:01 KST: === REST TIME END ===
+2026. 02. 26. (목) 08:00:01 KST: Starting llama-server (GPT-OSS 120B)...
+2026. 02. 26. (목) 08:00:01 KST: llama-server starting (PID: 2786598)
+/home/i0179/Realitylab-site/ai_server/start_server_and_tunnel.sh: line 29: 2786598 Aborted                 (core dumped) CUDA_VISIBLE_DEVICES=0,2 nohup ./llama-server -m $MODEL_PATH --port 8081 -ngl 18 --host 0.0.0.0 -c 4096 > /tmp/llama-server.log 2>&1
+2026. 02. 26. (목) 08:00:06 KST: Waiting for model to load... (1/24)
+2026. 02. 26. (목) 08:00:11 KST: Waiting for model to load... (2/24)
+2026. 02. 26. (목) 08:00:16 KST: Waiting for model to load... (3/24)
+2026. 02. 26. (목) 08:00:21 KST: Waiting for model to load... (4/24)
+2026. 02. 26. (목) 08:00:26 KST: Waiting for model to load... (5/24)
+2026. 02. 26. (목) 08:00:31 KST: Waiting for model to load... (6/24)
+2026. 02. 26. (목) 08:00:36 KST: Waiting for model to load... (7/24)
+2026. 02. 26. (목) 08:00:41 KST: Waiting for model to load... (8/24)
+2026. 02. 26. (목) 08:00:46 KST: Waiting for model to load... (9/24)
+2026. 02. 26. (목) 08:00:51 KST: Waiting for model to load... (10/24)
+2026. 02. 26. (목) 08:00:56 KST: Waiting for model to load... (11/24)
+2026. 02. 26. (목) 08:01:01 KST: Waiting for model to load... (12/24)
+2026. 02. 26. (목) 08:01:06 KST: Waiting for model to load... (13/24)
+2026. 02. 26. (목) 08:01:11 KST: Waiting for model to load... (14/24)
+2026. 02. 26. (목) 08:01:16 KST: Waiting for model to load... (15/24)
+2026. 02. 26. (목) 08:01:21 KST: Waiting for model to load... (16/24)
+2026. 02. 26. (목) 08:01:26 KST: Waiting for model to load... (17/24)
+2026. 02. 26. (목) 08:01:31 KST: Waiting for model to load... (18/24)
+2026. 02. 26. (목) 08:01:36 KST: Waiting for model to load... (19/24)
+2026. 02. 26. (목) 08:01:41 KST: Waiting for model to load... (20/24)
+2026. 02. 26. (목) 08:01:46 KST: Waiting for model to load... (21/24)
+2026. 02. 26. (목) 08:01:51 KST: Waiting for model to load... (22/24)
+2026. 02. 26. (목) 08:01:56 KST: Waiting for model to load... (23/24)
+2026. 02. 26. (목) 08:02:01 KST: Waiting for model to load... (24/24)
+2026. 02. 26. (목) 08:02:01 KST: Warning - llama-server may still be loading
+2026. 02. 26. (목) 08:02:01 KST: GPU status after start:
+index, memory.used [MiB]
+0, 18803 MiB
+1, 20824 MiB
+2, 24149 MiB
+3, 19072 MiB
+2026. 02. 26. (목) 08:02:01 KST: Starting ai_chatbot_server.py (port 4005)...
+2026. 02. 26. (목) 08:02:01 KST: ai_chatbot_server starting (PID: 2791784)
+2026. 02. 26. (목) 08:02:03 KST: Waiting for chatbot server... (1/10)
+2026. 02. 26. (목) 08:02:05 KST: Waiting for chatbot server... (2/10)
+2026. 02. 26. (목) 08:02:07 KST: Waiting for chatbot server... (3/10)
+2026. 02. 26. (목) 08:02:09 KST: Waiting for chatbot server... (4/10)
+2026. 02. 26. (목) 08:02:11 KST: Waiting for chatbot server... (5/10)
+2026. 02. 26. (목) 08:02:13 KST: Waiting for chatbot server... (6/10)
+2026. 02. 26. (목) 08:02:15 KST: Waiting for chatbot server... (7/10)
+2026. 02. 26. (목) 08:02:17 KST: Waiting for chatbot server... (8/10)
+2026. 02. 26. (목) 08:02:19 KST: Waiting for chatbot server... (9/10)
+2026. 02. 26. (목) 08:02:21 KST: Waiting for chatbot server... (10/10)
+2026. 02. 26. (목) 08:02:21 KST: Starting new cloudflared tunnel...
+[2026-02-26 08:02:21] Another restart_tunnel.sh is already running (PID: 2786586). Exiting.
+2026. 02. 26. (목) 08:02:21 KST: All services started
+2026. 02. 27. (금) 04:00:01 KST: === REST TIME START ===
+2026. 02. 27. (금) 04:00:01 KST: Stopping ai_chatbot_server...
+2026. 02. 27. (금) 04:00:02 KST: Stopping llama-server to free GPU memory...
+2026. 02. 27. (금) 04:00:04 KST: llama-server stopped, GPU 0,2 freed
+2026. 02. 27. (금) 04:00:04 KST: Stopping cloudflared tunnel...
+2026. 02. 27. (금) 04:00:05 KST: All services stopped
+2026. 02. 27. (금) 04:00:05 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 14 MiB
+1, 4961 MiB
+2, 24149 MiB
+3, 19072 MiB
+2026. 02. 27. (금) 04:00:05 KST: Rest time active until 8 AM KST
+2026. 02. 27. (금) 08:00:01 KST: === REST TIME END ===
+2026. 02. 27. (금) 08:00:01 KST: llama-server already running, skipping start
+2026. 02. 27. (금) 08:00:01 KST: GPU status after start:
+index, memory.used [MiB]
+0, 2238 MiB
+1, 1794 MiB
+2, 14 MiB
+3, 19072 MiB
+2026. 02. 27. (금) 08:00:01 KST: Starting ai_chatbot_server.py (port 4005)...
+2026. 02. 27. (금) 08:00:01 KST: ai_chatbot_server starting (PID: 436117)
+2026. 02. 27. (금) 08:00:03 KST: Waiting for chatbot server... (1/10)
+2026. 02. 27. (금) 08:00:05 KST: Waiting for chatbot server... (2/10)
+2026. 02. 27. (금) 08:00:07 KST: Waiting for chatbot server... (3/10)
+2026. 02. 27. (금) 08:00:09 KST: Waiting for chatbot server... (4/10)
+2026. 02. 27. (금) 08:00:11 KST: Waiting for chatbot server... (5/10)
+2026. 02. 27. (금) 08:00:13 KST: Waiting for chatbot server... (6/10)
+2026. 02. 27. (금) 08:00:15 KST: Waiting for chatbot server... (7/10)
+2026. 02. 27. (금) 08:00:17 KST: Waiting for chatbot server... (8/10)
+2026. 02. 27. (금) 08:00:19 KST: Waiting for chatbot server... (9/10)
+2026. 02. 27. (금) 08:00:21 KST: Waiting for chatbot server... (10/10)
+2026. 02. 27. (금) 08:00:21 KST: Starting new cloudflared tunnel...
+[2026-02-27 08:00:21] Another restart_tunnel.sh is already running (PID: 436100). Exiting.
+2026. 02. 27. (금) 08:00:21 KST: All services started
+2026. 02. 27. (금) 15:16:27 KST: === REST TIME END ===
+2026. 02. 27. (금) 15:16:27 KST: Starting llama-server (GPT-OSS 120B)...
+2026. 02. 27. (금) 15:16:27 KST: llama-server starting (PID: 693108)
+2026. 02. 27. (금) 15:16:32 KST: Waiting for model to load... (1/24)
+2026. 02. 27. (금) 15:16:37 KST: Waiting for model to load... (2/24)
+2026. 02. 27. (금) 15:16:42 KST: Waiting for model to load... (3/24)
+2026. 02. 27. (금) 15:16:47 KST: Waiting for model to load... (4/24)
+2026. 02. 27. (금) 15:16:52 KST: Waiting for model to load... (5/24)
+2026. 02. 27. (금) 15:16:57 KST: Waiting for model to load... (6/24)
+2026. 02. 27. (금) 15:17:02 KST: Waiting for model to load... (7/24)
+2026. 02. 27. (금) 15:17:08 KST: Waiting for model to load... (8/24)
+2026. 02. 27. (금) 15:17:13 KST: Waiting for model to load... (9/24)
+2026. 02. 27. (금) 15:17:18 KST: Waiting for model to load... (10/24)
+2026. 02. 27. (금) 15:17:23 KST: Waiting for model to load... (11/24)
+2026. 02. 27. (금) 15:17:28 KST: Waiting for model to load... (12/24)
+2026. 02. 27. (금) 15:17:33 KST: Waiting for model to load... (13/24)
+2026. 02. 27. (금) 15:17:38 KST: Waiting for model to load... (14/24)
+2026. 02. 27. (금) 15:17:43 KST: Waiting for model to load... (15/24)
+2026. 02. 27. (금) 15:17:48 KST: Waiting for model to load... (16/24)
+2026. 02. 27. (금) 15:17:53 KST: Waiting for model to load... (17/24)
+2026. 02. 27. (금) 15:17:58 KST: Waiting for model to load... (18/24)
+2026. 02. 27. (금) 15:18:03 KST: Waiting for model to load... (19/24)
+2026. 02. 27. (금) 15:18:08 KST: Waiting for model to load... (20/24)
+2026. 02. 27. (금) 15:18:13 KST: Waiting for model to load... (21/24)
+2026. 02. 27. (금) 15:18:18 KST: Waiting for model to load... (22/24)
+2026. 02. 27. (금) 15:18:23 KST: Waiting for model to load... (23/24)
+2026. 02. 27. (금) 15:18:28 KST: Waiting for model to load... (24/24)
+2026. 02. 27. (금) 15:18:28 KST: Warning - llama-server may still be loading
+2026. 02. 27. (금) 15:18:28 KST: GPU status after start:
+index, memory.used [MiB]
+0, 863 MiB
+1, 5671 MiB
+2, 24149 MiB
+3, 19072 MiB
+2026. 02. 27. (금) 15:18:28 KST: ai_chatbot_server already running, skipping
+2026. 02. 27. (금) 15:18:28 KST: Starting new cloudflared tunnel...
+[2026-02-27 15:18:28] Another restart_tunnel.sh is already running (PID: 641455). Exiting.
+2026. 02. 27. (금) 15:18:28 KST: All services started
