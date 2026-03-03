@@ -2,7 +2,7 @@
 layout: page
 title: Faculty - Reality Lab | 교수진 - 리얼리티랩
 description: Prof. Heewon Kim leads Reality Lab at Soongsil University, specializing in Computer Vision, Deep Learning, and Embodied AI. 숭실대학교 김희원 교수.
-keywords: Prof. Heewon Kim, 김희원, 김희원 교수, Soongsil University, 숭실대학교, 숭실대, SSU, Reality Lab, 리얼리티랩, 글로벌미디어학부, Global School of Media, IT대학, College of IT, Computer Vision, Deep Learning, Embodied AI, AI professor, 인공지능 교수, CVPR, AAAI, Seoul National University, 서울대학교
+keywords: Prof. Heewon Kim, 김희원, 김희원 교수, Soongsil University, 숭실대학교, 숭실대, SSU, Reality Lab, 리얼리티랩, AI소프트웨어학부, School of AI Software, 글로벌미디어학부, Global School of Media, AI대학, College of AI, IT대학, College of IT, Computer Vision, Deep Learning, Embodied AI, AI professor, 인공지능 교수, CVPR, AAAI, Seoul National University, 서울대학교
 ---
 
 # Faculty

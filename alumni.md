@@ -7,6 +7,91 @@ keywords: Reality Lab alumni, 리얼리티랩 졸업생, Soongsil University, �
 
 # Alumni
 
+## Former Master's Students
+<p style="color: #6c757d; font-size: 0.9rem; margin-top: -10px; margin-bottom: 20px;">Click on a card to view detailed information</p>
+
+<div class="members-grid">
+  {% for alumnus in site.data.members.alumni.former_ms_students %}
+  <div class="member-card clickable-card" onclick="openMemberModal('ms-alumni-{{ alumnus.name | slugify }}')">
+    <div class="member-photo">
+      <img src="{{ alumnus.photo }}" alt="{{ alumnus.name }}" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjZjNmNGY2Ii8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjgwIiByPSIzMCIgZmlsbD0iIzllYTNhOCIvPgo8cGF0aCBkPSJNNjAgMTYwYzAtMjIuMDkgMTcuOTEtNDAgNDAtNDBzNDAgMTcuOTEgNDAgNDB2MjBINjB2LTIweiIgZmlsbD0iIzllYTNhOCIvPgo8L3N2Zz4K'">
+    </div>
+    <div class="member-info">
+      <h3 class="member-name">{{ alumnus.name }}</h3>
+      {% if alumnus.current_position %}
+      <p class="member-current-position">{{ alumnus.current_position }}</p>
+      {% endif %}
+      {% if alumnus.email %}
+      <p class="member-email">{{ alumnus.email }}</p>
+      {% endif %}
+      {% if alumnus.university %}
+      <p class="member-university">{{ alumnus.university }}</p>
+      {% endif %}
+      {% if alumnus.research %}
+      <p class="member-research">{{ alumnus.research }}</p>
+      {% endif %}
+      {% if alumnus.period %}
+      <p class="member-period">{{ alumnus.period }}</p>
+      {% endif %}
+      <div class="member-social">
+        {% if alumnus.email and alumnus.email != "" %}
+          <a href="#" onclick="event.preventDefault(); event.stopPropagation(); copyEmail('{{ alumnus.email }}', event)" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        {% endif %}
+        {% if alumnus.github and alumnus.github != "" %}
+        <a href="{{ alumnus.github }}" target="_blank" onclick="event.stopPropagation()" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        {% endif %}
+        {% if alumnus.linkedin and alumnus.linkedin != "" %}
+        <a href="{{ alumnus.linkedin }}" target="_blank" onclick="event.stopPropagation()" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for {{ alumnus.name }} -->
+  <div id="modal-ms-alumni-{{ alumnus.name | slugify }}" class="member-modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeMemberModal('ms-alumni-{{ alumnus.name | slugify }}')">&times;</span>
+      <div class="modal-photo">
+        <img src="{{ alumnus.photo }}" alt="{{ alumnus.name }}" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjZjNmNGY2Ii8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjgwIiByPSIzMCIgZmlsbD0iIzllYTNhOCIvPgo8cGF0aCBkPSJNNjAgMTYwYzAtMjIuMDkgMTcuOTEtNDAgNDAtNDBzNDAgMTcuOTEgNDAgNDB2MjBINjB2LTIweiIgZmlsbD0iIzllYTNhOCIvPgo8L3N2Zz4K'">
+      </div>
+      <div class="modal-info">
+        <h2 class="modal-name">{{ alumnus.name }}</h2>
+        {% if alumnus.current_position %}
+        <p class="modal-current-position"><strong>Current:</strong> {{ alumnus.current_position }}</p>
+        {% endif %}
+        {% if alumnus.university %}
+        <p class="modal-university"><strong>University:</strong> {{ alumnus.university }}</p>
+        {% endif %}
+        {% if alumnus.research %}
+        <p class="modal-research"><strong>Research:</strong> {{ alumnus.research }}</p>
+        {% endif %}
+        {% if alumnus.period %}
+        <p class="modal-period"><strong>Period:</strong> {{ alumnus.period }}</p>
+        {% endif %}
+        <div class="modal-social">
+          {% if alumnus.github and alumnus.github != "" %}
+          <a href="{{ alumnus.github }}" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          {% endif %}
+          {% if alumnus.linkedin and alumnus.linkedin != "" %}
+          <a href="{{ alumnus.linkedin }}" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
 ## Former Research Interns
 <p style="color: #6c757d; font-size: 0.9rem; margin-top: -10px; margin-bottom: 20px;">Click on a card to view detailed information</p>
 
@@ -143,6 +228,20 @@ keywords: Reality Lab alumni, 리얼리티랩 졸업생, Soongsil University, �
   color: #6c757d;
   margin-bottom: 10px;
   line-height: 1.4;
+}
+
+.member-current-position {
+  font-size: 0.9rem;
+  color: #3498db;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.modal-current-position {
+  font-size: 1rem;
+  color: #3498db;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
 .member-period {
