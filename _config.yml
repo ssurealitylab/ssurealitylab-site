@@ -29,7 +29,7 @@ locale: "en" # See available languages in _data/sitetext.yml
 
 # Enhanced SEO Settings
 tagline: "AI Research Laboratory at Soongsil University"
-keywords: "Reality Lab, 리얼리티랩, 리얼리티랩 숭실, 숭실 리얼리티랩, Soongsil University, 숭실대학교, 숭실대, 숭실, SSU, AI Research, 인공지능 연구실, 컴퓨터비전 연구실, Computer Vision, 컴퓨터비전, Deep Learning, 딥러닝, Embodied AI, 피지컬 AI, 피지컬 AI 연구실, Physical AI, Machine Learning, 기계학습, CVPR, AAAI, ECCV, ICCV, NeurIPS, WACV, BMVC, 김희원, 김희원 교수, 김희원교수, Heewon Kim, Prof. Heewon Kim, 글로벌미디어학부, Global School of Media, IT대학, College of IT, Image Restoration, Super Resolution, 3D Vision, Robotics, 로보틱스, 로봇 연구실, Medical AI, Mobile AI, HiGlassRM, MBTI, DynScene, SIDL, EDSR, ARNOLD Challenge, Seoul, 서울, Dongjak, 동작구"
+keywords: "Reality Lab, 리얼리티랩, 리얼리티랩 숭실, 숭실 리얼리티랩, Soongsil University, 숭실대학교, 숭실대, 숭실, SSU, AI Research, 인공지능 연구실, 컴퓨터비전 연구실, Computer Vision, 컴퓨터비전, Deep Learning, 딥러닝, Embodied AI, 피지컬 AI, 피지컬 AI 연구실, Physical AI, Machine Learning, 기계학습, CVPR, AAAI, ECCV, ICCV, NeurIPS, WACV, BMVC, 김희원, 김희원 교수, 김희원교수, Heewon Kim, Prof. Heewon Kim, 글로벌미디어학부, Global School of Media, AI소프트웨어학부, School of AI Software, IT대학, AI대학, College of IT, College of AI, Image Restoration, Super Resolution, 3D Vision, Robotics, 로보틱스, 로봇 연구실, Medical AI, Mobile AI, HiGlassRM, MBTI, DynScene, SIDL, EDSR, ARNOLD Challenge, Seoul, 서울, Dongjak, 동작구"
 
 # Social Media & Open Graph
 twitter:
@@ -79,6 +79,11 @@ markdown: kramdown
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+
+exclude:
+  - finetune_env
+  - ai_server
+  - .claude
 
 # Uncomment following line to use Formspree form ID based URL instead of email based URL
 # Details: https://help.formspree.io/hc/en-us/articles/360017735154-How-to-prevent-spam

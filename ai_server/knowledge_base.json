@@ -106,7 +106,7 @@
     }
   },
   {
-    "content": "교수진: 김희원 교수 (Prof. Heewon Kim)\n직책: Assistant Professor, Ph. D.\n소속: Global School of Media\n이메일: hwkim@ssu.ac.kr",
+    "content": "교수진: 김희원 교수 (Prof. Heewon Kim)\n직책: Assistant Professor, Ph. D.\n소속: School of AI·Software\n이메일: hwkim@ssu.ac.kr",
     "metadata": {
       "type": "member",
       "language": "ko",
@@ -114,39 +114,6 @@
       "name": "Prof. Heewon Kim",
       "name_ko": "김희원 교수",
       "email": "hwkim@ssu.ac.kr"
-    }
-  },
-  {
-    "content": "석사과정 학생: 채병관 (Byungkwan Chae)\n연구 분야: Mobile AI, Augmented Reality",
-    "metadata": {
-      "type": "member",
-      "language": "ko",
-      "category": "ms_student",
-      "name": "Byungkwan Chae",
-      "name_ko": "채병관",
-      "research": "Mobile AI, Augmented Reality"
-    }
-  },
-  {
-    "content": "석사과정 학생: 최영재 (Youngjae Choi)\n연구 분야: Computer Vision, Deep Learning",
-    "metadata": {
-      "type": "member",
-      "language": "ko",
-      "category": "ms_student",
-      "name": "Youngjae Choi",
-      "name_ko": "최영재",
-      "research": "Computer Vision, Deep Learning"
-    }
-  },
-  {
-    "content": "석사과정 학생: 이상민 (Sangmin Lee)\n연구 분야: Computer Vision, Embodied AI\nGitHub: https://github.com/sangmin-lee\nLinkedIn: https://www.linkedin.com/in/sangminlee99/",
-    "metadata": {
-      "type": "member",
-      "language": "ko",
-      "category": "ms_student",
-      "name": "Sangmin Lee",
-      "name_ko": "이상민",
-      "research": "Computer Vision, Embodied AI"
     }
   },
   {
@@ -227,6 +194,17 @@
     }
   },
   {
+    "content": "석사과정 학생: 황지원 (Jiwon Hwang)\n연구 분야: Computer Vision, Deep Learning",
+    "metadata": {
+      "type": "member",
+      "language": "ko",
+      "category": "ms_student",
+      "name": "Jiwon Hwang",
+      "name_ko": "황지원",
+      "research": "Computer Vision, Deep Learning"
+    }
+  },
+  {
     "content": "인턴: 김서영 (Seoyoung Kim)\n연구 분야: Deep Learning, Medical AI",
     "metadata": {
       "type": "member",
@@ -235,17 +213,6 @@
       "name": "Seoyoung Kim",
       "name_ko": "김서영",
       "research": "Deep Learning, Medical AI"
-    }
-  },
-  {
-    "content": "인턴: 황지원 (Jiwon Hwang)\n연구 분야: Computer Vision, Deep Learning",
-    "metadata": {
-      "type": "member",
-      "language": "ko",
-      "category": "intern",
-      "name": "Jiwon Hwang",
-      "name_ko": "황지원",
-      "research": "Computer Vision, Deep Learning"
     }
   },
   {
@@ -260,39 +227,6 @@
     }
   },
   {
-    "content": "인턴: 이세빈 (Sebin Lee)\n연구 분야: Computer Vision, Generative Model\nGitHub: https://github.com/sebinyday\nLinkedIn: https://www.linkedin.com/in/sebin-lee-75968732b/",
-    "metadata": {
-      "type": "member",
-      "language": "ko",
-      "category": "intern",
-      "name": "Sebin Lee",
-      "name_ko": "이세빈",
-      "research": "Computer Vision, Generative Model"
-    }
-  },
-  {
-    "content": "인턴: 김도원 (Dowon Kim)\n연구 분야: Computer Vision, Machine Learning\nGitHub: https://github.com/dowonology\nLinkedIn: https://www.linkedin.com/in/dowon-kim-korea/",
-    "metadata": {
-      "type": "member",
-      "language": "ko",
-      "category": "intern",
-      "name": "Dowon Kim",
-      "name_ko": "김도원",
-      "research": "Computer Vision, Machine Learning"
-    }
-  },
-  {
-    "content": "인턴: 김연지 (Yeonji Kim)\n연구 분야: Computer Vision, Embodied AI",
-    "metadata": {
-      "type": "member",
-      "language": "ko",
-      "category": "intern",
-      "name": "Yeonji Kim",
-      "name_ko": "김연지",
-      "research": "Computer Vision, Embodied AI"
-    }
-  },
-  {
     "content": "인턴: 이재현 (Jaehyeon Lee)\n연구 분야: Computer Vision, Deep Learning",
     "metadata": {
       "type": "member",
@@ -301,17 +235,6 @@
       "name": "Jaehyeon Lee",
       "name_ko": "이재현",
       "research": "Computer Vision, Deep Learning"
-    }
-  },
-  {
-    "content": "인턴: 이예빈 (Yebin Lee)\n연구 분야: Computer Vision, Generative Model",
-    "metadata": {
-      "type": "member",
-      "language": "ko",
-      "category": "intern",
-      "name": "Yebin Lee",
-      "name_ko": "이예빈",
-      "research": "Computer Vision, Generative Model"
     }
   },
   {
@@ -367,6 +290,84 @@
       "name": "Yeunsuh Kim",
       "name_ko": "김연서",
       "research": "Physical AI"
+    }
+  },
+  {
+    "content": "뉴스: Department Renamed to School of AI·Software\n날짜: 2026-03-01\n카테고리: Announcement\n참여자: Prof. Heewon Kim\n내용: Our department has been renamed from Global School of Media to School of AI·Software, and College of IT has been renamed to College of AI, Soongsil University.",
+    "metadata": {
+      "type": "news",
+      "language": "ko",
+      "category": "announcement",
+      "title": "Department Renamed to School of AI·Software",
+      "date": "2026-03-01",
+      "participants": [
+        "Prof. Heewon Kim"
+      ]
+    }
+  },
+  {
+    "content": "News: Department Renamed to School of AI·Software\nDate: 2026-03-01\nCategory: Announcement\nParticipants: Prof. Heewon Kim\nDescription: Our department has been renamed from Global School of Media to School of AI·Software, and College of IT has been renamed to College of AI, Soongsil University.",
+    "metadata": {
+      "type": "news",
+      "language": "en",
+      "category": "announcement",
+      "title": "Department Renamed to School of AI·Software",
+      "date": "2026-03-01",
+      "participants": [
+        "Prof. Heewon Kim"
+      ]
+    }
+  },
+  {
+    "content": "뉴스: Youngjae Choi - Research Scientist @ Motif Drive\n날짜: 2026-02-28\n카테고리: Career\n참여자: Youngjae Choi\n내용: Youngjae Choi has graduated with a Master's degree and joined Motif Drive as a Research Scientist. Congratulations!",
+    "metadata": {
+      "type": "news",
+      "language": "ko",
+      "category": "career",
+      "title": "Youngjae Choi - Research Scientist @ Motif Drive",
+      "date": "2026-02-28",
+      "participants": [
+        "Youngjae Choi"
+      ]
+    }
+  },
+  {
+    "content": "News: Youngjae Choi - Research Scientist @ Motif Drive\nDate: 2026-02-28\nCategory: Career\nParticipants: Youngjae Choi\nDescription: Youngjae Choi has graduated with a Master's degree and joined Motif Drive as a Research Scientist. Congratulations!",
+    "metadata": {
+      "type": "news",
+      "language": "en",
+      "category": "career",
+      "title": "Youngjae Choi - Research Scientist @ Motif Drive",
+      "date": "2026-02-28",
+      "participants": [
+        "Youngjae Choi"
+      ]
+    }
+  },
+  {
+    "content": "뉴스: Sangmin Lee - SW Engineer @ Qualcomm\n날짜: 2026-02-28\n카테고리: Career\n참여자: Sangmin Lee\n내용: Sangmin Lee has graduated with a Master's degree and joined Qualcomm as a Software Engineer. Congratulations!",
+    "metadata": {
+      "type": "news",
+      "language": "ko",
+      "category": "career",
+      "title": "Sangmin Lee - SW Engineer @ Qualcomm",
+      "date": "2026-02-28",
+      "participants": [
+        "Sangmin Lee"
+      ]
+    }
+  },
+  {
+    "content": "News: Sangmin Lee - SW Engineer @ Qualcomm\nDate: 2026-02-28\nCategory: Career\nParticipants: Sangmin Lee\nDescription: Sangmin Lee has graduated with a Master's degree and joined Qualcomm as a Software Engineer. Congratulations!",
+    "metadata": {
+      "type": "news",
+      "language": "en",
+      "category": "career",
+      "title": "Sangmin Lee - SW Engineer @ Qualcomm",
+      "date": "2026-02-28",
+      "participants": [
+        "Sangmin Lee"
+      ]
     }
   },
   {
