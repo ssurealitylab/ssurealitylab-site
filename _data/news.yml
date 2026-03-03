@@ -1,4 +1,11 @@
 news:
+  - title: "CVPR 2026 Paper Acceptance"
+    date: "2026-03-03"
+    category: "Publication"
+    participants: ["Sungyong Park", "Sooyoung Choi", "Hyunsuh Kho", "Youngjae Choi"]
+    description: "Paper accepted to CVPR 2026: 'CLP: A Real-World Dataset of Contaminated Lens Protectors for Robust Semantic Segmentation' by Sungyong Park, Sooyoung Choi, Hyunsuh Kho, Youngjae Choi, and Heewon Kim. Congratulations!"
+    image: "cvpr2026.png"
+
   - title: "LG AI Research Internship"
     date: "2026-01-05"
     category: "Internship"
