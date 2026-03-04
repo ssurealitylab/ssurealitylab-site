@@ -2023,7 +2023,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (kstHour >= 4 && kstHour < 8) {
           errorMsg = isEnglish ? '💤 AI is resting (04:00-08:00 KST).' : '💤 AI 쉬는시간 (04:00-08:00 한국시간).';
         } else {
-          errorMsg = isEnglish ? '❌ Connection error. Please try again.' : '❌ 연결 오류입니다. 다시 시도해주세요.';
+          errorMsg = isEnglish ? '🔧 Our GPU is currently being used by lab researchers for training! The AI will be back once they\'re done. Thanks for your patience! 🙏' : '🔧 AI 챗봇에 사용되는 GPU가 현재 연구원분들의 학습에 열일 중이에요! 학습이 끝나면 다시 돌아올게요. 조금만 기다려주세요! 🙏';
         }
         addMessage(errorMsg, 'bot');
       }
