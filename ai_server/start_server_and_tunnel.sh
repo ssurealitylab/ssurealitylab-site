@@ -5,7 +5,7 @@ LOG_FILE="/home/i0179/Realitylab-site/ai_server/rest_time.log"
 LLAMA_DIR="/home/i0179/llama.cpp/build/bin"
 MODEL_PATH="/data/models/gpt-oss-120b/openai.gpt-oss-120b.MXFP4_MOE-00001-of-00005.gguf"
 WORK_DIR="/home/i0179/Realitylab-site"
-CHATBOT_SERVER="$WORK_DIR/_site/ai_server/ai_chatbot_server.py"
+CHATBOT_SERVER="$WORK_DIR/ai_server/ai_chatbot_server.py"
 
 echo "$(date): === REST TIME END ===" >> $LOG_FILE
 
@@ -51,7 +51,7 @@ if pgrep -f "ai_chatbot_server.py" > /dev/null; then
     echo "$(date): ai_chatbot_server already running, skipping" >> $LOG_FILE
 else
     echo "$(date): Starting ai_chatbot_server.py (port 4005)..." >> $LOG_FILE
-    cd $WORK_DIR/_site/ai_server
+    cd $WORK_DIR/ai_server
     PYTHONPATH=/home/i0179/lib/python3.10/site-packages nohup python3 $CHATBOT_SERVER --port 4005 > /tmp/chatbot_server.log 2>&1 &
     echo "$(date): ai_chatbot_server starting (PID: $!)" >> $LOG_FILE
 

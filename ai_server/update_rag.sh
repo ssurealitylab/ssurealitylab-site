@@ -4,7 +4,7 @@
 # Builds knowledge base from local YAML/MD files and rebuilds hierarchical RAG index
 
 SITE_ROOT="/home/i0179/Realitylab-site"
-SCRIPT_DIR="$SITE_ROOT/_site/ai_server"
+SCRIPT_DIR="$SITE_ROOT/ai_server"
 PYTHON="/usr/bin/python3"
 export PYTHONPATH="/home/i0179/lib/python3.10/site-packages"
 export CUDA_VISIBLE_DEVICES=""
