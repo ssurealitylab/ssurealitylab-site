@@ -59176,3 +59176,28 @@ To https://github.com/ssurealitylab/ssurealitylab.github.io.git
 [2026-03-11 02:15:22] Tunnel URL obtained: https://francis-flows-johnson-robertson.trycloudflare.com
 [2026-03-11 02:15:28] Tunnel health check PASSED!
 [2026-03-11 02:15:28] Updating URLs: https://todd-care-donate-definitions.trycloudflare.com -> https://francis-flows-johnson-robertson.trycloudflare.com
+Version auto-updated to v1134
+[main ea95c62] Auto-update Cloudflare Tunnel URL
+ 20 files changed, 6663 insertions(+), 33 deletions(-)
+ create mode 100644 ai_server/ai_chatbot_server.py
+ create mode 100644 ai_server/build_hierarchical_rag.py
+ create mode 100644 ai_server/build_knowledge_base.py
+ create mode 100644 ai_server/hierarchical_retriever.py
+ create mode 100644 ai_server/rag_retriever.py
+ create mode 100644 "\354\260\270\352\263\240 \354\235\264\353\257\270\354\247\200/\355\231\224\353\251\264 \354\272\241\354\262\230 2026-03-03 172249.png"
+To https://github.com/ssurealitylab/ssurealitylab.github.io.git
+   a616a5b..ea95c62  main -> main
+[2026-03-11 02:15:32] Successfully pushed to GitHub!
+[2026-03-11 02:15:32] Tunnel restart completed successfully!
+[2026-03-11 02:15:32] ========================================
+[2026-03-11 08:00:01] ========================================
+[2026-03-11 08:00:01] Starting Cloudflare Tunnel restart (Attempt 1/20 today)...
+[2026-03-11 08:00:03] Attempt 1/10 - Creating tunnel...
+[2026-03-11 08:00:09] Another restart_tunnel.sh is already running (PID: 2487817). Exiting.
+[2026-03-11 08:00:18] Tunnel URL obtained: https://api.trycloudflare.com
+[2026-03-11 08:00:23] Health check FAILED, will retry...
+[2026-03-11 08:00:23] Waiting 120s before next attempt (exponential backoff)...
+[2026-03-11 08:02:23] Attempt 2/10 - Creating tunnel...
+[2026-03-11 08:02:32] Tunnel URL obtained: https://deny-processing-machinery-artist.trycloudflare.com
+[2026-03-11 08:02:38] Tunnel health check PASSED!
+[2026-03-11 08:02:38] Updating URLs: https://francis-flows-johnson-robertson.trycloudflare.com -> https://deny-processing-machinery-artist.trycloudflare.com

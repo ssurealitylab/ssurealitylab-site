@@ -63157,3 +63157,24 @@ Unable to reach the origin service. The service may be down or it may not be res
 [2026-03-11 01:52:03] Waiting 1800s before next attempt (exponential backoff)...
 [2026-03-11 02:00:01] SKIP: restart_tunnel.sh already running (PID: 2010974)
 [2026-03-11 02:10:01] SKIP: restart_tunnel.sh already running (PID: 2010974)
+[2026-03-11 02:20:02] OK: Tunnel healthy - https://francis-flows-johnson-robertson.trycloudflare.com
+[2026-03-11 02:30:02] OK: Tunnel healthy - https://francis-flows-johnson-robertson.trycloudflare.com
+[2026-03-11 02:40:02] OK: Tunnel healthy - https://francis-flows-johnson-robertson.trycloudflare.com
+[2026-03-11 02:50:02] OK: Tunnel healthy - https://francis-flows-johnson-robertson.trycloudflare.com
+[2026-03-11 03:00:02] OK: Tunnel healthy - https://francis-flows-johnson-robertson.trycloudflare.com
+[2026-03-11 03:10:02] OK: Tunnel healthy - https://francis-flows-johnson-robertson.trycloudflare.com
+[2026-03-11 03:20:02] OK: Tunnel healthy - https://francis-flows-johnson-robertson.trycloudflare.com
+[2026-03-11 03:30:02] OK: Tunnel healthy - https://francis-flows-johnson-robertson.trycloudflare.com
+[2026-03-11 03:40:02] OK: Tunnel healthy - https://francis-flows-johnson-robertson.trycloudflare.com
+[2026-03-11 03:50:02] OK: Tunnel healthy - https://francis-flows-johnson-robertson.trycloudflare.com
+[2026-03-11 08:00:01] ALERT: cloudflared process not running! Starting restart_tunnel.sh...
+[2026-03-11 08:00:01] ========================================
+[2026-03-11 08:00:01] Starting Cloudflare Tunnel restart (Attempt 1/20 today)...
+[2026-03-11 08:00:03] Attempt 1/10 - Creating tunnel...
+[2026-03-11 08:00:18] Tunnel URL obtained: https://api.trycloudflare.com
+[2026-03-11 08:00:23] Health check FAILED, will retry...
+[2026-03-11 08:00:23] Waiting 120s before next attempt (exponential backoff)...
+[2026-03-11 08:02:23] Attempt 2/10 - Creating tunnel...
+[2026-03-11 08:02:32] Tunnel URL obtained: https://deny-processing-machinery-artist.trycloudflare.com
+[2026-03-11 08:02:38] Tunnel health check PASSED!
+[2026-03-11 08:02:38] Updating URLs: https://francis-flows-johnson-robertson.trycloudflare.com -> https://deny-processing-machinery-artist.trycloudflare.com
