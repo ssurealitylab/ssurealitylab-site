@@ -177,10 +177,12 @@ def health_check():
     """Health check endpoint"""
     # Check llama-server status
     llama_status = "unknown"
+    model_loaded = False
     try:
         resp = requests.get(f"{LLAMA_SERVER_URL}/health", timeout=5)
         if resp.status_code == 200:
             llama_status = "healthy"
+            model_loaded = True
         else:
             llama_status = "unhealthy"
     except:
@@ -190,7 +192,18 @@ def health_check():
         "status": "healthy",
         "rag_loaded": rag_retriever is not None,
         "llama_server": llama_status,
+        "model_loaded": model_loaded,
+        "model_name": "GPT-OSS-120B",
         "rest_time": is_rest_time()
+    })
+
+
+@app.route('/heartbeat', methods=['POST'])
+def heartbeat():
+    """Heartbeat endpoint to keep server alive"""
+    return jsonify({
+        "status": "ok",
+        "message": "Server is alive"
     })
 
 
@@ -261,8 +274,8 @@ def chat_stream():
     """Streaming chat endpoint"""
     if is_rest_time():
         def rest_response():
-            yield f"data: {json.dumps({'content': '💤 AI 쉬는시간입니다 (04:00-08:00 KST).'})}\n\n"
-            yield "data: [DONE]\n\n"
+            yield f"data: {json.dumps({'text': '💤 AI 쉬는시간입니다 (04:00-08:00 KST).', 'done': False})}\n\n"
+            yield f"data: {json.dumps({'done': True})}\n\n"
         return Response(rest_response(), mimetype='text/event-stream')
 
     data = request.get_json()
@@ -276,14 +289,16 @@ def chat_stream():
     language = detect_language(question)
     context = get_rag_context(question, language)
 
+    start_time = time.time()
+
     def generate():
         try:
             for chunk in call_llama_server_stream(question, context, language):
-                yield f"data: {json.dumps({'content': chunk})}\n\n"
-            yield "data: [DONE]\n\n"
+                yield f"data: {json.dumps({'text': chunk, 'done': False})}\n\n"
+            elapsed = round(time.time() - start_time, 1)
+            yield f"data: {json.dumps({'done': True, 'response_time': elapsed})}\n\n"
         except Exception as e:
             yield f"data: {json.dumps({'error': str(e)})}\n\n"
-            yield "data: [DONE]\n\n"
 
     return Response(stream_with_context(generate()), mimetype='text/event-stream')
 
