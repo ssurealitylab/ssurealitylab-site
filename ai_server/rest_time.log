@@ -3126,3 +3126,39 @@ index, memory.used [MiB]
 2026. 03. 16. (월) 08:00:11 KST: Waiting for model to load... (2/24)
 2026. 03. 16. (월) 08:00:16 KST: Waiting for model to load... (3/24)
 2026. 03. 16. (월) 08:00:21 KST: Waiting for model to load... (4/24)
+2026. 03. 16. (월) 08:00:26 KST: Waiting for model to load... (5/24)
+2026. 03. 16. (월) 08:00:32 KST: Waiting for model to load... (6/24)
+2026. 03. 16. (월) 08:00:37 KST: Waiting for model to load... (7/24)
+2026. 03. 16. (월) 08:00:42 KST: Waiting for model to load... (8/24)
+2026. 03. 16. (월) 08:00:47 KST: Waiting for model to load... (9/24)
+2026. 03. 16. (월) 08:00:52 KST: Waiting for model to load... (10/24)
+2026. 03. 16. (월) 08:00:57 KST: Waiting for model to load... (11/24)
+2026. 03. 16. (월) 08:01:02 KST: Waiting for model to load... (12/24)
+2026. 03. 16. (월) 08:01:07 KST: Waiting for model to load... (13/24)
+2026. 03. 16. (월) 08:01:12 KST: Waiting for model to load... (14/24)
+2026. 03. 16. (월) 08:01:17 KST: Waiting for model to load... (15/24)
+2026. 03. 16. (월) 08:01:22 KST: Waiting for model to load... (16/24)
+2026. 03. 16. (월) 08:01:27 KST: Waiting for model to load... (17/24)
+2026. 03. 16. (월) 08:01:32 KST: Waiting for model to load... (18/24)
+2026. 03. 16. (월) 08:01:37 KST: Waiting for model to load... (19/24)
+2026. 03. 16. (월) 08:01:42 KST: Waiting for model to load... (20/24)
+2026. 03. 16. (월) 08:01:47 KST: Waiting for model to load... (21/24)
+2026. 03. 16. (월) 08:01:52 KST: Waiting for model to load... (22/24)
+2026. 03. 16. (월) 08:01:57 KST: Waiting for model to load... (23/24)
+2026. 03. 16. (월) 08:02:02 KST: Waiting for model to load... (24/24)
+2026. 03. 16. (월) 08:02:02 KST: Warning - llama-server may still be loading
+2026. 03. 16. (월) 08:02:02 KST: GPU status after start:
+index, memory.used [MiB]
+0, 14 MiB
+1, 8801 MiB
+2, 24149 MiB
+3, 1333 MiB
+2026. 03. 16. (월) 08:02:02 KST: ai_chatbot_server already running, skipping
+2026. 03. 16. (월) 08:02:02 KST: Starting new cloudflared tunnel...
+[2026-03-16 08:02:02] ========================================
+[2026-03-16 08:02:02] Starting Cloudflare Tunnel restart (Attempt 1/20 today)...
+[2026-03-16 08:02:02] Killing old cloudflared process (PID: 507584)
+[2026-03-16 08:02:06] Attempt 1/10 - Creating tunnel...
+[2026-03-16 08:02:10] Tunnel URL obtained: https://strictly-leave-copies-aware.trycloudflare.com
+[2026-03-16 08:02:16] Tunnel health check PASSED!
+[2026-03-16 08:02:16] Updating URLs: https://primarily-fiction-tap-minnesota.trycloudflare.com -> https://strictly-leave-copies-aware.trycloudflare.com
