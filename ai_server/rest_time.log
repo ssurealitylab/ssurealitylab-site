@@ -3274,3 +3274,40 @@ index, memory.used [MiB]
 2026. 03. 19. (목) 08:00:06 KST: Waiting for model to load... (1/24)
 2026. 03. 19. (목) 08:00:11 KST: Waiting for model to load... (2/24)
 2026. 03. 19. (목) 08:00:16 KST: Waiting for model to load... (3/24)
+2026. 03. 19. (목) 08:00:21 KST: Waiting for model to load... (4/24)
+2026. 03. 19. (목) 08:00:26 KST: Waiting for model to load... (5/24)
+2026. 03. 19. (목) 08:00:31 KST: Waiting for model to load... (6/24)
+2026. 03. 19. (목) 08:00:36 KST: Waiting for model to load... (7/24)
+2026. 03. 19. (목) 08:00:41 KST: Waiting for model to load... (8/24)
+2026. 03. 19. (목) 08:00:46 KST: Waiting for model to load... (9/24)
+2026. 03. 19. (목) 08:00:51 KST: Waiting for model to load... (10/24)
+2026. 03. 19. (목) 08:00:56 KST: Waiting for model to load... (11/24)
+2026. 03. 19. (목) 08:01:01 KST: Waiting for model to load... (12/24)
+2026. 03. 19. (목) 08:01:06 KST: Waiting for model to load... (13/24)
+2026. 03. 19. (목) 08:01:11 KST: Waiting for model to load... (14/24)
+2026. 03. 19. (목) 08:01:16 KST: Waiting for model to load... (15/24)
+2026. 03. 19. (목) 08:01:21 KST: Waiting for model to load... (16/24)
+2026. 03. 19. (목) 08:01:26 KST: Waiting for model to load... (17/24)
+2026. 03. 19. (목) 08:01:31 KST: Waiting for model to load... (18/24)
+2026. 03. 19. (목) 08:01:36 KST: Waiting for model to load... (19/24)
+2026. 03. 19. (목) 08:01:41 KST: Waiting for model to load... (20/24)
+2026. 03. 19. (목) 08:01:46 KST: Waiting for model to load... (21/24)
+2026. 03. 19. (목) 08:01:51 KST: Waiting for model to load... (22/24)
+2026. 03. 19. (목) 08:01:56 KST: Waiting for model to load... (23/24)
+2026. 03. 19. (목) 08:02:01 KST: Waiting for model to load... (24/24)
+2026. 03. 19. (목) 08:02:02 KST: Warning - llama-server may still be loading
+2026. 03. 19. (목) 08:02:02 KST: GPU status after start:
+index, memory.used [MiB]
+0, 14 MiB
+1, 2325 MiB
+2, 21649 MiB
+3, 24095 MiB
+2026. 03. 19. (목) 08:02:02 KST: ai_chatbot_server already running, skipping
+2026. 03. 19. (목) 08:02:02 KST: Starting new cloudflared tunnel...
+[2026-03-19 08:02:02] ========================================
+[2026-03-19 08:02:02] Starting Cloudflare Tunnel restart (Attempt 1/20 today)...
+[2026-03-19 08:02:02] Killing old cloudflared process (PID: 685969)
+[2026-03-19 08:02:06] Attempt 1/10 - Creating tunnel...
+[2026-03-19 08:02:13] Tunnel URL obtained: https://treasury-mark-scanner-bugs.trycloudflare.com
+[2026-03-19 08:02:19] Tunnel health check PASSED!
+[2026-03-19 08:02:19] Updating URLs: https://month-pts-sub-furnished.trycloudflare.com -> https://treasury-mark-scanner-bugs.trycloudflare.com
