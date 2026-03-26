@@ -293,6 +293,17 @@
     }
   },
   {
+    "content": "인턴: 강인선 (Inseon Kang)\n연구 분야: Computer Vision, Physical AI",
+    "metadata": {
+      "type": "member",
+      "language": "ko",
+      "category": "intern",
+      "name": "Inseon Kang",
+      "name_ko": "강인선",
+      "research": "Computer Vision, Physical AI"
+    }
+  },
+  {
     "content": "뉴스: CVPR 2026 Paper Acceptance\n날짜: 2026-03-03\n카테고리: Publication\n참여자: Sungyong Park, Sooyoung Choi, Hyunsuh Kho, Youngjae Choi\n내용: Paper accepted to CVPR 2026: 'CLP: A Real-World Dataset of Contaminated Lens Protectors for Robust Semantic Segmentation' by Sungyong Park, Sooyoung Choi, Hyunsuh Kho, Youngjae Choi, and Heewon Kim. Congratulations!",
     "metadata": {
       "type": "news",
