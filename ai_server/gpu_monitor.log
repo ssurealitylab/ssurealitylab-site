@@ -1697,3 +1697,99 @@
 [2026-03-27 08:00:01]   GPU 3: 13678 MiB free (OK)
 [2026-03-27 08:00:01] Starting llama-server on GPUs: 0,1
 [2026-03-27 08:00:01] llama-server starting (PID: 2391073, GPUs: 0,1)
+[2026-03-27 08:02:02] WARN: llama-server may still be loading
+[2026-03-27 08:02:02] OK: ai_chatbot_server running
+[2026-03-27 08:30:01] OK: llama-server healthy
+[2026-03-27 08:30:01] OK: ai_chatbot_server running
+[2026-03-27 09:00:02] OK: llama-server healthy
+[2026-03-27 09:00:02] OK: ai_chatbot_server running
+[2026-03-27 09:30:01] OK: llama-server healthy
+[2026-03-27 09:30:01] OK: ai_chatbot_server running
+[2026-03-27 10:00:01] OK: llama-server healthy
+[2026-03-27 10:00:01] OK: llama-server healthy
+[2026-03-27 10:00:01] OK: ai_chatbot_server running
+[2026-03-27 10:00:01] OK: ai_chatbot_server running
+[2026-03-27 10:30:01] OK: llama-server healthy
+[2026-03-27 10:30:02] OK: ai_chatbot_server running
+[2026-03-27 11:00:01] OK: llama-server healthy
+[2026-03-27 11:00:01] OK: ai_chatbot_server running
+[2026-03-27 11:30:01] OK: llama-server healthy
+[2026-03-27 11:30:01] OK: ai_chatbot_server running
+[2026-03-27 12:00:01] OK: llama-server healthy
+[2026-03-27 12:00:01] OK: ai_chatbot_server running
+[2026-03-27 12:30:01] OK: llama-server healthy
+[2026-03-27 12:30:01] OK: ai_chatbot_server running
+[2026-03-27 13:00:01] OK: llama-server healthy
+[2026-03-27 13:00:01] OK: ai_chatbot_server running
+[2026-03-27 13:30:01] OK: llama-server healthy
+[2026-03-27 13:30:01] OK: ai_chatbot_server running
+[2026-03-27 14:00:01] OK: llama-server healthy
+[2026-03-27 14:00:01] OK: ai_chatbot_server running
+[2026-03-27 14:30:01] OK: llama-server healthy
+[2026-03-27 14:30:01] OK: ai_chatbot_server running
+[2026-03-27 15:00:01] OK: llama-server healthy
+[2026-03-27 15:00:01] OK: ai_chatbot_server running
+[2026-03-27 15:30:01] OK: llama-server healthy
+[2026-03-27 15:30:01] OK: ai_chatbot_server running
+[2026-03-27 16:00:01] OK: llama-server healthy
+[2026-03-27 16:00:01] OK: ai_chatbot_server running
+[2026-03-27 16:30:01] OK: llama-server healthy
+[2026-03-27 16:30:01] OK: ai_chatbot_server running
+[2026-03-27 17:00:01] OK: llama-server healthy
+[2026-03-27 17:00:01] OK: ai_chatbot_server running
+[2026-03-27 17:30:01] OK: llama-server healthy
+[2026-03-27 17:30:01] OK: ai_chatbot_server running
+[2026-03-27 18:00:01] OK: llama-server healthy
+[2026-03-27 18:00:01] OK: ai_chatbot_server running
+[2026-03-27 18:30:01] OK: llama-server healthy
+[2026-03-27 18:30:01] OK: ai_chatbot_server running
+[2026-03-27 19:00:01] OK: llama-server healthy
+[2026-03-27 19:00:01] OK: ai_chatbot_server running
+[2026-03-27 19:30:02] OK: llama-server healthy
+[2026-03-27 19:30:02] OK: ai_chatbot_server running
+[2026-03-27 20:00:01] OK: llama-server healthy
+[2026-03-27 20:00:01] OK: ai_chatbot_server running
+[2026-03-27 20:30:01] OK: llama-server healthy
+[2026-03-27 20:30:01] OK: ai_chatbot_server running
+[2026-03-27 21:00:01] OK: llama-server healthy
+[2026-03-27 21:00:01] OK: ai_chatbot_server running
+[2026-03-27 21:30:01] OK: llama-server healthy
+[2026-03-27 21:30:01] OK: ai_chatbot_server running
+[2026-03-27 22:00:01] OK: llama-server healthy
+[2026-03-27 22:00:01] OK: llama-server healthy
+[2026-03-27 22:00:01] OK: ai_chatbot_server running
+[2026-03-27 22:00:01] OK: ai_chatbot_server running
+[2026-03-27 22:30:01] OK: llama-server healthy
+[2026-03-27 22:30:01] OK: ai_chatbot_server running
+[2026-03-27 23:00:02] OK: llama-server healthy
+[2026-03-27 23:00:02] OK: ai_chatbot_server running
+[2026-03-27 23:30:01] OK: llama-server healthy
+[2026-03-27 23:30:01] OK: ai_chatbot_server running
+[2026-03-28 00:00:01] OK: llama-server healthy
+[2026-03-28 00:00:01] OK: ai_chatbot_server running
+[2026-03-28 00:30:01] OK: llama-server healthy
+[2026-03-28 00:30:01] OK: ai_chatbot_server running
+[2026-03-28 01:00:01] OK: llama-server healthy
+[2026-03-28 01:00:01] OK: ai_chatbot_server running
+[2026-03-28 01:30:01] OK: llama-server healthy
+[2026-03-28 01:30:01] OK: ai_chatbot_server running
+[2026-03-28 02:00:01] OK: llama-server healthy
+[2026-03-28 02:00:01] OK: ai_chatbot_server running
+[2026-03-28 02:30:01] OK: llama-server healthy
+[2026-03-28 02:30:01] OK: ai_chatbot_server running
+[2026-03-28 03:00:01] OK: llama-server healthy
+[2026-03-28 03:00:01] OK: ai_chatbot_server running
+[2026-03-28 03:30:01] OK: llama-server healthy
+[2026-03-28 03:30:01] OK: ai_chatbot_server running
+[2026-03-28 08:00:01] WARN: llama-server process exists but not responding, killing...
+[2026-03-28 08:00:04] llama-server not running. Checking GPU availability...
+[2026-03-28 08:00:04]   GPU 0: 23249 MiB free (OK)
+[2026-03-28 08:00:04]   GPU 1: 24203 MiB free (OK)
+[2026-03-28 08:00:04]   GPU 2: 14022 MiB free (OK)
+[2026-03-28 08:00:04]   GPU 3: 13678 MiB free (OK)
+[2026-03-28 08:00:04] Starting llama-server on GPUs: 0,1
+[2026-03-28 08:00:04] llama-server starting (PID: 387956, GPUs: 0,1)
+[2026-03-28 08:00:29] llama-server is ready!
+[2026-03-28 08:00:29] OK: ai_chatbot_server running
+[2026-03-28 08:00:29] cloudflared not running. Starting restart_tunnel.sh...
+[2026-03-28 08:00:29] Another restart_tunnel.sh is already running (PID: 387742). Exiting.
