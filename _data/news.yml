@@ -1,11 +1,4 @@
 news:
-- title: test
-  date: '2026-03-29'
-  category: Publication
-  participants:
-  - test
-  description: test
-  image: ''
 - title: "CVPR 2026 Paper Acceptance"
   date: "2026-03-03"
   category: "Publication"
