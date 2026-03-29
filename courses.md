@@ -19,66 +19,18 @@ image: /assets/img/header.png
     </tr>
   </thead>
   <tbody>
+    {% for course in site.data.courses.undergraduate %}
     <tr>
-      <td class="year-cell">-</td>
+      <td class="year-cell">{{ course.year }}</td>
       <td class="course-name">
-        <strong>데이터사이언스</strong><br>
-        <span class="course-name-en">Data Science</span>
+        <strong>{{ course.name_ko }}</strong><br>
+        <span class="course-name-en">{{ course.name_en }}</span>
       </td>
       <td class="course-content">
-        • 빅데이터 분석 및 머신러닝 기초<br>
-        • 통계적 데이터 분석 방법론<br>
-        • Python을 활용한 데이터 처리
+        {{ course.content | newline_to_br }}
       </td>
     </tr>
-    <tr>
-      <td class="year-cell">-</td>
-      <td class="course-name">
-        <strong>영상처리및실습</strong><br>
-        <span class="course-name-en">Image Processing and Practice</span>
-      </td>
-      <td class="course-content">
-        • 디지털 영상처리 이론 및 실습<br>
-        • OpenCV를 활용한 영상처리 기법<br>
-        • 컴퓨터 비전 기초
-      </td>
-    </tr>
-    <tr>
-      <td class="year-cell">-</td>
-      <td class="course-name">
-        <strong>미디어GAN</strong><br>
-        <span class="course-name-en">Media GAN</span>
-      </td>
-      <td class="course-content">
-        • 생성적 적대 신경망 이론<br>
-        • 이미지 및 비디오 생성 모델<br>
-        • 창작 AI 및 미디어 응용
-      </td>
-    </tr>
-    <tr>
-      <td class="year-cell">-</td>
-      <td class="course-name">
-        <strong>컴퓨터비전</strong><br>
-        <span class="course-name-en">Computer Vision</span>
-      </td>
-      <td class="course-content">
-        • 컴퓨터 비전 기초 이론<br>
-        • 객체 검출 및 인식<br>
-        • 영상 분류 및 분할
-      </td>
-    </tr>
-    <tr>
-      <td class="year-cell">-</td>
-      <td class="course-name">
-        <strong>기계학습</strong><br>
-        <span class="course-name-en">Machine Learning</span>
-      </td>
-      <td class="course-content">
-        • 머신러닝 알고리즘 기초<br>
-        • 지도학습 및 비지도학습<br>
-        • 딥러닝 기초
-      </td>
-    </tr>
+    {% endfor %}
   </tbody>
 </table>
 
@@ -92,23 +44,23 @@ image: /assets/img/header.png
     </tr>
   </thead>
   <tbody>
+    {% for course in site.data.courses.graduate %}
     <tr>
       <td class="course-name">
-        <strong>컴퓨터비전특론</strong><br>
-        <span class="course-name-en">Advanced Computer Vision</span>
+        <strong>{{ course.name_ko }}</strong><br>
+        <span class="course-name-en">{{ course.name_en }}</span>
       </td>
       <td class="course-content">
-        • 최신 컴퓨터 비전 연구 동향<br>
-        • 딥러닝 기반 비전 시스템<br>
-        • 연구 논문 분석 및 구현
+        {{ course.content | newline_to_br }}
       </td>
     </tr>
+    {% endfor %}
   </tbody>
 </table>
 
 <div class="course-info">
-  <p><strong>Location:</strong> Global School of Media, Soongsil University, Seoul, Republic of Korea</p>
-  <p><strong>Instructor:</strong> Prof. Heewon Kim</p>
+  <p><strong>Location:</strong> {{ site.data.courses.info.location }}</p>
+  <p><strong>Instructor:</strong> {{ site.data.courses.info.instructor }}</p>
 </div>
 
 </div>

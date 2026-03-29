@@ -47,3 +47,6 @@ simple_lora_finetune.py
 *.crt
 *.cert
 /user_questions/
+admin_cms/admin_config.json
+admin_cms/backups/
+admin_cms/.edit_lock

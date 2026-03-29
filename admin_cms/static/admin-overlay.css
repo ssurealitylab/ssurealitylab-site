@@ -1,0 +1,109 @@
+/* ─── Dev Banner (slim top bar) ───── */
+.admin-dev-banner{position:fixed;top:0;left:0;right:0;height:32px;
+  background:#1e293b;
+  display:flex;align-items:center;justify-content:space-between;padding:0 16px;
+  z-index:100001;font-family:'Inter',system-ui,sans-serif;font-size:12px;color:#cbd5e1;
+  box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.admin-dev-banner .dev-label{background:repeating-linear-gradient(45deg,#f59e0b,#f59e0b 8px,#d97706 8px,#d97706 16px);
+  padding:2px 12px;border-radius:4px;font-weight:700;color:#fff;font-size:11px;letter-spacing:1px;
+  text-shadow:0 1px 1px rgba(0,0,0,.3)}
+.admin-dev-banner .dev-right{display:flex;align-items:center;gap:10px}
+.admin-dev-banner .admin-status{color:#94a3b8;font-size:11px}
+.admin-dev-banner .apply-btn{background:#059669;color:#fff;padding:4px 14px;border-radius:5px;font-size:12px;
+  font-weight:600;border:none;cursor:pointer;transition:all .2s;display:none}
+.admin-dev-banner .apply-btn:hover{background:#047857}
+.admin-dev-banner .apply-btn.has-changes{display:inline-flex;align-items:center;gap:5px}
+.admin-dev-banner .apply-btn .badge{background:rgba(255,255,255,.3);padding:1px 6px;border-radius:10px;font-size:10px}
+.admin-dev-banner .logout-btn{color:#f87171;text-decoration:none;font-size:11px;padding:3px 8px;
+  border-radius:4px;transition:background .2s}
+.admin-dev-banner .logout-btn:hover{background:rgba(239,68,68,.15)}
+body{margin-top:32px !important}
+
+/* ─── Editable Indicators ────────── */
+[data-admin-editable]{position:relative;transition:outline .15s}
+[data-admin-editable]:hover{outline:2px solid #3b82f6;outline-offset:3px;cursor:pointer}
+[data-admin-editable]:hover::after{content:'Edit';position:absolute;top:-10px;right:-10px;
+  background:#3b82f6;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;
+  font-family:'Inter',system-ui,sans-serif;font-weight:600;z-index:100001;pointer-events:none;
+  white-space:nowrap}
+
+/* ─── Add Button ─────────────────── */
+.admin-add-btn{display:flex;align-items:center;justify-content:center;padding:14px;margin:12px 0;
+  border:2px dashed #94a3b8;border-radius:12px;color:#64748b;cursor:pointer;font-size:14px;
+  font-family:'Inter',system-ui,sans-serif;font-weight:500;transition:all .2s;background:rgba(255,255,255,.8)}
+.admin-add-btn:hover{border-color:#3b82f6;color:#3b82f6;background:#eff6ff}
+
+/* ─── Side Panel ─────────────────── */
+.admin-panel-backdrop{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);
+  z-index:100001;display:none}
+.admin-panel-backdrop.open{display:block}
+.admin-panel{position:fixed !important;top:32px !important;right:-520px;bottom:0 !important;width:500px !important;
+  background:#1e293b !important;opacity:1 !important;
+  box-shadow:-4px 0 20px rgba(0,0,0,.6) !important;transition:right .3s;z-index:100002 !important;
+  overflow-y:auto !important;font-family:'Inter',system-ui,sans-serif !important}
+.admin-panel.open{right:0 !important}
+.admin-panel-header{padding:20px 24px !important;border-bottom:1px solid #334155 !important;display:flex !important;
+  align-items:center !important;background:#1e293b !important}
+.admin-panel-header h2{flex:1;font-size:18px !important;color:#e2e8f0 !important;margin:0 !important}
+.admin-panel-close{background:none !important;border:none !important;font-size:28px !important;cursor:pointer;
+  color:#64748b !important;padding:0 8px}
+.admin-panel-close:hover{color:#f1f5f9 !important}
+.admin-panel-body{padding:24px !important;background:#1e293b !important}
+
+/* Force all text inside panel to be light */
+.admin-panel,.admin-panel *{color:#e2e8f0 !important}
+.admin-panel a{color:#60a5fa !important}
+.admin-panel .admin-panel-close{color:#64748b !important}
+.admin-panel .admin-panel-close:hover{color:#f1f5f9 !important}
+
+/* ─── Form ───────────────────────── */
+.admin-fg{margin-bottom:18px}
+.admin-fg label{display:block;font-size:13px;font-weight:600;color:#94a3b8 !important;margin-bottom:5px}
+.admin-fg input,.admin-fg textarea,.admin-fg select{width:100% !important;padding:10px 12px !important;border:1px solid #334155 !important;
+  border-radius:8px !important;font-size:14px !important;outline:none !important;font-family:inherit !important;transition:border .2s;
+  background:#0f172a !important;color:#e2e8f0 !important}
+.admin-fg input:focus,.admin-fg textarea:focus{border-color:#3b82f6 !important}
+.admin-fg textarea{resize:vertical;min-height:80px}
+.admin-fg .hint{font-size:11px !important;color:#94a3b8 !important;margin-top:4px}
+.admin-fg .photo-preview{width:60px;height:60px;border-radius:8px;object-fit:cover;margin-top:6px;border:1px solid #334155}
+.admin-btn-row{display:flex;gap:8px;margin-top:24px}
+.admin-btn{flex:1;padding:12px;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;transition:background .2s}
+.admin-btn-primary{background:#3b82f6 !important;color:#fff !important}
+.admin-btn-primary:hover{background:#2563eb !important}
+.admin-btn-cancel{background:#334155 !important;color:#cbd5e1 !important}
+.admin-btn-cancel:hover{background:#475569 !important}
+.admin-btn-danger{background:rgba(239,68,68,.1) !important;color:#f87171 !important;border:1px solid #7f1d1d !important;width:100%;padding:10px;
+  margin-top:12px;border-radius:8px;cursor:pointer;font-size:13px}
+.admin-btn-danger:hover{background:rgba(239,68,68,.2) !important}
+
+/* ─── Toast ──────────────────────── */
+.admin-toast{position:fixed;bottom:24px;right:24px;padding:14px 24px;border-radius:10px;color:#fff;
+  font-size:14px;z-index:200000;opacity:0;transition:opacity .3s;pointer-events:none;
+  font-family:'Inter',system-ui,sans-serif;max-width:400px}
+.admin-toast.show{opacity:1}
+.admin-toast.success{background:#059669}
+.admin-toast.error{background:#dc2626}
+.admin-toast.info{background:#3b82f6}
+
+/* ─── Loading ────────────────────── */
+.admin-loading{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);display:none;
+  align-items:center;justify-content:center;z-index:200000;font-family:'Inter',system-ui,sans-serif}
+.admin-loading.show{display:flex}
+.admin-loading-box{background:#fff;padding:32px 48px;border-radius:16px;text-align:center}
+.admin-spinner{width:36px;height:36px;border:3px solid #e2e8f0;border-top-color:#3b82f6;border-radius:50%;
+  animation:admin-spin .8s linear infinite;margin:0 auto 14px}
+@keyframes admin-spin{to{transform:rotate(360deg)}}
+
+/* ─── Image Picker ───────────────── */
+.admin-img-modal{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);z-index:200001;
+  display:flex;align-items:center;justify-content:center}
+.admin-img-modal-body{background:#1e293b !important;border-radius:16px;padding:24px;max-width:640px;width:90%;max-height:80vh;overflow-y:auto}
+.admin-img-modal-body,.admin-img-modal-body *{color:#e2e8f0 !important}
+.admin-img-grid{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.admin-img-grid img{width:90px;height:90px;object-fit:cover;border-radius:8px;cursor:pointer;border:2px solid transparent;transition:border .15s}
+.admin-img-grid img:hover{border-color:#3b82f6}
+
+/* ─── Slider Drag ────────────────── */
+.admin-slider-item[draggable="true"]:active{cursor:grabbing}
+.admin-slider-item.drag-over-top{border-top:2px solid #3b82f6 !important}
+.admin-slider-item.drag-over-bottom{border-bottom:2px solid #3b82f6 !important}

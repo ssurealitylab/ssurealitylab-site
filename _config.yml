@@ -83,6 +83,7 @@ plugins:
 exclude:
   - finetune_env
   - ai_server
+  - admin_cms
   - .claude
 
 # Uncomment following line to use Formspree form ID based URL instead of email based URL
