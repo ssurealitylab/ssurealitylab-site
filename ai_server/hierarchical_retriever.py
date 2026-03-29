@@ -23,12 +23,12 @@ class HierarchicalRetriever:
 
         # Category keywords for classification
         self.category_keywords = {
-            "faculty": ["교수", "professor", "prof", "김희원", "heewon", "지도교수", "책임자"],
-            "students": ["학생", "student", "연구원", "researcher", "석사", "master", "인턴", "intern", "멤버", "member", "연구생", "수", "몇 명", "명단", "구성원"],
-            "alumni": ["졸업생", "alumni", "졸업", "graduate", "former"],
+            "members": ["교수", "professor", "prof", "김희원", "heewon", "지도교수", "책임자", "학생", "student", "연구원", "researcher", "석사", "master", "인턴", "intern", "멤버", "member", "연구생", "수", "몇 명", "명단", "구성원", "졸업생", "alumni", "졸업", "graduate", "former", "박사", "phd"],
             "news": ["뉴스", "news", "소식", "발표", "announcement", "accept", "award", "수상"],
-            "publications": ["논문", "paper", "publication", "학회", "conference", "journal", "cvpr", "iccv", "wacv", "bmvc", "aaai", "eccv", "nips", "neurips", "icml", "2023", "2024", "2025", "2026", "최신", "recent", "latest", "higlassrm", "mbti", "dynscene", "연구", "research"],
-            "lab_info": ["연구실", "lab", "위치", "location", "주소", "address", "contact", "연락처"]
+            "publications": ["논문", "paper", "publication", "학회", "conference", "journal", "cvpr", "iccv", "wacv", "bmvc", "aaai", "eccv", "nips", "neurips", "icml", "2023", "2024", "2025", "2026", "최신", "recent", "latest", "higlassrm", "mbti", "dynscene"],
+            "lab_info": ["연구실", "lab", "위치", "location", "주소", "address", "contact", "연락처", "이메일", "email", "전화", "phone"],
+            "research": ["연구", "research", "분야", "area", "비전", "vision", "로봇", "robot", "컴퓨터비전", "딥러닝", "deep learning", "computer vision"],
+            "qa": ["지원", "apply", "join", "입학", "admission", "어떻게", "how", "방법", "procedure", "프로젝트", "project", "기술", "스택", "도구", "tool"]
         }
 
     def load(self):
