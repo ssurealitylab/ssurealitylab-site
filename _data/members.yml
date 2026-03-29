@@ -27,6 +27,14 @@ students:
     github: "https://ejqdl02.github.io/"
     linkedin: "https://www.linkedin.com/in/sungyong-park-662a19294/"
 
+  - name: test phd
+    name_ko: te
+    email: test@naver.com
+    university: ttt
+    research: t
+    photo: ''
+    github: ''
+    linkedin: ''
   ms_students:
   - name: "Minjoo Koh"
     name_ko: "고민주"
