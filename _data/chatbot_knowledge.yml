@@ -117,9 +117,12 @@ custom_qa:
   - question: "What projects are you working on?"
     answer: "We are currently conducting various research projects in robotics, computer vision, machine learning, multimodal language understanding, and AI+X applications. Please contact Professor Heewon Kim for specific project details."
     keywords: ["projects", "research", "work"]
-  - question: "Where is the lab located?"
-    answer: "Reality Lab is located at Soongsil University. For specific building and room information, please contact us via email (heewon@ssu.ac.kr) or phone (+82-2-820-0679)."
-    keywords: ["location", "where", "address"]
+  - question: Where is the lab located?
+    answer: Reality Lab is based in Room 602 of Soongsil University's Information Science Building, with researchers also operating out of the Tech Station and other collaborative spaces.
+    keywords:
+    - location
+    - where
+    - address
   - question: "What technology stack do you use?"
     answer: "We use various technologies needed for AI/ML research, from machine learning frameworks like Python, PyTorch, TensorFlow to ROS for robotics and OpenCV for computer vision."
     keywords: ["technology", "stack", "tools", "framework"]
