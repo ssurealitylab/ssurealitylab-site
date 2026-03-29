@@ -10,7 +10,6 @@ lab_info:
     phone: "+82-2-820-0679"
     mission: "우리는 AI와 물리적 세계의 교차점을 탐구하며, 인간처럼 현실을 인지하고 이해하며 상호작용할 수 있는 지능형 시스템을 개발합니다."
     vision: "현실 세계를 이해하고 상호작용하는 AI 기술 발전"
-  
   en:
     name: "SSU Reality Lab"
     full_name: "Soongsil University Reality Lab"
@@ -23,116 +22,110 @@ lab_info:
     vision: "Advancing AI technologies that understand and interact with the real world"
 
 research_areas:
-  - ko:
-      name: "로보틱스"
-      description: "물리적 세계를 자율적으로 인지하고 학습하며 상호작용할 수 있는 지능형 로봇 시스템을 개발합니다."
-      keywords: ["로보틱스", "로봇", "자율시스템", "로봇시스템", "robotics", "robot", "autonomous systems", "robotic systems"]
-    en:
-      name: "Robotics"
-      description: "Developing intelligent robotic systems that can perceive, learn, and interact with the physical world autonomously."
-      keywords: ["robotics", "robot", "autonomous systems", "robotic systems", "로보틱스", "로봇"]
-  
-  - ko:
-      name: "컴퓨터 비전"
-      description: "실세계 응용과 인간-AI 상호작용을 위한 고급 시각 인식 및 이해 시스템을 연구합니다."
-      keywords: ["컴퓨터비전", "영상인식", "이미지처리", "비전", "computer vision", "visual recognition", "image processing", "vision"]
-    en:
-      name: "Computer Vision"
-      description: "Advanced visual recognition and understanding systems for real-world applications and human-AI interaction."
-      keywords: ["computer vision", "visual recognition", "image processing", "vision", "컴퓨터비전", "영상인식"]
-  
-  - ko:
-      name: "기계학습"
-      description: "AI 역량과 실세계 이해 사이의 격차를 메우는 최첨단 ML 알고리즘과 모델을 연구합니다."
-      keywords: ["기계학습", "머신러닝", "알고리즘", "AI모델", "machine learning", "ML", "algorithms", "AI models"]
-    en:
-      name: "Machine Learning"
-      description: "Cutting-edge ML algorithms and models that bridge the gap between AI capabilities and real-world understanding."
-      keywords: ["machine learning", "ML", "algorithms", "AI models", "기계학습", "머신러닝"]
-  
-  - ko:
-      name: "다중모달 언어 이해"
-      description: "포괄적인 AI 이해를 위해 언어 처리를 시각적, 감각적 입력과 통합하는 연구를 수행합니다."
-      keywords: ["자연어처리", "언어처리", "다중모달", "언어이해", "NLP", "language processing", "multimodal", "language understanding"]
-    en:
-      name: "Multimodal Language Understanding"
-      description: "Integrating language processing with visual and sensory inputs for comprehensive AI understanding."
-      keywords: ["NLP", "language processing", "multimodal", "language understanding", "자연어처리", "언어처리"]
-  
-  - ko:
-      name: "AI+X 응용"
-      description: "헬스케어, 교육, 인간-컴퓨터 상호작용 등 다양한 도메인에 AI 기술을 적용합니다."
-      keywords: ["AI응용", "헬스케어AI", "교육AI", "HCI", "AI applications", "healthcare AI", "education AI"]
-    en:
-      name: "AI+X Applications"
-      description: "Applying AI technologies to various domains including healthcare, education, and human-computer interaction."
-      keywords: ["AI applications", "healthcare AI", "education AI", "HCI", "AI응용", "헬스케어AI"]
+- ko:
+    name: "로보틱스"
+    description: "물리적 세계를 자율적으로 인지하고 학습하며 상호작용할 수 있는 지능형 로봇 시스템을 개발합니다."
+    keywords: ["로보틱스", "로봇", "자율시스템", "로봇시스템", "robotics", "robot", "autonomous systems", "robotic systems"]
+  en:
+    name: "Robotics"
+    description: "Developing intelligent robotic systems that can perceive, learn, and interact with the physical world autonomously."
+    keywords: ["robotics", "robot", "autonomous systems", "robotic systems", "로보틱스", "로봇"]
+- ko:
+    name: "컴퓨터 비전"
+    description: "실세계 응용과 인간-AI 상호작용을 위한 고급 시각 인식 및 이해 시스템을 연구합니다."
+    keywords: ["컴퓨터비전", "영상인식", "이미지처리", "비전", "computer vision", "visual recognition", "image processing", "vision"]
+  en:
+    name: "Computer Vision"
+    description: "Advanced visual recognition and understanding systems for real-world applications and human-AI interaction."
+    keywords: ["computer vision", "visual recognition", "image processing", "vision", "컴퓨터비전", "영상인식"]
+- ko:
+    name: "기계학습"
+    description: "AI 역량과 실세계 이해 사이의 격차를 메우는 최첨단 ML 알고리즘과 모델을 연구합니다."
+    keywords: ["기계학습", "머신러닝", "알고리즘", "AI모델", "machine learning", "ML", "algorithms", "AI models"]
+  en:
+    name: "Machine Learning"
+    description: "Cutting-edge ML algorithms and models that bridge the gap between AI capabilities and real-world understanding."
+    keywords: ["machine learning", "ML", "algorithms", "AI models", "기계학습", "머신러닝"]
+- ko:
+    name: "다중모달 언어 이해"
+    description: "포괄적인 AI 이해를 위해 언어 처리를 시각적, 감각적 입력과 통합하는 연구를 수행합니다."
+    keywords: ["자연어처리", "언어처리", "다중모달", "언어이해", "NLP", "language processing", "multimodal", "language understanding"]
+  en:
+    name: "Multimodal Language Understanding"
+    description: "Integrating language processing with visual and sensory inputs for comprehensive AI understanding."
+    keywords: ["NLP", "language processing", "multimodal", "language understanding", "자연어처리", "언어처리"]
+- ko:
+    name: "AI+X 응용"
+    description: "헬스케어, 교육, 인간-컴퓨터 상호작용 등 다양한 도메인에 AI 기술을 적용합니다."
+    keywords: ["AI응용", "헬스케어AI", "교육AI", "HCI", "AI applications", "healthcare AI", "education AI"]
+  en:
+    name: "AI+X Applications"
+    description: "Applying AI technologies to various domains including healthcare, education, and human-computer interaction."
+    keywords: ["AI applications", "healthcare AI", "education AI", "HCI", "AI응용", "헬스케어AI"]
 
 team_members:
   ko:
-    - name: "김희원 교수님"
-      role: "책임교수"
-      email: "heewon@ssu.ac.kr"
-    - name: "박성용"
-      role: "박사과정"
-    - name: "고현서"
-      role: "석사과정"
-    - name: "정호재"
-      role: "석사과정"
-    - name: "황지원"
-      role: "석사과정"
+  - name: "김희원 교수님"
+    role: "책임교수"
+    email: "heewon@ssu.ac.kr"
+  - name: "박성용"
+    role: "박사과정"
+  - name: "고현서"
+    role: "석사과정"
+  - name: "정호재"
+    role: "석사과정"
+  - name: "황지원"
+    role: "석사과정"
 
   en:
-    - name: "Prof. Heewon Kim"
-      role: "Principal Investigator"
-      email: "heewon@ssu.ac.kr"
-    - name: "Sungyong Park"
-      role: "PhD Student"
-    - name: "Hyunsuh Kho"
-      role: "Master's Student"
-    - name: "Hojae Jeong"
-      role: "Master's Student"
-    - name: "Jiwon Hwang"
-      role: "Master's Student"
+  - name: "Prof. Heewon Kim"
+    role: "Principal Investigator"
+    email: "heewon@ssu.ac.kr"
+  - name: "Sungyong Park"
+    role: "PhD Student"
+  - name: "Hyunsuh Kho"
+    role: "Master's Student"
+  - name: "Hojae Jeong"
+    role: "Master's Student"
+  - name: "Jiwon Hwang"
+    role: "Master's Student"
 
 # Custom Q&A pairs that you can configure
 custom_qa:
   ko:
-    - question: "연구실에 어떻게 지원할 수 있나요?"
-      answer: "Reality Lab에 관심을 가져주셔서 감사합니다! 학부생이나 대학원생 모두 환영합니다. 자세한 지원 방법은 김희원 교수님께 이메일(heewon@ssu.ac.kr)로 문의해주시거나 전화(+82-2-820-0679)로 연락해주세요."
-      keywords: ["지원", "지원방법", "참여", "입학"]
-  
-    - question: "어떤 프로젝트를 진행하고 있나요?"
-      answer: "현재 로보틱스, 컴퓨터 비전, 머신러닝, 다중모달 언어 이해, AI+X 응용 분야에서 다양한 연구 프로젝트를 진행하고 있습니다. 구체적인 프로젝트 내용은 김희원 교수님께 문의해주세요."
-      keywords: ["프로젝트", "연구", "진행"]
-      
-    - question: "연구실 위치가 어디인가요?"
-      answer: "Reality Lab은 숭실대학교에 위치하고 있습니다. 정확한 건물과 호실 정보는 이메일(heewon@ssu.ac.kr) 또는 전화(+82-2-820-0679)로 문의해주세요."
-      keywords: ["위치", "어디", "장소"]
-      
-    - question: "어떤 기술 스택을 사용하나요?"
-      answer: "AI/ML 연구에 필요한 다양한 기술을 사용합니다. Python, PyTorch, TensorFlow 등의 머신러닝 프레임워크부터 로보틱스용 ROS, 컴퓨터 비전용 OpenCV 등을 활용합니다."
-      keywords: ["기술", "스택", "도구", "프레임워크"]
+  - question: "연구실에 어떻게 지원할 수 있나요?"
+    answer: "Reality Lab에 관심을 가져주셔서 감사합니다! 학부생이나 대학원생 모두 환영합니다. 자세한 지원 방법은 김희원 교수님께 이메일(heewon@ssu.ac.kr)로 문의해주시거나 전화(+82-2-820-0679)로 연락해주세요."
+    keywords: ["지원", "지원방법", "참여", "입학"]
+  - question: "어떤 프로젝트를 진행하고 있나요?"
+    answer: "현재 로보틱스, 컴퓨터 비전, 머신러닝, 다중모달 언어 이해, AI+X 응용 분야에서 다양한 연구 프로젝트를 진행하고 있습니다. 구체적인 프로젝트 내용은 김희원 교수님께 문의해주세요."
+    keywords: ["프로젝트", "연구", "진행"]
+  - question: 연구실 위치가 어디인가요?
+    answer: Reality Lab은 숭실대학교 정보과학관 602호에 위치하고 있습니다.
+    keywords:
+    - 위치
+    - 어디
+    - 장소
+    - 정보과학관
+  - question: "어떤 기술 스택을 사용하나요?"
+    answer: "AI/ML 연구에 필요한 다양한 기술을 사용합니다. Python, PyTorch, TensorFlow 등의 머신러닝 프레임워크부터 로보틱스용 ROS, 컴퓨터 비전용 OpenCV 등을 활용합니다."
+    keywords: ["기술", "스택", "도구", "프레임워크"]
 
   en:
-    - question: "How can I apply to the lab?"
-      answer: "Thank you for your interest in Reality Lab! Both undergraduate and graduate students are welcome. For detailed application procedures, please contact Professor Heewon Kim via email (heewon@ssu.ac.kr) or phone (+82-2-820-0679)."
-      keywords: ["apply", "application", "join", "admission"]
-      
-    - question: "What projects are you working on?"
-      answer: "We are currently conducting various research projects in robotics, computer vision, machine learning, multimodal language understanding, and AI+X applications. Please contact Professor Heewon Kim for specific project details."
-      keywords: ["projects", "research", "work"]
-      
-    - question: "Where is the lab located?"
-      answer: "Reality Lab is located at Soongsil University. For specific building and room information, please contact us via email (heewon@ssu.ac.kr) or phone (+82-2-820-0679)."
-      keywords: ["location", "where", "address"]
-      
-    - question: "What technology stack do you use?"
-      answer: "We use various technologies needed for AI/ML research, from machine learning frameworks like Python, PyTorch, TensorFlow to ROS for robotics and OpenCV for computer vision."
-      keywords: ["technology", "stack", "tools", "framework"]
+  - question: "How can I apply to the lab?"
+    answer: "Thank you for your interest in Reality Lab! Both undergraduate and graduate students are welcome. For detailed application procedures, please contact Professor Heewon Kim via email (heewon@ssu.ac.kr) or phone (+82-2-820-0679)."
+    keywords: ["apply", "application", "join", "admission"]
+  - question: "What projects are you working on?"
+    answer: "We are currently conducting various research projects in robotics, computer vision, machine learning, multimodal language understanding, and AI+X applications. Please contact Professor Heewon Kim for specific project details."
+    keywords: ["projects", "research", "work"]
+  - question: "Where is the lab located?"
+    answer: "Reality Lab is located at Soongsil University. For specific building and room information, please contact us via email (heewon@ssu.ac.kr) or phone (+82-2-820-0679)."
+    keywords: ["location", "where", "address"]
+  - question: "What technology stack do you use?"
+    answer: "We use various technologies needed for AI/ML research, from machine learning frameworks like Python, PyTorch, TensorFlow to ROS for robotics and OpenCV for computer vision."
+    keywords: ["technology", "stack", "tools", "framework"]
 
 # Fallback responses
 fallback_responses:
-  - "죄송합니다. 해당 질문에 대한 정보가 없습니다. 김희원 교수님께 직접 문의해주세요. (heewon@ssu.ac.kr, +82-2-820-0679)"
-  - "더 자세한 정보는 Reality Lab 홈페이지의 다른 섹션을 확인하시거나, 교수님께 직접 연락주세요."
-  - "구체적인 내용은 이메일(heewon@ssu.ac.kr)로 문의해주시면 정확한 답변을 받으실 수 있습니다."
+- "죄송합니다. 해당 질문에 대한 정보가 없습니다. 김희원 교수님께 직접 문의해주세요. (heewon@ssu.ac.kr, +82-2-820-0679)"
+- "더 자세한 정보는 Reality Lab 홈페이지의 다른 섹션을 확인하시거나, 교수님께 직접 연락주세요."
+- "구체적인 내용은 이메일(heewon@ssu.ac.kr)로 문의해주시면 정확한 답변을 받으실 수 있습니다."
