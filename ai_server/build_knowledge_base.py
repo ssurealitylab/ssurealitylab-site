@@ -196,34 +196,39 @@ Description: {description}"""
                 "participants": participants
             })
 
-    def extract_publications_from_md(self):
-        """Extract publication information from international.md"""
-        md_file = self.site_root / "international.md"
+    def extract_publications_from_yml(self):
+        """Extract publication information from publications.yml"""
+        pub_data = self.load_yaml("publications.yml")
+        pub_list = pub_data.get('publications', [])
+        total = len(pub_list)
 
-        with open(md_file, 'r', encoding='utf-8') as f:
-            content = f.read()
+        for idx, pub in enumerate(pub_list):
+            title = pub.get('title', '')
+            authors = pub.get('authors', '')
+            year = pub.get('year', 2025)
+            venue = pub.get('venue', '')
+            venue_short = pub.get('venue_short', '')
+            pub_type = pub.get('type', 'conference')
+            status = pub.get('status', '')
+            abstract = pub.get('abstract', '')
 
-        # Extract publication items using regex
-        # Pattern: <h5 class="list-title">TITLE</h5>\n<p class="list-authors">AUTHORS</p>
-        pattern = r'<h5 class="list-title">(.*?)</h5>\s*<p class="list-authors">(.*?)</p>'
-        matches = re.findall(pattern, content, re.DOTALL)
+            # idx 0 = most recent (listed first in YAML)
+            recency = f"최신순 {idx+1}/{total}위" if idx < 5 else ""
+            recency_en = f"Recency rank: {idx+1}/{total}" if idx < 5 else ""
 
-        for idx, (title, authors) in enumerate(matches):
-            # Clean HTML tags
-            title = re.sub(r'<[^>]+>', '', title).strip()
-            authors = re.sub(r'<[^>]+>', '', authors).strip()
-
-            # Extract year from nearby badge if possible
-            year = "2025"  # Default to 2025 for recent papers
-
-            # Build document
             content_text = f"""논문: {title}
 저자: {authors}
 연도: {year}
+학회: {venue} ({venue_short})
+{f'최신 논문 순위: {recency}' if recency else ''}
+{f'초록: {abstract}' if abstract else ''}
 
 Publication: {title}
 Authors: {authors}
-Year: {year}"""
+Year: {year}
+Venue: {venue} ({venue_short})
+{f'Recency: {recency_en}' if recency_en else ''}
+{f'Abstract: {abstract}' if abstract else ''}"""
 
             self.add_document(content_text, {
                 "type": "publication",
@@ -231,7 +236,9 @@ Year: {year}"""
                 "category": "paper",
                 "title": title,
                 "authors": authors,
-                "year": year
+                "year": str(year),
+                "venue": venue_short,
+                "recency_rank": idx + 1
             })
 
     def build_qa_docs(self):
@@ -281,7 +288,7 @@ Keywords: {', '.join(qa['keywords'])}"""
         self.build_news_docs()
 
         print("- Extracting publications...")
-        self.extract_publications_from_md()
+        self.extract_publications_from_yml()
 
         print("- Extracting Q&A pairs...")
         self.build_qa_docs()

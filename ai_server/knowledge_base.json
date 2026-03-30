@@ -858,366 +858,432 @@
     }
   },
   {
-    "content": "논문: HiGlassRM: Learning to Remove High-prescription Glasses via Synthetic Dataset Generation\n저자: Sebin Lee†, Heewon Kim\n연도: 2025\n\nPublication: HiGlassRM: Learning to Remove High-prescription Glasses via Synthetic Dataset Generation\nAuthors: Sebin Lee†, Heewon Kim\nYear: 2025",
+    "content": "논문: HiGlassRM: Learning to Remove High-prescription Glasses via Synthetic Dataset Generation\n저자: Sebin Lee†, Heewon Kim\n연도: 2026\n학회: Winter Conference on Applications of Computer Vision (WACV) (WACV26)\n최신 논문 순위: 최신순 1/33위\n초록: Existing eyeglass removal methods can handle frames and shadows but fail to correct lens-induced geometric distortions, as public datasets lack the necessary supervision. To address this, we introduce the HiGlass Dataset, the first large-scale synthetic dataset providing explicit flow-based supervision for refractive warping. We also propose HiGlassRM, a novel pipeline whose core is a network that explicitly estimates a displacement flowmap to de-warp distorted facial geometry. Experiments on both synthetic and real images show that this flowmap-centric approach, trained on our data, significantly improves identity preservation and perceptual quality over existing methods. Our work demonstrates that explicitly modeling and correcting geometric distortion via flowmap estimation, enabled by targeted supervision, is key to faithful eyeglass removal.\n\nPublication: HiGlassRM: Learning to Remove High-prescription Glasses via Synthetic Dataset Generation\nAuthors: Sebin Lee†, Heewon Kim\nYear: 2026\nVenue: Winter Conference on Applications of Computer Vision (WACV) (WACV26)\nRecency: Recency rank: 1/33\nAbstract: Existing eyeglass removal methods can handle frames and shadows but fail to correct lens-induced geometric distortions, as public datasets lack the necessary supervision. To address this, we introduce the HiGlass Dataset, the first large-scale synthetic dataset providing explicit flow-based supervision for refractive warping. We also propose HiGlassRM, a novel pipeline whose core is a network that explicitly estimates a displacement flowmap to de-warp distorted facial geometry. Experiments on both synthetic and real images show that this flowmap-centric approach, trained on our data, significantly improves identity preservation and perceptual quality over existing methods. Our work demonstrates that explicitly modeling and correcting geometric distortion via flowmap estimation, enabled by targeted supervision, is key to faithful eyeglass removal.",
     "metadata": {
       "type": "publication",
       "language": "both",
       "category": "paper",
       "title": "HiGlassRM: Learning to Remove High-prescription Glasses via Synthetic Dataset Generation",
       "authors": "Sebin Lee†, Heewon Kim",
-      "year": "2025"
+      "year": "2026",
+      "venue": "WACV26",
+      "recency_rank": 1
     }
   },
   {
-    "content": "논문: MBTI: Metric-Based Textual Inversion for Fine-Grained Image Generation\n저자: ByungKwan Chae*, Youngjae Choi*, Heewon Kim\n연도: 2025\n\nPublication: MBTI: Metric-Based Textual Inversion for Fine-Grained Image Generation\nAuthors: ByungKwan Chae*, Youngjae Choi*, Heewon Kim\nYear: 2025",
+    "content": "논문: MBTI: Metric-Based Textual Inversion for Fine-Grained Image Generation\n저자: ByungKwan Chae*, Youngjae Choi*, Heewon Kim\n연도: 2026\n학회: Winter Conference on Applications of Computer Vision (WACV) (WACV26)\n최신 논문 순위: 최신순 2/33위\n초록: Personalizing text-to-image diffusion models from only a few images per class remains challenging, especially for fine-grained categories where class-defining cues are subtle. We introduce Metric-Based Textual Inversion (MBTI), a plug-and-play objective that augments textual inversion by explicitly enlarging inter-class margins in the text-embedding space while preserving denoising fidelity. MBTI (i) selects the most confusable previously learned classes as support embeddings via cosine similarity (SES), (ii) contrasts predicted noises under the same diffusion state (timestep and noise) between the supports and the current token (DMM), and (iii) stabilizes training with a time-weighted regularizer aligned to the diffusion objective. Across Flowers102, NABirds, FGVC-Aircraft, Stanford Cars, COCO, and PASCAL VOC, MBTI produces more representative samples and improves few-shot classification under augmentation-for-classification. MBTI requires no model fine-tuning and integrates seamlessly with existing personalization pipelines.\n\nPublication: MBTI: Metric-Based Textual Inversion for Fine-Grained Image Generation\nAuthors: ByungKwan Chae*, Youngjae Choi*, Heewon Kim\nYear: 2026\nVenue: Winter Conference on Applications of Computer Vision (WACV) (WACV26)\nRecency: Recency rank: 2/33\nAbstract: Personalizing text-to-image diffusion models from only a few images per class remains challenging, especially for fine-grained categories where class-defining cues are subtle. We introduce Metric-Based Textual Inversion (MBTI), a plug-and-play objective that augments textual inversion by explicitly enlarging inter-class margins in the text-embedding space while preserving denoising fidelity. MBTI (i) selects the most confusable previously learned classes as support embeddings via cosine similarity (SES), (ii) contrasts predicted noises under the same diffusion state (timestep and noise) between the supports and the current token (DMM), and (iii) stabilizes training with a time-weighted regularizer aligned to the diffusion objective. Across Flowers102, NABirds, FGVC-Aircraft, Stanford Cars, COCO, and PASCAL VOC, MBTI produces more representative samples and improves few-shot classification under augmentation-for-classification. MBTI requires no model fine-tuning and integrates seamlessly with existing personalization pipelines.",
     "metadata": {
       "type": "publication",
       "language": "both",
       "category": "paper",
       "title": "MBTI: Metric-Based Textual Inversion for Fine-Grained Image Generation",
       "authors": "ByungKwan Chae*, Youngjae Choi*, Heewon Kim",
-      "year": "2025"
+      "year": "2026",
+      "venue": "WACV26",
+      "recency_rank": 2
     }
   },
   {
-    "content": "논문: Intrinsic-Guided Photorealistic Style Transfer for Radiance Fields\n저자: Hyunsuh Koh*, Seunghyun Oh*, Jungyun Jang*, Heewon Kim\n연도: 2025\n\nPublication: Intrinsic-Guided Photorealistic Style Transfer for Radiance Fields\nAuthors: Hyunsuh Koh*, Seunghyun Oh*, Jungyun Jang*, Heewon Kim\nYear: 2025",
-    "metadata": {
-      "type": "publication",
-      "language": "both",
-      "category": "paper",
-      "title": "Intrinsic-Guided Photorealistic Style Transfer for Radiance Fields",
-      "authors": "Hyunsuh Koh*, Seunghyun Oh*, Jungyun Jang*, Heewon Kim",
-      "year": "2025"
-    }
-  },
-  {
-    "content": "논문: Unsupervised Discovery of Transformations between Fine-Grained Classes in Diffusion Models\n저자: Youngjae Choi*, Hyunsuh Koh*, Hojae Jeong*, ByungKwan Chae*, Sungyong Park, Heewon Kim\n연도: 2025\n\nPublication: Unsupervised Discovery of Transformations between Fine-Grained Classes in Diffusion Models\nAuthors: Youngjae Choi*, Hyunsuh Koh*, Hojae Jeong*, ByungKwan Chae*, Sungyong Park, Heewon Kim\nYear: 2025",
-    "metadata": {
-      "type": "publication",
-      "language": "both",
-      "category": "paper",
-      "title": "Unsupervised Discovery of Transformations between Fine-Grained Classes in Diffusion Models",
-      "authors": "Youngjae Choi*, Hyunsuh Koh*, Hojae Jeong*, ByungKwan Chae*, Sungyong Park, Heewon Kim",
-      "year": "2025"
-    }
-  },
-  {
-    "content": "논문: DeepGAM: An Interpretable Deep Neural Network Using Generalized Additive Model for Depression Diagnosis\n저자: Chiyoung Lee*, Yeri Kim*†, Seoyoung Kim*†, Mary Whooley, Heewon Kim\n연도: 2025\n\nPublication: DeepGAM: An Interpretable Deep Neural Network Using Generalized Additive Model for Depression Diagnosis\nAuthors: Chiyoung Lee*, Yeri Kim*†, Seoyoung Kim*†, Mary Whooley, Heewon Kim\nYear: 2025",
-    "metadata": {
-      "type": "publication",
-      "language": "both",
-      "category": "paper",
-      "title": "DeepGAM: An Interpretable Deep Neural Network Using Generalized Additive Model for Depression Diagnosis",
-      "authors": "Chiyoung Lee*, Yeri Kim*†, Seoyoung Kim*†, Mary Whooley, Heewon Kim",
-      "year": "2025"
-    }
-  },
-  {
-    "content": "논문: Dog Cough Sound Classification Using Neural Networks for Diagnosing Bronchial Diseases\n저자: Do-Ye Kwon*†, Yeon-Ju Oh*†, Heewon Kim\n연도: 2025\n\nPublication: Dog Cough Sound Classification Using Neural Networks for Diagnosing Bronchial Diseases\nAuthors: Do-Ye Kwon*†, Yeon-Ju Oh*†, Heewon Kim\nYear: 2025",
-    "metadata": {
-      "type": "publication",
-      "language": "both",
-      "category": "paper",
-      "title": "Dog Cough Sound Classification Using Neural Networks for Diagnosing Bronchial Diseases",
-      "authors": "Do-Ye Kwon*†, Yeon-Ju Oh*†, Heewon Kim",
-      "year": "2025"
-    }
-  },
-  {
-    "content": "논문: Accurate Baseball Player Pose Refinement Using Motion Prior Guidance\n저자: Seunghyun Oh†, Heewon Kim\n연도: 2025\n\nPublication: Accurate Baseball Player Pose Refinement Using Motion Prior Guidance\nAuthors: Seunghyun Oh†, Heewon Kim\nYear: 2025",
-    "metadata": {
-      "type": "publication",
-      "language": "both",
-      "category": "paper",
-      "title": "Accurate Baseball Player Pose Refinement Using Motion Prior Guidance",
-      "authors": "Seunghyun Oh†, Heewon Kim",
-      "year": "2025"
-    }
-  },
-  {
-    "content": "논문: DynScene: Scalable Generation of Dynamic Robotic Manipulation Scenes for Embodied AI\n저자: Sangmin Lee*, Sungyong Park*, Heewon Kim\n연도: 2025\n\nPublication: DynScene: Scalable Generation of Dynamic Robotic Manipulation Scenes for Embodied AI\nAuthors: Sangmin Lee*, Sungyong Park*, Heewon Kim\nYear: 2025",
+    "content": "논문: DynScene: Scalable Generation of Dynamic Robotic Manipulation Scenes for Embodied AI\n저자: Sangmin Lee*, Sungyong Park*, Heewon Kim\n연도: 2025\n학회: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) (CVPR25)\n최신 논문 순위: 최신순 3/33위\n\n\nPublication: DynScene: Scalable Generation of Dynamic Robotic Manipulation Scenes for Embodied AI\nAuthors: Sangmin Lee*, Sungyong Park*, Heewon Kim\nYear: 2025\nVenue: IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) (CVPR25)\nRecency: Recency rank: 3/33\n",
     "metadata": {
       "type": "publication",
       "language": "both",
       "category": "paper",
       "title": "DynScene: Scalable Generation of Dynamic Robotic Manipulation Scenes for Embodied AI",
       "authors": "Sangmin Lee*, Sungyong Park*, Heewon Kim",
-      "year": "2025"
+      "year": "2025",
+      "venue": "CVPR25",
+      "recency_rank": 3
     }
   },
   {
-    "content": "논문: SIDL: A Real-World Dataset for Restoring Smartphone Images with Dirty Lenses\n저자: Sooyoung Choi*†, Sungyong Park*, Heewon Kim\n연도: 2025\n\nPublication: SIDL: A Real-World Dataset for Restoring Smartphone Images with Dirty Lenses\nAuthors: Sooyoung Choi*†, Sungyong Park*, Heewon Kim\nYear: 2025",
+    "content": "논문: SIDL: A Real-World Dataset for Restoring Smartphone Images with Dirty Lenses\n저자: Sooyoung Choi*†, Sungyong Park*, Heewon Kim\n연도: 2025\n학회: AAAI Conference on Artificial Intelligence (AAAI25)\n최신 논문 순위: 최신순 4/33위\n\n\nPublication: SIDL: A Real-World Dataset for Restoring Smartphone Images with Dirty Lenses\nAuthors: Sooyoung Choi*†, Sungyong Park*, Heewon Kim\nYear: 2025\nVenue: AAAI Conference on Artificial Intelligence (AAAI25)\nRecency: Recency rank: 4/33\n",
     "metadata": {
       "type": "publication",
       "language": "both",
       "category": "paper",
       "title": "SIDL: A Real-World Dataset for Restoring Smartphone Images with Dirty Lenses",
       "authors": "Sooyoung Choi*†, Sungyong Park*, Heewon Kim",
-      "year": "2025"
+      "year": "2025",
+      "venue": "AAAI25",
+      "recency_rank": 4
     }
   },
   {
-    "content": "논문: Predictors of the treatment effects of transcranial direct current stimulation on knee osteoarthritis pain\n저자: Chiyoung Lee, Heewon Kim, Yeri Kim†, Seoyoung Kim†, et al.\n연도: 2025\n\nPublication: Predictors of the treatment effects of transcranial direct current stimulation on knee osteoarthritis pain\nAuthors: Chiyoung Lee, Heewon Kim, Yeri Kim†, Seoyoung Kim†, et al.\nYear: 2025",
+    "content": "논문: Intrinsic-Guided Photorealistic Style Transfer for Radiance Fields\n저자: Hyunsuh Kho*, Seunghyun Oh*, Jungyun Jang*, Heewon Kim\n연도: 2025\n학회: International Workshop on Application-driven Point Cloud Processing and 3D Vision (APP3DV, ACM MM Workshop) (APP3DV25)\n최신 논문 순위: 최신순 5/33위\n\n\nPublication: Intrinsic-Guided Photorealistic Style Transfer for Radiance Fields\nAuthors: Hyunsuh Kho*, Seunghyun Oh*, Jungyun Jang*, Heewon Kim\nYear: 2025\nVenue: International Workshop on Application-driven Point Cloud Processing and 3D Vision (APP3DV, ACM MM Workshop) (APP3DV25)\nRecency: Recency rank: 5/33\n",
+    "metadata": {
+      "type": "publication",
+      "language": "both",
+      "category": "paper",
+      "title": "Intrinsic-Guided Photorealistic Style Transfer for Radiance Fields",
+      "authors": "Hyunsuh Kho*, Seunghyun Oh*, Jungyun Jang*, Heewon Kim",
+      "year": "2025",
+      "venue": "APP3DV25",
+      "recency_rank": 5
+    }
+  },
+  {
+    "content": "논문: Unsupervised Discovery of Transformations between Fine-Grained Classes in Diffusion Models\n저자: Youngjae Choi*, Hyunsuh Kho*, Hojae Jeong*, Byungkwan Chae*, Sungyong Park, Heewon Kim\n연도: 2025\n학회: British Machine Vision Conference (BMVC) (BMVC25)\n\n초록: Diffusion models achieve impressive image synthesis, yet unsupervised methods for latent space exploration remain limited in fine-grained class translation. Existing approaches struggle with fine-grained class translation, often producing low-diversity outputs within parent classes or inconsistent child-class mappings across images. We propose UDT (Unsupervised Discovery of Transformations), a framework that incorporates hierarchical structure into unsupervised direction discovery. UDT leverages parent-class prompts to decompose predicted noise into class-general and class-specific components, ensuring translations remain within the parent domain while enabling disentangled child-class transformations. A hierarchy-aware contrastive loss further enforces consistency, with each direction corresponding to a distinct child class. Experiments on dogs, cats, birds, and flowers show that UDT outperforms state-of-the-art methods both qualitatively and quantitatively. Moreover, UDT supports controllable interpolation, allowing for the smooth generation of intermediate classes (e.g., mixed breeds). These results demonstrate UDT as a general and effective solution for fine-grained image translation.\n\nPublication: Unsupervised Discovery of Transformations between Fine-Grained Classes in Diffusion Models\nAuthors: Youngjae Choi*, Hyunsuh Kho*, Hojae Jeong*, Byungkwan Chae*, Sungyong Park, Heewon Kim\nYear: 2025\nVenue: British Machine Vision Conference (BMVC) (BMVC25)\n\nAbstract: Diffusion models achieve impressive image synthesis, yet unsupervised methods for latent space exploration remain limited in fine-grained class translation. Existing approaches struggle with fine-grained class translation, often producing low-diversity outputs within parent classes or inconsistent child-class mappings across images. We propose UDT (Unsupervised Discovery of Transformations), a framework that incorporates hierarchical structure into unsupervised direction discovery. UDT leverages parent-class prompts to decompose predicted noise into class-general and class-specific components, ensuring translations remain within the parent domain while enabling disentangled child-class transformations. A hierarchy-aware contrastive loss further enforces consistency, with each direction corresponding to a distinct child class. Experiments on dogs, cats, birds, and flowers show that UDT outperforms state-of-the-art methods both qualitatively and quantitatively. Moreover, UDT supports controllable interpolation, allowing for the smooth generation of intermediate classes (e.g., mixed breeds). These results demonstrate UDT as a general and effective solution for fine-grained image translation.",
+    "metadata": {
+      "type": "publication",
+      "language": "both",
+      "category": "paper",
+      "title": "Unsupervised Discovery of Transformations between Fine-Grained Classes in Diffusion Models",
+      "authors": "Youngjae Choi*, Hyunsuh Kho*, Hojae Jeong*, Byungkwan Chae*, Sungyong Park, Heewon Kim",
+      "year": "2025",
+      "venue": "BMVC25",
+      "recency_rank": 6
+    }
+  },
+  {
+    "content": "논문: DeepGAM: An Interpretable Deep Neural Network Using Generalized Additive Model for Depression Diagnosis: Data From The Heart and Soul Study\n저자: Chiyoung Lee*, Yeri Kim*†, Seoyoung Kim*†, Mary Whooley, Heewon Kim\n연도: 2025\n학회: PLOS ONE (PLOS ONE)\n\n\n\nPublication: DeepGAM: An Interpretable Deep Neural Network Using Generalized Additive Model for Depression Diagnosis: Data From The Heart and Soul Study\nAuthors: Chiyoung Lee*, Yeri Kim*†, Seoyoung Kim*†, Mary Whooley, Heewon Kim\nYear: 2025\nVenue: PLOS ONE (PLOS ONE)\n\n",
+    "metadata": {
+      "type": "publication",
+      "language": "both",
+      "category": "paper",
+      "title": "DeepGAM: An Interpretable Deep Neural Network Using Generalized Additive Model for Depression Diagnosis: Data From The Heart and Soul Study",
+      "authors": "Chiyoung Lee*, Yeri Kim*†, Seoyoung Kim*†, Mary Whooley, Heewon Kim",
+      "year": "2025",
+      "venue": "PLOS ONE",
+      "recency_rank": 7
+    }
+  },
+  {
+    "content": "논문: Dog Cough Sound Classification Using Neural Networks for Diagnosing Bronchial Diseases\n저자: Do-Ye Kwon*†, Yeon-Ju Oh*†, Heewon Kim\n연도: 2025\n학회: Journal of Electrical Engineering & Technology (JEET) (JEET)\n\n\n\nPublication: Dog Cough Sound Classification Using Neural Networks for Diagnosing Bronchial Diseases\nAuthors: Do-Ye Kwon*†, Yeon-Ju Oh*†, Heewon Kim\nYear: 2025\nVenue: Journal of Electrical Engineering & Technology (JEET) (JEET)\n\n",
+    "metadata": {
+      "type": "publication",
+      "language": "both",
+      "category": "paper",
+      "title": "Dog Cough Sound Classification Using Neural Networks for Diagnosing Bronchial Diseases",
+      "authors": "Do-Ye Kwon*†, Yeon-Ju Oh*†, Heewon Kim",
+      "year": "2025",
+      "venue": "JEET",
+      "recency_rank": 8
+    }
+  },
+  {
+    "content": "논문: Predictors of the treatment effects of transcranial direct current stimulation on knee osteoarthritis pain\n저자: Chiyoung Lee, Heewon Kim, Yeri Kim†, Seoyoung Kim†, et al.\n연도: 2025\n학회: International Brain Stimulation Conference & Brain Stimulation (Brain Stimulation)\n\n\n\nPublication: Predictors of the treatment effects of transcranial direct current stimulation on knee osteoarthritis pain\nAuthors: Chiyoung Lee, Heewon Kim, Yeri Kim†, Seoyoung Kim†, et al.\nYear: 2025\nVenue: International Brain Stimulation Conference & Brain Stimulation (Brain Stimulation)\n\n",
     "metadata": {
       "type": "publication",
       "language": "both",
       "category": "paper",
       "title": "Predictors of the treatment effects of transcranial direct current stimulation on knee osteoarthritis pain",
       "authors": "Chiyoung Lee, Heewon Kim, Yeri Kim†, Seoyoung Kim†, et al.",
-      "year": "2025"
+      "year": "2025",
+      "venue": "Brain Stimulation",
+      "recency_rank": 9
     }
   },
   {
-    "content": "논문: 1st Place Winner at CVPR 2025 Embodied AI Workshop\n저자: Dowon Kim, Chaewoo Lim, Sangmin Lee, Sungyong Park, Heewon Kim\n연도: 2025\n\nPublication: 1st Place Winner at CVPR 2025 Embodied AI Workshop\nAuthors: Dowon Kim, Chaewoo Lim, Sangmin Lee, Sungyong Park, Heewon Kim\nYear: 2025",
+    "content": "논문: 1st Place Winner at CVPR 2025 Embodied AI Workshop\n저자: Dowon Kim, Chaewoo Lim, Sangmin Lee, Sungyong Park, Heewon Kim\n연도: 2025\n학회: CVPR 2025 Embodied AI Workshop (Arnold Challenge)\n\n\n\nPublication: 1st Place Winner at CVPR 2025 Embodied AI Workshop\nAuthors: Dowon Kim, Chaewoo Lim, Sangmin Lee, Sungyong Park, Heewon Kim\nYear: 2025\nVenue: CVPR 2025 Embodied AI Workshop (Arnold Challenge)\n\n",
     "metadata": {
       "type": "publication",
       "language": "both",
       "category": "paper",
       "title": "1st Place Winner at CVPR 2025 Embodied AI Workshop",
       "authors": "Dowon Kim, Chaewoo Lim, Sangmin Lee, Sungyong Park, Heewon Kim",
-      "year": "2025"
+      "year": "2025",
+      "venue": "Arnold Challenge",
+      "recency_rank": 10
     }
   },
   {
-    "content": "논문: 3rd Place at CVPR 2024 Embodied AI Workshop\n저자: Sangmin Lee, Sungyong Park, Heewon Kim\n연도: 2025\n\nPublication: 3rd Place at CVPR 2024 Embodied AI Workshop\nAuthors: Sangmin Lee, Sungyong Park, Heewon Kim\nYear: 2025",
+    "content": "논문: 3rd Place at CVPR 2024 Embodied AI Workshop\n저자: Sangmin Lee, Sungyong Park, Heewon Kim\n연도: 2024\n학회: CVPR 2024 Embodied AI Workshop (Arnold Challenge)\n\n\n\nPublication: 3rd Place at CVPR 2024 Embodied AI Workshop\nAuthors: Sangmin Lee, Sungyong Park, Heewon Kim\nYear: 2024\nVenue: CVPR 2024 Embodied AI Workshop (Arnold Challenge)\n\n",
     "metadata": {
       "type": "publication",
       "language": "both",
       "category": "paper",
       "title": "3rd Place at CVPR 2024 Embodied AI Workshop",
       "authors": "Sangmin Lee, Sungyong Park, Heewon Kim",
-      "year": "2025"
+      "year": "2024",
+      "venue": "Arnold Challenge",
+      "recency_rank": 11
     }
   },
   {
-    "content": "논문: Trajectories of chronic pain among older Veterans: Identifying pain-worsening predictors via machine learning\n저자: Chiyoung Lee, Yeri Kim†, Seoyoung Kim†, Beth Cohen, Kent Kwoh, Hyochol Ahn, Juyoung Park, Heewon Kim\n연도: 2025\n\nPublication: Trajectories of chronic pain among older Veterans: Identifying pain-worsening predictors via machine learning\nAuthors: Chiyoung Lee, Yeri Kim†, Seoyoung Kim†, Beth Cohen, Kent Kwoh, Hyochol Ahn, Juyoung Park, Heewon Kim\nYear: 2025",
+    "content": "논문: Trajectories of chronic pain among older Veterans: Identifying pain-worsening predictors via machine learning\n저자: Chiyoung Lee, Yeri Kim†, Seoyoung Kim†, Beth Cohen, Kent Kwoh, Hyochol Ahn, Juyoung Park, Heewon Kim\n연도: 2024\n학회: Gerontological Society of America (GSA) Annual Scientific Meeting (GSA)\n\n\n\nPublication: Trajectories of chronic pain among older Veterans: Identifying pain-worsening predictors via machine learning\nAuthors: Chiyoung Lee, Yeri Kim†, Seoyoung Kim†, Beth Cohen, Kent Kwoh, Hyochol Ahn, Juyoung Park, Heewon Kim\nYear: 2024\nVenue: Gerontological Society of America (GSA) Annual Scientific Meeting (GSA)\n\n",
     "metadata": {
       "type": "publication",
       "language": "both",
       "category": "paper",
       "title": "Trajectories of chronic pain among older Veterans: Identifying pain-worsening predictors via machine learning",
       "authors": "Chiyoung Lee, Yeri Kim†, Seoyoung Kim†, Beth Cohen, Kent Kwoh, Hyochol Ahn, Juyoung Park, Heewon Kim",
-      "year": "2025"
+      "year": "2024",
+      "venue": "GSA",
+      "recency_rank": 12
     }
   },
   {
-    "content": "논문: Machine Learning-Based Etiologic Subtyping of Ischemic Stroke Using Circulating Exosomal microRNAs\n저자: Ji Hoon Bang†, Eun Hee Kim, Hyung Jun Kim, Jong-Won Chung, Woo-Keun Seo, Gyeong-Moon Kim, Dong-Ho Lee, Heewon Kim*, Oh Young Bang*\n연도: 2025\n\nPublication: Machine Learning-Based Etiologic Subtyping of Ischemic Stroke Using Circulating Exosomal microRNAs\nAuthors: Ji Hoon Bang†, Eun Hee Kim, Hyung Jun Kim, Jong-Won Chung, Woo-Keun Seo, Gyeong-Moon Kim, Dong-Ho Lee, Heewon Kim*, Oh Young Bang*\nYear: 2025",
+    "content": "논문: Machine Learning-Based Etiologic Subtyping of Ischemic Stroke Using Circulating Exosomal microRNAs\n저자: Ji Hoon Bang†, Eun Hee Kim, Hyung Jun Kim, Jong-Won Chung, Woo-Keun Seo, Gyeong-Moon Kim, Dong-Ho Lee, Heewon Kim*, Oh Young Bang*\n연도: 2024\n학회: International Journal of Molecular Sciences (IJMS) (IJMS)\n\n\n\nPublication: Machine Learning-Based Etiologic Subtyping of Ischemic Stroke Using Circulating Exosomal microRNAs\nAuthors: Ji Hoon Bang†, Eun Hee Kim, Hyung Jun Kim, Jong-Won Chung, Woo-Keun Seo, Gyeong-Moon Kim, Dong-Ho Lee, Heewon Kim*, Oh Young Bang*\nYear: 2024\nVenue: International Journal of Molecular Sciences (IJMS) (IJMS)\n\n",
     "metadata": {
       "type": "publication",
       "language": "both",
       "category": "paper",
       "title": "Machine Learning-Based Etiologic Subtyping of Ischemic Stroke Using Circulating Exosomal microRNAs",
       "authors": "Ji Hoon Bang†, Eun Hee Kim, Hyung Jun Kim, Jong-Won Chung, Woo-Keun Seo, Gyeong-Moon Kim, Dong-Ho Lee, Heewon Kim*, Oh Young Bang*",
-      "year": "2025"
+      "year": "2024",
+      "venue": "IJMS",
+      "recency_rank": 13
     }
   },
   {
-    "content": "논문: Learning Controllable ISP for Image Enhancement\n저자: Heewon Kim, Kyoung Mu Lee\n연도: 2025\n\nPublication: Learning Controllable ISP for Image Enhancement\nAuthors: Heewon Kim, Kyoung Mu Lee\nYear: 2025",
+    "content": "논문: NERDS: A General Framework to Train Camera Denoisers from Raw-RGB Noisy Image Pairs\n저자: Heewon Kim, Kyoung Mu Lee\n연도: 2023\n학회: International Conference on Learning Representations (ICLR) (ICLR)\n\n\n\nPublication: NERDS: A General Framework to Train Camera Denoisers from Raw-RGB Noisy Image Pairs\nAuthors: Heewon Kim, Kyoung Mu Lee\nYear: 2023\nVenue: International Conference on Learning Representations (ICLR) (ICLR)\n\n",
+    "metadata": {
+      "type": "publication",
+      "language": "both",
+      "category": "paper",
+      "title": "NERDS: A General Framework to Train Camera Denoisers from Raw-RGB Noisy Image Pairs",
+      "authors": "Heewon Kim, Kyoung Mu Lee",
+      "year": "2023",
+      "venue": "ICLR",
+      "recency_rank": 14
+    }
+  },
+  {
+    "content": "논문: Learning Controllable ISP for Image Enhancement\n저자: Heewon Kim, Kyoung Mu Lee\n연도: 2023\n학회: IEEE Transactions on Image Processing (TIP) (TIP)\n\n\n\nPublication: Learning Controllable ISP for Image Enhancement\nAuthors: Heewon Kim, Kyoung Mu Lee\nYear: 2023\nVenue: IEEE Transactions on Image Processing (TIP) (TIP)\n\n",
     "metadata": {
       "type": "publication",
       "language": "both",
       "category": "paper",
       "title": "Learning Controllable ISP for Image Enhancement",
       "authors": "Heewon Kim, Kyoung Mu Lee",
-      "year": "2025"
+      "year": "2023",
+      "venue": "TIP",
+      "recency_rank": 15
     }
   },
   {
-    "content": "논문: Learning to Learn Task-Adaptive Hyperparameters for Few-Shot Learning\n저자: Sungyong Baik, Myungsub Choi, Janghoon Choi, Heewon Kim, Kyoung Mu Lee\n연도: 2025\n\nPublication: Learning to Learn Task-Adaptive Hyperparameters for Few-Shot Learning\nAuthors: Sungyong Baik, Myungsub Choi, Janghoon Choi, Heewon Kim, Kyoung Mu Lee\nYear: 2025",
+    "content": "논문: Learning to Learn Task-Adaptive Hyperparameters for Few-Shot Learning\n저자: Sungyong Baik, Myungsub Choi, Janghoon Choi, Heewon Kim, Kyoung Mu Lee\n연도: 2023\n학회: IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) (TPAMI)\n\n\n\nPublication: Learning to Learn Task-Adaptive Hyperparameters for Few-Shot Learning\nAuthors: Sungyong Baik, Myungsub Choi, Janghoon Choi, Heewon Kim, Kyoung Mu Lee\nYear: 2023\nVenue: IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) (TPAMI)\n\n",
     "metadata": {
       "type": "publication",
       "language": "both",
       "category": "paper",
       "title": "Learning to Learn Task-Adaptive Hyperparameters for Few-Shot Learning",
       "authors": "Sungyong Baik, Myungsub Choi, Janghoon Choi, Heewon Kim, Kyoung Mu Lee",
-      "year": "2025"
+      "year": "2023",
+      "venue": "TPAMI",
+      "recency_rank": 16
     }
   },
   {
-    "content": "논문: NERDS: A General Framework to Train Camera Denoisers\n저자: Heewon Kim, Kyoung Mu Lee\n연도: 2025\n\nPublication: NERDS: A General Framework to Train Camera Denoisers\nAuthors: Heewon Kim, Kyoung Mu Lee\nYear: 2025",
-    "metadata": {
-      "type": "publication",
-      "language": "both",
-      "category": "paper",
-      "title": "NERDS: A General Framework to Train Camera Denoisers",
-      "authors": "Heewon Kim, Kyoung Mu Lee",
-      "year": "2025"
-    }
-  },
-  {
-    "content": "논문: Fine-Grained Neural Architecture Search for Image Super-Resolution\n저자: Heewon Kim, Seokil Hong, Bohyung Han, Heesoo Myeong, Kyoung Mu Lee\n연도: 2025\n\nPublication: Fine-Grained Neural Architecture Search for Image Super-Resolution\nAuthors: Heewon Kim, Seokil Hong, Bohyung Han, Heesoo Myeong, Kyoung Mu Lee\nYear: 2025",
-    "metadata": {
-      "type": "publication",
-      "language": "both",
-      "category": "paper",
-      "title": "Fine-Grained Neural Architecture Search for Image Super-Resolution",
-      "authors": "Heewon Kim, Seokil Hong, Bohyung Han, Heesoo Myeong, Kyoung Mu Lee",
-      "year": "2025"
-    }
-  },
-  {
-    "content": "논문: CADyQ: Content-Aware Dynamic Quantization for Image Super-Resolution\n저자: Cheeun Hong, Sungyong Baik, Heewon Kim, Seungjun Nah, Kyoung Mu Lee\n연도: 2025\n\nPublication: CADyQ: Content-Aware Dynamic Quantization for Image Super-Resolution\nAuthors: Cheeun Hong, Sungyong Baik, Heewon Kim, Seungjun Nah, Kyoung Mu Lee\nYear: 2025",
-    "metadata": {
-      "type": "publication",
-      "language": "both",
-      "category": "paper",
-      "title": "CADyQ: Content-Aware Dynamic Quantization for Image Super-Resolution",
-      "authors": "Cheeun Hong, Sungyong Baik, Heewon Kim, Seungjun Nah, Kyoung Mu Lee",
-      "year": "2025"
-    }
-  },
-  {
-    "content": "논문: Machine learning-based predictive modeling of depression in hypertensive populations\n저자: Chiyoung Lee, Heewon Kim\n연도: 2025\n\nPublication: Machine learning-based predictive modeling of depression in hypertensive populations\nAuthors: Chiyoung Lee, Heewon Kim\nYear: 2025",
-    "metadata": {
-      "type": "publication",
-      "language": "both",
-      "category": "paper",
-      "title": "Machine learning-based predictive modeling of depression in hypertensive populations",
-      "authors": "Chiyoung Lee, Heewon Kim",
-      "year": "2025"
-    }
-  },
-  {
-    "content": "논문: Attentive Fine-Grained Structured Sparsity for Image Restoration\n저자: Junghun Oh, Heewon Kim, Seungjun Nah, Cheeun Hong, Jonghyun Choi, Kyoung Mu Lee\n연도: 2025\n\nPublication: Attentive Fine-Grained Structured Sparsity for Image Restoration\nAuthors: Junghun Oh, Heewon Kim, Seungjun Nah, Cheeun Hong, Jonghyun Choi, Kyoung Mu Lee\nYear: 2025",
-    "metadata": {
-      "type": "publication",
-      "language": "both",
-      "category": "paper",
-      "title": "Attentive Fine-Grained Structured Sparsity for Image Restoration",
-      "authors": "Junghun Oh, Heewon Kim, Seungjun Nah, Cheeun Hong, Jonghyun Choi, Kyoung Mu Lee",
-      "year": "2025"
-    }
-  },
-  {
-    "content": "논문: DAQ: Channel-Wise Distribution-Aware Quantization for Deep Image Super-Resolution Networks\n저자: Cheeun Hong*, Heewon Kim*, Sungyong Baik, Junghun Oh, Kyoung Mu Lee\n연도: 2025\n\nPublication: DAQ: Channel-Wise Distribution-Aware Quantization for Deep Image Super-Resolution Networks\nAuthors: Cheeun Hong*, Heewon Kim*, Sungyong Baik, Junghun Oh, Kyoung Mu Lee\nYear: 2025",
-    "metadata": {
-      "type": "publication",
-      "language": "both",
-      "category": "paper",
-      "title": "DAQ: Channel-Wise Distribution-Aware Quantization for Deep Image Super-Resolution Networks",
-      "authors": "Cheeun Hong*, Heewon Kim*, Sungyong Baik, Junghun Oh, Kyoung Mu Lee",
-      "year": "2025"
-    }
-  },
-  {
-    "content": "논문: Batch Normalization Tells You Which Filter is Important\n저자: Junghun Oh, Heewon Kim, Sungyong Baik, Cheeun Hong, Kyoung Mu Lee\n연도: 2025\n\nPublication: Batch Normalization Tells You Which Filter is Important\nAuthors: Junghun Oh, Heewon Kim, Sungyong Baik, Cheeun Hong, Kyoung Mu Lee\nYear: 2025",
+    "content": "논문: Batch Normalization Tells You Which Filter is Important\n저자: Junghun Oh, Heewon Kim, Sungyong Baik, Cheeun Hong, Kyoung Mu Lee\n연도: 2022\n학회: Winter Conference on Applications of Computer Vision (WACV) (WACV)\n\n\n\nPublication: Batch Normalization Tells You Which Filter is Important\nAuthors: Junghun Oh, Heewon Kim, Sungyong Baik, Cheeun Hong, Kyoung Mu Lee\nYear: 2022\nVenue: Winter Conference on Applications of Computer Vision (WACV) (WACV)\n\n",
     "metadata": {
       "type": "publication",
       "language": "both",
       "category": "paper",
       "title": "Batch Normalization Tells You Which Filter is Important",
       "authors": "Junghun Oh, Heewon Kim, Sungyong Baik, Cheeun Hong, Kyoung Mu Lee",
-      "year": "2025"
+      "year": "2022",
+      "venue": "WACV",
+      "recency_rank": 17
     }
   },
   {
-    "content": "논문: Meta-Learning with Task-Adaptive Loss Function for Few-Shot Learning\n저자: Sungyong Baik, Janghoon Choi, Heewon Kim, Dohee Cho, Jaesik Min, Kyoung Mu Lee\n연도: 2025\n\nPublication: Meta-Learning with Task-Adaptive Loss Function for Few-Shot Learning\nAuthors: Sungyong Baik, Janghoon Choi, Heewon Kim, Dohee Cho, Jaesik Min, Kyoung Mu Lee\nYear: 2025",
+    "content": "논문: Machine learning-based predictive modeling of depression in hypertensive populations\n저자: Chiyoung Lee, Heewon Kim\n연도: 2022\n학회: PLOS ONE (PLOS ONE)\n\n\n\nPublication: Machine learning-based predictive modeling of depression in hypertensive populations\nAuthors: Chiyoung Lee, Heewon Kim\nYear: 2022\nVenue: PLOS ONE (PLOS ONE)\n\n",
     "metadata": {
       "type": "publication",
       "language": "both",
       "category": "paper",
-      "title": "Meta-Learning with Task-Adaptive Loss Function for Few-Shot Learning",
-      "authors": "Sungyong Baik, Janghoon Choi, Heewon Kim, Dohee Cho, Jaesik Min, Kyoung Mu Lee",
-      "year": "2025"
+      "title": "Machine learning-based predictive modeling of depression in hypertensive populations",
+      "authors": "Chiyoung Lee, Heewon Kim",
+      "year": "2022",
+      "venue": "PLOS ONE",
+      "recency_rank": 18
     }
   },
   {
-    "content": "논문: Motion-Aware Dynamic Architecture for Efficient Frame Interpolation\n저자: Myungsub Choi, Suyoung Lee, Heewon Kim, Kyoung Mu Lee\n연도: 2025\n\nPublication: Motion-Aware Dynamic Architecture for Efficient Frame Interpolation\nAuthors: Myungsub Choi, Suyoung Lee, Heewon Kim, Kyoung Mu Lee\nYear: 2025",
+    "content": "논문: Fine-Grained Neural Architecture Search for Image Super-Resolution\n저자: Heewon Kim, Seokil Hong, Bohyung Han, Heesoo Myeong, Kyoung Mu Lee\n연도: 2022\n학회: Journal of Visual Communication and Image Representation (JVCI) (JVCI)\n\n\n\nPublication: Fine-Grained Neural Architecture Search for Image Super-Resolution\nAuthors: Heewon Kim, Seokil Hong, Bohyung Han, Heesoo Myeong, Kyoung Mu Lee\nYear: 2022\nVenue: Journal of Visual Communication and Image Representation (JVCI) (JVCI)\n\n",
     "metadata": {
       "type": "publication",
       "language": "both",
       "category": "paper",
-      "title": "Motion-Aware Dynamic Architecture for Efficient Frame Interpolation",
-      "authors": "Myungsub Choi, Suyoung Lee, Heewon Kim, Kyoung Mu Lee",
-      "year": "2025"
+      "title": "Fine-Grained Neural Architecture Search for Image Super-Resolution",
+      "authors": "Heewon Kim, Seokil Hong, Bohyung Han, Heesoo Myeong, Kyoung Mu Lee",
+      "year": "2022",
+      "venue": "JVCI",
+      "recency_rank": 19
     }
   },
   {
-    "content": "논문: Searching for Controllable Image Restoration Networks\n저자: Heewon Kim, Sungyong Baik, Myungsub Choi, Janghoon Choi, Kyoung Mu Lee\n연도: 2025\n\nPublication: Searching for Controllable Image Restoration Networks\nAuthors: Heewon Kim, Sungyong Baik, Myungsub Choi, Janghoon Choi, Kyoung Mu Lee\nYear: 2025",
-    "metadata": {
-      "type": "publication",
-      "language": "both",
-      "category": "paper",
-      "title": "Searching for Controllable Image Restoration Networks",
-      "authors": "Heewon Kim, Sungyong Baik, Myungsub Choi, Janghoon Choi, Kyoung Mu Lee",
-      "year": "2025"
-    }
-  },
-  {
-    "content": "논문: Real-time video super-resolution on smartphones with deep learning, mobile ai 2021 challenge: Report\n저자: Andrey Ignatov, Andres Romero, Heewon Kim, Radu Timofte\n연도: 2025\n\nPublication: Real-time video super-resolution on smartphones with deep learning, mobile ai 2021 challenge: Report\nAuthors: Andrey Ignatov, Andres Romero, Heewon Kim, Radu Timofte\nYear: 2025",
-    "metadata": {
-      "type": "publication",
-      "language": "both",
-      "category": "paper",
-      "title": "Real-time video super-resolution on smartphones with deep learning, mobile ai 2021 challenge: Report",
-      "authors": "Andrey Ignatov, Andres Romero, Heewon Kim, Radu Timofte",
-      "year": "2025"
-    }
-  },
-  {
-    "content": "논문: Meta-Learning with Adaptive Hyperparameters\n저자: Sungyong Baik, Myungsub Choi, Janghoon Choi, Heewon Kim, Kyoung Mu Lee\n연도: 2025\n\nPublication: Meta-Learning with Adaptive Hyperparameters\nAuthors: Sungyong Baik, Myungsub Choi, Janghoon Choi, Heewon Kim, Kyoung Mu Lee\nYear: 2025",
+    "content": "논문: Meta-Learning with Adaptive Hyperparameters\n저자: Sungyong Baik, Myungsub Choi, Janghoon Choi, Heewon Kim, Kyoung Mu Lee\n연도: 2020\n학회: Advances in Neural Information Processing Systems (NeurIPS) (NeurIPS)\n\n\n\nPublication: Meta-Learning with Adaptive Hyperparameters\nAuthors: Sungyong Baik, Myungsub Choi, Janghoon Choi, Heewon Kim, Kyoung Mu Lee\nYear: 2020\nVenue: Advances in Neural Information Processing Systems (NeurIPS) (NeurIPS)\n\n",
     "metadata": {
       "type": "publication",
       "language": "both",
       "category": "paper",
       "title": "Meta-Learning with Adaptive Hyperparameters",
       "authors": "Sungyong Baik, Myungsub Choi, Janghoon Choi, Heewon Kim, Kyoung Mu Lee",
-      "year": "2025"
+      "year": "2020",
+      "venue": "NeurIPS",
+      "recency_rank": 20
     }
   },
   {
-    "content": "논문: Channel Attention Is All You Need for Video Frame Interpolation\n저자: Myungsub Choi, Heewon Kim, Bohyung Han, Ning Xu, Kyoung Mu Lee\n연도: 2025\n\nPublication: Channel Attention Is All You Need for Video Frame Interpolation\nAuthors: Myungsub Choi, Heewon Kim, Bohyung Han, Ning Xu, Kyoung Mu Lee\nYear: 2025",
+    "content": "논문: CADyQ: Content-Aware Dynamic Quantization for Image Super-Resolution\n저자: Cheeun Hong, Sungyong Baik, Heewon Kim, Seungjun Nah, Kyoung Mu Lee\n연도: 2022\n학회: European Conference on Computer Vision (ECCV) (ECCV)\n\n\n\nPublication: CADyQ: Content-Aware Dynamic Quantization for Image Super-Resolution\nAuthors: Cheeun Hong, Sungyong Baik, Heewon Kim, Seungjun Nah, Kyoung Mu Lee\nYear: 2022\nVenue: European Conference on Computer Vision (ECCV) (ECCV)\n\n",
+    "metadata": {
+      "type": "publication",
+      "language": "both",
+      "category": "paper",
+      "title": "CADyQ: Content-Aware Dynamic Quantization for Image Super-Resolution",
+      "authors": "Cheeun Hong, Sungyong Baik, Heewon Kim, Seungjun Nah, Kyoung Mu Lee",
+      "year": "2022",
+      "venue": "ECCV",
+      "recency_rank": 21
+    }
+  },
+  {
+    "content": "논문: DAQ: Channel-Wise Distribution-Aware Quantization for Deep Image Super-Resolution Networks\n저자: Cheeun Hong*, Heewon Kim*, Sungyong Baik, Junghun Oh, Kyoung Mu Lee\n연도: 2022\n학회: Winter Conference on Applications of Computer Vision (WACV) (WACV)\n\n\n\nPublication: DAQ: Channel-Wise Distribution-Aware Quantization for Deep Image Super-Resolution Networks\nAuthors: Cheeun Hong*, Heewon Kim*, Sungyong Baik, Junghun Oh, Kyoung Mu Lee\nYear: 2022\nVenue: Winter Conference on Applications of Computer Vision (WACV) (WACV)\n\n",
+    "metadata": {
+      "type": "publication",
+      "language": "both",
+      "category": "paper",
+      "title": "DAQ: Channel-Wise Distribution-Aware Quantization for Deep Image Super-Resolution Networks",
+      "authors": "Cheeun Hong*, Heewon Kim*, Sungyong Baik, Junghun Oh, Kyoung Mu Lee",
+      "year": "2022",
+      "venue": "WACV",
+      "recency_rank": 22
+    }
+  },
+  {
+    "content": "논문: Attentive Fine-Grained Structured Sparsity for Image Restoration\n저자: Junghun Oh, Heewon Kim, Seungjun Nah, Cheeun Hong, Jonghyun Choi, Kyoung Mu Lee\n연도: 2022\n학회: Proc. Computer Vision and Pattern Recognition (CVPR) (CVPR)\n\n\n\nPublication: Attentive Fine-Grained Structured Sparsity for Image Restoration\nAuthors: Junghun Oh, Heewon Kim, Seungjun Nah, Cheeun Hong, Jonghyun Choi, Kyoung Mu Lee\nYear: 2022\nVenue: Proc. Computer Vision and Pattern Recognition (CVPR) (CVPR)\n\n",
+    "metadata": {
+      "type": "publication",
+      "language": "both",
+      "category": "paper",
+      "title": "Attentive Fine-Grained Structured Sparsity for Image Restoration",
+      "authors": "Junghun Oh, Heewon Kim, Seungjun Nah, Cheeun Hong, Jonghyun Choi, Kyoung Mu Lee",
+      "year": "2022",
+      "venue": "CVPR",
+      "recency_rank": 23
+    }
+  },
+  {
+    "content": "논문: Meta-Learning with Task-Adaptive Loss Function for Few-Shot Learning\n저자: Sungyong Baik, Janghoon Choi, Heewon Kim, Dohee Cho, Jaesik Min, and Kyoung Mu Lee\n연도: 2021\n학회: Proc. International Conference on Computer Vision (ICCV) (ICCV)\n\n\n\nPublication: Meta-Learning with Task-Adaptive Loss Function for Few-Shot Learning\nAuthors: Sungyong Baik, Janghoon Choi, Heewon Kim, Dohee Cho, Jaesik Min, and Kyoung Mu Lee\nYear: 2021\nVenue: Proc. International Conference on Computer Vision (ICCV) (ICCV)\n\n",
+    "metadata": {
+      "type": "publication",
+      "language": "both",
+      "category": "paper",
+      "title": "Meta-Learning with Task-Adaptive Loss Function for Few-Shot Learning",
+      "authors": "Sungyong Baik, Janghoon Choi, Heewon Kim, Dohee Cho, Jaesik Min, and Kyoung Mu Lee",
+      "year": "2021",
+      "venue": "ICCV",
+      "recency_rank": 24
+    }
+  },
+  {
+    "content": "논문: Searching for Controllable Image Restoration Networks\n저자: Heewon Kim, Sungyong Baik, Myungsub Choi, Janghoon Choi, and Kyoung Mu Lee\n연도: 2021\n학회: Proc. International Conference on Computer Vision (ICCV) (ICCV)\n\n\n\nPublication: Searching for Controllable Image Restoration Networks\nAuthors: Heewon Kim, Sungyong Baik, Myungsub Choi, Janghoon Choi, and Kyoung Mu Lee\nYear: 2021\nVenue: Proc. International Conference on Computer Vision (ICCV) (ICCV)\n\n",
+    "metadata": {
+      "type": "publication",
+      "language": "both",
+      "category": "paper",
+      "title": "Searching for Controllable Image Restoration Networks",
+      "authors": "Heewon Kim, Sungyong Baik, Myungsub Choi, Janghoon Choi, and Kyoung Mu Lee",
+      "year": "2021",
+      "venue": "ICCV",
+      "recency_rank": 25
+    }
+  },
+  {
+    "content": "논문: Real-time video super-resolution on smartphones with deep learning, mobile ai 2021 challenge: Report\n저자: Andrey Ignatov, Andres Romero, Heewon Kim, and Radu Timofte\n연도: 2021\n학회: Proc. Computer Vision and Pattern Recognition Workshops (CVPRW) (CVPRW)\n\n\n\nPublication: Real-time video super-resolution on smartphones with deep learning, mobile ai 2021 challenge: Report\nAuthors: Andrey Ignatov, Andres Romero, Heewon Kim, and Radu Timofte\nYear: 2021\nVenue: Proc. Computer Vision and Pattern Recognition Workshops (CVPRW) (CVPRW)\n\n",
+    "metadata": {
+      "type": "publication",
+      "language": "both",
+      "category": "paper",
+      "title": "Real-time video super-resolution on smartphones with deep learning, mobile ai 2021 challenge: Report",
+      "authors": "Andrey Ignatov, Andres Romero, Heewon Kim, and Radu Timofte",
+      "year": "2021",
+      "venue": "CVPRW",
+      "recency_rank": 26
+    }
+  },
+  {
+    "content": "논문: Motion-Aware Dynamic Architecture for Efficient Frame Interpolation\n저자: Myungsub Choi, Suyoung Lee, Heewon Kim, and Kyoung Mu Lee\n연도: 2021\n학회: Proc. International Conference on Computer Vision (ICCV) (ICCV)\n\n\n\nPublication: Motion-Aware Dynamic Architecture for Efficient Frame Interpolation\nAuthors: Myungsub Choi, Suyoung Lee, Heewon Kim, and Kyoung Mu Lee\nYear: 2021\nVenue: Proc. International Conference on Computer Vision (ICCV) (ICCV)\n\n",
+    "metadata": {
+      "type": "publication",
+      "language": "both",
+      "category": "paper",
+      "title": "Motion-Aware Dynamic Architecture for Efficient Frame Interpolation",
+      "authors": "Myungsub Choi, Suyoung Lee, Heewon Kim, and Kyoung Mu Lee",
+      "year": "2021",
+      "venue": "ICCV",
+      "recency_rank": 27
+    }
+  },
+  {
+    "content": "논문: Channel Attention Is All You Need for Video Frame Interpolation\n저자: Myungsub Choi, Heewon Kim, Bohyung Han, Ning Xu, and Kyoung Mu Lee\n연도: 2020\n학회: AAAI Conference on Artificial Intelligence (AAAI)\n\n\n\nPublication: Channel Attention Is All You Need for Video Frame Interpolation\nAuthors: Myungsub Choi, Heewon Kim, Bohyung Han, Ning Xu, and Kyoung Mu Lee\nYear: 2020\nVenue: AAAI Conference on Artificial Intelligence (AAAI)\n\n",
     "metadata": {
       "type": "publication",
       "language": "both",
       "category": "paper",
       "title": "Channel Attention Is All You Need for Video Frame Interpolation",
-      "authors": "Myungsub Choi, Heewon Kim, Bohyung Han, Ning Xu, Kyoung Mu Lee",
-      "year": "2025"
+      "authors": "Myungsub Choi, Heewon Kim, Bohyung Han, Ning Xu, and Kyoung Mu Lee",
+      "year": "2020",
+      "venue": "AAAI",
+      "recency_rank": 28
     }
   },
   {
-    "content": "논문: AIM 2019 challenge on video temporal super-resolution: Methods and results\n저자: Seungjun Nah, Sanghyun Son, Radu Timofte, Kyoung Mu Lee, et al.\n연도: 2025\n\nPublication: AIM 2019 challenge on video temporal super-resolution: Methods and results\nAuthors: Seungjun Nah, Sanghyun Son, Radu Timofte, Kyoung Mu Lee, et al.\nYear: 2025",
+    "content": "논문: AIM 2019 challenge on video temporal super-resolution: Methods and results\n저자: Seungjun Nah, Sanghyun Son, Radu Timofte, Kyoung Mu Lee, Li Siyao, Ziwei Pan, Xiangyu Xu, Wenxiu Sun, Myungsub Choi, Heewon Kim, Bohyung Han, Ning Xu, Renjie Liao, Alex Schwing, Yuhua Chen, Chen Chen, Kai Zhang, Wangmeng Zuo, Tong Lu, Ran Duan, Tong Lu, Lihe Zhang, Woonsook Park, Manhcuot Tran, George Pisha, Eyal Naor, Lilie Zhang, Kai Zhang, Wangmeng Zuo, Zhimin Tang, Linkai Luo, Shaochui Li, Min Fu, Lei Cai, Wen Heng, Giang Bui, Truc Le, Ye Deng, Sifei Liu, Hyun Young Jung, Tianlong Guo, Hongchang Gao, Jiejun Xu, Ruofan Fang, Yunsong Li, Anmur Mehta, Vishal Monga\n연도: 2019\n학회: International Conference on Computer Vision Workshop (ICCVW) (ICCVW)\n\n\n\nPublication: AIM 2019 challenge on video temporal super-resolution: Methods and results\nAuthors: Seungjun Nah, Sanghyun Son, Radu Timofte, Kyoung Mu Lee, Li Siyao, Ziwei Pan, Xiangyu Xu, Wenxiu Sun, Myungsub Choi, Heewon Kim, Bohyung Han, Ning Xu, Renjie Liao, Alex Schwing, Yuhua Chen, Chen Chen, Kai Zhang, Wangmeng Zuo, Tong Lu, Ran Duan, Tong Lu, Lihe Zhang, Woonsook Park, Manhcuot Tran, George Pisha, Eyal Naor, Lilie Zhang, Kai Zhang, Wangmeng Zuo, Zhimin Tang, Linkai Luo, Shaochui Li, Min Fu, Lei Cai, Wen Heng, Giang Bui, Truc Le, Ye Deng, Sifei Liu, Hyun Young Jung, Tianlong Guo, Hongchang Gao, Jiejun Xu, Ruofan Fang, Yunsong Li, Anmur Mehta, Vishal Monga\nYear: 2019\nVenue: International Conference on Computer Vision Workshop (ICCVW) (ICCVW)\n\n",
     "metadata": {
       "type": "publication",
       "language": "both",
       "category": "paper",
       "title": "AIM 2019 challenge on video temporal super-resolution: Methods and results",
-      "authors": "Seungjun Nah, Sanghyun Son, Radu Timofte, Kyoung Mu Lee, et al.",
-      "year": "2025"
+      "authors": "Seungjun Nah, Sanghyun Son, Radu Timofte, Kyoung Mu Lee, Li Siyao, Ziwei Pan, Xiangyu Xu, Wenxiu Sun, Myungsub Choi, Heewon Kim, Bohyung Han, Ning Xu, Renjie Liao, Alex Schwing, Yuhua Chen, Chen Chen, Kai Zhang, Wangmeng Zuo, Tong Lu, Ran Duan, Tong Lu, Lihe Zhang, Woonsook Park, Manhcuot Tran, George Pisha, Eyal Naor, Lilie Zhang, Kai Zhang, Wangmeng Zuo, Zhimin Tang, Linkai Luo, Shaochui Li, Min Fu, Lei Cai, Wen Heng, Giang Bui, Truc Le, Ye Deng, Sifei Liu, Hyun Young Jung, Tianlong Guo, Hongchang Gao, Jiejun Xu, Ruofan Fang, Yunsong Li, Anmur Mehta, Vishal Monga",
+      "year": "2019",
+      "venue": "ICCVW",
+      "recency_rank": 29
     }
   },
   {
-    "content": "논문: Task-Aware Image Downscaling\n저자: Heewon Kim, Myungsub Choi, Bee Lim, Kyoung Mu Lee\n연도: 2025\n\nPublication: Task-Aware Image Downscaling\nAuthors: Heewon Kim, Myungsub Choi, Bee Lim, Kyoung Mu Lee\nYear: 2025",
+    "content": "논문: Task-Aware Image Downscaling\n저자: Heewon Kim, Myungsub Choi, Bee Lim, and Kyoung Mu Lee\n연도: 2018\n학회: Proc. European Conference on Computer Vision (ECCV) (ECCV)\n\n\n\nPublication: Task-Aware Image Downscaling\nAuthors: Heewon Kim, Myungsub Choi, Bee Lim, and Kyoung Mu Lee\nYear: 2018\nVenue: Proc. European Conference on Computer Vision (ECCV) (ECCV)\n\n",
     "metadata": {
       "type": "publication",
       "language": "both",
       "category": "paper",
       "title": "Task-Aware Image Downscaling",
-      "authors": "Heewon Kim, Myungsub Choi, Bee Lim, Kyoung Mu Lee",
-      "year": "2025"
+      "authors": "Heewon Kim, Myungsub Choi, Bee Lim, and Kyoung Mu Lee",
+      "year": "2018",
+      "venue": "ECCV",
+      "recency_rank": 30
     }
   },
   {
-    "content": "논문: NTIRE 2017 Challenge on Single Image Super-Resolution: Methods and Results\n저자: Radu Timofte, Eirikur Agustsson, Luc Van Gool, Ming-Hsuan Yang, Lei Zhang, Bee Lim, Sanghyun Son, Heewon Kim, Seungjun Nah, Kyoung Mu Lee, et al.\n연도: 2025\n\nPublication: NTIRE 2017 Challenge on Single Image Super-Resolution: Methods and Results\nAuthors: Radu Timofte, Eirikur Agustsson, Luc Van Gool, Ming-Hsuan Yang, Lei Zhang, Bee Lim, Sanghyun Son, Heewon Kim, Seungjun Nah, Kyoung Mu Lee, et al.\nYear: 2025",
+    "content": "논문: NTIRE 2017 Challenge on Single Image Super-Resolution: Methods and Results\n저자: Radu Timofte, Eirikur Agustsson, Luc Van Gool, Ming-Hsuan Yang, Lei Zhang, Bee Lim, Sanghyun Son, Heewon Kim, Seungjun Nah, Kyoung Mu Lee, et al.\n연도: 2017\n학회: Proc. Computer Vision and Pattern Recognition Workshops (CVPRW) (CVPRW)\n\n\n\nPublication: NTIRE 2017 Challenge on Single Image Super-Resolution: Methods and Results\nAuthors: Radu Timofte, Eirikur Agustsson, Luc Van Gool, Ming-Hsuan Yang, Lei Zhang, Bee Lim, Sanghyun Son, Heewon Kim, Seungjun Nah, Kyoung Mu Lee, et al.\nYear: 2017\nVenue: Proc. Computer Vision and Pattern Recognition Workshops (CVPRW) (CVPRW)\n\n",
     "metadata": {
       "type": "publication",
       "language": "both",
       "category": "paper",
       "title": "NTIRE 2017 Challenge on Single Image Super-Resolution: Methods and Results",
       "authors": "Radu Timofte, Eirikur Agustsson, Luc Van Gool, Ming-Hsuan Yang, Lei Zhang, Bee Lim, Sanghyun Son, Heewon Kim, Seungjun Nah, Kyoung Mu Lee, et al.",
-      "year": "2025"
+      "year": "2017",
+      "venue": "CVPRW",
+      "recency_rank": 31
     }
   },
   {
-    "content": "논문: Enhanced Deep Residual Networks for Single Image Super-Resolution\n저자: Bee Lim*, Sanghyun Son*, Heewon Kim, Seungjun Nah, Kyoung Mu Lee\n연도: 2025\n\nPublication: Enhanced Deep Residual Networks for Single Image Super-Resolution\nAuthors: Bee Lim*, Sanghyun Son*, Heewon Kim, Seungjun Nah, Kyoung Mu Lee\nYear: 2025",
+    "content": "논문: Enhanced Deep Residual Networks for Single Image Super-Resolution\n저자: Bee Lim, Sanghyun Son, Heewon Kim, Seungjun Nah, and Kyoung Mu Lee\n연도: 2017\n학회: 2nd NTIRE: New Trends in Image Restoration and Enhancement workshop and challenge on image super-resolution in conjunction with CVPR 2017 (CVPRW17)\n\n\n\nPublication: Enhanced Deep Residual Networks for Single Image Super-Resolution\nAuthors: Bee Lim, Sanghyun Son, Heewon Kim, Seungjun Nah, and Kyoung Mu Lee\nYear: 2017\nVenue: 2nd NTIRE: New Trends in Image Restoration and Enhancement workshop and challenge on image super-resolution in conjunction with CVPR 2017 (CVPRW17)\n\n",
     "metadata": {
       "type": "publication",
       "language": "both",
       "category": "paper",
       "title": "Enhanced Deep Residual Networks for Single Image Super-Resolution",
-      "authors": "Bee Lim*, Sanghyun Son*, Heewon Kim, Seungjun Nah, Kyoung Mu Lee",
-      "year": "2025"
+      "authors": "Bee Lim, Sanghyun Son, Heewon Kim, Seungjun Nah, and Kyoung Mu Lee",
+      "year": "2017",
+      "venue": "CVPRW17",
+      "recency_rank": 32
+    }
+  },
+  {
+    "content": "논문: Accurate Baseball Player Pose Refinement Using Motion Prior Guidance\n저자: Seunghyun Oh†, Heewon Kim\n연도: 2025\n학회: ICT Express (ICT Express)\n\n\n\nPublication: Accurate Baseball Player Pose Refinement Using Motion Prior Guidance\nAuthors: Seunghyun Oh†, Heewon Kim\nYear: 2025\nVenue: ICT Express (ICT Express)\n\n",
+    "metadata": {
+      "type": "publication",
+      "language": "both",
+      "category": "paper",
+      "title": "Accurate Baseball Player Pose Refinement Using Motion Prior Guidance",
+      "authors": "Seunghyun Oh†, Heewon Kim",
+      "year": "2025",
+      "venue": "ICT Express",
+      "recency_rank": 33
     }
   },
   {
@@ -1239,7 +1305,7 @@
     }
   },
   {
-    "content": "질문: 연구실 위치가 어디인가요?\n답변: Reality Lab은 숭실대학교에 위치하고 있습니다. 정확한 건물과 호실 정보는 이메일(heewon@ssu.ac.kr) 또는 전화(+82-2-820-0679)로 문의해주세요.\n키워드: 위치, 어디, 장소",
+    "content": "질문: 연구실 위치가 어디인가요?\n답변: Reality Lab은 숭실대학교 정보과학관 602호에 위치하고 있습니다.\n뿐만 아니라 tech station등 다양한 공간에서 연구원 분들이 활동중입니다.\n키워드: 위치, 어디, 장소, 정보과학관",
     "metadata": {
       "type": "qa",
       "language": "ko",
@@ -1275,7 +1341,7 @@
     }
   },
   {
-    "content": "Question: Where is the lab located?\nAnswer: Reality Lab is located at Soongsil University. For specific building and room information, please contact us via email (heewon@ssu.ac.kr) or phone (+82-2-820-0679).\nKeywords: location, where, address",
+    "content": "Question: Where is the lab located?\nAnswer: Reality Lab is based in Room 602 of Soongsil University's Information Science Building, with researchers also operating out of the Tech Station and other collaborative spaces.\nKeywords: location, where, address",
     "metadata": {
       "type": "qa",
       "language": "en",

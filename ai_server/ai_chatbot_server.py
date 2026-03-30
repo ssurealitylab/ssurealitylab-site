@@ -39,11 +39,13 @@ RAG_DIR = "/home/i0179/Realitylab-site/ai_server/hierarchical_rag"
 SYSTEM_PROMPT_KO = """당신은 숭실대학교 Reality Lab(리얼리티 연구실)의 AI 어시스턴트입니다.
 연구실의 정보, 구성원, 연구 분야, 논문 등에 대한 질문에 친절하고 정확하게 답변해주세요.
 제공된 참고자료를 기반으로 답변하되, 참고자료에 없는 내용은 "정확한 정보를 찾지 못했습니다"라고 말씀해주세요.
+중요: 참고자료에 나오는 주소, 이름, 고유명사, 숫자는 절대 변경하거나 추측하지 마세요. 그대로 인용하세요.
 답변은 한국어로 해주세요."""
 
 SYSTEM_PROMPT_EN = """You are an AI assistant for Reality Lab at Soongsil University.
 Answer questions about the lab's information, members, research areas, and publications accurately and helpfully.
 Base your answers on the provided reference materials. If information is not available, say so.
+IMPORTANT: Never modify or guess addresses, names, proper nouns, or numbers from the reference materials. Quote them exactly as provided.
 Answer in English."""
 
 
@@ -73,18 +75,24 @@ def detect_language(text):
 
 
 def get_rag_context(question, language='ko'):
-    """Get RAG context for a question"""
+    """Get RAG context for a question. Returns (context_str, has_verified_qa)."""
     if rag_retriever is None:
-        return ""
+        return "", False
 
     try:
         results = rag_retriever.search(question, k=5, min_score=0.3)
         if results:
-            return rag_retriever.format_context(results, language=language)
+            context = rag_retriever.format_context(results, language=language)
+            # Check if any result comes from researcher-verified Q&A
+            has_verified = any(
+                r.get('metadata', {}).get('type') == 'qa' or r.get('category') == 'qa'
+                for r in results
+            )
+            return context, has_verified
     except Exception as e:
         print(f"RAG search error: {e}")
 
-    return ""
+    return "", False
 
 
 def call_llama_server(question, context="", language="ko"):
@@ -232,9 +240,9 @@ def chat():
 
     with request_lock:
         # Get RAG context
-        context = get_rag_context(question, language)
+        context, verified_by_researchers = get_rag_context(question, language)
         if context:
-            print(f"[RAG] Found context ({len(context)} chars)")
+            print(f"[RAG] Found context ({len(context)} chars), verified={verified_by_researchers}")
 
         if mode == 'search':
             # Search mode - return RAG results only
@@ -242,7 +250,8 @@ def chat():
                 return jsonify({
                     "response": context,
                     "status": "success",
-                    "mode": "search"
+                    "mode": "search",
+                    "verified_by_researchers": verified_by_researchers
                 })
             else:
                 msg = "관련 정보를 찾지 못했습니다." if language == 'ko' else "No relevant information found."
@@ -259,7 +268,8 @@ def chat():
             return jsonify({
                 "response": response_text,
                 "status": "success",
-                "mode": mode
+                "mode": mode,
+                "verified_by_researchers": verified_by_researchers
             })
         else:
             # llama-server is down - return error
@@ -287,7 +297,7 @@ def chat_stream():
         return jsonify({"error": "No question provided"}), 400
 
     language = detect_language(question)
-    context = get_rag_context(question, language)
+    context, verified_by_researchers = get_rag_context(question, language)
 
     start_time = time.time()
 
@@ -296,7 +306,7 @@ def chat_stream():
             for chunk in call_llama_server_stream(question, context, language):
                 yield f"data: {json.dumps({'text': chunk, 'done': False})}\n\n"
             elapsed = round(time.time() - start_time, 1)
-            yield f"data: {json.dumps({'done': True, 'response_time': elapsed})}\n\n"
+            yield f"data: {json.dumps({'done': True, 'response_time': elapsed, 'verified_by_researchers': verified_by_researchers})}\n\n"
         except Exception as e:
             yield f"data: {json.dumps({'error': str(e)})}\n\n"
 

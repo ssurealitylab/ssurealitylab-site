@@ -107,6 +107,7 @@
               <p><strong>업데이트:</strong> 매일 오전 0시 자동 업데이트</p>
               <br>
               <p>• <span style="display:inline-block;width:12px;height:12px;background:#4caf50;border-radius:50%;color:white;font-size:8px;text-align:center;line-height:12px;">✓</span> : 연구원이 검증한 정보를 기반으로 한 답변</p>
+              <p style="font-size:11px;color:#888;margin-top:4px">※ 체크 표시가 없는 답변도 연구실 데이터(구성원, 논문, 뉴스 등)를 기반으로 하므로 정확할 수 있습니다.</p>
             </div>
             <div class="tooltip-en" style="display: none;">
               <h4>🤖 Reality Lab AI Assistant</h4>
@@ -119,6 +120,7 @@
               <p><strong>Updates:</strong> Daily auto-update at 12 AM KST</p>
               <br>
               <p>• <span style="display:inline-block;width:12px;height:12px;background:#4caf50;border-radius:50%;color:white;font-size:8px;text-align:center;line-height:12px;">✓</span> : Answer based on researcher-verified information</p>
+              <p style="font-size:11px;color:#888;margin-top:4px">※ Answers without this mark are based on lab data (members, publications, news) and may still be accurate.</p>
             </div>
           </div>
         </div>
@@ -1096,7 +1098,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const GPU_MANAGER_URL = null; // Example: 'https://your-tunnel.trycloudflare.com'
 
   // Direct AI server endpoint (fallback when GPU_MANAGER_URL is null)
-  const DIRECT_AI_SERVER_URL = 'https://solving-pleased-terrorist-title.trycloudflare.com';
+  const DIRECT_AI_SERVER_URL = 'https://jelsoft-television-ahead-upload.trycloudflare.com';
   
   // Page visitor management
   let visitorSessionTimer = null;
@@ -1983,7 +1985,7 @@ document.addEventListener('DOMContentLoaded', function() {
           // Show/hide verified badge on chatbot window
           const verifiedBadge = document.getElementById('verified-badge');
           if (verifiedBadge) {
-            const tooltipText = isEnglish ? 'Verified by researchers' : '연구원 검증 정보';
+            const tooltipText = isEnglish ? 'Based on researcher-verified info (answers without this mark may still be accurate)' : '연구원이 검증한 정보 기반 답변 (체크 없는 답변도 정확할 수 있습니다)';
             verifiedBadge.setAttribute('data-tooltip', tooltipText);
             if (verifiedByResearchers) {
               verifiedBadge.classList.add('show');
