@@ -99,7 +99,7 @@ class HierarchicalRetriever:
 
         return result
 
-    def search_category(self, category: str, query: str, k: int = 3, min_score: float = 0.3) -> List[Dict[str, Any]]:
+    def search_category(self, category: str, query: str, k: int = 5, min_score: float = 0.15) -> List[Dict[str, Any]]:
         """Search within a specific category"""
         if category not in self.category_indexes:
             return []
@@ -125,7 +125,7 @@ class HierarchicalRetriever:
 
         return results
 
-    def search(self, query: str, k: int = 3, min_score: float = 0.3, max_categories: int = 2) -> List[Dict[str, Any]]:
+    def search(self, query: str, k: int = 5, min_score: float = 0.15, max_categories: int = 3) -> List[Dict[str, Any]]:
         """
         2-stage hierarchical search:
         1. Classify query to find relevant categories

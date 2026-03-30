@@ -80,7 +80,7 @@ def get_rag_context(question, language='ko'):
         return "", False
 
     try:
-        results = rag_retriever.search(question, k=5, min_score=0.3)
+        results = rag_retriever.search(question, k=5, min_score=0.15)
         if results:
             context = rag_retriever.format_context(results, language=language)
             # Check if any result comes from researcher-verified Q&A
