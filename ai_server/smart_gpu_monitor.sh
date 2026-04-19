@@ -1,10 +1,9 @@
 #!/bin/bash
 
 # Smart GPU Monitor for llama-server
-# - Checks if llama-server is running
-# - If not, finds 2 free GPUs and starts it
-# - Also restarts ai_chatbot_server if needed
-# - Designed to run twice daily + as 30-min fallback monitor
+# - NEVER uses GPUs that other users are using
+# - Only starts on GPUs with NO other users' processes AND enough free memory
+# - Checks if llama-server/chatbot/tunnel are running
 
 WORK_DIR="/home/i0179/Realitylab-site"
 LOG_FILE="$WORK_DIR/ai_server/gpu_monitor.log"
@@ -12,6 +11,7 @@ LLAMA_DIR="/home/i0179/llama.cpp/build/bin"
 MODEL_PATH="/data/models/gpt-oss-120b/openai.gpt-oss-120b.MXFP4_MOE-00001-of-00005.gguf"
 PYTHON="/usr/bin/python3"
 CHATBOT_SERVER="$WORK_DIR/ai_server/ai_chatbot_server.py"
+MY_USER="i0179"
 
 # Minimum free GPU memory required per GPU (in MiB)
 MIN_FREE_MEM=10000
@@ -40,18 +40,39 @@ if pgrep -f "llama-server.*8081" > /dev/null; then
     fi
 fi
 
-# === 2. If llama-server is not running, find free GPUs ===
+# === 2. If llama-server is not running, find TRULY free GPUs ===
 if ! pgrep -f "llama-server.*8081" > /dev/null; then
     log "llama-server not running. Checking GPU availability..."
 
-    # Get free memory for each GPU
+    # Step A: Find which GPUs have OTHER users' processes (not ours)
+    OCCUPIED_GPUS=""
+    while IFS=',' read -r pid gpu_uuid used_mem pname; do
+        pid=$(echo "$pid" | tr -d ' ')
+        gpu_uuid=$(echo "$gpu_uuid" | tr -d ' ')
+
+        # Check if this process belongs to another user
+        PROC_USER=$(ps -o user= -p "$pid" 2>/dev/null | tr -d ' ')
+        if [ -n "$PROC_USER" ] && [ "$PROC_USER" != "$MY_USER" ]; then
+            # Find GPU index from UUID
+            GPU_IDX=$(nvidia-smi --query-gpu=index,gpu_uuid --format=csv,noheader | grep "$gpu_uuid" | cut -d',' -f1 | tr -d ' ')
+            OCCUPIED_GPUS="$OCCUPIED_GPUS $GPU_IDX"
+            log "  GPU $GPU_IDX: occupied by user '$PROC_USER' (pid $pid, $(echo $pname | tr -d ' '))"
+        fi
+    done < <(nvidia-smi --query-compute-apps=pid,gpu_uuid,used_memory,name --format=csv,noheader 2>/dev/null)
+
+    # Step B: Find GPUs with enough free memory AND not occupied by others
     FREE_GPUS=""
     GPU_COUNT=0
 
     while IFS=', ' read -r idx free_mem; do
-        # Clean whitespace
         idx=$(echo "$idx" | tr -d ' ')
         free_mem=$(echo "$free_mem" | tr -d ' MiB')
+
+        # Check if this GPU is occupied by another user
+        if echo "$OCCUPIED_GPUS" | grep -qw "$idx"; then
+            log "  GPU $idx: ${free_mem}MiB free but OTHER USER is using it - SKIP"
+            continue
+        fi
 
         if [ "$free_mem" -ge "$MIN_FREE_MEM" ]; then
             if [ -z "$FREE_GPUS" ]; then
@@ -60,16 +81,15 @@ if ! pgrep -f "llama-server.*8081" > /dev/null; then
                 FREE_GPUS="$FREE_GPUS,$idx"
             fi
             GPU_COUNT=$((GPU_COUNT + 1))
-            log "  GPU $idx: ${free_mem} MiB free (OK)"
+            log "  GPU $idx: ${free_mem}MiB free, no other users (OK)"
         else
-            log "  GPU $idx: ${free_mem} MiB free (not enough)"
+            log "  GPU $idx: ${free_mem}MiB free (not enough memory)"
         fi
     done < <(nvidia-smi --query-gpu=index,memory.free --format=csv,noheader,nounits)
 
     if [ "$GPU_COUNT" -ge "$NUM_GPUS" ]; then
-        # Pick first NUM_GPUS GPUs
         SELECTED_GPUS=$(echo "$FREE_GPUS" | cut -d',' -f1-${NUM_GPUS})
-        log "Starting llama-server on GPUs: $SELECTED_GPUS"
+        log "Starting llama-server on GPUs: $SELECTED_GPUS (verified no other users)"
 
         cd "$LLAMA_DIR"
         CUDA_VISIBLE_DEVICES=$SELECTED_GPUS nohup ./llama-server \
@@ -83,7 +103,6 @@ if ! pgrep -f "llama-server.*8081" > /dev/null; then
         LLAMA_PID=$!
         log "llama-server starting (PID: $LLAMA_PID, GPUs: $SELECTED_GPUS)"
 
-        # Wait for ready (max 2 minutes)
         for i in {1..24}; do
             sleep 5
             if curl -s --max-time 5 http://localhost:8081/health | grep -q "ok"; then
@@ -96,7 +115,7 @@ if ! pgrep -f "llama-server.*8081" > /dev/null; then
             log "WARN: llama-server may still be loading"
         fi
     else
-        log "Not enough free GPUs (need $NUM_GPUS, found $GPU_COUNT with >=${MIN_FREE_MEM}MiB free). Skipping."
+        log "Not enough exclusive GPUs (need $NUM_GPUS, found $GPU_COUNT). Other users are using GPUs. Skipping."
     fi
 fi
 
