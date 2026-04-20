@@ -3941,3 +3941,132 @@
 [2026-04-20 08:00:29] OK: ai_chatbot_server running
 [2026-04-20 08:00:30] cloudflared not running. Starting restart_tunnel.sh...
 [2026-04-20 08:00:30] Another restart_tunnel.sh is already running (PID: 1400973). Exiting.
+[2026-04-20 08:30:01] OK: llama-server healthy
+[2026-04-20 08:30:01] OK: ai_chatbot_server running
+[2026-04-20 09:00:01] OK: llama-server healthy
+[2026-04-20 09:00:01] OK: ai_chatbot_server running
+[2026-04-20 09:30:01] OK: llama-server healthy
+[2026-04-20 09:30:01] OK: ai_chatbot_server running
+[2026-04-20 10:00:01] OK: llama-server healthy
+[2026-04-20 10:00:01] OK: llama-server healthy
+[2026-04-20 10:00:01] OK: ai_chatbot_server running
+[2026-04-20 10:00:01] OK: ai_chatbot_server running
+[2026-04-20 10:30:01] OK: llama-server healthy
+[2026-04-20 10:30:01] OK: ai_chatbot_server running
+[2026-04-20 11:00:01] OK: llama-server healthy
+[2026-04-20 11:00:01] OK: ai_chatbot_server running
+[2026-04-20 11:30:01] OK: llama-server healthy
+[2026-04-20 11:30:01] OK: ai_chatbot_server running
+[2026-04-20 12:00:01] OK: llama-server healthy
+[2026-04-20 12:00:01] OK: ai_chatbot_server running
+[2026-04-20 12:30:01] OK: llama-server healthy
+[2026-04-20 12:30:01] OK: ai_chatbot_server running
+[2026-04-20 13:00:01] OK: llama-server healthy
+[2026-04-20 13:00:02] OK: ai_chatbot_server running
+[2026-04-20 13:30:01] OK: llama-server healthy
+[2026-04-20 13:30:01] OK: ai_chatbot_server running
+[2026-04-20 14:00:01] OK: llama-server healthy
+[2026-04-20 14:00:01] OK: ai_chatbot_server running
+[2026-04-20 14:30:01] OK: llama-server healthy
+[2026-04-20 14:30:01] OK: ai_chatbot_server running
+[2026-04-20 15:00:01] OK: llama-server healthy
+[2026-04-20 15:00:01] OK: ai_chatbot_server running
+[2026-04-20 15:30:01] OK: llama-server healthy
+[2026-04-20 15:30:02] OK: ai_chatbot_server running
+[2026-04-20 16:00:01] OK: llama-server healthy
+[2026-04-20 16:00:01] OK: ai_chatbot_server running
+[2026-04-20 16:30:01] OK: llama-server healthy
+[2026-04-20 16:30:01] OK: ai_chatbot_server running
+[2026-04-20 17:00:01] OK: llama-server healthy
+[2026-04-20 17:00:01] OK: ai_chatbot_server running
+[2026-04-20 17:30:01] OK: llama-server healthy
+[2026-04-20 17:30:01] OK: ai_chatbot_server running
+[2026-04-20 18:00:01] OK: llama-server healthy
+[2026-04-20 18:00:01] OK: ai_chatbot_server running
+[2026-04-20 18:30:01] OK: llama-server healthy
+[2026-04-20 18:30:02] OK: ai_chatbot_server running
+[2026-04-20 19:00:01] OK: llama-server healthy
+[2026-04-20 19:00:01] OK: ai_chatbot_server running
+[2026-04-20 19:30:01] OK: llama-server healthy
+[2026-04-20 19:30:02] OK: ai_chatbot_server running
+[2026-04-20 20:00:02] OK: llama-server healthy
+[2026-04-20 20:00:02] OK: ai_chatbot_server running
+[2026-04-20 20:30:01] OK: llama-server healthy
+[2026-04-20 20:30:01] OK: ai_chatbot_server running
+[2026-04-20 21:00:01] OK: llama-server healthy
+[2026-04-20 21:00:01] OK: ai_chatbot_server running
+[2026-04-20 21:30:01] OK: llama-server healthy
+[2026-04-20 21:30:01] OK: ai_chatbot_server running
+[2026-04-20 22:00:01] OK: llama-server healthy
+[2026-04-20 22:00:01] OK: llama-server healthy
+[2026-04-20 22:00:01] OK: ai_chatbot_server running
+[2026-04-20 22:00:01] OK: ai_chatbot_server running
+[2026-04-20 22:30:01] OK: llama-server healthy
+[2026-04-20 22:30:01] OK: ai_chatbot_server running
+[2026-04-20 23:00:01] OK: llama-server healthy
+[2026-04-20 23:00:01] OK: ai_chatbot_server running
+[2026-04-20 23:30:01] OK: llama-server healthy
+[2026-04-20 23:30:02] OK: ai_chatbot_server running
+[2026-04-21 00:00:02] OK: llama-server healthy
+[2026-04-21 00:00:02] OK: ai_chatbot_server running
+[2026-04-21 00:30:01] OK: llama-server healthy
+[2026-04-21 00:30:01] OK: ai_chatbot_server running
+[2026-04-21 01:00:01] OK: llama-server healthy
+[2026-04-21 01:00:02] OK: ai_chatbot_server running
+[2026-04-21 01:30:02] OK: llama-server healthy
+[2026-04-21 01:30:02] OK: ai_chatbot_server running
+[2026-04-21 02:00:02] OK: llama-server healthy
+[2026-04-21 02:00:02] OK: ai_chatbot_server running
+[2026-04-21 02:30:01] OK: llama-server healthy
+[2026-04-21 02:30:01] OK: ai_chatbot_server running
+[2026-04-21 03:00:01] OK: llama-server healthy
+[2026-04-21 03:00:01] OK: ai_chatbot_server running
+[2026-04-21 03:30:01] OK: llama-server healthy
+[2026-04-21 03:30:01] OK: ai_chatbot_server running
+[2026-04-21 08:00:01] llama-server not running. Checking GPU availability...
+[2026-04-21 08:00:01]   GPU 1: occupied by user 'user0005' (pid 1347190, ray::Trainer.continuous_update_weights)
+[2026-04-21 08:00:01]   GPU 1: occupied by user 'user0005' (pid 1347195, ray::Reanalyse.reanalyse)
+[2026-04-21 08:00:02]   GPU 1: occupied by user 'user0005' (pid 1348598, ray::Trainer.continuous_update_weights)
+[2026-04-21 08:00:02]   GPU 1: occupied by user 'user0005' (pid 1348596, ray::Reanalyse.reanalyse)
+[2026-04-21 08:00:02]   GPU 1: occupied by user 'user0005' (pid 1349995, ray::Trainer.continuous_update_weights)
+[2026-04-21 08:00:02]   GPU 1: occupied by user 'user0005' (pid 1349990, ray::Reanalyse.reanalyse)
+[2026-04-21 08:00:02]   GPU 1: occupied by user 'user0005' (pid 1351416, ray::Trainer.continuous_update_weights)
+[2026-04-21 08:00:02]   GPU 1: occupied by user 'user0005' (pid 1351425, ray::Reanalyse.reanalyse)
+[2026-04-21 08:00:02]   GPU 1: occupied by user 'user0005' (pid 1352827, ray::Reanalyse.reanalyse)
+[2026-04-21 08:00:02]   GPU 1: occupied by user 'user0005' (pid 1352826, ray::Trainer.continuous_update_weights)
+[2026-04-21 08:00:03]   GPU 1: occupied by user 'user0005' (pid 1354210, ray::Trainer.continuous_update_weights)
+[2026-04-21 08:00:03]   GPU 1: occupied by user 'user0005' (pid 1354212, ray::Reanalyse.reanalyse)
+[2026-04-21 08:00:03]   GPU 1: occupied by user 'user0005' (pid 1361599, ray::SelfPlay.continuous_self_play)
+[2026-04-21 08:00:03]   GPU 1: occupied by user 'user0005' (pid 1361604, ray::SelfPlay.continuous_self_play)
+[2026-04-21 08:00:03]   GPU 1: occupied by user 'user0005' (pid 1362976, ray::SelfPlay.continuous_self_play)
+[2026-04-21 08:00:03]   GPU 1: occupied by user 'user0005' (pid 1362980, ray::SelfPlay.continuous_self_play)
+[2026-04-21 08:00:03]   GPU 1: occupied by user 'user0005' (pid 1364370, ray::SelfPlay.continuous_self_play)
+[2026-04-21 08:00:04]   GPU 1: occupied by user 'user0005' (pid 1364376, ray::SelfPlay.continuous_self_play)
+[2026-04-21 08:00:04]   GPU 3: occupied by user 'user0005' (pid 1347193, ray::SelfPlay.continuous_self_play)
+[2026-04-21 08:00:04]   GPU 3: occupied by user 'user0005' (pid 1347199, ray::SelfPlay.continuous_self_play)
+[2026-04-21 08:00:04]   GPU 3: occupied by user 'user0005' (pid 1348599, ray::SelfPlay.continuous_self_play)
+[2026-04-21 08:00:04]   GPU 3: occupied by user 'user0005' (pid 1348591, ray::SelfPlay.continuous_self_play)
+[2026-04-21 08:00:04]   GPU 3: occupied by user 'user0005' (pid 1349998, ray::SelfPlay.continuous_self_play)
+[2026-04-21 08:00:04]   GPU 3: occupied by user 'user0005' (pid 1350000, ray::SelfPlay.continuous_self_play)
+[2026-04-21 08:00:04]   GPU 3: occupied by user 'user0005' (pid 1351429, ray::SelfPlay.continuous_self_play)
+[2026-04-21 08:00:05]   GPU 3: occupied by user 'user0005' (pid 1351417, ray::SelfPlay.continuous_self_play)
+[2026-04-21 08:00:05]   GPU 3: occupied by user 'user0005' (pid 1352838, ray::SelfPlay.continuous_self_play)
+[2026-04-21 08:00:05]   GPU 3: occupied by user 'user0005' (pid 1352829, ray::SelfPlay.continuous_self_play)
+[2026-04-21 08:00:05]   GPU 3: occupied by user 'user0005' (pid 1354215, ray::SelfPlay.continuous_self_play)
+[2026-04-21 08:00:05]   GPU 3: occupied by user 'user0005' (pid 1354214, ray::SelfPlay.continuous_self_play)
+[2026-04-21 08:00:05]   GPU 3: occupied by user 'user0005' (pid 1361603, ray::Trainer.continuous_update_weights)
+[2026-04-21 08:00:05]   GPU 3: occupied by user 'user0005' (pid 1361591, ray::Reanalyse.reanalyse)
+[2026-04-21 08:00:05]   GPU 3: occupied by user 'user0005' (pid 1362966, ray::Reanalyse.reanalyse)
+[2026-04-21 08:00:06]   GPU 3: occupied by user 'user0005' (pid 1362972, ray::Trainer.continuous_update_weights)
+[2026-04-21 08:00:06]   GPU 3: occupied by user 'user0005' (pid 1364374, ray::Reanalyse.reanalyse)
+[2026-04-21 08:00:06]   GPU 3: occupied by user 'user0005' (pid 1364369, ray::Trainer.continuous_update_weights)
+[2026-04-21 08:00:06]   GPU 0: 24203MiB free, no other users (OK)
+[2026-04-21 08:00:06]   GPU 1: 9683MiB free but OTHER USER is using it - SKIP
+[2026-04-21 08:00:06]   GPU 2: 24203MiB free, no other users (OK)
+[2026-04-21 08:00:06]   GPU 3: 12294MiB free but OTHER USER is using it - SKIP
+[2026-04-21 08:00:06] Starting llama-server on GPUs: 0,2 (verified no other users)
+[2026-04-21 08:00:06] llama-server starting (PID: 1440706, GPUs: 0,2)
+[2026-04-21 08:00:31] llama-server is ready!
+[2026-04-21 08:00:31] OK: ai_chatbot_server running
+[2026-04-21 08:00:31] cloudflared not running. Starting restart_tunnel.sh...
+[2026-04-21 08:00:31] Another restart_tunnel.sh is already running (PID: 1439920). Exiting.
