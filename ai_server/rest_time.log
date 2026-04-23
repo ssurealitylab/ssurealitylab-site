@@ -4652,3 +4652,39 @@ index, memory.used [MiB]
 2026. 04. 23. (목) 08:00:12 KST: Starting new cloudflared tunnel...
 [2026-04-23 08:00:12] Another restart_tunnel.sh is already running (PID: 1555294). Exiting.
 2026. 04. 23. (목) 08:00:12 KST: All services started
+2026. 04. 24. (금) 04:00:01 KST: === REST TIME START ===
+2026. 04. 24. (금) 04:00:01 KST: Stopping ai_chatbot_server...
+2026. 04. 24. (금) 04:00:02 KST: Stopping llama-server to free GPU memory...
+2026. 04. 24. (금) 04:00:04 KST: llama-server stopped, GPU 0,2 freed
+2026. 04. 24. (금) 04:00:04 KST: Stopping cloudflared tunnel...
+2026. 04. 24. (금) 04:00:05 KST: All services stopped
+2026. 04. 24. (금) 04:00:05 KST: GPU status after stop:
+index, memory.used [MiB]
+0, 499 MiB
+1, 14 MiB
+2, 14 MiB
+3, 1307 MiB
+2026. 04. 24. (금) 04:00:05 KST: Rest time active until 8 AM KST
+2026. 04. 24. (금) 08:00:01 KST: === REST TIME END ===
+2026. 04. 24. (금) 08:00:01 KST: Starting llama-server (GPT-OSS 120B) - finding free GPUs...
+2026. 04. 24. (금) 08:00:01 KST: GPU 0: occupied by user 'user0005' - SKIP
+2026. 04. 24. (금) 08:00:01 KST: GPU 3: occupied by user 'user0005' - SKIP
+2026. 04. 24. (금) 08:00:01 KST: GPU 3: occupied by user 'user0005' - SKIP
+2026. 04. 24. (금) 08:00:01 KST: GPU 0: 23717MiB free but other user present - SKIP
+2026. 04. 24. (금) 08:00:01 KST: GPU 1: 24203MiB free, no other users (OK)
+2026. 04. 24. (금) 08:00:01 KST: GPU 2: 24203MiB free, no other users (OK)
+2026. 04. 24. (금) 08:00:01 KST: GPU 3: 22901MiB free but other user present - SKIP
+2026. 04. 24. (금) 08:00:01 KST: Selected GPUs: 1,2
+2026. 04. 24. (금) 08:00:01 KST: llama-server starting (PID: 1601870, GPUs: 1,2)
+2026. 04. 24. (금) 08:00:06 KST: Waiting for model to load... (1/24)
+2026. 04. 24. (금) 08:00:12 KST: llama-server is ready!
+2026. 04. 24. (금) 08:00:12 KST: GPU status after start:
+index, memory.used [MiB]
+0, 499 MiB
+1, 16293 MiB
+2, 15861 MiB
+3, 1307 MiB
+2026. 04. 24. (금) 08:00:12 KST: ai_chatbot_server already running, skipping
+2026. 04. 24. (금) 08:00:12 KST: Starting new cloudflared tunnel...
+[2026-04-24 08:00:12] Another restart_tunnel.sh is already running (PID: 1601768). Exiting.
+2026. 04. 24. (금) 08:00:12 KST: All services started
