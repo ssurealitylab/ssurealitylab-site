@@ -120,15 +120,84 @@ def git_commit(message: str, files: list) -> tuple:
         return False, str(e)
 
 
-def git_push() -> tuple:
-    """Push all local commits to remote. Returns (success, output)."""
+def _get_pending_site_files() -> list:
+    """Get list of uncommitted files that affect the public site (templates, data, assets, includes).
+    Excludes admin_cms internals, ai_server runtime files, logs, etc.
+    """
     try:
+        result = subprocess.run(
+            ["git", "status", "--porcelain"],
+            cwd=SITE_ROOT, capture_output=True, text=True, timeout=10
+        )
+        files = []
+        for line in result.stdout.strip().split('\n'):
+            if not line:
+                continue
+            # Format: "XY filename" where X,Y are status chars
+            status = line[:2]
+            path = line[3:].strip()
+            # Handle renamed files "XY old -> new"
+            if ' -> ' in path:
+                path = path.split(' -> ')[-1]
+            # Strip quotes
+            if path.startswith('"') and path.endswith('"'):
+                path = path[1:-1]
+
+            # Only include site-affecting files
+            site_prefixes = (
+                '_data/', '_includes/', '_layouts/', '_portfolio/',
+                'assets/', 'img/', '_config.yml',
+            )
+            site_extensions = ('.md', '.html', '.yml', '.yaml')
+
+            is_site_file = (
+                path.startswith(site_prefixes) or
+                (not path.startswith(('admin_cms/', 'ai_server/', '.claude/',
+                                      'finetune_env/', '_site/'))
+                 and any(path.endswith(ext) for ext in site_extensions))
+            )
+            # Explicitly exclude admin internals and runtime files
+            is_excluded = path.startswith((
+                'admin_cms/', 'ai_server/', '.claude/', 'finetune_env/',
+                '_site/', '.gitignore'
+            )) or path.endswith(('.log', '.pid', '.lock', '.tmp'))
+
+            if is_site_file and not is_excluded:
+                files.append(path)
+        return files
+    except Exception:
+        return []
+
+
+def git_push() -> tuple:
+    """Push all local commits to remote. Auto-commits any pending site files first.
+    Returns (success, output).
+    """
+    try:
+        # Auto-commit any pending site files (templates, data, assets) before push
+        pending = _get_pending_site_files()
+        if pending:
+            for f in pending:
+                subprocess.run(["git", "add", f], cwd=SITE_ROOT,
+                               capture_output=True, timeout=10)
+            commit_result = subprocess.run(
+                ["git", "commit", "-m", f"CMS: Auto-commit pending site changes ({len(pending)} files)"],
+                cwd=SITE_ROOT, capture_output=True, text=True, timeout=30
+            )
+            # OK if "nothing to commit" - some files may already be staged elsewhere
+            if commit_result.returncode != 0 and "nothing to commit" not in commit_result.stdout + commit_result.stderr:
+                pass  # continue to push anyway
+
         result = subprocess.run(
             ["git", "push"], cwd=SITE_ROOT, capture_output=True, text=True, timeout=60
         )
         if result.returncode != 0:
             return False, f"Push failed: {result.stderr}"
-        return True, "Pushed to remote successfully"
+
+        msg = "Pushed to remote successfully"
+        if pending:
+            msg += f" (auto-committed {len(pending)} pending file(s))"
+        return True, msg
     except subprocess.TimeoutExpired:
         return False, "Push timed out"
     except Exception as e:
@@ -212,9 +281,40 @@ def full_deploy(yaml_filename: str, data: dict, operation: str,
         commit_msg = f"CMS: {operation}"
         success, git_output = git_commit(commit_msg, files_to_stage)
 
+        # Step 7: If chatbot knowledge changed, rebuild RAG so chatbot uses new info immediately
+        rag_status = ""
+        if yaml_filename == "chatbot_knowledge":
+            rag_success, rag_output = trigger_rag_update()
+            if rag_success:
+                rag_status = " RAG updated."
+            else:
+                rag_status = f" RAG update failed: {rag_output[:80]}"
+
         return {
             "status": "success",
             "backup_id": backup_id,
-            "message": f"Saved. {git_output}",
+            "message": f"Saved. {git_output}{rag_status}",
             "pushed": False,
         }
+
+
+def trigger_rag_update() -> tuple:
+    """Run update_rag.sh in background to refresh the chatbot's knowledge base.
+    Returns (success, output).
+    """
+    try:
+        rag_script = "/home/i0179/Realitylab-site/ai_server/update_rag.sh"
+        if not os.path.exists(rag_script):
+            return False, "update_rag.sh not found"
+        # Run synchronously with reasonable timeout
+        result = subprocess.run(
+            ["/bin/bash", rag_script],
+            cwd=SITE_ROOT, capture_output=True, text=True, timeout=180
+        )
+        if result.returncode == 0:
+            return True, "RAG rebuilt"
+        return False, result.stderr[-200:] if result.stderr else "Unknown error"
+    except subprocess.TimeoutExpired:
+        return False, "RAG update timed out (>3min)"
+    except Exception as e:
+        return False, str(e)

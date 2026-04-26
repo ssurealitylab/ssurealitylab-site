@@ -110,19 +110,144 @@ custom_qa:
     - 장소
     - 정보과학관
 
-  en:
-  - question: "How can I apply to the lab?"
-    answer: "Thank you for your interest in Reality Lab! Both undergraduate and graduate students are welcome. For detailed application procedures, please contact Professor Heewon Kim via email (heewon@ssu.ac.kr) or phone (+82-2-820-0679)."
-    keywords: ["apply", "application", "join", "admission"]
-  - question: "What projects are you working on?"
-    answer: "We are currently conducting various research projects in robotics, computer vision, machine learning, multimodal language understanding, and AI+X applications. Please contact Professor Heewon Kim for specific project details."
-    keywords: ["projects", "research", "work"]
-  - question: Where is the lab located?
-    answer: Reality Lab is based in Room 602 of Soongsil University's Information Science Building, with researchers also operating out of the Tech Station and other collaborative spaces.
+  - question: 현재 연구실에서 직접 제작한 로봇은 어떤 게 있나요?
+    answer: "현재 저희 연구실에서는 오픈소스를 기반으로 제작한 두 대의 로봇을 보유하고 있습니다.\n\n• GARO: 키 2m의 비전 기반 로봇으로, 최대 시속 3km까지 이동 가능합니다.\n• NARO: 작은 크기의 토들러(toddler) 로봇입니다."
     keywords:
-    - location
-    - where
-    - address
+    - 로봇
+    - GARO
+    - NARO
+    - 제작
+    - 자체제작
+    - 하드웨어
+
+  - question: 현재 제작 중인 로봇도 있나요?
+    answer: "구체적인 내용은 알려드릴 수 없으나, 비밀리에 한 대의 로봇이 제작 중에 있습니다 :)"
+    keywords:
+    - 제작중
+    - 새로운 로봇
+    - 신규 로봇
+    - 개발중
+
+  - question: 인턴십 기간은 얼마나 되나요?
+    answer: "인턴십은 일반적으로 석사 입학 시점까지 진행됩니다. 이후 석사과정으로 자연스럽게 이어지는 경우가 많습니다."
+    keywords:
+    - 인턴
+    - 인턴십
+    - 기간
+    - 인턴기간
+
+  - question: 학부 연구생 또는 인턴 신청은 어떻게 하나요?
+    answer: "김희원 교수님 이메일(hwkim@ssu.ac.kr)로 미팅 신청을 보내주시면 됩니다. 간단한 자기소개와 관심 연구 분야를 함께 적어주시면 더욱 좋습니다."
+    keywords:
+    - 학부 연구생
+    - 인턴 신청
+    - 지원
+    - 신청 방법
+    - 미팅
+    - 컨택
+
+  - question: 코어 출근 시간이나 출퇴근 정책이 있나요?
+    answer: "출퇴근은 자율적으로 이루어집니다. 원격 근무도 가능하지만, 연구원 간의 활발한 소통과 연구 진행을 위해 한 주에 몇 차례는 출근하시는 것을 권장합니다."
+    keywords:
+    - 출근
+    - 출퇴근
+    - 코어타임
+    - 원격
+    - 재택
+
+  - question: 정기 미팅은 얼마나 자주 진행되나요?
+    answer: "2026년 4월 기준으로 정기 미팅은 2주에 한 번 진행됩니다."
+    keywords:
+    - 미팅
+    - 정기 미팅
+    - 회의
+    - 랩미팅
+
+  - question: 연구 주제는 자유롭게 선택할 수 있나요?
+    answer: "네, 자유롭습니다. 현재 연구실에서는 로봇 하드웨어, Physical AI, 디퓨전(Diffusion) 모델 등 연구원분들이 원하시는 다양한 주제를 자유롭게 연구하고 있습니다."
+    keywords:
+    - 연구 주제
+    - 주제 선택
+    - 자유
+    - 분야
+
+  - question: 연구실 분위기는 어떤가요?
+    answer: "굉장히 자유롭고 편안한 분위기라고 생각합니다 (~-~)"
+    keywords:
+    - 분위기
+    - 연구실 분위기
+    - 문화
+
+  - question: GPU 서버 사양은 어떻게 되나요?
+    answer: "2026년 기준 H200 56대를 대여받아 사용 중이며, 그 외에도 A100, RTX PRO 6000 등 고가의 GPU를 다수 보유하고 있습니다. 아마 숭실대 내에서는 가장 많은 수준일 것입니다 ㅎ"
+    keywords:
+    - GPU
+    - 서버
+    - 사양
+    - 컴퓨팅
+    - H200
+    - A100
+
+  - question: 컴퓨팅 자원 사용에 제약이 있나요?
+    answer: "다른 연구원분들과 사전에 스케줄을 공지한 뒤에는 자유롭게 사용하셔도 무방합니다."
+    keywords:
+    - 자원
+    - 컴퓨팅 자원
+    - GPU 사용
+    - 제약
+    - 스케줄
+
+  - question: 자주 쓰는 프레임워크나 툴은 무엇인가요?
+    answer: "주로 Python을 기반으로 PyTorch, ROS, OpenCV 등 AI/로보틱스 연구에 필요한 다양한 도구를 활용합니다."
+    keywords:
+    - 프레임워크
+    - 툴
+    - 도구
+    - 파이썬
+    - PyTorch
+    - 기술 스택
+
+  - question: 주로 어떤 학회나 저널에 논문을 투고하나요?
+    answer: "컴퓨터 비전 분야의 탑티어 학회인 CVPR, ECCV, AAAI 등을 비롯한 다수의 국제 탑티어 학회에 꾸준히 논문을 투고하고 있습니다."
+    keywords:
+    - 학회
+    - 논문
+    - 투고
+    - CVPR
+    - ECCV
+    - AAAI
+    - 저널
+
+  - question: 산학협력이나 외부 기관과의 협업 프로젝트가 있나요?
+    answer: "네, 상당수의 산학협력 및 외부 과제를 이미 체결하여 활발히 수행 중에 있습니다."
+    keywords:
+    - 산학협력
+    - 협업
+    - 외부 과제
+    - 프로젝트
+
+  - question: 연구실 방문 전에 미리 약속을 잡아야 하나요?
+    answer: "네, 김희원 교수님 이메일(hwkim@ssu.ac.kr)로 미리 연락 주신 뒤 방문해 주시면 감사하겠습니다."
+    keywords:
+    - 방문
+    - 약속
+    - 미팅
+    - 컨택
+    - 사전 연락
+
+  en: []
+
+# Pending Q&A - questions waiting to be answered (shown in admin CMS)
+pending_qa:
+  ko:
+  - question: "인턴 지원 자격이나 우대 사항이 있나요? (예: 학년, 전공, 코딩 경험)"
+  - question: "인턴에서 정식 대학원생으로 이어지는 경우가 많나요?"
+  - question: "외국인 학생도 받나요?"
+  - question: "신규 연구원 온보딩(교육)은 어떻게 진행되나요?"
+  - question: "학부생이나 인턴이 논문에 1저자로 참여할 기회가 있나요?"
+  - question: "학회 참가비나 출장비를 지원해주나요?"
+  - question: "졸업생들은 주로 어떤 진로로 가나요?"
+  - question: "인턴이나 석사 학생에게 인건비나 장학금이 지급되나요?"
 
 # Fallback responses
 fallback_responses:

@@ -72,11 +72,15 @@ function markEditables(){
   // ─── Publication Items ───
   document.querySelectorAll('.publication-list-item').forEach(item=>{
     if(item.hasAttribute('data-admin-editable')) return;
-    item.setAttribute('data-admin-editable','publication');
-    // Extract pub ID from onclick
+    // Skip if inside domestic list (handled separately below)
+    if(item.closest('#domestic-pub-list')) return;
+    // International items have onclick="openPublicationModal('...')"
     const onclick=item.getAttribute('onclick')||'';
     const match=onclick.match(/openPublicationModal\('([^']+)'\)/);
-    if(match) item.setAttribute('data-admin-pub-id',match[1]);
+    if(match){
+      item.setAttribute('data-admin-editable','publication');
+      item.setAttribute('data-admin-pub-id',match[1]);
+    }
   });
 
   // ─── Publication Cards (homepage) ───
@@ -589,10 +593,12 @@ window.editChatbotQA = async function(){
   const qaKo = data.custom_qa?.ko || [];
   const qaEn = data.custom_qa?.en || [];
 
-  let html = '<div style="margin-bottom:16px;color:#94a3b8;font-size:13px">AI chatbot knowledge base. Edit Q&A pairs that the chatbot uses to answer questions.</div>';
+  const pending = (data.pending_qa?.ko) || [];
 
-  // Korean Q&A
-  html += '<div style="font-size:14px;font-weight:700;color:#60a5fa;margin:16px 0 8px">Korean Q&A</div>';
+  let html = '<div style="margin-bottom:16px;color:#94a3b8;font-size:13px">AI chatbot knowledge base. Korean only — chatbot auto-translates for English users.</div>';
+
+  // ─── Active Q&A ───
+  html += `<div style="font-size:14px;font-weight:700;color:#60a5fa;margin:16px 0 8px">✓ 작성된 Q&A (${qaKo.length})</div>`;
   qaKo.forEach((qa,i)=>{
     html += `<div style="padding:10px;margin-bottom:6px;background:#0f172a;border-radius:8px;border:1px solid #334155;cursor:pointer"
       onclick="window._adminEditQA('ko',${i})">
@@ -600,27 +606,89 @@ window.editChatbotQA = async function(){
       <div style="font-size:12px;color:#94a3b8;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">A: ${esc(qa.answer)}</div>
     </div>`;
   });
-  html += `<button class="admin-btn admin-btn-cancel" onclick="window._adminAddQA('ko')" style="width:100%;margin-top:4px;margin-bottom:16px;border:2px dashed #334155;background:none;color:#94a3b8">+ Add Korean Q&A</button>`;
+  html += `<button class="admin-btn admin-btn-cancel" onclick="window._adminAddQA('ko')" style="width:100%;margin-top:8px;border:2px dashed #334155;background:none;color:#94a3b8">+ Add Q&A</button>`;
 
-  // English Q&A
-  html += '<div style="font-size:14px;font-weight:700;color:#60a5fa;margin:16px 0 8px">English Q&A</div>';
-  qaEn.forEach((qa,i)=>{
-    html += `<div style="padding:10px;margin-bottom:6px;background:#0f172a;border-radius:8px;border:1px solid #334155;cursor:pointer"
-      onclick="window._adminEditQA('en',${i})">
-      <div style="font-size:13px;font-weight:600;color:#e2e8f0;margin-bottom:4px">Q: ${esc(qa.question)}</div>
-      <div style="font-size:12px;color:#94a3b8;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">A: ${esc(qa.answer)}</div>
-    </div>`;
-  });
-  html += `<button class="admin-btn admin-btn-cancel" onclick="window._adminAddQA('en')" style="width:100%;margin-top:4px;border:2px dashed #334155;background:none;color:#94a3b8">+ Add English Q&A</button>`;
+  // ─── Pending Q&A (questions waiting for answers) ───
+  if(pending.length){
+    html += `<div style="font-size:14px;font-weight:700;color:#fbbf24;margin:24px 0 8px">📝 미작성 답변 (${pending.length})</div>`;
+    html += `<div style="font-size:12px;color:#94a3b8;margin-bottom:8px">클릭하면 답변을 작성하여 활성화할 수 있습니다.</div>`;
+    pending.forEach((q,i)=>{
+      html += `<div style="padding:10px;margin-bottom:6px;background:rgba(251,191,36,.05);border-radius:8px;border:1px dashed #92400e;cursor:pointer"
+        onclick="window._adminAnswerPending(${i})">
+        <div style="font-size:13px;font-weight:600;color:#fbbf24;margin-bottom:4px">Q: ${esc(q.question)}</div>
+        <div style="font-size:11px;color:#94a3b8">→ 클릭하여 답변 작성</div>
+      </div>`;
+    });
+  }
 
-  openPanel('AI Chatbot Knowledge ('+qaKo.length+' KO, '+qaEn.length+' EN)', html);
+  openPanel('AI Chatbot Knowledge', html);
 }
+
+window._adminAnswerPending = async function(idx){
+  const data = await apiGet('/data/chatbot_knowledge');
+  const pending = data.pending_qa?.ko || [];
+  if(idx<0 || idx>=pending.length){ adminToast('Question not found','error'); return; }
+  const q = pending[idx];
+
+  openPanel('답변 작성', `
+    <div class="admin-fg"><label>Question (질문)</label>
+      <textarea id="af-qa-question" style="min-height:60px">${esc(q.question||'')}</textarea></div>
+    <div class="admin-fg"><label>Answer (답변) *</label>
+      <textarea id="af-qa-answer" style="min-height:140px" placeholder="답변을 입력하세요"></textarea></div>
+    <div class="admin-fg"><label>Keywords (쉼표로 구분)</label>
+      <input id="af-qa-keywords" placeholder="키워드1, 키워드2"></div>
+    <div class="admin-btn-row">
+      <button class="admin-btn admin-btn-cancel" onclick="editChatbotQA()">Back</button>
+      <button class="admin-btn admin-btn-primary" onclick="window._adminSavePendingAnswer(${idx})">활성화 (답변 저장)</button>
+    </div>
+    <button class="admin-btn-danger" onclick="window._adminDeletePending(${idx})">이 질문 삭제</button>
+  `);
+};
+
+window._adminSavePendingAnswer = async function(idx){
+  const newQA = {
+    question: document.getElementById('af-qa-question').value.trim(),
+    answer: document.getElementById('af-qa-answer').value.trim(),
+    keywords: document.getElementById('af-qa-keywords').value.split(',').map(s=>s.trim()).filter(s=>s),
+  };
+  if(!newQA.question || !newQA.answer){ adminToast('질문과 답변 모두 필수입니다','error'); return; }
+
+  adminShowLoading('Activating Q&A...');
+  try{
+    // Step 1: Add to active Q&A
+    const r1 = await apiCall('/deploy/chatbot_knowledge/custom_qa.ko', 'POST', newQA);
+    if(r1.status !== 'success'){ adminHideLoading(); adminToast(r1.message||'Add failed','error'); return; }
+
+    // Step 2: Remove from pending
+    const r2 = await apiCall(`/deploy/chatbot_knowledge/pending_qa.ko.${idx}`, 'DELETE');
+    adminHideLoading();
+    if(r2.status === 'success'){
+      adminToast('답변 활성화 완료! Apply로 배포하세요.','success');
+      checkUnpushed();
+      editChatbotQA();
+    } else adminToast(r2.message,'error');
+  }catch(e){ adminHideLoading(); adminToast(e.message,'error'); }
+};
+
+window._adminDeletePending = async function(idx){
+  if(!confirm('이 미작성 질문을 삭제하시겠습니까?')) return;
+  adminShowLoading('Deleting...');
+  try{
+    const res = await apiCall(`/deploy/chatbot_knowledge/pending_qa.ko.${idx}`, 'DELETE');
+    adminHideLoading();
+    if(res.status === 'success'){
+      adminToast('Deleted!','success');
+      checkUnpushed();
+      editChatbotQA();
+    } else adminToast(res.message,'error');
+  }catch(e){ adminHideLoading(); adminToast(e.message,'error'); }
+};
 
 window._adminEditQA = async function(lang, idx){
   const data = await apiGet('/data/chatbot_knowledge');
   const qa = data.custom_qa[lang][idx];
 
-  openPanel((lang==='ko'?'Korean':'English')+' Q&A Edit', `
+  openPanel('Q&A Edit', `
     <div class="admin-fg"><label>Question *</label>
       <textarea id="af-qa-question" style="min-height:60px">${esc(qa.question||'')}</textarea></div>
     <div class="admin-fg"><label>Answer *</label>
@@ -636,13 +704,13 @@ window._adminEditQA = async function(lang, idx){
 };
 
 window._adminAddQA = function(lang){
-  openPanel('Add '+(lang==='ko'?'Korean':'English')+' Q&A', `
+  openPanel('Add Q&A', `
     <div class="admin-fg"><label>Question *</label>
-      <textarea id="af-qa-question" style="min-height:60px" placeholder="${lang==='ko'?'질문을 입력하세요':'Enter question'}"></textarea></div>
+      <textarea id="af-qa-question" style="min-height:60px" placeholder="질문을 입력하세요"></textarea></div>
     <div class="admin-fg"><label>Answer *</label>
-      <textarea id="af-qa-answer" style="min-height:120px" placeholder="${lang==='ko'?'답변을 입력하세요':'Enter answer'}"></textarea></div>
+      <textarea id="af-qa-answer" style="min-height:120px" placeholder="답변을 입력하세요"></textarea></div>
     <div class="admin-fg"><label>Keywords (comma separated)</label>
-      <input id="af-qa-keywords" placeholder="${lang==='ko'?'키워드1, 키워드2':'keyword1, keyword2'}"></div>
+      <input id="af-qa-keywords" placeholder="키워드1, 키워드2"></div>
     <div class="admin-btn-row">
       <button class="admin-btn admin-btn-cancel" onclick="editChatbotQA()">Back</button>
       <button class="admin-btn admin-btn-primary" onclick="window._adminSaveQA('${lang}',-1)">Add</button>
