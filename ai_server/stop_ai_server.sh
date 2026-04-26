@@ -24,9 +24,9 @@ fi
 
 echo "$(date): llama-server stopped, GPU 0,2 freed" >> $LOG_FILE
 
-# Stop cloudflared tunnel
-echo "$(date): Stopping cloudflared tunnel..." >> $LOG_FILE
-pkill -f "cloudflared.*tunnel"
+# Stop chatbot cloudflared tunnel only (port 4005), keep admin tunnel running
+echo "$(date): Stopping chatbot cloudflared tunnel..." >> $LOG_FILE
+pkill -f "cloudflared.*url http://localhost:4005"
 sleep 1
 
 echo "$(date): All services stopped" >> $LOG_FILE

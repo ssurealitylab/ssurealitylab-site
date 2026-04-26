@@ -137,9 +137,25 @@ else
     log "OK: ai_chatbot_server running"
 fi
 
-# === 4. Check tunnel ===
-if ! pgrep -f "cloudflared.*tunnel" > /dev/null; then
-    log "cloudflared not running. Starting restart_tunnel.sh..."
+# === 4. Check chatbot tunnel (port 4005) ===
+if ! pgrep -f "cloudflared.*url http://localhost:4005" > /dev/null; then
+    log "Chatbot tunnel not running. Starting restart_tunnel.sh..."
     cd "$WORK_DIR"
     nohup "$WORK_DIR/ai_server/restart_tunnel.sh" >> "$LOG_FILE" 2>&1 &
+fi
+
+# === 5. Check admin CMS server (port 4010) ===
+if ! pgrep -f "admin_server.py" > /dev/null; then
+    log "admin_server (CMS) not running. Starting..."
+    cd "$WORK_DIR/admin_cms" 2>/dev/null || cd "/data2/i0179/Realitylab-site/admin_cms"
+    PYTHONPATH=/home/i0179/lib/python3.10/site-packages \
+        nohup "$PYTHON" admin_server.py --port 4010 >> /tmp/admin_cms.log 2>&1 &
+    log "admin_server starting (PID: $!)"
+    sleep 5
+fi
+
+# === 6. Check admin tunnel (port 4010) ===
+if ! pgrep -f "cloudflared.*url http://localhost:4010" > /dev/null; then
+    log "Admin tunnel not running. Starting restart_admin_tunnel.sh..."
+    nohup "$WORK_DIR/ai_server/restart_admin_tunnel.sh" >> "$LOG_FILE" 2>&1 &
 fi

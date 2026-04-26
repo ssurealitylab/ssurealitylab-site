@@ -113,9 +113,24 @@ else
     done
 fi
 
-# === 3. Start new tunnel and update URL ===
-echo "$(date): Starting new cloudflared tunnel..." >> $LOG_FILE
+# === 3. Start chatbot tunnel ===
+echo "$(date): Starting chatbot tunnel..." >> $LOG_FILE
 cd $WORK_DIR
 $WORK_DIR/ai_server/restart_tunnel.sh >> $LOG_FILE 2>&1
+
+# === 4. Start admin CMS server (port 4010) ===
+if pgrep -f "admin_server.py" > /dev/null; then
+    echo "$(date): admin_server already running, skipping" >> $LOG_FILE
+else
+    echo "$(date): Starting admin_server.py (port 4010)..." >> $LOG_FILE
+    cd /data2/i0179/Realitylab-site/admin_cms
+    PYTHONPATH=/home/i0179/lib/python3.10/site-packages nohup python3 admin_server.py --port 4010 > /tmp/admin_cms.log 2>&1 &
+    echo "$(date): admin_server starting (PID: $!)" >> $LOG_FILE
+    sleep 5
+fi
+
+# === 5. Start admin tunnel ===
+echo "$(date): Starting admin tunnel..." >> $LOG_FILE
+$WORK_DIR/ai_server/restart_admin_tunnel.sh >> $LOG_FILE 2>&1
 
 echo "$(date): All services started" >> $LOG_FILE
