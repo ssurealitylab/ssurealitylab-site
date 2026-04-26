@@ -34,6 +34,7 @@ EDITABLE_FILES = {
     "sitetext": "sitetext.yml",
     "navigation": "navigation.yml",
     "courses": "courses.yml",
+    "domestic_publications": "domestic_publications.yml",
 }
 
 MAX_UPLOAD_SIZE = 5 * 1024 * 1024  # 5MB

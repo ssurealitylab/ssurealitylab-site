@@ -259,7 +259,9 @@ def api_deploy_add(filename, data_path):
         if errors:
             return jsonify({"status": "error", "errors": errors})
         data = read_yaml(filename)
-        if filename == 'news' and data_path == 'news':
+        if (filename == 'news' and data_path == 'news') or \
+           (filename == 'publications' and data_path == 'publications') or \
+           (filename == 'domestic_publications' and data_path == 'publications'):
             target = resolve_path(data, data_path)
             target.insert(0, new_value)
         else:

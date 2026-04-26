@@ -107,6 +107,22 @@ function markEditables(){
     sliderContainer.setAttribute('data-admin-editable','slider');
   }
 
+  // ─── Robot cards ───
+  document.querySelectorAll('.robots-grid .member-card').forEach(card=>{
+    if(card.getAttribute('data-admin-editable')==='robot') return;
+    card.setAttribute('data-admin-editable','robot');
+    const onclick = card.getAttribute('onclick')||'';
+    const m = onclick.match(/openMemberModal\('(robot-[^']+)'\)/);
+    if(m) card.setAttribute('data-admin-robot-id', m[1]);
+  });
+
+  // ─── Domestic publications ───
+  document.querySelectorAll('#domestic-pub-list .publication-list-item').forEach(item=>{
+    if(item.hasAttribute('data-admin-editable')) return;
+    item.setAttribute('data-admin-editable','domestic-pub');
+    item.setAttribute('data-admin-pub-id', item.getAttribute('data-pub-id')||'');
+  });
+
   // ─── Course rows ───
   document.querySelectorAll('.course-table tbody tr').forEach((row,i)=>{
     if(row.hasAttribute('data-admin-editable')) return;
@@ -183,6 +199,44 @@ function insertAddButtons(){
     btn.onclick=()=>addNewsForm();
     newsRow.before(btn);
   }
+
+  // Robots section (students page)
+  const robotsHeading = document.getElementById('research-robots');
+  if(robotsHeading){
+    const btn = document.createElement('div');
+    btn.className='admin-add-btn';
+    btn.textContent='+ Add Robot';
+    btn.onclick=()=>addRobotForm();
+    const grid = robotsHeading.parentElement?.querySelector('.robots-grid')
+              || robotsHeading.nextElementSibling;
+    if(grid) grid.after(btn);
+  }
+
+  // International publications page - button at TOP
+  const intlList = document.querySelector('.publications-content');
+  if(intlList && window.location.pathname.includes('international')){
+    const container = intlList.querySelector('.container');
+    if(container && !container.querySelector('.admin-add-btn')){
+      const btn = document.createElement('div');
+      btn.className='admin-add-btn';
+      btn.textContent='+ Add International Publication';
+      btn.onclick=()=>addIntlPubForm();
+      container.prepend(btn);
+    }
+  }
+
+  // Domestic publications page - button at TOP
+  const domList = document.getElementById('domestic-pub-list');
+  if(domList){
+    const section = domList.closest('.category-section') || domList.parentElement;
+    if(section && !section.querySelector('.admin-add-btn')){
+      const btn = document.createElement('div');
+      btn.className='admin-add-btn';
+      btn.textContent='+ Add Domestic Publication';
+      btn.onclick=()=>addDomesticPubForm();
+      section.prepend(btn);
+    }
+  }
 }
 
 // ═══════════════════════════════════════
@@ -207,6 +261,8 @@ document.addEventListener('click', async function(e){
   else if(type==='slider') await editSlider();
   else if(type==='course') await editCourse(editable);
   else if(type==='chatbot-qa') await editChatbotQA();
+  else if(type==='robot') await editRobot(editable);
+  else if(type==='domestic-pub') await editDomesticPub(editable);
 }, true);
 
 // ═══════════════════════════════════════
@@ -685,6 +741,220 @@ window._adminDeleteCourse = async function(courseType, idx){
     const res = await apiCall(`/deploy/courses/${courseType}.${idx}`,'DELETE');
     adminHideLoading();
     if(res.status==='success'){ adminToast('Deleted! Click "Apply" to publish.','success'); checkUnpushed(); setTimeout(()=>location.reload(),1500); }
+    else adminToast(res.message,'error');
+  }catch(e){ adminHideLoading(); adminToast(e.message,'error'); }
+};
+
+// ═══════════════════════════════════════
+// ROBOT EDITING
+// ═══════════════════════════════════════
+
+async function editRobot(el){
+  const data = await apiGet('/data/members');
+  const robots = data.robots?.members || [];
+  const nameEl = el.querySelector('.member-name');
+  const cardName = nameEl ? nameEl.textContent.trim() : '';
+  const idx = robots.findIndex(r=> r.name===cardName || r.name_ko===cardName);
+  if(idx<0){ adminToast('Robot not found: '+cardName,'error'); return; }
+  showRobotForm(robots[idx], idx);
+}
+
+function addRobotForm(){ showRobotForm({}, -1); }
+
+function showRobotForm(robot, idx){
+  const isNew = idx < 0;
+  const specs = robot.specs || {};
+  const photoPreview = robot.photo ? `<img src="/${esc(robot.photo)}" class="photo-preview">` : '';
+  openPanel((isNew?'Add':'Edit')+' Robot: '+(robot.name||'New Robot'), `
+    <div class="admin-fg"><label>Name *</label><input id="af-rname" value="${esc(robot.name||'')}"></div>
+    <div class="admin-fg"><label>Korean Name</label><input id="af-rname_ko" value="${esc(robot.name_ko||'')}"></div>
+    <div class="admin-fg"><label>Model</label><input id="af-rmodel" value="${esc(robot.model||'')}"></div>
+    <div class="admin-fg"><label>Joined Date</label><input id="af-rjoined" value="${esc(robot.joined||'')}" placeholder="e.g. January 2026"></div>
+    <div class="admin-fg"><label>Photo</label>
+      <input id="af-rphoto" value="${esc(robot.photo||'')}" readonly style="cursor:pointer" onclick="window._adminImagePicker('members','af-rphoto')">
+      ${photoPreview}
+      <div class="hint">Click to upload</div></div>
+    <div class="admin-fg"><label>Bio</label><textarea id="af-rbio">${esc(robot.bio||'')}</textarea></div>
+    <hr style="margin:16px 0;border-color:#334155">
+    <div style="font-size:13px;font-weight:600;color:#94a3b8;margin-bottom:8px">Specifications</div>
+    <div class="admin-fg"><label>Height</label><input id="af-rheight" value="${esc(specs.height||'')}"></div>
+    <div class="admin-fg"><label>Weight</label><input id="af-rweight" value="${esc(specs.weight||'')}"></div>
+    <div class="admin-fg"><label>DOF</label><input id="af-rdof" value="${esc(specs.dof||'')}"></div>
+    <div class="admin-fg"><label>Speed</label><input id="af-rspeed" value="${esc(specs.speed||'')}"></div>
+    <div class="admin-fg"><label>Battery</label><input id="af-rbattery" value="${esc(specs.battery||'')}"></div>
+    <div class="admin-fg"><label>Payload</label><input id="af-rpayload" value="${esc(specs.payload||'')}"></div>
+    <div class="admin-btn-row">
+      <button class="admin-btn admin-btn-cancel" onclick="adminClosePanel()">Cancel</button>
+      <button class="admin-btn admin-btn-primary" onclick="window._adminSaveRobot(${idx})">${isNew?'Add':'Save'}</button>
+    </div>
+    ${!isNew?`<button class="admin-btn-danger" onclick="window._adminDeleteRobot(${idx},'${esc(robot.name||'')}')">Delete this robot</button>`:''}
+  `);
+}
+
+window._adminSaveRobot = async function(idx){
+  const d = {
+    name:document.getElementById('af-rname').value.trim(),
+    name_ko:document.getElementById('af-rname_ko').value.trim(),
+    model:document.getElementById('af-rmodel').value.trim(),
+    joined:document.getElementById('af-rjoined').value.trim(),
+    photo:document.getElementById('af-rphoto').value.trim(),
+    bio:document.getElementById('af-rbio').value.trim(),
+    specs:{
+      height:document.getElementById('af-rheight').value.trim(),
+      weight:document.getElementById('af-rweight').value.trim(),
+      dof:document.getElementById('af-rdof').value.trim(),
+      speed:document.getElementById('af-rspeed').value.trim(),
+      battery:document.getElementById('af-rbattery').value.trim(),
+      payload:document.getElementById('af-rpayload').value.trim(),
+    }
+  };
+  Object.keys(d.specs).forEach(k=>{if(!d.specs[k])delete d.specs[k]});
+  if(!Object.keys(d.specs).length) delete d.specs;
+  if(!d.name){ adminToast('Robot name is required','error'); return; }
+
+  adminShowLoading('Saving...');
+  try{
+    const endpoint = idx>=0 ? `/deploy/members/robots.members.${idx}` : `/deploy/members/robots.members`;
+    const method = idx>=0 ? 'PUT' : 'POST';
+    const res = await apiCall(endpoint, method, d);
+    adminHideLoading();
+    if(res.status==='success'){ adminToast('Saved! Click "Apply" to publish.','success'); checkUnpushed(); adminClosePanel(); setTimeout(()=>location.reload(),1500); }
+    else adminToast(res.message||JSON.stringify(res.errors),'error');
+  }catch(e){ adminHideLoading(); adminToast(e.message,'error'); }
+};
+
+window._adminDeleteRobot = async function(idx, name){
+  if(!confirm('Delete robot '+name+'?')) return;
+  adminShowLoading('Deleting...');
+  try{
+    const res = await apiCall(`/deploy/members/robots.members.${idx}`,'DELETE');
+    adminHideLoading();
+    if(res.status==='success'){ adminToast('Deleted!','success'); checkUnpushed(); setTimeout(()=>location.reload(),1500); }
+    else adminToast(res.message,'error');
+  }catch(e){ adminHideLoading(); adminToast(e.message,'error'); }
+};
+
+// ═══════════════════════════════════════
+// INTERNATIONAL PUBLICATION ADD
+// ═══════════════════════════════════════
+
+function addIntlPubForm(){
+  const types = ['conference','journal','workshop'];
+  const statuses = ['accepted','published','award'];
+  openPanel('Add International Publication', `
+    <div class="admin-fg"><label>ID *</label><input id="af-id" placeholder="e.g. c27 (must be unique)"></div>
+    <div class="admin-fg"><label>Title *</label><textarea id="af-title" style="min-height:60px"></textarea></div>
+    <div class="admin-fg"><label>Authors *</label><input id="af-authors"></div>
+    <div class="admin-fg"><label>Venue *</label><input id="af-venue" placeholder="Full name"></div>
+    <div class="admin-fg"><label>Venue Short</label><input id="af-venue_short" placeholder="e.g. CVPR"></div>
+    <div class="admin-fg"><label>Year</label><input id="af-year" type="number" value="2026"></div>
+    <div class="admin-fg"><label>Type</label>
+      <select id="af-type">${types.map(t=>`<option>${t}</option>`).join('')}</select></div>
+    <div class="admin-fg"><label>Status</label>
+      <select id="af-status">${statuses.map(s=>`<option>${s}</option>`).join('')}</select></div>
+    <div class="admin-fg"><label>PDF Link</label><input id="af-link-pdf"></div>
+    <div class="admin-fg"><label>Website Link</label><input id="af-link-website"></div>
+    <div class="admin-fg"><label>GitHub Link</label><input id="af-link-github"></div>
+    <div class="admin-fg"><label>Architecture Image</label>
+      <input id="af-pub-image" value="" readonly style="cursor:pointer" onclick="window._adminImagePicker('publications','af-pub-image')">
+      <div class="hint">Click to upload</div></div>
+    <div class="admin-fg"><label>Abstract</label><textarea id="af-abstract" style="min-height:120px"></textarea></div>
+    <div class="admin-btn-row">
+      <button class="admin-btn admin-btn-cancel" onclick="adminClosePanel()">Cancel</button>
+      <button class="admin-btn admin-btn-primary" onclick="window._adminAddIntlPub()">Add</button>
+    </div>
+  `);
+}
+
+window._adminAddIntlPub = async function(){
+  const d = {
+    id:document.getElementById('af-id').value.trim(),
+    title:document.getElementById('af-title').value.trim(),
+    authors:document.getElementById('af-authors').value.trim(),
+    venue:document.getElementById('af-venue').value.trim(),
+    venue_short:document.getElementById('af-venue_short').value.trim(),
+    year:parseInt(document.getElementById('af-year').value)||2026,
+    type:document.getElementById('af-type').value,
+    status:document.getElementById('af-status').value,
+    image:document.getElementById('af-pub-image').value.trim()||undefined,
+    abstract:document.getElementById('af-abstract').value.trim()||undefined,
+    links:{
+      pdf:document.getElementById('af-link-pdf').value.trim()||undefined,
+      website:document.getElementById('af-link-website').value.trim()||undefined,
+      github:document.getElementById('af-link-github').value.trim()||undefined,
+    }
+  };
+  Object.keys(d.links).forEach(k=>{if(!d.links[k])delete d.links[k]});
+  if(!Object.keys(d.links).length) delete d.links;
+  Object.keys(d).forEach(k=>{if(d[k]===undefined)delete d[k]});
+  if(!d.id||!d.title||!d.authors||!d.venue){ adminToast('ID, title, authors, venue are required','error'); return; }
+
+  adminShowLoading('Adding publication...');
+  try{
+    const res = await apiCall('/deploy/publications/publications','POST',d);
+    adminHideLoading();
+    if(res.status==='success'){ adminToast('Added! Click "Apply" to publish.','success'); checkUnpushed(); adminClosePanel(); setTimeout(()=>location.reload(),1500); }
+    else adminToast(res.message||JSON.stringify(res.errors),'error');
+  }catch(e){ adminHideLoading(); adminToast(e.message,'error'); }
+};
+
+// ═══════════════════════════════════════
+// DOMESTIC PUBLICATION EDITING
+// ═══════════════════════════════════════
+
+async function editDomesticPub(el){
+  const pubId = el.getAttribute('data-admin-pub-id');
+  const data = await apiGet('/data/domestic_publications');
+  const pubs = data.publications || [];
+  const idx = pubs.findIndex(p=> p.id === pubId);
+  if(idx<0){ adminToast('Publication not found','error'); return; }
+  showDomesticPubForm(pubs[idx], idx);
+}
+
+function addDomesticPubForm(){ showDomesticPubForm({}, -1); }
+
+function showDomesticPubForm(pub, idx){
+  const isNew = idx < 0;
+  openPanel((isNew?'Add':'Edit')+' Domestic Publication', `
+    <div class="admin-fg"><label>ID *</label><input id="af-did" value="${esc(pub.id||'')}" ${isNew?'placeholder="e.g. d8"':'readonly style="background:#334155"'}></div>
+    <div class="admin-fg"><label>Title (Korean) *</label><textarea id="af-dtitle" style="min-height:60px">${esc(pub.title||'')}</textarea></div>
+    <div class="admin-fg"><label>Authors *</label><input id="af-dauthors" value="${esc(pub.authors||'')}"></div>
+    <div class="admin-fg"><label>Venue (학회/저널) *</label><input id="af-dvenue" value="${esc(pub.venue||'')}"></div>
+    <div class="admin-btn-row">
+      <button class="admin-btn admin-btn-cancel" onclick="adminClosePanel()">Cancel</button>
+      <button class="admin-btn admin-btn-primary" onclick="window._adminSaveDomesticPub(${idx})">${isNew?'Add':'Save'}</button>
+    </div>
+    ${!isNew?`<button class="admin-btn-danger" onclick="window._adminDeleteDomesticPub(${idx})">Delete this publication</button>`:''}
+  `);
+}
+
+window._adminSaveDomesticPub = async function(idx){
+  const d = {
+    id:document.getElementById('af-did').value.trim(),
+    title:document.getElementById('af-dtitle').value.trim(),
+    authors:document.getElementById('af-dauthors').value.trim(),
+    venue:document.getElementById('af-dvenue').value.trim(),
+  };
+  if(!d.id||!d.title||!d.authors||!d.venue){ adminToast('All fields required','error'); return; }
+
+  adminShowLoading('Saving...');
+  try{
+    const endpoint = idx>=0 ? `/deploy/domestic_publications/publications.${idx}` : `/deploy/domestic_publications/publications`;
+    const method = idx>=0 ? 'PUT' : 'POST';
+    const res = await apiCall(endpoint, method, d);
+    adminHideLoading();
+    if(res.status==='success'){ adminToast('Saved! Click "Apply" to publish.','success'); checkUnpushed(); adminClosePanel(); setTimeout(()=>location.reload(),1500); }
+    else adminToast(res.message||JSON.stringify(res.errors),'error');
+  }catch(e){ adminHideLoading(); adminToast(e.message,'error'); }
+};
+
+window._adminDeleteDomesticPub = async function(idx){
+  if(!confirm('Delete this domestic publication?')) return;
+  adminShowLoading('Deleting...');
+  try{
+    const res = await apiCall(`/deploy/domestic_publications/publications.${idx}`,'DELETE');
+    adminHideLoading();
+    if(res.status==='success'){ adminToast('Deleted!','success'); checkUnpushed(); setTimeout(()=>location.reload(),1500); }
     else adminToast(res.message,'error');
   }catch(e){ adminHideLoading(); adminToast(e.message,'error'); }
 };
