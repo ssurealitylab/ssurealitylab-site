@@ -123,9 +123,6 @@ custom_qa:
     - location
     - where
     - address
-  - question: "What technology stack do you use?"
-    answer: "We use various technologies needed for AI/ML research, from machine learning frameworks like Python, PyTorch, TensorFlow to ROS for robotics and OpenCV for computer vision."
-    keywords: ["technology", "stack", "tools", "framework"]
 
 # Fallback responses
 fallback_responses:
