@@ -1373,4 +1373,47 @@ observer.observe(document.body, {childList:true, subtree:true});
 checkUnpushed();
 setInterval(checkUnpushed, 15000);
 
+// Audit log viewer
+window._adminShowAudit = async function(){
+  try{
+    const entries = await apiGet('/audit?limit=200');
+    let html = '<div style="margin-bottom:12px;color:#94a3b8;font-size:13px">최근 편집 이력 (최대 200건)</div>';
+    if(!entries.length){
+      html += '<div style="color:#64748b;text-align:center;padding:20px">기록이 없습니다.</div>';
+    } else {
+      const actionColors = {
+        'LOGIN':'#60a5fa', 'UPDATE':'#fbbf24', 'ADD':'#34d399',
+        'DELETE':'#f87171', 'APPLY (push)':'#a78bfa'
+      };
+      entries.forEach(e=>{
+        const color = actionColors[e.action] || '#94a3b8';
+        const dt = e.ts.replace('T',' ');
+        html += `<div style="padding:8px 10px;margin-bottom:4px;background:#0f172a;border-radius:6px;border-left:3px solid ${color}">
+          <div style="display:flex;justify-content:space-between;align-items:center;font-size:11px;color:#64748b;margin-bottom:2px">
+            <span>${esc(dt)}</span>
+            <span style="background:${color};color:#0f172a;padding:1px 6px;border-radius:3px;font-weight:700">${esc(e.action)}</span>
+          </div>
+          <div style="font-size:13px;color:#e2e8f0">
+            <strong>${esc(e.user)}</strong>${e.target?' &middot; <span style="color:#94a3b8">'+esc(e.target)+'</span>':''}
+          </div>
+          ${e.details?`<div style="font-size:11px;color:#64748b;margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(e.details)}</div>`:''}
+        </div>`;
+      });
+    }
+    openPanel('Edit Log ('+entries.length+')', html);
+  }catch(e){ adminToast('Failed to load log: '+e.message,'error'); }
+};
+
+
+(async function showEditorName(){
+  try{
+    const res = await apiGet('/whoami');
+    const status = document.getElementById('admin-status');
+    if(status && res.name){
+      status.textContent = '✏️ ' + res.name;
+      status.title = 'Logged in as ' + res.name;
+    }
+  }catch(e){}
+})();
+
 })();

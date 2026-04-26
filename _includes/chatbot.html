@@ -1979,7 +1979,26 @@ document.addEventListener('DOMContentLoaded', function() {
         if (lastMessage && lastMessage.classList.contains('bot-message')) {
           const contentDiv = lastMessage.querySelector('div:first-child');
           if (contentDiv) {
-            contentDiv.innerHTML = finalResponse.replace(/\n/g, '<br>');
+            // Strip any leftover citation marks the model may have included
+            const cleaned = finalResponse
+              .replace(/【[^】]*】/g, '')
+              .replace(/\[\s*(참고자료|출처|reference|source)\s*\d*\s*\]/gi, '')
+              .replace(/\(\s*(참고자료|source)\s*\d+\s*\)/gi, '')
+              .replace(/\[\d+\]/g, '')
+              .replace(/  +/g, ' ');
+            contentDiv.innerHTML = cleaned.replace(/\n/g, '<br>');
+          }
+
+          // Add verified mark at top-left of message bubble
+          if (verifiedByResearchers && lastMessage && !lastMessage.querySelector('.msg-verified-mark')) {
+            const mark = document.createElement('span');
+            mark.className = 'msg-verified-mark';
+            mark.innerHTML = '✓';
+            mark.title = isEnglish
+              ? 'Based on researcher-verified info'
+              : '연구원이 검증한 정보 기반 답변';
+            mark.style.cssText = 'display:inline-block;width:16px;height:16px;line-height:16px;text-align:center;background:#4caf50;color:#fff;border-radius:50%;font-size:10px;font-weight:bold;margin-right:6px;vertical-align:middle;cursor:help';
+            lastMessage.insertBefore(mark, lastMessage.firstChild);
           }
 
           // Show/hide verified badge on chatbot window

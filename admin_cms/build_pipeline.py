@@ -299,22 +299,23 @@ def full_deploy(yaml_filename: str, data: dict, operation: str,
 
 
 def trigger_rag_update() -> tuple:
-    """Run update_rag.sh in background to refresh the chatbot's knowledge base.
-    Returns (success, output).
+    """Trigger update_rag.sh in BACKGROUND so the user doesn't wait for RAG rebuild.
+    RAG rebuild takes ~1-2 minutes (sentence-transformer load + FAISS index build + chatbot restart).
+    Returns (success, output) immediately after spawning the background job.
     """
     try:
         rag_script = "/home/i0179/Realitylab-site/ai_server/update_rag.sh"
         if not os.path.exists(rag_script):
             return False, "update_rag.sh not found"
-        # Run synchronously with reasonable timeout
-        result = subprocess.run(
+        # Spawn detached background process
+        log_file = "/tmp/admin_rag_update.log"
+        subprocess.Popen(
             ["/bin/bash", rag_script],
-            cwd=SITE_ROOT, capture_output=True, text=True, timeout=180
+            cwd=SITE_ROOT,
+            stdout=open(log_file, "a"),
+            stderr=subprocess.STDOUT,
+            start_new_session=True,
         )
-        if result.returncode == 0:
-            return True, "RAG rebuilt"
-        return False, result.stderr[-200:] if result.stderr else "Unknown error"
-    except subprocess.TimeoutExpired:
-        return False, "RAG update timed out (>3min)"
+        return True, "RAG rebuild started in background (~1-2min until chatbot picks up)"
     except Exception as e:
         return False, str(e)

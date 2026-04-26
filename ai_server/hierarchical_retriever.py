@@ -28,7 +28,7 @@ class HierarchicalRetriever:
             "publications": ["논문", "paper", "publication", "학회", "conference", "journal", "cvpr", "iccv", "wacv", "bmvc", "aaai", "eccv", "nips", "neurips", "icml", "2023", "2024", "2025", "2026", "최신", "recent", "latest", "higlassrm", "mbti", "dynscene"],
             "lab_info": ["연구실", "lab", "위치", "location", "주소", "address", "contact", "연락처", "이메일", "email", "전화", "phone"],
             "research": ["연구", "research", "분야", "area", "비전", "vision", "로봇", "robot", "컴퓨터비전", "딥러닝", "deep learning", "computer vision"],
-            "qa": ["지원", "apply", "join", "입학", "admission", "어떻게", "how", "방법", "procedure", "프로젝트", "project", "기술", "스택", "도구", "tool"]
+            "qa": ["지원", "apply", "join", "입학", "admission", "어떻게", "how", "방법", "procedure", "프로젝트", "project", "기술", "스택", "도구", "tool", "있나요", "되나요", "되어있나요", "있어요", "되어있어요", "되는지", "되는가", "없나요"]
         }
 
     def load(self):
@@ -134,6 +134,10 @@ class HierarchicalRetriever:
         """
         # Stage 1: Classify
         relevant_categories = self.classify_query(query)[:max_categories]
+
+        # Always include 'qa' (researcher-verified Q&A) - it's small and high-value
+        if 'qa' not in relevant_categories and 'qa' in self.categories:
+            relevant_categories.append('qa')
 
         print(f"[Query Classification] Searching categories: {relevant_categories}")
 

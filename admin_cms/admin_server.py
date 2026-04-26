@@ -26,6 +26,7 @@ from backup_manager import create_backup, restore_backup, list_backups
 from schemas import validate_data
 from image_manager import list_images, save_image, delete_image
 from build_pipeline import full_deploy, jekyll_build, smoke_test, git_push, has_unpushed_commits
+from audit_log import log_event, get_recent
 
 app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = MAX_UPLOAD_SIZE
@@ -61,7 +62,8 @@ LOGIN_HTML = """<!DOCTYPE html>
     <label style="margin-top:16px">Confirm Password</label><input type="password" name="password_confirm" placeholder="Confirm password" required>
     <p class="setup-note">First-time setup: create your admin password</p>
     {% else %}
-    <label>Password</label><input type="password" name="password" placeholder="Enter password" required autofocus>
+    <label>Your Name (편집자 이름)</label><input type="text" name="user_name" placeholder="홍길동" required autofocus>
+    <label style="margin-top:16px">Password</label><input type="password" name="password" placeholder="Enter password" required>
     {% endif %}
     <button type="submit">{{ button_text }}</button>
     {% if error %}<p class="error">{{ error }}</p>{% endif %}
@@ -91,6 +93,7 @@ def _load_overlay():
   <div class="dev-right">
     <span class="admin-status" id="admin-status">Click any element to edit</span>
     <button class="apply-btn" id="admin-apply-btn" onclick="window._adminApplyChanges()">Apply to Live Site <span class="badge" id="admin-unpushed-count">0</span></button>
+    <a href="#" onclick="window._adminShowAudit();return false;" class="logout-btn" style="background:transparent;color:#94a3b8;border:1px solid #334155;margin-right:6px">📋 Log</a>
     <a href="/logout" class="logout-btn">Logout</a>
   </div>
 </div>
@@ -155,9 +158,12 @@ def login():
             error=f"Too many failed attempts. Locked for {LOGIN_LOCKOUT_MINUTES} minutes.")
 
     pw = request.form.get('password', '')
+    user_name = request.form.get('user_name', '').strip() or 'Anonymous'
     if verify_password(pw):
         session.permanent = True
         session['authenticated'] = True
+        session['user_name'] = user_name
+        log_event(user_name, "LOGIN", "", request.headers.get('User-Agent','')[:80])
         return redirect('/')
     return render_template_string(LOGIN_HTML, setup_mode=False,
         subtitle="Enter your password", button_text="Login", error="Invalid password")
@@ -242,7 +248,9 @@ def api_deploy_update(filename, data_path):
             return jsonify({"status": "error", "errors": errors})
         data = read_yaml(filename)
         set_at_path(data, data_path, new_value)
-        result = full_deploy(filename, data, f"Update {filename}/{data_path}")
+        editor = session.get('user_name', 'Anonymous')
+        result = full_deploy(filename, data, f"Update {filename}/{data_path} (by {editor})")
+        log_event(editor, "UPDATE", f"{filename}/{data_path}", result.get('message',''))
         return jsonify(result)
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)})
@@ -266,7 +274,9 @@ def api_deploy_add(filename, data_path):
             target.insert(0, new_value)
         else:
             append_at_path(data, data_path, new_value)
-        result = full_deploy(filename, data, f"Add to {filename}/{data_path}")
+        editor = session.get('user_name', 'Anonymous')
+        result = full_deploy(filename, data, f"Add to {filename}/{data_path} (by {editor})")
+        log_event(editor, "ADD", f"{filename}/{data_path}", result.get('message',''))
         return jsonify(result)
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)})
@@ -278,10 +288,20 @@ def api_deploy_delete(filename, data_path):
     try:
         data = read_yaml(filename)
         delete_at_path(data, data_path)
-        result = full_deploy(filename, data, f"Delete {filename}/{data_path}")
+        editor = session.get('user_name', 'Anonymous')
+        result = full_deploy(filename, data, f"Delete {filename}/{data_path} (by {editor})")
+        log_event(editor, "DELETE", f"{filename}/{data_path}", result.get('message',''))
         return jsonify(result)
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)})
+
+
+# ─── User info ───────────────────────
+
+@app.route('/api/whoami')
+@login_required
+def api_whoami():
+    return jsonify({"name": session.get('user_name', 'Anonymous')})
 
 
 # ─── Image API ───────────────────────
@@ -328,9 +348,19 @@ def api_restore_backup(backup_id):
 def api_push():
     """Push all local commits to remote (apply to live site)."""
     success, output = git_push()
+    editor = session.get('user_name', 'Anonymous')
+    log_event(editor, "APPLY (push)", "", output[:120])
     if success:
         return jsonify({"status": "success", "message": output})
     return jsonify({"status": "error", "message": output})
+
+
+@app.route('/api/audit')
+@login_required
+def api_audit():
+    """Get recent audit log entries."""
+    limit = int(request.args.get('limit', 100))
+    return jsonify(get_recent(limit))
 
 
 @app.route('/api/unpushed')
