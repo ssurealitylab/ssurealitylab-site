@@ -11,68 +11,68 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: 
-    text: Welcome to the SSU <span class="reality-lab-text"><span id="easter-egg-trigger-container"><span id="easter-egg-trigger">R</span></span>eality Lab</span>! 
+    title:
+    text: Welcome to the SSU <span class="reality-lab-text"><span id="easter-egg-trigger-container"><span id="easter-egg-trigger">R</span></span>eality Lab</span>!
     button: Learn About Our Research
     buttonlink: "#services"
     slider:
-      - image: "참고 이미지/homepage_slider_images/slider_yearend_party.jpg"
-        title: "Year-End Party"
-        description: "2025 Lab Celebration"
-      - image: "참고 이미지/homepage_slider_images/slider_arnold_award.jpg"
-        title: "ARNOLD Challenge"
-        description: "CVPR 2025 - 1st Place Award Ceremony"
-      - image: "참고 이미지/homepage_slider_images/slider_kist_seminar.jpg"
-        title: "Media Seminar"
-        description: "Kanggeon Kim, KIST"
-      - image: "참고 이미지/homepage_slider_images/slider_rrr_robot.jpg"
-        title: "RRR Robot"
-        description: "Custom Built Research Platform"
-      - image: "참고 이미지/homepage_slider_images/slider_gyeonggi2025.png"
-        title: "Gyeonggi Youth Gap Year"
-        description: "Governor's Award - Toddlerbot Project"
-      - image: "참고 이미지/homepage_slider_images/slider_toddlerbot.png"
-        title: "ToddlerBot Development"
-        description: "Built with Gyeonggi Youth Gap Year Grant"
-      - image: "참고 이미지/homepage_slider_images/slider_unithon2024.jpg"
-        title: "UNITHON Hackathon"
-        description: "Grand Prize - Spartan SW Camp"
-      - image: "참고 이미지/homepage_slider_images/slider_09.jpg"
-        title: "AAAI 2025"
-        description: "Association for the Advancement of AI"
-      - image: "참고 이미지/homepage_slider_images/slider_14.jpg"
-        title: "CVPR 2025"
-        description: "Poster Session Participation"
-      - image: "참고 이미지/homepage_slider_images/slider_10.jpg"
-        title: "Qualcomm Visit"
-        description: "Industry Collaboration and Research"
-      - image: "참고 이미지/homepage_slider_images/slider_08.jpg"
-        title: "Team Building"
-        description: "Lab Activities and Team Bonding"
-      - image: "참고 이미지/homepage_slider_images/slider_12.jpg"
-        title: "Teacher's Day"
-        description: "Lab Celebration and Appreciation"
+    - image: "참고 이미지/homepage_slider_images/slider_yearend_party.jpg"
+      title: "Year-End Party"
+      description: "2025 Lab Celebration"
+    - image: "참고 이미지/homepage_slider_images/slider_arnold_award.jpg"
+      title: "ARNOLD Challenge"
+      description: "CVPR 2025 - 1st Place Award Ceremony"
+    - image: "참고 이미지/homepage_slider_images/slider_kist_seminar.jpg"
+      title: "Media Seminar"
+      description: "Kanggeon Kim, KIST"
+    - description: Custom Built Research Platform
+      image: 참고 이미지/homepage_slider_images/slider_rrr_robot.jpg
+      title: GARO Robot
+    - image: "참고 이미지/homepage_slider_images/slider_gyeonggi2025.png"
+      title: "Gyeonggi Youth Gap Year"
+      description: "Governor's Award - Toddlerbot Project"
+    - image: "참고 이미지/homepage_slider_images/slider_toddlerbot.png"
+      title: "ToddlerBot Development"
+      description: "Built with Gyeonggi Youth Gap Year Grant"
+    - image: "참고 이미지/homepage_slider_images/slider_unithon2024.jpg"
+      title: "UNITHON Hackathon"
+      description: "Grand Prize - Spartan SW Camp"
+    - image: "참고 이미지/homepage_slider_images/slider_09.jpg"
+      title: "AAAI 2025"
+      description: "Association for the Advancement of AI"
+    - image: "참고 이미지/homepage_slider_images/slider_14.jpg"
+      title: "CVPR 2025"
+      description: "Poster Session Participation"
+    - image: "참고 이미지/homepage_slider_images/slider_10.jpg"
+      title: "Qualcomm Visit"
+      description: "Industry Collaboration and Research"
+    - image: "참고 이미지/homepage_slider_images/slider_08.jpg"
+      title: "Team Building"
+      description: "Lab Activities and Team Bonding"
+    - image: "참고 이미지/homepage_slider_images/slider_12.jpg"
+      title: "Teacher's Day"
+      description: "Lab Celebration and Appreciation"
 
   services:
     title: "Research Areas"
     text: "We develop intelligent systems that learn from real-world perception and interaction—just like humans."
     section: services
     list:
-      - title: "Robotics"
-        desc: "Developing intelligent robotic systems that can perceive, learn, and interact with the physical world autonomously."
-        icon: fas fa-robot
-      - title: "Computer Vision"
-        desc: "Advanced visual recognition and understanding systems for real-world applications and human-AI interaction."
-        icon: fas fa-eye
-      - title: "Machine Learning"
-        desc: "Cutting-edge ML algorithms and models that bridge the gap between AI capabilities and real-world understanding."
-        icon: fas fa-brain
-      - title: "Multimodal Language Understanding"
-        desc: "Integrating language processing with visual and sensory inputs for comprehensive AI understanding."
-        icon: fas fa-comments
-      - title: "AI+X Applications"
-        desc: "Applying AI technologies to various domains including healthcare, education, and human-computer interaction."
-        icon: fas fa-plus-circle
+    - title: "Robotics"
+      desc: "Developing intelligent robotic systems that can perceive, learn, and interact with the physical world autonomously."
+      icon: fas fa-robot
+    - title: "Computer Vision"
+      desc: "Advanced visual recognition and understanding systems for real-world applications and human-AI interaction."
+      icon: fas fa-eye
+    - title: "Machine Learning"
+      desc: "Cutting-edge ML algorithms and models that bridge the gap between AI capabilities and real-world understanding."
+      icon: fas fa-brain
+    - title: "Multimodal Language Understanding"
+      desc: "Integrating language processing with visual and sensory inputs for comprehensive AI understanding."
+      icon: fas fa-comments
+    - title: "AI+X Applications"
+      desc: "Applying AI technologies to various domains including healthcare, education, and human-computer interaction."
+      icon: fas fa-plus-circle
 
   portfolio:
     title: "Research Projects"
@@ -85,27 +85,27 @@ en: &DEFAULT_EN
     text: "The story of Reality Lab"
     section: timeline
     events:
-      - title: "Lab Foundation"
-        year: "2023"
-        desc: "Reality Lab was established at Soongsil University under the supervision of Prof. Heewon Kim, with a vision to advance AI technologies that understand and interact with the real world."
-        image: assets/img/timeline/1.jpg
-        alt: Lab Foundation
-      - title: "Research Focus Established"
-        year: "2023"
-        desc: "We defined our core research areas: Robotics, Computer Vision, Machine Learning, and Multimodal Language Understanding, setting the foundation for our interdisciplinary approach."
-        image: assets/img/timeline/2.jpg
-        alt: Research Focus
-      - title: "Team Growth"
-        year: "2023-2024"
-        desc: "Our research team expanded with talented graduate students and research assistants, building a collaborative environment for cutting-edge AI research."
-        image: assets/img/timeline/3.jpg
-        alt: Team Growth
-      - title: "Ongoing Research"
-        year: "Present"
-        desc: "We continue to push the boundaries of AI research, developing intelligent systems that bridge the gap between artificial intelligence and real-world understanding."
-        image: assets/img/timeline/4.jpg
-        alt: Ongoing Research
-        align: right
+    - title: "Lab Foundation"
+      year: "2023"
+      desc: "Reality Lab was established at Soongsil University under the supervision of Prof. Heewon Kim, with a vision to advance AI technologies that understand and interact with the real world."
+      image: assets/img/timeline/1.jpg
+      alt: Lab Foundation
+    - title: "Research Focus Established"
+      year: "2023"
+      desc: "We defined our core research areas: Robotics, Computer Vision, Machine Learning, and Multimodal Language Understanding, setting the foundation for our interdisciplinary approach."
+      image: assets/img/timeline/2.jpg
+      alt: Research Focus
+    - title: "Team Growth"
+      year: "2023-2024"
+      desc: "Our research team expanded with talented graduate students and research assistants, building a collaborative environment for cutting-edge AI research."
+      image: assets/img/timeline/3.jpg
+      alt: Team Growth
+    - title: "Ongoing Research"
+      year: "Present"
+      desc: "We continue to push the boundaries of AI research, developing intelligent systems that bridge the gap between artificial intelligence and real-world understanding."
+      image: assets/img/timeline/4.jpg
+      alt: Ongoing Research
+      align: right
     end: "Join Us <br> in Advancing <br> AI Reality!"
 
   about:
@@ -120,13 +120,13 @@ en: &DEFAULT_EN
     max-height: 100px
     horizontal-scrolling: "" #"yes/no"
     list:
-      - title: "Soongsil University"
-        url: https://www.ssu.ac.kr
-        logo: assets/img/ssu-logo.png
-      - title: "Kairoba"
-        url: https://kairoba.com
-        logo: assets/img/kairoba-logo.png
-        style: "margin-top: 5px"
+    - title: "Soongsil University"
+      url: https://www.ssu.ac.kr
+      logo: assets/img/ssu-logo.png
+    - title: "Kairoba"
+      url: https://kairoba.com
+      logo: assets/img/kairoba-logo.png
+      style: "margin-top: 5px"
 
   team:
     title: "OUR RESEARCH TEAM"
@@ -134,54 +134,54 @@ en: &DEFAULT_EN
     subtext: Our team combines expertise in artificial intelligence, robotics, computer vision, and machine learning to push the boundaries of what's possible in AI research.
     section: team
     people:
-      - name: "Prof. Heewon Kim"
-        role: "Principal Investigator"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-          - url: mailto:heewon@ssu.ac.kr
-            icon: fas fa-envelope
-      - name: "Youngjae Choi"
-        role: "PhD Student"
-        image: assets/img/team/2.jpg
-        social:
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-          - url: https://github.com
-            icon: fab fa-github
-      - name: "Hyunsuh Koh"
-        role: "Master's Student"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-          - url: https://github.com
-            icon: fab fa-github
-      - name: "Hojae Jeong"
-        role: "Master's Student"
-        image: assets/img/team/2.jpg
-        social:
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-          - url: https://github.com
-            icon: fab fa-github
-      - name: "ByungKwan Chae"
-        role: "Research Assistant"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-          - url: https://github.com
-            icon: fab fa-github
-      - name: "Dowon Kim"
-        role: "Research Assistant"
-        image: assets/img/team/2.jpg
-        social:
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-          - url: https://github.com
-            icon: fab fa-github
+    - name: "Prof. Heewon Kim"
+      role: "Principal Investigator"
+      image: assets/img/team/500x500.jpg
+      social:
+      - url: https://linkedin.com
+        icon: fab fa-linkedin-in
+      - url: mailto:heewon@ssu.ac.kr
+        icon: fas fa-envelope
+    - name: "Youngjae Choi"
+      role: "PhD Student"
+      image: assets/img/team/2.jpg
+      social:
+      - url: https://linkedin.com
+        icon: fab fa-linkedin-in
+      - url: https://github.com
+        icon: fab fa-github
+    - name: "Hyunsuh Koh"
+      role: "Master's Student"
+      image: assets/img/team/500x500.jpg
+      social:
+      - url: https://linkedin.com
+        icon: fab fa-linkedin-in
+      - url: https://github.com
+        icon: fab fa-github
+    - name: "Hojae Jeong"
+      role: "Master's Student"
+      image: assets/img/team/2.jpg
+      social:
+      - url: https://linkedin.com
+        icon: fab fa-linkedin-in
+      - url: https://github.com
+        icon: fab fa-github
+    - name: "ByungKwan Chae"
+      role: "Research Assistant"
+      image: assets/img/team/500x500.jpg
+      social:
+      - url: https://linkedin.com
+        icon: fab fa-linkedin-in
+      - url: https://github.com
+        icon: fab fa-github
+    - name: "Dowon Kim"
+      role: "Research Assistant"
+      image: assets/img/team/2.jpg
+      social:
+      - url: https://linkedin.com
+        icon: fab fa-linkedin-in
+      - url: https://github.com
+        icon: fab fa-github
 
   contact:
     title: "Contact Reality Lab"
@@ -201,16 +201,16 @@ en: &DEFAULT_EN
   footer:
     legal: "Privacy Policy"
     social:
-      - url: https://twitter.com
-        icon: "fab fa-twitter"
-      - url: https://facebook.com
-        icon: "fab fa-facebook-f"
-      - url: https://linkedin.com
-        icon: "fab fa-linkedin-in"
-      - url: https://github.com/raviriley/agency-jekyll-theme
-        icon: "fab fa-github"
-      - url: https://instagram.com
-        icon: "fab fa-instagram"
+    - url: https://twitter.com
+      icon: "fab fa-twitter"
+    - url: https://facebook.com
+      icon: "fab fa-facebook-f"
+    - url: https://linkedin.com
+      icon: "fab fa-linkedin-in"
+    - url: https://github.com/raviriley/agency-jekyll-theme
+      icon: "fab fa-github"
+    - url: https://instagram.com
+      icon: "fab fa-instagram"
 
 en-001: #English (World)
   <<: *DEFAULT_EN
@@ -433,15 +433,15 @@ es: &DEFAULT_ES
     text: "Lorem ipsum"
     section: servicios
     list:
-      - title: "Comercio Electrónico"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Diseño Responsivo"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop
-      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
-        desc: "Su descripción aquí, soporte completo de **Markdown**"
-        icon: fab fa-markdown
+    - title: "Comercio Electrónico"
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      icon: fas fa-shopping-cart   #find more at https://fontawesome.com/icons
+    - title: "Diseño Responsivo"
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      icon: fas fa-laptop
+    - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
+      desc: "Su descripción aquí, soporte completo de **Markdown**"
+      icon: fab fa-markdown
 
   portfolio:
     title: "Portafolio"
@@ -456,28 +456,28 @@ es: &DEFAULT_ES
     # left is the default
     #start_align: "left"
     events:
-      - title: "Nuestro Humilde Comienzo"
-        year: "2009-2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/1.jpg
-        alt:
-      - title: "Una Agencia nace"
-        year: "March 2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/2.jpg
-        alt:
-      - title: "La plantilla Jekyll es creada"
-        year: "2019"
-        desc: "Ravi Riley convirtió Agency, una plantilla basada en Bootstrap, en una plantilla de Jekyll. La plantilla Jekyll puede ser instalada commo una gema de Ruby (Ruby gem) o remotamente. Para más información, visite la documentación."
-        image: assets/img/timeline/3.jpg
-        alt: image alt text
-      - title: "Título"
-        year: "2009-2011"
-        desc: "Su descripción aquí, **Markdown** es soportado completamente."
-        image: assets/img/timeline/4.jpg
-        alt:
+    - title: "Nuestro Humilde Comienzo"
+      year: "2009-2011"
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+      image: assets/img/timeline/1.jpg
+      alt:
+    - title: "Una Agencia nace"
+      year: "March 2011"
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+      image: assets/img/timeline/2.jpg
+      alt:
+    - title: "La plantilla Jekyll es creada"
+      year: "2019"
+      desc: "Ravi Riley convirtió Agency, una plantilla basada en Bootstrap, en una plantilla de Jekyll. La plantilla Jekyll puede ser instalada commo una gema de Ruby (Ruby gem) o remotamente. Para más información, visite la documentación."
+      image: assets/img/timeline/3.jpg
+      alt: image alt text
+    - title: "Título"
+      year: "2009-2011"
+      desc: "Su descripción aquí, **Markdown** es soportado completamente."
+      image: assets/img/timeline/4.jpg
+      alt:
         # you can enforce the alignment
-        align: right
+      align: right
     end: "¡Se parte <br> de Nuestra <br> Historia!"
 
   about:
@@ -491,18 +491,18 @@ es: &DEFAULT_ES
     max-height: 100px
     horizontal-scrolling: "" #"yes/no"
     list:
-      - title: "envato"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/envato.jpg
-      - title: "designmodo"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.jpg
-      - title: "themeforest"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.jpg
-      - title: "Creative Market"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.jpg
+    - title: "envato"
+      url: https://github.com/raviriley/agency-jekyll-theme
+      logo: assets/img/clients/envato.jpg
+    - title: "designmodo"
+      url: https://github.com/raviriley/agency-jekyll-theme
+      logo: assets/img/clients/designmodo.jpg
+    - title: "themeforest"
+      url: https://github.com/raviriley/agency-jekyll-theme
+      logo: assets/img/clients/themeforest.jpg
+    - title: "Creative Market"
+      url: https://github.com/raviriley/agency-jekyll-theme
+      logo: assets/img/clients/creative-market.jpg
 
   team:
     title: "NUESTRO INCREÍBLE EQUIPO"
@@ -510,36 +510,36 @@ es: &DEFAULT_ES
     subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
     section: equipo
     people:
-      - name: "Kay Garland"
-        role: "Lead Designer"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Larry Parker"
-        role: "Lead Marketer"
-        image: assets/img/team/2.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Diana Perterson"
-        role: "Lead Developer"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
+    - name: "Kay Garland"
+      role: "Lead Designer"
+      image: assets/img/team/500x500.jpg
+      social:
+      - url: https://twitter.com
+        icon: fab fa-twitter
+      - url: https://facebook.com
+        icon: fab fa-facebook-f
+      - url: https://linkedin.com
+        icon: fab fa-linkedin-in
+    - name: "Larry Parker"
+      role: "Lead Marketer"
+      image: assets/img/team/2.jpg
+      social:
+      - url: https://twitter.com
+        icon: fab fa-twitter
+      - url: https://facebook.com
+        icon: fab fa-facebook-f
+      - url: https://linkedin.com
+        icon: fab fa-linkedin-in
+    - name: "Diana Perterson"
+      role: "Lead Developer"
+      image: assets/img/team/500x500.jpg
+      social:
+      - url: https://twitter.com
+        icon: fab fa-twitter
+      - url: https://facebook.com
+        icon: fab fa-facebook-f
+      - url: https://linkedin.com
+        icon: fab fa-linkedin-in
 
   contact:
     title: "Contáctenos"
@@ -559,16 +559,16 @@ es: &DEFAULT_ES
   footer:
     legal: "Política de Privacidad"
     social:
-      - url: https://twitter.com
-        icon: "fab fa-twitter"
-      - url: https://facebook.com
-        icon: "fab fa-facebook-f"
-      - url: https://linkedin.com
-        icon: "fab fa-linkedin-in"
-      - url: https://github.com/raviriley/agency-jekyll-theme
-        icon: "fab fa-github"
-      - url: https://instagram.com
-        icon: "fab fa-instagram"
+    - url: https://twitter.com
+      icon: "fab fa-twitter"
+    - url: https://facebook.com
+      icon: "fab fa-facebook-f"
+    - url: https://linkedin.com
+      icon: "fab fa-linkedin-in"
+    - url: https://github.com/raviriley/agency-jekyll-theme
+      icon: "fab fa-github"
+    - url: https://instagram.com
+      icon: "fab fa-instagram"
 
 es-419: #Spanish (Latin America and the Caribbean)
   <<: *DEFAULT_ES
@@ -637,15 +637,15 @@ de: &DEFAULT_DE
     text: "Was wir anbieten."
     section: Leistungen
     list:
-      - title: "E-Commerce"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Responsive Design"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop
-      - title: "[Markdown](https://de.wikipedia.org/wiki/Markdown)"
-        desc: "Hier können Sie etwas mit **Markdown** einfügen."
-        icon: fab fa-markdown
+    - title: "E-Commerce"
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      icon: fas fa-shopping-cart   #find more at https://fontawesome.com/icons
+    - title: "Responsive Design"
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      icon: fas fa-laptop
+    - title: "[Markdown](https://de.wikipedia.org/wiki/Markdown)"
+      desc: "Hier können Sie etwas mit **Markdown** einfügen."
+      icon: fab fa-markdown
 
   portfolio:
     title: "Portfolio"
@@ -660,28 +660,28 @@ de: &DEFAULT_DE
     # left is the default
     #start_align: "left"
     events:
-      - title: "Unsere Anfänge"
-        year: "2009-2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/1.jpg
-        alt:
-      - title: "Gründung der Firma"
-        year: "März 2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/2.jpg
-        alt:
-      - title: "Das Jekyll-Thema wurde erstellt"
-        year: "2019"
-        desc: "Ravi Riley wandelte Agency, ein auf Bootstrap basierendes Thema, in ein Jekyll-Thema um. Man kann das Jekyll-Thema als Ruby-Gem oder remotely installieren. Für mehr Informationen, schauen Sie sich die Dokumentation an."
-        image: assets/img/timeline/3.jpg
-        alt: Bildbeschreibung
-      - title: "Titel"
-        year: "2009-2011"
-        desc: "Hier können Sie etwas mit **Markdown** einfügen."
-        image: assets/img/timeline/4.jpg
-        alt:
+    - title: "Unsere Anfänge"
+      year: "2009-2011"
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+      image: assets/img/timeline/1.jpg
+      alt:
+    - title: "Gründung der Firma"
+      year: "März 2011"
+      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+      image: assets/img/timeline/2.jpg
+      alt:
+    - title: "Das Jekyll-Thema wurde erstellt"
+      year: "2019"
+      desc: "Ravi Riley wandelte Agency, ein auf Bootstrap basierendes Thema, in ein Jekyll-Thema um. Man kann das Jekyll-Thema als Ruby-Gem oder remotely installieren. Für mehr Informationen, schauen Sie sich die Dokumentation an."
+      image: assets/img/timeline/3.jpg
+      alt: Bildbeschreibung
+    - title: "Titel"
+      year: "2009-2011"
+      desc: "Hier können Sie etwas mit **Markdown** einfügen."
+      image: assets/img/timeline/4.jpg
+      alt:
         # you can enforce the alignment
-        align: right
+      align: right
     end: "Seien Sie <br> Teil unserer <br> Geschichte!"
 
   about:
@@ -695,18 +695,18 @@ de: &DEFAULT_DE
     max-height: 100px
     horizontal-scrolling: "" #"yes/no"
     list:
-      - title: "envato"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/envato.jpg
-      - title: "designmodo"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.jpg
-      - title: "themeforest"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.jpg
-      - title: "Creative Market"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.jpg
+    - title: "envato"
+      url: https://github.com/raviriley/agency-jekyll-theme
+      logo: assets/img/clients/envato.jpg
+    - title: "designmodo"
+      url: https://github.com/raviriley/agency-jekyll-theme
+      logo: assets/img/clients/designmodo.jpg
+    - title: "themeforest"
+      url: https://github.com/raviriley/agency-jekyll-theme
+      logo: assets/img/clients/themeforest.jpg
+    - title: "Creative Market"
+      url: https://github.com/raviriley/agency-jekyll-theme
+      logo: assets/img/clients/creative-market.jpg
 
   team:
     title: "Unser großartiges Team"
@@ -714,36 +714,36 @@ de: &DEFAULT_DE
     subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
     section: Team
     people:
-      - name: "Kay Garland"
-        role: "Chef-Designer"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Larry Parker"
-        role: "Chef der Werbeabteilung"
-        image: assets/img/team/2.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Diana Perterson"
-        role: "Chef-Programmiererin"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
+    - name: "Kay Garland"
+      role: "Chef-Designer"
+      image: assets/img/team/500x500.jpg
+      social:
+      - url: https://twitter.com
+        icon: fab fa-twitter
+      - url: https://facebook.com
+        icon: fab fa-facebook-f
+      - url: https://linkedin.com
+        icon: fab fa-linkedin-in
+    - name: "Larry Parker"
+      role: "Chef der Werbeabteilung"
+      image: assets/img/team/2.jpg
+      social:
+      - url: https://twitter.com
+        icon: fab fa-twitter
+      - url: https://facebook.com
+        icon: fab fa-facebook-f
+      - url: https://linkedin.com
+        icon: fab fa-linkedin-in
+    - name: "Diana Perterson"
+      role: "Chef-Programmiererin"
+      image: assets/img/team/500x500.jpg
+      social:
+      - url: https://twitter.com
+        icon: fab fa-twitter
+      - url: https://facebook.com
+        icon: fab fa-facebook-f
+      - url: https://linkedin.com
+        icon: fab fa-linkedin-in
 
   contact:
     title: "Kontakt"
@@ -763,16 +763,16 @@ de: &DEFAULT_DE
   footer:
     legal: "Datenschutzerklärung"
     social:
-      - url: https://twitter.com
-        icon: "fab fa-twitter"
-      - url: https://facebook.com
-        icon: "fab fa-facebook-f"
-      - url: https://linkedin.com
-        icon: "fab fa-linkedin-in"
-      - url: https://github.com/raviriley/agency-jekyll-theme
-        icon: "fab fa-github"
-      - url: https://instagram.com
-        icon: "fab fa-instagram"
+    - url: https://twitter.com
+      icon: "fab fa-twitter"
+    - url: https://facebook.com
+      icon: "fab fa-facebook-f"
+    - url: https://linkedin.com
+      icon: "fab fa-linkedin-in"
+    - url: https://github.com/raviriley/agency-jekyll-theme
+      icon: "fab fa-github"
+    - url: https://instagram.com
+      icon: "fab fa-instagram"
 
 de-AT: #German (Austria)
   <<: *DEFAULT_DE
