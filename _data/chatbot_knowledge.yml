@@ -240,7 +240,6 @@ custom_qa:
 # Pending Q&A - questions waiting to be answered (shown in admin CMS)
 pending_qa:
   ko:
-  - question: "인턴 지원 자격이나 우대 사항이 있나요? (예: 학년, 전공, 코딩 경험)"
   - question: "인턴에서 정식 대학원생으로 이어지는 경우가 많나요?"
   - question: "외국인 학생도 받나요?"
   - question: "신규 연구원 온보딩(교육)은 어떻게 진행되나요?"
