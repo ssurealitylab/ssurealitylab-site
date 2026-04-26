@@ -1,10 +1,6 @@
 # Domestic publications - editable via Admin CMS
 year_range: "2024-2025"
 publications:
-- id: test
-  title: 테스트
-  authors: 테스트인
-  venue: 테스트학회
 - id: d1
   title: "로봇 조작 정책 학습에서 다중 시점 구성 변화의 정량적 영향분석"
   authors: "Dowon Kim, Sangmin Lee, Sungyong Park, Heewon Kim"
