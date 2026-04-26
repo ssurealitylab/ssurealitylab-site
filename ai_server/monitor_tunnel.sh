@@ -65,7 +65,7 @@ log "Response: $HEALTH_RESPONSE"
 
 # Kill existing tunnel and restart
 log "Killing existing tunnel and restarting..."
-pkill -f "cloudflared.*tunnel" 2>/dev/null
+pkill -f "cloudflared.*url http://localhost:4005" 2>/dev/null
 sleep 3
 
 # Start restart script (which has retry logic)

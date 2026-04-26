@@ -30,3 +30,47 @@ To https://github.com/ssurealitylab/ssurealitylab.github.io.git
 2026-04-26T14:21:33Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.13
 2026/04/26 23:21:33 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
 2026-04-26T14:21:33Z INF Registered tunnel connection connIndex=0 connection=b2ef4ba7-18b3-4c40-b4d4-7d47af413b4f event=0 ip=198.41.200.13 location=icn05 protocol=quic
+[2026-04-27 08:00:13] Starting new admin tunnel...
+[2026-04-27 08:00:13] Started cloudflared PID: 1718555
+[2026-04-27 08:00:14] Starting new admin tunnel...
+[2026-04-27 08:00:14] Started cloudflared PID: 1718569
+[2026-04-27 08:00:16] Admin tunnel URL: https://apartment-nothing-slope-today.trycloudflare.com
+[2026-04-27 08:00:17] Admin tunnel URL: https://alone-empty-disclose-diy.trycloudflare.com
+[2026-04-27 08:00:19] WARN: Admin tunnel returned 000
+[2026-04-27 08:00:19] Updating admin.html: https://rome-abroad-sacred-mas.trycloudflare.com -> https://apartment-nothing-slope-today.trycloudflare.com
+Version auto-updated to v1222
+[main 589ed9c] Auto-update admin tunnel URL
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+[2026-04-27 08:00:20] WARN: Admin tunnel returned 000
+[2026-04-27 08:00:20] Updating admin.html: https://apartment-nothing-slope-today.trycloudflare.com -> https://alone-empty-disclose-diy.trycloudflare.com
+Version auto-updated to v1223
+[main 7b0accf] Auto-update admin tunnel URL
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+To https://github.com/ssurealitylab/ssurealitylab.github.io.git
+   881d35c..589ed9c  main -> main
+[2026-04-27 08:00:21] Successfully pushed admin URL to GitHub
+2026-04-26T23:00:14Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-04-26T23:00:14Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-04-26T23:00:16Z INF +--------------------------------------------------------------------------------------------+
+2026-04-26T23:00:16Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-04-26T23:00:16Z INF |  https://alone-empty-disclose-diy.trycloudflare.com                                        |
+2026-04-26T23:00:16Z INF +--------------------------------------------------------------------------------------------+
+2026-04-26T23:00:16Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-04-26T23:00:16Z INF Version 2026.1.1 (Checksum 0c3de409287cc60264cd59a285c434a243ec6d1d79ff39dc8d36b716f9dda7ef)
+2026-04-26T23:00:16Z INF GOOS: linux, GOVersion: go1.24.11, GoArch: amd64
+2026-04-26T23:00:16Z INF Settings: map[ha-connections:1 protocol:quic url:http://localhost:4010]
+2026-04-26T23:00:16Z INF Autoupdate frequency is set autoupdateFreq=86400000
+2026-04-26T23:00:16Z INF Generated Connector ID: bb30f450-09b9-4fef-b809-78b6fdbeed1e
+2026-04-26T23:00:16Z INF Initial protocol quic
+2026-04-26T23:00:16Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-04-26T23:00:16Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-04-26T23:00:16Z INF ICMP proxy will use 203.253.25.165 as source for IPv4
+2026-04-26T23:00:16Z INF ICMP proxy will use fe80::3ae1:3c0d:ec12:c6ee in zone enp4s0 as source for IPv6
+2026-04-26T23:00:16Z INF Starting metrics server on 127.0.0.1:20242/metrics
+2026-04-26T23:00:16Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.200.33
+2026/04/27 08:00:16 failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+2026-04-26T23:00:17Z INF Registered tunnel connection connIndex=0 connection=ba615753-4914-4a35-8a69-877ba45743ae event=0 ip=198.41.200.33 location=icn01 protocol=quic
+To https://github.com/ssurealitylab/ssurealitylab.github.io.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 7b0accf83b0ac38ebe3354f72f0dac2db8aabde5 but expected 881d35c1c3106ed1bccd4ea5995974227e03a2f7)
+error: failed to push some refs to 'https://github.com/ssurealitylab/ssurealitylab.github.io.git'
+[2026-04-27 08:00:22] WARNING: Failed to push to GitHub

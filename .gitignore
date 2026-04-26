@@ -50,3 +50,4 @@ simple_lora_finetune.py
 admin_cms/admin_config.json
 admin_cms/backups/
 admin_cms/.edit_lock
+admin_cms/audit_log.jsonl

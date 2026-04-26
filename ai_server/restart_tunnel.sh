@@ -101,7 +101,7 @@ if [ -f "$PID_FILE" ]; then
         sleep 2
     fi
 fi
-pkill -f "cloudflared.*tunnel" 2>/dev/null
+pkill -f "cloudflared.*url http://localhost:4005" 2>/dev/null
 sleep 2
 
 # Retry loop with exponential backoff
@@ -140,20 +140,20 @@ while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
             if grep -q "429 Too Many Requests" "$TEMP_LOG" 2>/dev/null; then
                 log "RATE LIMIT detected (429)! Entering cooldown..."
                 RATE_LIMITED=true
-                pkill -f "cloudflared" 2>/dev/null
+                pkill -f "cloudflared.*url http://localhost:4005" 2>/dev/null
                 break
             fi
 
             # Check for Cloudflare API error (service outage)
             if grep -q "Error unmarshaling QuickTunnel" "$TEMP_LOG" 2>/dev/null; then
                 log "Cloudflare API error detected"
-                pkill -f "cloudflared" 2>/dev/null
+                pkill -f "cloudflared.*url http://localhost:4005" 2>/dev/null
                 break
             fi
 
             if grep -q "failed to unmarshal quick Tunnel" "$TEMP_LOG" 2>/dev/null; then
                 log "Cloudflare API error detected"
-                pkill -f "cloudflared" 2>/dev/null
+                pkill -f "cloudflared.*url http://localhost:4005" 2>/dev/null
                 break
             fi
         fi
@@ -216,7 +216,7 @@ while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
             exit 0
         else
             log "Health check FAILED, will retry..."
-            pkill -f "cloudflared" 2>/dev/null
+            pkill -f "cloudflared.*url http://localhost:4005" 2>/dev/null
         fi
     fi
 
