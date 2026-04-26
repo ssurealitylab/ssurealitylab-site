@@ -1,0 +1,41 @@
+# Domestic publications - editable via Admin CMS
+year_range: "2024-2025"
+publications:
+- id: test
+  title: 테스트
+  authors: 테스트인
+  venue: 테스트학회
+- id: d1
+  title: "로봇 조작 정책 학습에서 다중 시점 구성 변화의 정량적 영향분석"
+  authors: "Dowon Kim, Sangmin Lee, Sungyong Park, Heewon Kim"
+  venue: "방송공학회논문지"
+
+- id: d2
+  title: "GraspLDM 기반 파지 생성에서 객체 스케일의 영향 분석"
+  authors: "Yeonji Kim, Sangmin Lee, Heewon Kim"
+  venue: "방송공학회논문지"
+
+- id: d3
+  title: "심층 신경망을 사용한 누운 얼굴 감지 기법"
+  authors: "Seongho Park†, Heewon Kim"
+  venue: "한국데이터정보과학회지"
+
+- id: d4
+  title: "재귀적 대화 요약을 통한 장기 기억 트렌스포머"
+  authors: "Jinho Oh*†, ByungKwan Chae*†, Heewon Kim"
+  venue: "대한전자공학회 논문지"
+
+- id: d5
+  title: "3차원 안개 제거를 위한 대기 산란 기반 최적화 연구"
+  authors: "Hyunjun Koh, Hyunsuh Koh, Heewon Kim"
+  venue: "제37회 영상처리 및 이해에 관한 워크샵"
+
+- id: d6
+  title: "비디오 기반 저해상도 동적 3D 고해상도 재구성 방법 연구"
+  authors: "Minju Koh, Heewon Kim"
+  venue: "제37회 영상처리 및 이해에 관한 워크샵"
+
+- id: d7
+  title: "스윙 모션 사전 지식을 활용한 정확한 야구 선수 포즈 보정"
+  authors: "Seunghyun Oh†, Heewon Kim"
+  venue: "ASK 학술발표대회 논문집"
