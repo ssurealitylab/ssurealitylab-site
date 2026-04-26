@@ -180,6 +180,14 @@ students:
     photo: assets/img/members/inseon_kang.jpg
     github: ''
     linkedin: ''
+  - name: Hyunsoo Park
+    name_ko: 박현수
+    email: hyunsoopark41@gmail.com
+    university: AI Software Engineering, Soongsil University, B.S.
+    research: Physical AI
+    photo: assets/img/members/.jpg
+    github: https://github.com/hyunsoopark4/hyunsoopark4
+    linkedin: https://www.linkedin.com/in/%ED%98%84%EC%88%98-%EB%B0%95-04b48835a/
 robots:
   description: "Research Robots"
   members:
