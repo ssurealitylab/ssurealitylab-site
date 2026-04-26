@@ -14,6 +14,13 @@ def sanitize_filename(name: str) -> str:
     name = re.sub(r'[^a-z0-9_.]', '_', name)
     name = re.sub(r'_+', '_', name)
     name = name.strip('_')
+    # If sanitization stripped everything (e.g., Korean filename), use timestamp fallback
+    base = name.rsplit('.', 1)[0] if '.' in name else name
+    if not base:
+        from datetime import datetime
+        ts = datetime.now().strftime('%Y%m%d_%H%M%S')
+        ext = name if name.startswith('.') else ''
+        name = f'upload_{ts}{ext}'
     return name
 
 
