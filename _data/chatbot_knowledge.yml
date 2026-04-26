@@ -106,9 +106,6 @@ custom_qa:
     - 어디
     - 장소
     - 정보과학관
-  - question: "어떤 기술 스택을 사용하나요?"
-    answer: "AI/ML 연구에 필요한 다양한 기술을 사용합니다. Python, PyTorch, TensorFlow 등의 머신러닝 프레임워크부터 로보틱스용 ROS, 컴퓨터 비전용 OpenCV 등을 활용합니다."
-    keywords: ["기술", "스택", "도구", "프레임워크"]
 
   en:
   - question: "How can I apply to the lab?"
