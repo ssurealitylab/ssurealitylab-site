@@ -304,6 +304,17 @@
     }
   },
   {
+    "content": "인턴: 박현수 (Hyunsoo Park)\n연구 분야: Physical AI\nGitHub: https://github.com/hyunsoopark4/hyunsoopark4\nLinkedIn: https://www.linkedin.com/in/%ED%98%84%EC%88%98-%EB%B0%95-04b48835a/",
+    "metadata": {
+      "type": "member",
+      "language": "ko",
+      "category": "intern",
+      "name": "Hyunsoo Park",
+      "name_ko": "박현수",
+      "research": "Physical AI"
+    }
+  },
+  {
     "content": "뉴스: CVPR 2026 Paper Acceptance\n날짜: 2026-03-03\n카테고리: Publication\n참여자: Sungyong Park, Sooyoung Choi, Hyunsuh Kho, Youngjae Choi\n내용: Paper accepted to CVPR 2026: 'CLP: A Real-World Dataset of Contaminated Lens Protectors for Robust Semantic Segmentation' by Sungyong Park, Sooyoung Choi, Hyunsuh Kho, Youngjae Choi, and Heewon Kim. Congratulations!",
     "metadata": {
       "type": "news",
