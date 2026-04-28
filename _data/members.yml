@@ -54,15 +54,14 @@ students:
     github: ""
     linkedin: ""
 
-  - name: "Juhyoung Lee"
-    name_ko: "이주형"
-    email: "i0179@naver.com"
-    university: "EE. Korea National University of Transportation, B.S."
-    research: "Computer Vision, Deep Learning"
-    photo: "assets/img/members/juhyoung_lee.jpg"
-    github: "https://github.com/JuHyoungLee02"
-    linkedin: "https://www.linkedin.com/in/juhyoung-lee-3588a8314"
-
+  - name: Juhyoung Lee
+    name_ko: 이주형
+    email: i0179@naver.com
+    university: EE. Korea National University of Transportation, B.S.
+    research: Computer Vision, Robotics
+    photo: assets/img/members/juhyoung_lee.jpg
+    github: https://github.com/JuHyoungLee02
+    linkedin: https://www.linkedin.com/in/juhyoung-lee-3588a8314
   - name: "Jiwoo Seo"
     name_ko: "서지우"
     email: "jiwooindaeyo@gmail.com"
