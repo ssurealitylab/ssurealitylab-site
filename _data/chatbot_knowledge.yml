@@ -235,6 +235,14 @@ custom_qa:
     - 컨택
     - 사전 연락
 
+  - question: 테크스테이션은 어떤 곳인가요?
+    answer: 테크스테이션에서는 리얼리티랩의 피지컬 AI연구가 본격적으로 이루어지는 장소입니다. 연구실의 모든 로봇과 장비들을 이용해 연구를 진행할 수 있는 공간입니다.
+    keywords:
+    - 테크
+    - 스테이션
+    - 테크스테이션
+    - 로봇
+    - 피지컬AI physical
   en: []
 
 # Pending Q&A - questions waiting to be answered (shown in admin CMS)
