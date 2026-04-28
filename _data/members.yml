@@ -203,6 +203,19 @@ robots:
       speed: Up to 2 m/s walking
       battery: ~2 hours runtime
       payload: 0.5 kg (per arm)
+  - name: GARO
+    name_ko: 가로
+    model: RedRabbitRobotics RX-1(heavily modified)
+    joined: Dec 2025
+    photo: ''
+    bio: A custom humanoid built on the Red Rabbit Robotics platform, featuring tuned gearboxes, in-house interface and hardware upgrades, and a chassis redesigned for Vision-Language-Action (VLA) integration — extended with a custom-developed wheeled mobile base and lift body for full-body mobility.
+    specs:
+      height: 2M
+      weight: 60kg
+      dof: 21DOF
+      speed: 3m/s
+      battery: ~7 hours runtime
+      payload: 0.4 kg (per arm)
 alumni:
   description: "Former Lab Members"
   former_ms_students:
