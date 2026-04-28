@@ -300,12 +300,23 @@ async function editMember(el){
 async function editFaculty(el){
   const data = await apiGet('/data/members');
   const nameEl = el.querySelector('.member-name');
-  const cardName = nameEl ? nameEl.textContent.trim().replace('Prof. ','') : '';
+  const nameKoEl = el.querySelector('.member-name-ko');
+  const rawName = nameEl ? nameEl.textContent.trim() : '';
+  const strippedName = rawName.replace(/^Prof\.\s*/, '').trim();
+  const koName = nameKoEl ? nameKoEl.textContent.trim().replace(/\s*교수$/,'').trim() : '';
   const faculty = data.faculty || [];
-  const idx = faculty.findIndex(m=> m.name===cardName || m.name_ko===cardName ||
-    'Prof. '+m.name===nameEl.textContent.trim());
+  // Try multiple matching strategies
+  const idx = faculty.findIndex(m=> {
+    const fName = (m.name||'').trim();
+    const fKo = (m.name_ko||'').trim();
+    const fNameStripped = fName.replace(/^Prof\.\s*/, '').trim();
+    const fKoStripped = fKo.replace(/\s*교수$/,'').trim();
+    return fName === rawName || fName === strippedName ||
+           fNameStripped === strippedName || fNameStripped === rawName ||
+           fKo === koName || fKoStripped === koName;
+  });
 
-  if(idx<0){ adminToast('Faculty not found: '+cardName,'error'); return; }
+  if(idx<0){ adminToast('Faculty not found: '+rawName+' / '+koName,'error'); return; }
   const f = faculty[idx];
 
   openPanel('Edit Faculty: '+(f.name_ko||f.name), `

@@ -243,7 +243,7 @@ def api_deploy_update(filename, data_path):
         new_value = request.get_json()
         if not new_value:
             return jsonify({"error": "No data provided"}), 400
-        errors = validate_data(filename, new_value)
+        errors = validate_data(filename, new_value, path=data_path)
         if errors:
             return jsonify({"status": "error", "errors": errors})
         data = read_yaml(filename)
@@ -263,7 +263,7 @@ def api_deploy_add(filename, data_path):
         new_value = request.get_json()
         if not new_value:
             return jsonify({"error": "No data provided"}), 400
-        errors = validate_data(filename, new_value)
+        errors = validate_data(filename, new_value, path=data_path)
         if errors:
             return jsonify({"status": "error", "errors": errors})
         data = read_yaml(filename)

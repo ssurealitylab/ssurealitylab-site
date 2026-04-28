@@ -150,14 +150,14 @@
     }
   },
   {
-    "content": "석사과정 학생: 이주형 (Juhyoung Lee)\n연구 분야: Computer Vision, Deep Learning\nGitHub: https://github.com/JuHyoungLee02\nLinkedIn: https://www.linkedin.com/in/juhyoung-lee-3588a8314",
+    "content": "석사과정 학생: 이주형 (Juhyoung Lee)\n연구 분야: Robotics, Physical AI\nGitHub: https://github.com/JuHyoungLee02\nLinkedIn: https://www.linkedin.com/in/juhyoung-lee-3588a8314",
     "metadata": {
       "type": "member",
       "language": "ko",
       "category": "ms_student",
       "name": "Juhyoung Lee",
       "name_ko": "이주형",
-      "research": "Computer Vision, Deep Learning"
+      "research": "Robotics, Physical AI"
     }
   },
   {
@@ -1388,7 +1388,7 @@
     }
   },
   {
-    "content": "질문: 연구실 분위기는 어떤가요?\n답변: 굉장히 자유롭고 편안한 분위기라고 생각합니다 (~-~)\n키워드: 분위기, 연구실 분위기, 문화",
+    "content": "질문: 연구실 분위기는 어떤가요?\n답변: 굉장히 자유롭고 편안한 분위기라고 생각합니다 (+_+)\n키워드: 분위기, 연구실 분위기, 문화",
     "metadata": {
       "type": "qa",
       "language": "ko",
@@ -1448,6 +1448,15 @@
       "language": "ko",
       "category": "faq",
       "question": "연구실 방문 전에 미리 약속을 잡아야 하나요?"
+    }
+  },
+  {
+    "content": "질문: 테크스테이션은 어떤 곳인가요?\n답변: 테크스테이션에서는 리얼리티랩의 피지컬 AI연구가 본격적으로 이루어지는 장소입니다. 연구실의 모든 로봇과 장비들을 이용해 연구를 진행할 수 있는 공간입니다.\n키워드: 테크, 스테이션, 테크스테이션, 로봇, 피지컬AI physical",
+    "metadata": {
+      "type": "qa",
+      "language": "ko",
+      "category": "faq",
+      "question": "테크스테이션은 어떤 곳인가요?"
     }
   }
 ]

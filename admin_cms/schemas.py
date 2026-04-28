@@ -115,7 +115,15 @@ def validate_publication(data: dict, existing_ids: list = None) -> list:
 def validate_data(filename: str, data: dict, path: str = "", **kwargs) -> list:
     """Route validation to the appropriate schema."""
     if filename == "members":
-        section = kwargs.get('section', 'intern')
+        section = kwargs.get('section')
+        if not section:
+            # Auto-detect section from path or fields
+            if 'robots' in path or 'model' in data or 'specs' in data:
+                section = 'robot'
+            elif 'faculty' in path:
+                section = 'faculty'
+            else:
+                section = 'intern'
         return validate_member(data, section)
     elif filename == "news":
         return validate_news(data)
