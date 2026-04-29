@@ -60217,3 +60217,26 @@ To https://github.com/ssurealitylab/ssurealitylab.github.io.git
 [2026-04-29 08:00:11] Another restart_tunnel.sh is already running (PID: 2118566). Exiting.
 [2026-04-29 08:00:16] Tunnel health check PASSED!
 [2026-04-29 08:00:16] Updating URLs: https://announcement-chris-ranked-mothers.trycloudflare.com -> https://lincoln-stanley-hundreds-panels.trycloudflare.com
+Version auto-updated to v1234
+[main 70c647f] Auto-update Cloudflare Tunnel URL
+ 25 files changed, 431 insertions(+), 42 deletions(-)
+ create mode 100644 ai_server/admin_tunnel_temp.log
+remote: This repository moved. Please use the new location:        
+remote:   https://github.com/ssurealitylab/ssurealitylab-site.git        
+To https://github.com/ssurealitylab/ssurealitylab.github.io.git
+   580c90d..70c647f  main -> main
+[2026-04-29 08:00:21] Successfully pushed to GitHub!
+[2026-04-29 08:00:21] Tunnel restart completed successfully!
+[2026-04-29 08:00:21] ========================================
+[2026-04-30 08:00:04] ========================================
+[2026-04-30 08:00:04] Starting Cloudflare Tunnel restart (Attempt 1/20 today)...
+[2026-04-30 08:00:06] Attempt 1/10 - Creating tunnel...
+[2026-04-30 08:00:09] Another restart_tunnel.sh is already running (PID: 2490018). Exiting.
+[2026-04-30 08:00:09] Tunnel URL obtained: https://approve-sapphire-realized-reports.trycloudflare.com
+[2026-04-30 08:00:14] Health check FAILED, will retry...
+[2026-04-30 08:00:14] Waiting 120s before next attempt (exponential backoff)...
+[2026-04-30 08:00:30] Another restart_tunnel.sh is already running (PID: 2490018). Exiting.
+[2026-04-30 08:02:14] Attempt 2/10 - Creating tunnel...
+[2026-04-30 08:02:17] Tunnel URL obtained: https://already-springs-hull-investigators.trycloudflare.com
+[2026-04-30 08:02:23] Tunnel health check PASSED!
+[2026-04-30 08:02:23] Updating URLs: https://lincoln-stanley-hundreds-panels.trycloudflare.com -> https://already-springs-hull-investigators.trycloudflare.com
