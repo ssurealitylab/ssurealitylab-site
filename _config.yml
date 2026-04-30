@@ -13,7 +13,7 @@
 
 # theme: jekyll-agency  # Removed theme dependency
 
-url    : "https://ssurealitylab.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url    : "https://reality.ssu.ac.kr" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # root deployment - no subpath needed
 
 title      : "Reality Lab"
@@ -40,14 +40,14 @@ social:
   name: Reality Lab
   links:
     - https://github.com/ssurealitylab
-    - https://ssurealitylab.github.io
+    - https://reality.ssu.ac.kr
 
 # Organization Schema
 organization:
   name: Reality Lab
   legal_name: Reality Lab, Soongsil University
-  url: https://ssurealitylab.github.io
-  logo: https://ssurealitylab.github.io/assets/img/ssu-logo.png
+  url: https://reality.ssu.ac.kr
+  logo: https://reality.ssu.ac.kr/assets/img/ssu-logo.png
   description: AI Research Laboratory specializing in Computer Vision, Deep Learning, and Embodied AI
   address:
     street: 369 Sangdo-ro, Dongjak-gu
@@ -65,7 +65,7 @@ og_image: /assets/img/header.png
 lang: en
 lang_alternates:
   - lang: ko
-    url: https://ssurealitylab.github.io
+    url: https://reality.ssu.ac.kr
 
 analytics:
   google: #Google Analytics tracking code here

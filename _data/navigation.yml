@@ -10,29 +10,29 @@
 # Default navigation (used when no locale is specified)
 nav:
   - title: "Home"
-    url: https://ssurealitylab.github.io/
+    url: /
   - title: "News"
-    url: https://ssurealitylab.github.io/news.html
+    url: /news.html
   - title: "Members"
-    url: https://ssurealitylab.github.io/members.html
+    url: /members.html
     dropdown:
       - title: "Faculty"
-        url: https://ssurealitylab.github.io/faculty.html
+        url: /faculty.html
       - title: "Students"
-        url: https://ssurealitylab.github.io/students.html
+        url: /students.html
       - title: "Alumni"
-        url: https://ssurealitylab.github.io/alumni.html
+        url: /alumni.html
       - title: "Robots"
-        url: https://ssurealitylab.github.io/students.html#research-robots
+        url: /students.html#research-robots
   - title: "Publications"
-    url: https://ssurealitylab.github.io/international.html
+    url: /international.html
     dropdown:
       - title: "International"
-        url: https://ssurealitylab.github.io/international.html
+        url: /international.html
       - title: "Domestic"
-        url: https://ssurealitylab.github.io/domestic.html
+        url: /domestic.html
   - title: "Courses"
-    url: https://ssurealitylab.github.io/courses.html
+    url: /courses.html
   - title: "AI"
     url: "#ai"
     dropdown:
@@ -47,29 +47,29 @@ nav:
 en: &DEFAULT_EN
   nav:
     - title: "Home"
-      url: https://ssurealitylab.github.io/
+      url: /
     - title: "News"
-      url: https://ssurealitylab.github.io/news.html
+      url: /news.html
     - title: "Members"
-      url: https://ssurealitylab.github.io/members.html
+      url: /members.html
       dropdown:
         - title: "Faculty"
-          url: https://ssurealitylab.github.io/faculty.html
+          url: /faculty.html
         - title: "Students"
-          url: https://ssurealitylab.github.io/students.html
+          url: /students.html
         - title: "Alumni"
-          url: https://ssurealitylab.github.io/alumni.html
+          url: /alumni.html
         - title: "Robots"
-          url: https://ssurealitylab.github.io/students.html#research-robots
+          url: /students.html#research-robots
     - title: "Publications"
-      url: https://ssurealitylab.github.io/international.html
+      url: /international.html
       dropdown:
         - title: "International"
-          url: https://ssurealitylab.github.io/international.html
+          url: /international.html
         - title: "Domestic"
-          url: https://ssurealitylab.github.io/domestic.html
+          url: /domestic.html
     - title: "Courses"
-      url: https://ssurealitylab.github.io/courses.html
+      url: /courses.html
     - title: "AI"
       url: "#ai"
       dropdown:
